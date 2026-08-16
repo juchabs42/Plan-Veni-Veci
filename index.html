@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#8B1E2D" />
+  <meta name="description" content="Préparation Veni Vici 87 km — planning quotidien, nutrition et consignes." />
+  <title>Prépa Veni Vici</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon-192.png" alt="" class="brand-icon" />
+      <div>
+        <div class="brand-title">Prépa Veni Vici</div>
+        <div class="brand-subtitle">87 km · 2 250 m D+</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="connectionBadge" class="connection-badge">Connexion…</span>
+      <button id="installBtn" class="icon-btn hidden" aria-label="Installer l'application" title="Installer">＋</button>
+    </div>
+  </header>
+
+  <main id="app" class="app-shell">
+    <section id="todayView" class="view active" aria-label="Aujourd'hui">
+      <div class="day-toolbar">
+        <button id="prevDayBtn" class="icon-btn" aria-label="Jour précédent">‹</button>
+        <button id="todayBtn" class="date-button">
+          <span id="dayTitle">Aujourd'hui</span>
+          <strong id="dayDate">—</strong>
+        </button>
+        <button id="nextDayBtn" class="icon-btn" aria-label="Jour suivant">›</button>
+      </div>
+      <div id="dayMeta" class="day-meta"></div>
+      <div id="todaySessions" class="session-list"></div>
+      <div id="eveningRoutine"></div>
+    </section>
+
+    <section id="weekView" class="view" aria-label="Semaine">
+      <div class="section-heading">
+        <button id="prevWeekBtn" class="icon-btn" aria-label="Semaine précédente">‹</button>
+        <div>
+          <span class="eyebrow">Planning</span>
+          <h2 id="weekTitle">Semaine</h2>
+        </div>
+        <button id="nextWeekBtn" class="icon-btn" aria-label="Semaine suivante">›</button>
+      </div>
+      <div id="weekPhase" class="week-phase"></div>
+      <div id="weekDays" class="week-days"></div>
+    </section>
+
+    <section id="resourcesView" class="view" aria-label="Ressources">
+      <div class="section-heading simple">
+        <div>
+          <span class="eyebrow">Référence</span>
+          <h2>Protocoles</h2>
+        </div>
+      </div>
+      <div id="resourcesContent" class="resource-list"></div>
+    </section>
+
+    <section id="settingsView" class="view" aria-label="Réglages">
+      <div class="section-heading simple">
+        <div>
+          <span class="eyebrow">Application</span>
+          <h2>Réglages</h2>
+        </div>
+      </div>
+      <div id="settingsContent"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Navigation principale">
+    <button data-view="todayView" class="nav-item active"><span>●</span><small>Aujourd'hui</small></button>
+    <button data-view="weekView" class="nav-item"><span>▦</span><small>Semaine</small></button>
+    <button data-view="resourcesView" class="nav-item"><span>≡</span><small>Protocoles</small></button>
+    <button data-view="settingsView" class="nav-item"><span>⚙</span><small>Réglages</small></button>
+  </nav>
+
+  <div id="authModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+    <div class="modal auth-modal">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow">Supabase</span>
+          <h2 id="authTitle">Connexion</h2>
+        </div>
+      </div>
+      <p class="muted">Utilise le compte créé dans Supabase Auth. Il n'y a pas d'inscription depuis l'application.</p>
+      <form id="loginForm" class="form-stack">
+        <label>Email<input id="emailInput" type="email" autocomplete="email" required /></label>
+        <label>Mot de passe<input id="passwordInput" type="password" autocomplete="current-password" required /></label>
+        <button type="submit" class="primary-btn">Se connecter</button>
+      </form>
+      <p id="authMessage" class="form-message"></p>
+    </div>
+  </div>
+
+  <div id="editModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="editTitle">
+    <div class="modal edit-modal">
+      <div class="modal-header sticky">
+        <div>
+          <span class="eyebrow">Séance</span>
+          <h2 id="editTitle">Modifier</h2>
+        </div>
+        <button id="closeEditBtn" class="icon-btn" aria-label="Fermer">×</button>
+      </div>
+      <form id="editForm" class="form-stack">
+        <input id="editId" type="hidden" />
+        <div class="form-grid two">
+          <label>Date<input id="editDate" type="date" required /></label>
+          <label>Créneau<select id="editSlot"><option value="am">Matin</option><option value="pm">Soir</option></select></label>
+        </div>
+        <label>Horaire<input id="editTime" type="text" placeholder="18:15" /></label>
+        <label>Séance<textarea id="editSessionTitle" rows="3" required></textarea></label>
+        <div class="form-grid three">
+          <label>Durée (min)<input id="editDuration" type="number" min="0" step="1" /></label>
+          <label>RPE<input id="editRpe" type="number" min="0" max="10" step="0.5" /></label>
+          <label>D+ (m)<input id="editElevation" type="number" min="0" step="10" /></label>
+        </div>
+        <label>Nutrition<textarea id="editNutrition" rows="3"></textarea></label>
+        <label>Consignes clés<textarea id="editInstructions" rows="4"></textarea></label>
+        <label>Notes personnelles<textarea id="editNotes" rows="4" placeholder="Ex. Achille un peu raide, séance remplacée par HT…"></textarea></label>
+        <label>Statut<select id="editStatus"><option value="planned">Prévue</option><option value="done">Faite</option><option value="skipped">Sautée</option></select></label>
+        <div class="modal-actions">
+          <button type="submit" class="primary-btn">Enregistrer</button>
+          <button id="resetSessionBtn" type="button" class="secondary-btn">Revenir au plan initial</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
