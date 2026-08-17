@@ -3,6 +3,7 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 const PLAN_URL = './training-plan.json';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
+const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
 const STATUS_LABELS = { planned: 'Prévue', done: 'Faite', skipped: 'Sautée' };
 const DAY_NAMES = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
 
@@ -29,6 +30,11 @@ function localISO(date) {
   return `${y}-${m}-${d}`;
 }
 function parseISO(s){ const [y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
+function isStandalone(){ return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true; }
+function isiOS(){ return /iphone|ipad|ipod/i.test(navigator.userAgent); }
+function isMobile(){ return window.matchMedia('(max-width: 820px)').matches; }
+function installCardDismissed(){ return localStorage.getItem(INSTALL_DISMISS_KEY)==='1'; }
+function dismissInstallCard(){ localStorage.setItem(INSTALL_DISMISS_KEY,'1'); updateInstallUI(); }
 function addDays(s,n){ const d=parseISO(s); d.setDate(d.getDate()+n); return localISO(d); }
 function formatDate(s, opts={weekday:'long',day:'numeric',month:'long'}){ return new Intl.DateTimeFormat('fr-FR',opts).format(parseISO(s)); }
 function slotLabel(slot){ return slot === 'am' ? 'Matin' : 'Soir'; }
@@ -181,7 +187,7 @@ function getNutritionGuide(session){
   return rows.find(x=>x.situation.includes("Footing <75'"));
 }
 
-function renderAll(){ updateConnectionBadge(); renderToday(); renderWeek(); renderResources(); renderSettings(); }
+function renderAll(){ updateConnectionBadge(); updateInstallUI(); renderToday(); renderWeek(); renderResources(); renderSettings(); }
 function switchView(id){
   state.currentView=id;
   document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));
@@ -359,11 +365,50 @@ function exportData(){
 function showAuth(){ if(!state.demoMode) $('authModal').classList.remove('hidden'); }
 function hideAuth(){ $('authModal').classList.add('hidden'); $('authMessage').textContent=''; }
 
+async function triggerInstall(){
+  if(state.installPrompt){
+    state.installPrompt.prompt();
+    await state.installPrompt.userChoice;
+    state.installPrompt=null;
+    localStorage.removeItem(INSTALL_DISMISS_KEY);
+    updateInstallUI();
+    return;
+  }
+  if(isiOS()) dismissInstallCard();
+}
+
+function updateInstallUI(){
+  const card=$('installCard');
+  const topBtn=$('installBtn');
+  const cta=$('installCardBtn');
+  const txt=$('installCardText');
+  if(!card||!topBtn||!cta||!txt) return;
+  if(isStandalone()){
+    card.classList.add('hidden');
+    topBtn.classList.add('hidden');
+    return;
+  }
+  const canInstall=Boolean(state.installPrompt);
+  const showCard=isMobile() && !installCardDismissed() && (canInstall || isiOS());
+  card.classList.toggle('hidden',!showCard);
+  topBtn.classList.toggle('hidden',!(canInstall && isMobile()));
+  if(showCard && isiOS() && !canInstall){
+    txt.textContent='Sur iPhone, ouvre le menu Partager puis choisis « Sur l’écran d’accueil » pour installer l’application.';
+    cta.textContent='J'ai compris';
+  } else {
+    txt.textContent='Ajoute cette application sur ton téléphone pour ouvrir directement la séance du jour, même plus rapidement depuis l’écran d’accueil.';
+    cta.textContent='Installer';
+  }
+}
+
 function bindUI(){
   document.querySelectorAll('.nav-item').forEach(btn=>btn.onclick=()=>switchView(btn.dataset.view));
   $('prevDayBtn').onclick=()=>{state.currentDate=addDays(state.currentDate,-1);renderToday();};
   $('nextDayBtn').onclick=()=>{state.currentDate=addDays(state.currentDate,1);renderToday();};
   $('todayBtn').onclick=()=>{state.currentDate=localISO(new Date());state.selectedWeek=weekForDate(state.currentDate);renderToday();};
+  $('dismissInstallCardBtn').onclick=dismissInstallCard;
+  $('installCardBtn').onclick=triggerInstall;
+  $('installBtn').onclick=triggerInstall;
   $('prevWeekBtn').onclick=()=>{state.selectedWeek=Math.max(1,state.selectedWeek-1);renderWeek();};
   $('nextWeekBtn').onclick=()=>{state.selectedWeek=Math.min(12,state.selectedWeek+1);renderWeek();};
   $('closeEditBtn').onclick=closeEdit;
@@ -387,10 +432,19 @@ function bindUI(){
 
 function registerPWA(){
   if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(console.warn);
-  const standalone=window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true;
-  window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();state.installPrompt=e;if(!standalone)$('installBtn').classList.remove('hidden');});
-  $('installBtn').onclick=async()=>{if(!state.installPrompt)return;state.installPrompt.prompt();await state.installPrompt.userChoice;state.installPrompt=null;$('installBtn').classList.add('hidden');};
-  window.addEventListener('appinstalled',()=>$('installBtn').classList.add('hidden'));
+  updateInstallUI();
+  window.addEventListener('beforeinstallprompt',e=>{
+    e.preventDefault();
+    state.installPrompt=e;
+    localStorage.removeItem(INSTALL_DISMISS_KEY);
+    updateInstallUI();
+  });
+  window.addEventListener('appinstalled',()=>{
+    state.installPrompt=null;
+    localStorage.removeItem(INSTALL_DISMISS_KEY);
+    updateInstallUI();
+  });
+  window.addEventListener('resize',updateInstallUI);
 }
 
 init().catch(err=>{console.error(err);document.body.innerHTML=`<main class="app-shell"><div class="empty-card"><strong>Erreur de démarrage</strong><p>${esc(err.message)}</p></div></main>`;});

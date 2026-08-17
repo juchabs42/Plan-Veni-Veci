@@ -15,7 +15,7 @@
 <body>
   <header class="topbar">
     <div class="brand">
-      <img src="icons/icon-192.png" alt="" class="brand-icon" />
+      <img src="icons/icon-192.png" alt="Logo Prépa Veni Vici" class="brand-icon" />
       <div>
         <div class="brand-title">Prépa Veni Vici</div>
         <div class="brand-subtitle">87 km · 2 250 m D+</div>
@@ -29,6 +29,18 @@
 
   <main id="app" class="app-shell">
     <section id="todayView" class="view active" aria-label="Aujourd'hui">
+      <div id="installCard" class="install-card hidden" aria-live="polite">
+        <div class="install-card-copy">
+          <span class="eyebrow on-red">Application mobile</span>
+          <h3>Installer l'application</h3>
+          <p id="installCardText">Ajoute cette application sur ton téléphone pour ouvrir directement la séance du jour.</p>
+        </div>
+        <div class="install-card-actions">
+          <button id="installCardBtn" class="install-primary-btn" type="button">Installer</button>
+          <button id="dismissInstallCardBtn" class="install-secondary-btn" type="button" aria-label="Fermer">Plus tard</button>
+        </div>
+      </div>
+
       <div class="day-toolbar">
         <button id="prevDayBtn" class="icon-btn" aria-label="Jour précédent">‹</button>
         <button id="todayBtn" class="date-button">
