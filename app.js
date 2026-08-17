@@ -406,9 +406,9 @@ function bindUI(){
   $('prevDayBtn').onclick=()=>{state.currentDate=addDays(state.currentDate,-1);renderToday();};
   $('nextDayBtn').onclick=()=>{state.currentDate=addDays(state.currentDate,1);renderToday();};
   $('todayBtn').onclick=()=>{state.currentDate=localISO(new Date());state.selectedWeek=weekForDate(state.currentDate);renderToday();};
-  $('dismissInstallCardBtn').onclick=dismissInstallCard;
-  $('installCardBtn').onclick=triggerInstall;
-  $('installBtn').onclick=triggerInstall;
+  if($('dismissInstallCardBtn')) $('dismissInstallCardBtn').onclick=dismissInstallCard;
+  if($('installCardBtn')) $('installCardBtn').onclick=triggerInstall;
+  if($('installBtn')) $('installBtn').onclick=triggerInstall;
   $('prevWeekBtn').onclick=()=>{state.selectedWeek=Math.max(1,state.selectedWeek-1);renderWeek();};
   $('nextWeekBtn').onclick=()=>{state.selectedWeek=Math.min(12,state.selectedWeek+1);renderWeek();};
   $('closeEditBtn').onclick=closeEdit;
