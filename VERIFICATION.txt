@@ -1,0 +1,56 @@
+VÉRIFICATION — Prépa Veni Vici PWA — 17/08/2026
+
+1. index.html
+   OK — présence de l'encart d'installation mobile.
+   OK — logo coureur référencé.
+   OK — style.css, config.js, supabase-client.js et app.js référencés avec version v5.
+
+2. app.js
+   OK — syntaxe validée avec Node.js.
+   CORRIGÉ — l'ancien texte J'ai compris cassait JavaScript à cause d'une apostrophe non échappée.
+   OK — aucun import JavaScript externe requis au démarrage.
+   OK — 47 IDs HTML utilisés par JavaScript vérifiés, aucun manquant.
+
+3. supabase-client.js
+   OK — syntaxe validée.
+   OK — Auth email/mot de passe, session, SELECT, UPSERT, UPDATE et DELETE utilisés par l'app sont inclus localement.
+
+4. style.css
+   OK — accolades équilibrées.
+   OK — styles de l'encart d'installation, du logo, des cartes séance et de la navigation présents.
+
+5. sw.js
+   OK — syntaxe validée.
+   OK — cache renommé veni-vici-v5.
+   OK — anciens caches supprimés à l'activation.
+   OK — 10 ressources pré-cachées existent réellement.
+   OK — stratégie réseau d'abord pour éviter un mélange de versions.
+
+6. manifest.json
+   OK — JSON valide.
+   OK — display=standalone.
+   OK — start_url=./.
+   OK — icônes 192 et 512 référencées.
+
+7. training-plan.json
+   OK — JSON valide.
+   OK — 84 jours.
+   OK — 125 séances.
+   OK — champs essentiels présents pour chaque séance.
+
+8. icons/icon-192.png
+   OK — PNG réel 192 × 192.
+
+9. icons/icon-512.png
+   OK — PNG réel 512 × 512.
+
+10. config.js
+    OK — syntaxe valide.
+    À RENSEIGNER — URL et clé publishable Supabase si synchronisation souhaitée.
+
+11. supabase.sql
+    OK — table training_sessions présente.
+    OK — RLS activé.
+    OK — politiques select/insert/update/delete limitées à l'utilisateur connecté.
+
+RÉSULTAT : ALL_CHECKS_OK

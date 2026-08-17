@@ -1,6 +1,6 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.95.0/+esm';
+const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json';
+const PLAN_URL = './training-plan.json?v=5';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -394,7 +394,7 @@ function updateInstallUI(){
   topBtn.classList.toggle('hidden',!(canInstall && isMobile()));
   if(showCard && isiOS() && !canInstall){
     txt.textContent='Sur iPhone, ouvre le menu Partager puis choisis « Sur l’écran d’accueil » pour installer l’application.';
-    cta.textContent='J'ai compris';
+    cta.textContent="J'ai compris";
   } else {
     txt.textContent='Ajoute cette application sur ton téléphone pour ouvrir directement la séance du jour, même plus rapidement depuis l’écran d’accueil.';
     cta.textContent='Installer';

@@ -1,69 +1,51 @@
 # Prépa Veni Vici — PWA mobile
 
-Application mobile-first pour consulter et réorganiser la préparation Veni Vici 87 km depuis un téléphone.
+Version vérifiée du 17/08/2026.
 
-## Ce que fait la V1
-
-- écran **Aujourd'hui** : séances AM/PM, durée, RPE, D+, nutrition, consignes et détail de séance ;
-- routine du soir automatiquement affichée selon le jour ;
-- écran **Semaine** : toutes les séances prévues, y compris celles déplacées ;
-- modification d'une séance : date, créneau, horaire, contenu, durée, RPE, D+, nutrition, consignes, notes ;
-- statuts **Prévue / Faite / Sautée** ;
-- badge **Modifiée** / **Déplacée** quand le plan n'est plus identique à l'Excel ;
-- bouton **Revenir au plan initial** pour une séance ;
-- ressources : bibliothèque de séances, musculation, chaleur, nutrition, affûtage et routine du soir ;
-- PWA installable sur téléphone ;
-- lecture hors ligne du dernier planning chargé ;
-- mode local automatique tant que Supabase n'est pas configuré.
-
-## 1. Supabase
-
-1. Crée un projet Supabase.
-2. Ouvre **SQL Editor** et exécute entièrement `supabase.sql`.
-3. Dans **Authentication > Users**, crée ton compte avec email + mot de passe. L'application ne propose volontairement pas d'auto-inscription.
-4. Dans le menu **Connect** du projet, récupère :
-   - le **Project URL** ;
-   - la **Publishable key** (`sb_publishable_...`).
-5. Ouvre `config.js` et remplace les deux valeurs d'exemple.
-
-La publishable key est destinée au code frontend. La sécurité des données repose sur les politiques RLS de `supabase.sql`. **Ne mets jamais une Secret key / service_role key dans GitHub ou dans `config.js`.**
-
-Au premier login, si ton compte n'a encore aucune séance, l'application importe automatiquement le plan contenu dans `training-plan.json`.
-
-## 2. GitHub Pages
-
-Dépose à la racine du dépôt :
+## Fichiers à mettre à la racine du dépôt GitHub Pages
 
 - `index.html`
 - `style.css`
 - `app.js`
+- `supabase-client.js`
 - `config.js`
+- `training-plan.json`
 - `manifest.json`
 - `sw.js`
-- `training-plan.json`
-- le dossier `icons/`
+- `supabase.sql` (utile pour Supabase, pas exécuté par GitHub Pages)
+- dossier `icons/`
+  - `icon-192.png`
+  - `icon-512.png`
 
-Puis : **Settings > Pages > Deploy from a branch > main / root**.
+Ne mets pas le dossier `VeniVici_App_VERIFIEE` lui-même dans un sous-dossier si GitHub Pages publie la racine du dépôt : les fichiers ci-dessus doivent être au niveau publié par Pages.
 
-`supabase.sql` et ce README peuvent rester dans le dépôt ; ils ne sont pas utilisés par le navigateur.
+## Configuration Supabase
 
-## 3. Installation sur téléphone
+Dans `config.js`, remplace uniquement les deux valeurs :
 
-Ouvre l'URL GitHub Pages. Sur un navigateur compatible, le bouton `+` du bandeau permet l'installation. Il disparaît quand l'application est déjà lancée en mode installé.
+```js
+window.APP_CONFIG = {
+  supabaseUrl: "https://TON-PROJET.supabase.co",
+  supabasePublishableKey: "TA_CLE_PUBLISHABLE"
+};
+```
 
-## 4. Modifier la préparation
+Si ces valeurs restent celles d'exemple, l'application fonctionne en **mode local** dans le navigateur, sans synchronisation Supabase.
 
-Dans **Aujourd'hui** ou **Semaine**, touche une séance :
+Dans Supabase > SQL Editor, exécute `supabase.sql` une fois. Puis crée ton compte dans Authentication > Users.
 
-- **Modifier** pour changer son contenu ;
-- **Déplacer** pour changer sa date/créneau ;
-- **Fait** pour la valider ;
-- **Sauter** si elle n'est pas réalisée.
+## Installation mobile
 
-L'Excel n'est jamais écrasé : `training-plan.json` reste la référence. Chaque ligne Supabase conserve les valeurs d'origine dans `original_data`.
+L'encart « Installer l'application » apparaît sur téléphone quand l'installation PWA est disponible.
 
-Dans **Réglages**, le bouton **Réinitialiser depuis l'Excel** supprime tes séances Supabase et réimporte le plan de référence. Cette action demande une confirmation.
+- Android/Chrome : le bouton `Installer` déclenche l'installation.
+- iPhone/Safari : l'encart indique d'utiliser Partager > Sur l'écran d'accueil.
+- Une fois installée en mode standalone, l'encart disparaît.
 
-## Important pour les mises à jour GitHub
+## Cache
 
-Les noms `app.js` et `style.css` sont volontairement stables. Lors d'une mise à jour, remplace simplement les fichiers existants.
+Cette version utilise le cache `veni-vici-v5` et des URLs versionnées `?v=5` pour éviter de mélanger d'anciens fichiers avec les nouveaux.
+
+## Contrôles réalisés avant livraison
+
+Voir `VERIFICATION.txt`.
