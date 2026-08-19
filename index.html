@@ -9,9 +9,9 @@
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
-  <link rel="stylesheet" href="style.css?v=5" />
-  <script src="config.js?v=5"></script>
-  <script src="supabase-client.js?v=5"></script>
+  <link rel="stylesheet" href="style.css?v=6" />
+  <script src="config.js?v=6"></script>
+  <script src="supabase-client.js?v=6"></script>
 </head>
 <body>
   <header class="topbar">
@@ -104,11 +104,12 @@
           <h2 id="authTitle">Connexion</h2>
         </div>
       </div>
-      <p class="muted">Utilise le compte créé dans Supabase Auth. Il n'y a pas d'inscription depuis l'application.</p>
+      <p class="muted">Connecte-toi avec ton compte. Si tu es invité en lecture seule, crée d’abord ton compte avec la même adresse email que celle partagée par le propriétaire.</p>
       <form id="loginForm" class="form-stack">
         <label>Email<input id="emailInput" type="email" autocomplete="email" required /></label>
         <label>Mot de passe<input id="passwordInput" type="password" autocomplete="current-password" required /></label>
         <button type="submit" class="primary-btn">Se connecter</button>
+        <button id="signupBtn" type="button" class="secondary-btn">Créer un compte lecteur</button>
       </form>
       <p id="authMessage" class="form-message"></p>
     </div>
@@ -150,6 +151,6 @@
 
   <div id="toast" class="toast hidden" role="status"></div>
 
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

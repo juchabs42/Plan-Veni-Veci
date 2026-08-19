@@ -96,3 +96,18 @@ details.session-details summary{font-weight:800;color:var(--red);font-size:.88re
 .offline-note{background:var(--blue-soft);color:var(--blue);border:1px solid #cfe6ed;padding:10px 12px;border-radius:13px;font-size:.82rem;margin-bottom:10px}
 @media(min-width:700px){.app-shell{padding:22px 20px 40px}.week-days{grid-template-columns:1fr 1fr}.modal-backdrop{align-items:center;padding:20px}.modal{border-radius:24px}.bottom-nav{left:50%;transform:translateX(-50%);max-width:620px;border:1px solid var(--border);border-bottom:0;border-radius:18px 18px 0 0}}
 @media(max-width:430px){.connection-badge{display:none}.session-actions button{font-size:.71rem}.form-grid.three{grid-template-columns:1fr 1fr}.form-grid.three label:last-child{grid-column:1/-1}.install-card{padding:14px}.install-card-actions{grid-template-columns:1fr}.install-secondary-btn{width:100%}}
+
+/* Partage lecture seule */
+.readonly-note{background:var(--blue-soft);color:var(--blue);border:1px solid #cfe6ed;padding:12px;border-radius:14px;margin-bottom:12px;line-height:1.45;font-size:.87rem}
+.readonly-strip{border-top:1px solid var(--border);padding:11px 14px;background:#f8fafc;color:var(--muted);font-size:.78rem;font-weight:800;text-align:center}
+.readonly-settings{border-color:#cfe6ed;background:#f8fcfd}
+.share-form{display:grid;grid-template-columns:1fr auto;gap:8px;margin:12px 0 8px}
+.share-form input{width:100%;min-width:0;border:1px solid #cfd4dc;border-radius:12px;padding:11px 12px;color:var(--text);background:#fff;outline:none}
+.share-form input:focus{border-color:var(--red);box-shadow:0 0 0 3px var(--red-soft)}
+.share-list{margin-top:12px;border-top:1px solid var(--border)}
+.share-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--border)}
+.share-row strong{display:block;font-size:.9rem;overflow-wrap:anywhere}
+.share-row small{display:block;color:var(--muted);margin-top:2px}
+.share-remove-btn{border:1px solid #efc2bd;background:#fff0ef;color:var(--danger);border-radius:10px;padding:8px 10px;font-weight:800;white-space:nowrap}
+.share-help{font-size:.8rem!important;margin-top:10px!important}
+@media(max-width:430px){.share-form{grid-template-columns:1fr}.share-form .primary-btn{width:100%}.share-row{align-items:flex-start}.share-remove-btn{padding:7px 9px}}

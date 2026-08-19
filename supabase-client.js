@@ -96,6 +96,28 @@
       }
     }
 
+    async signUp({ email, password }) {
+      try {
+        const response = await fetch(`${this.client.url}/auth/v1/signup`, {
+          method: 'POST',
+          headers: { apikey: this.client.key, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        const payload = await parseResponse(response);
+        if (!response.ok) return { data: null, error: makeError(payload, response.status, 'Création du compte impossible') };
+        const rawSession = payload?.session || (payload?.access_token ? payload : null);
+        if (rawSession?.access_token) {
+          const session = { ...rawSession, user: rawSession.user || payload.user, expires_at: now() + Number(rawSession.expires_in || 3600) };
+          this.save(session);
+          this.emit('SIGNED_IN', session);
+          return { data: { user: payload.user || session.user, session }, error: null };
+        }
+        return { data: { user: payload?.user || payload, session: null }, error: null };
+      } catch (error) {
+        return { data: null, error: { message: error?.message || 'Création du compte Supabase impossible' } };
+      }
+    }
+
     async signOut() {
       const session = this.load();
       if (session?.access_token) {
@@ -222,6 +244,27 @@
       this.auth = new AuthClient(this);
     }
     from(table) { return new TableClient(this, table); }
+    async rpc(functionName, args = {}) {
+      const session = await this.auth.validSession();
+      if (!session) return { data: null, error: { message: 'Session Supabase expirée. Reconnecte-toi.' } };
+      try {
+        const response = await fetch(`${this.url}/rest/v1/rpc/${encodeURIComponent(functionName)}`, {
+          method: 'POST',
+          headers: {
+            apikey: this.key,
+            Authorization: `Bearer ${session.access_token}`,
+            'Content-Type': 'application/json',
+            Accept: 'application/json'
+          },
+          body: JSON.stringify(args || {})
+        });
+        const payload = await parseResponse(response);
+        if (!response.ok) return { data: null, error: makeError(payload, response.status, 'Fonction Supabase impossible') };
+        return { data: payload, error: null };
+      } catch (error) {
+        return { data: null, error: { message: error?.message || 'Connexion Supabase impossible' } };
+      }
+    }
   }
 
   window.SupabaseLite = {

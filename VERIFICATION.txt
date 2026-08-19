@@ -1,56 +1,56 @@
-VÉRIFICATION — Prépa Veni Vici PWA — 17/08/2026
+Veni Vici App — vérification version partage lecture seule
+Date : 2026-08-19
 
-1. index.html
-   OK — présence de l'encart d'installation mobile.
-   OK — logo coureur référencé.
-   OK — style.css, config.js, supabase-client.js et app.js référencés avec version v5.
+1. JavaScript
+- app.js : node --check OK
+- supabase-client.js : node --check OK
+- config.js : node --check OK
 
-2. app.js
-   OK — syntaxe validée avec Node.js.
-   CORRIGÉ — l'ancien texte J'ai compris cassait JavaScript à cause d'une apostrophe non échappée.
-   OK — aucun import JavaScript externe requis au démarrage.
-   OK — 47 IDs HTML utilisés par JavaScript vérifiés, aucun manquant.
+2. Données
+- training-plan.json : JSON valide
+- manifest.json : JSON valide
+- 84 jours présents
+- 125 séances présentes
 
-3. supabase-client.js
-   OK — syntaxe validée.
-   OK — Auth email/mot de passe, session, SELECT, UPSERT, UPDATE et DELETE utilisés par l'app sont inclus localement.
+3. Cohérence HTML / JS
+- 51 IDs HTML statiques détectés
+- 50 références document.getElementById/$() dans app.js
+- 0 ID requis manquant (les IDs dynamiques de Réglages sont inclus dans le contrôle)
 
-4. style.css
-   OK — accolades équilibrées.
-   OK — styles de l'encart d'installation, du logo, des cartes séance et de la navigation présents.
+4. Ressources GitHub/PWA
+- index.html : présent
+- style.css : présent
+- app.js : présent
+- supabase-client.js : présent
+- config.js : présent
+- manifest.json : présent
+- sw.js : présent
+- training-plan.json : présent
+- icons/icon-192.png : présent
+- icons/icon-512.png : présent
+- toutes les ressources référencées par index.html existent
+- toutes les ressources listées dans le service worker existent
+- cache PWA : veni-vici-v6-share
 
-5. sw.js
-   OK — syntaxe validée.
-   OK — cache renommé veni-vici-v5.
-   OK — anciens caches supprimés à l'activation.
-   OK — 10 ressources pré-cachées existent réellement.
-   OK — stratégie réseau d'abord pour éviter un mélange de versions.
+5. Tests d'exécution Node avec DOM simulé
+- démarrage en mode local : OK, 0 erreur d'exécution
+- mode propriétaire : encart Partage du plan affiché, boutons Modifier présents, 0 erreur
+- mode lecteur : Accès lecture seule affiché, boutons Modifier absents, bandeau Lecture seule, 0 erreur
 
-6. manifest.json
-   OK — JSON valide.
-   OK — display=standalone.
-   OK — start_url=./.
-   OK — icônes 192 et 512 référencées.
+6. Client Supabase local
+- signUp() : requête /auth/v1/signup testée avec réponse simulée, OK
+- rpc() : appel /rest/v1/rpc/share_training_with_email testé avec réponse simulée, OK
 
-7. training-plan.json
-   OK — JSON valide.
-   OK — 84 jours.
-   OK — 125 séances.
-   OK — champs essentiels présents pour chaque séance.
+7. Contrôles SQL statiques
+- RLS training_sessions : présent
+- RLS training_shares : présent
+- SELECT propriétaire ou lecteur partagé : présent
+- INSERT/UPDATE/DELETE séances réservés au propriétaire : présents
+- aucun INSERT direct accordé sur training_shares : OK
+- fonction share_training_with_email : exécution accordée à authenticated uniquement
+- exécution révoquée pour public/anon
+- fonction SECURITY DEFINER avec search_path vide : présente
 
-8. icons/icon-192.png
-   OK — PNG réel 192 × 192.
-
-9. icons/icon-512.png
-   OK — PNG réel 512 × 512.
-
-10. config.js
-    OK — syntaxe valide.
-    À RENSEIGNER — URL et clé publishable Supabase si synchronisation souhaitée.
-
-11. supabase.sql
-    OK — table training_sessions présente.
-    OK — RLS activé.
-    OK — politiques select/insert/update/delete limitées à l'utilisateur connecté.
-
-RÉSULTAT : ALL_CHECKS_OK
+Limite du test :
+- impossible de tester contre TON projet Supabase réel sans tes identifiants/URL/clés et sans exécuter le SQL sur ta base.
+- le schéma SQL est donc vérifié statiquement, pas exécuté sur ta base de production.

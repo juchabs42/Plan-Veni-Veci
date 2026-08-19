@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=5';
+const PLAN_URL = './training-plan.json?v=6';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -17,7 +17,10 @@ const state = {
   demoMode: false,
   offline: !navigator.onLine,
   installPrompt: null,
-  currentView: 'todayView'
+  currentView: 'todayView',
+  accessMode: 'unknown',
+  ownerId: null,
+  shares: []
 };
 
 const $ = id => document.getElementById(id);
@@ -50,7 +53,10 @@ function updateConnectionBadge(){
   const el=$('connectionBadge');
   if(state.offline){ el.textContent='Hors ligne'; return; }
   if(state.demoMode){ el.textContent='Mode local'; return; }
-  el.textContent=state.user ? 'Synchronisé' : 'Connexion';
+  if(!state.user){ el.textContent='Connexion'; return; }
+  if(state.accessMode==='viewer'){ el.textContent='Lecture seule'; return; }
+  if(state.accessMode==='unauthorized'){ el.textContent='Aucun accès'; return; }
+  el.textContent='Synchronisé';
 }
 
 async function init(){
@@ -73,6 +79,7 @@ async function init(){
   const {data:{session}}=await state.supabase.auth.getSession();
   if(session?.user){
     state.user=session.user;
+    await resolveAccess();
     await loadSessions();
   } else {
     showAuth();
@@ -81,8 +88,17 @@ async function init(){
   }
   state.supabase.auth.onAuthStateChange(async(_event,sessionNow)=>{
     state.user=sessionNow?.user||null;
-    if(state.user){ hideAuth(); await loadSessions(); }
-    else showAuth();
+    if(state.user){
+      hideAuth();
+      await resolveAccess();
+      await loadSessions();
+    } else {
+      state.accessMode='unknown';
+      state.ownerId=null;
+      state.shares=[];
+      state.sessions=[];
+      showAuth();
+    }
     updateConnectionBadge(); renderAll();
   });
   updateConnectionBadge();
@@ -98,9 +114,93 @@ function loadLocalSessions(){
 function saveLocalSessions(){ if(state.demoMode) localStorage.setItem(LOCAL_KEY,JSON.stringify(state.sessions)); localStorage.setItem(CACHE_KEY,JSON.stringify(state.sessions)); }
 function readCache(){ try{return JSON.parse(localStorage.getItem(CACHE_KEY)||'[]')}catch{return[]} }
 
+async function resolveAccess(){
+  if(state.demoMode){ state.accessMode='owner'; state.ownerId='local'; return; }
+  if(!state.user||!state.supabase){ state.accessMode='unknown'; state.ownerId=null; return; }
+
+  // Un partage reçu est prioritaire : un compte ami voit le plan partagé, pas un éventuel plan local ancien.
+  const {data:received,error:shareError}=await state.supabase
+    .from('training_shares')
+    .select('owner_id,viewer_id,viewer_email,created_at')
+    .eq('viewer_id',state.user.id);
+  if(shareError){ console.error('Lecture des partages impossible',shareError); }
+  if(received?.length){
+    state.accessMode='viewer';
+    state.ownerId=received[0].owner_id;
+    state.shares=[];
+    return;
+  }
+
+  const {data:ownRows,error:ownError}=await state.supabase
+    .from('training_sessions')
+    .select('id')
+    .eq('user_id',state.user.id);
+  if(ownError){ console.error('Détection du propriétaire impossible',ownError); }
+  if(ownRows?.length){
+    state.accessMode='owner';
+    state.ownerId=state.user.id;
+    await loadShares();
+    return;
+  }
+
+  state.accessMode='unauthorized';
+  state.ownerId=null;
+  state.shares=[];
+}
+
+async function loadShares(){
+  if(state.demoMode||state.accessMode!=='owner'||!state.user||!state.supabase){ state.shares=[]; return; }
+  const {data,error}=await state.supabase
+    .from('training_shares')
+    .select('owner_id,viewer_id,viewer_email,created_at')
+    .eq('owner_id',state.user.id)
+    .order('created_at',{ascending:false});
+  if(error){ console.error(error); state.shares=[]; return; }
+  state.shares=data||[];
+}
+
+async function shareWithEmail(email){
+  if(state.accessMode!=='owner') return toast('Compte en lecture seule');
+  if(state.offline) return toast('Connexion nécessaire');
+  const clean=String(email||'').trim().toLowerCase();
+  if(!clean) return toast('Saisis un email');
+  const {data,error}=await state.supabase.rpc('share_training_with_email',{p_viewer_email:clean});
+  if(error){ toast(error.message||'Partage impossible'); return false; }
+  await loadShares();
+  renderSettings();
+  toast('Accès lecture seule ajouté');
+  return data;
+}
+
+async function removeShare(viewerId){
+  if(state.accessMode!=='owner'||!state.user) return false;
+  if(state.offline) return toast('Connexion nécessaire');
+  const {error}=await state.supabase
+    .from('training_shares')
+    .delete()
+    .eq('owner_id',state.user.id)
+    .eq('viewer_id',viewerId);
+  if(error){ toast(error.message||'Suppression impossible'); return false; }
+  await loadShares();
+  renderSettings();
+  toast('Accès supprimé');
+  return true;
+}
+
 async function loadSessions(){
   if(!state.user||!state.supabase) return;
-  const {data,error}=await state.supabase.from('training_sessions').select('*').order('scheduled_date').order('slot');
+  if(state.accessMode==='unauthorized'||!state.ownerId){
+    state.sessions=[];
+    saveLocalSessions();
+    renderAll();
+    return;
+  }
+  const {data,error}=await state.supabase
+    .from('training_sessions')
+    .select('*')
+    .eq('user_id',state.ownerId)
+    .order('scheduled_date')
+    .order('slot');
   if(error){
     console.error(error);
     const cached=readCache();
@@ -108,15 +208,17 @@ async function loadSessions(){
     else toast(`Erreur Supabase : ${error.message}`);
     return;
   }
-  if(!data.length){ await seedPlan(); return; }
-  state.sessions=data.sort(sortSessions);
+  if(!data.length && state.accessMode==='owner'){ await seedPlan(); return; }
+  state.sessions=(data||[]).sort(sortSessions);
   saveLocalSessions();
+  if(state.accessMode==='owner') await loadShares();
   renderAll();
 }
 
 async function seedPlan(){
   if(state.demoMode){ loadLocalSessions(); renderAll(); return; }
-  if(!state.user) return;
+  if(!state.user||state.accessMode!=='owner') return;
+  state.ownerId=state.user.id;
   const rows=state.plan.sessions.map(s=>({...s,user_id:state.user.id}));
   for(let i=0;i<rows.length;i+=50){
     const chunk=rows.slice(i,i+50);
@@ -128,6 +230,7 @@ async function seedPlan(){
 }
 
 async function persistSession(id,updates){
+  if(!state.demoMode && state.accessMode!=='owner'){ toast('Lecture seule : modification interdite'); return false; }
   if(state.demoMode){
     const idx=state.sessions.findIndex(s=>s.id===id);
     if(idx>=0) state.sessions[idx]={...state.sessions[idx],...updates};
@@ -207,6 +310,8 @@ function renderToday(){
 
   let html='';
   if(state.demoMode) html+='<div class="setup-note"><strong>Mode local.</strong> Renseigne <code>config.js</code> pour activer Supabase. Tes modifications restent pour l’instant dans ce navigateur.</div>';
+  if(state.accessMode==='viewer') html+='<div class="readonly-note"><strong>Lecture seule.</strong> Ce plan t’a été partagé. Tu peux consulter toutes les séances et leurs consignes, mais aucune modification n’est autorisée.</div>';
+  if(state.accessMode==='unauthorized') html+='<div class="setup-note"><strong>Aucun plan partagé.</strong> Ce compte est bien connecté, mais aucun propriétaire ne lui a encore donné accès. Demande au propriétaire d’ajouter ton email dans Réglages → Partage du plan.</div>';
   if(state.offline) html+='<div class="offline-note">Hors ligne : affichage du dernier planning en cache. Les modifications Supabase sont désactivées.</div>';
   if(!items.length){
     const next=state.sessions.filter(s=>s.scheduled_date>state.currentDate && s.status!=='skipped').sort(sortSessions)[0];
@@ -214,7 +319,7 @@ function renderToday(){
   } else html+=items.map(sessionCard).join('');
   $('todaySessions').innerHTML=html;
 
-  const routine=routineForDate(state.currentDate);
+  const routine=state.accessMode==='unauthorized'?null:routineForDate(state.currentDate);
   $('eveningRoutine').innerHTML=routine?`<article class="routine-card"><span class="eyebrow">Ce soir · ${esc(routine.duration)}</span><h3>${esc(routine.type)}</h3><p><strong>${esc(routine.objective)}</strong></p><p>${esc(routine.content)}</p><p class="muted">${esc(routine.instruction)}</p></article>`:'';
   bindDynamicSessionButtons();
 }
@@ -239,12 +344,12 @@ function sessionCard(s){
       ${s.notes?`<div class="detail-block"><div class="detail-label">Mes notes</div><div class="detail-text">${esc(s.notes)}</div></div>`:''}
       ${detail}
     </div>
-    <div class="session-actions">
+    ${state.accessMode==='owner'||state.demoMode?`<div class="session-actions">
       <button data-action="edit" data-id="${esc(s.id)}">Modifier</button>
       <button data-action="move" data-id="${esc(s.id)}">Déplacer</button>
       <button class="done-btn" data-action="done" data-id="${esc(s.id)}">${s.status==='done'?'Annuler ✓':'Fait ✓'}</button>
       <button class="skip-btn" data-action="skip" data-id="${esc(s.id)}">${s.status==='skipped'?'Rétablir':'Sauter'}</button>
-    </div>
+    </div>`:`<div class="readonly-strip">Lecture seule · aucune modification possible</div>`}
   </article>`;
 }
 
@@ -268,6 +373,7 @@ function renderReferenceDetail(lib,strength,heat,ng){
 function mini(label,text){ return text&&text!=='—'?`<div class="detail-mini"><div class="detail-label">${esc(label)}</div><div class="detail-text">${esc(text)}</div></div>`:''; }
 
 function bindDynamicSessionButtons(){
+  if(state.accessMode!=='owner'&&!state.demoMode) return;
   document.querySelectorAll('[data-action][data-id]').forEach(btn=>btn.onclick=async()=>{
     const s=state.sessions.find(x=>String(x.id)===btn.dataset.id); if(!s) return;
     const action=btn.dataset.action;
@@ -293,7 +399,11 @@ function renderWeek(){
     html+=`<article class="day-card ${date===today?'today':''}" data-date="${date}"><div class="day-card-head"><strong>${esc(DAY_NAMES[parseISO(date).getDay()])}</strong><span>${esc(formatDate(date,{day:'numeric',month:'short'}))}</span></div>${items.length?items.map(s=>`<div class="week-session" data-open-id="${esc(s.id)}"><div class="week-time">${esc(s.time_label||slotLabel(s.slot))}</div><div><div class="week-session-title">${esc(s.title)}</div><div class="week-session-meta">${s.duration_min?`${s.duration_min} min · `:''}${s.rpe?`RPE ${String(s.rpe).replace('.',',')} · `:''}${isMoved(s)?'Déplacée · ':isModified(s)?'Modifiée · ':''}${STATUS_LABELS[s.status]}</div></div></div>`).join(''):'<div class="muted">Repos / aucune séance</div>'}</article>`;
   }
   $('weekDays').innerHTML=html;
-  document.querySelectorAll('[data-open-id]').forEach(el=>el.onclick=()=>{const s=state.sessions.find(x=>String(x.id)===el.dataset.openId); if(s) openEdit(s,false);});
+  document.querySelectorAll('[data-open-id]').forEach(el=>el.onclick=()=>{
+    const s=state.sessions.find(x=>String(x.id)===el.dataset.openId); if(!s) return;
+    if(state.accessMode==='owner'||state.demoMode) openEdit(s,false);
+    else { state.currentDate=s.scheduled_date; switchView('todayView'); renderToday(); window.scrollTo({top:0,behavior:'smooth'}); }
+  });
 }
 
 function renderResources(){
@@ -319,18 +429,41 @@ function renderNutritionResources(){
 
 function renderSettings(){
   if(!state.plan) return;
-  const mode=state.demoMode?'Mode local (Supabase non configuré)':state.user?`Connecté : ${esc(state.user.email)}`:'Non connecté';
+  const account=state.user?.email?esc(state.user.email):'Non connecté';
+  if(state.accessMode==='viewer'){
+    $('settingsContent').innerHTML=`
+      <div class="settings-card readonly-settings"><h3>Accès lecture seule</h3><p>Connecté : ${account}</p><p>Le propriétaire t’a autorisé à consulter son planning. Les boutons de modification, déplacement, validation et réinitialisation sont désactivés, et Supabase bloque aussi les écritures côté base.</p><span class="pill blue">Lecteur</span></div>
+      <div class="settings-card"><h3>Application</h3><p>Tu peux installer l’application sur ton téléphone et consulter le plan normalement.</p><button id="logoutBtn" class="secondary-btn full-btn">Se déconnecter</button></div>`;
+    $('logoutBtn').onclick=()=>state.supabase.auth.signOut();
+    return;
+  }
+  if(state.accessMode==='unauthorized'){
+    $('settingsContent').innerHTML=`
+      <div class="settings-card"><h3>Aucun accès au plan</h3><p>Connecté : ${account}</p><p>Ton compte existe, mais aucun plan ne t’a encore été partagé. Envoie cette adresse email au propriétaire pour qu’il l’ajoute en lecture seule.</p><button id="logoutBtn" class="secondary-btn full-btn">Se déconnecter</button></div>`;
+    $('logoutBtn').onclick=()=>state.supabase.auth.signOut();
+    return;
+  }
+
+  const mode=state.demoMode?'Mode local (Supabase non configuré)':state.user?`Connecté : ${account}`:'Non connecté';
+  const shareList=state.shares.length
+    ? state.shares.map(s=>`<div class="share-row"><div><strong>${esc(s.viewer_email)}</strong><small>Lecture seule</small></div><button type="button" class="share-remove-btn" data-remove-share="${esc(s.viewer_id)}">Retirer</button></div>`).join('')
+    : '<p class="muted">Aucun lecteur autorisé pour le moment.</p>';
+  const shareCard=!state.demoMode&&state.user?`<div class="settings-card"><h3>Partage du plan</h3><p>Ajoute l’email du compte Supabase de ton ami. Il verra tes séances actuelles mais ne pourra rien modifier.</p><form id="shareForm" class="share-form"><input id="shareEmail" type="email" placeholder="ami@email.fr" autocomplete="email" required><button class="primary-btn" type="submit">Ajouter</button></form><div class="share-list">${shareList}</div><p class="muted share-help">Ton ami doit d’abord créer son compte depuis l’écran de connexion de cette application, puis tu ajoutes ici exactement la même adresse email.</p></div>`:'';
   $('settingsContent').innerHTML=`
-    <div class="settings-card"><h3>Synchronisation</h3><p>${mode}</p><p>Plan de référence : ${esc(state.plan.meta.sourceFile)}</p><p>${esc(formatDate(state.plan.meta.startDate,{day:'numeric',month:'long',year:'numeric'}))} → ${esc(formatDate(state.plan.meta.raceDate,{day:'numeric',month:'long',year:'numeric'}))}</p>${!state.demoMode&&state.user?'<button id="logoutBtn" class="secondary-btn full-btn">Se déconnecter</button>':''}</div>
+    <div class="settings-card"><h3>Synchronisation</h3><p>${mode}</p><p>Plan de référence : ${esc(state.plan.meta.sourceFile)}</p><p>${esc(formatDate(state.plan.meta.startDate,{day:'numeric',month:'long',year:'numeric'}))} → ${esc(formatDate(state.plan.meta.raceDate,{day:'numeric',month:'long',year:'numeric'}))}</p>${!state.demoMode&&state.user?'<span class="pill green">Propriétaire</span><button id="logoutBtn" class="secondary-btn full-btn">Se déconnecter</button>':''}</div>
+    ${shareCard}
     <div class="settings-card"><h3>Sauvegarde</h3><p>Exporte toutes les séances actuelles, y compris tes modifications et notes, au format JSON.</p><button id="exportBtn" class="secondary-btn full-btn">Exporter mes données</button></div>
     <div class="settings-card danger-zone"><h3>Réinitialisation</h3><p>Supprime les ajustements et recharge exactement le plan issu de l'Excel.</p><button id="resetPlanBtn" class="danger-btn full-btn">Réinitialiser depuis l'Excel</button></div>
   `;
   $('exportBtn').onclick=exportData;
   $('resetPlanBtn').onclick=resetPlan;
   if($('logoutBtn')) $('logoutBtn').onclick=()=>state.supabase.auth.signOut();
+  if($('shareForm')) $('shareForm').onsubmit=async e=>{ e.preventDefault(); await shareWithEmail($('shareEmail').value); if($('shareEmail')) $('shareEmail').value=''; };
+  document.querySelectorAll('[data-remove-share]').forEach(btn=>btn.onclick=()=>{ if(confirm('Retirer cet accès en lecture seule ?')) removeShare(btn.dataset.removeShare); });
 }
 
 function openEdit(s,moveOnly=false){
+  if(state.accessMode!=='owner'&&!state.demoMode){ toast('Lecture seule'); return; }
   $('editTitle').textContent=moveOnly?'Déplacer la séance':'Modifier la séance';
   $('editId').value=s.id; $('editDate').value=s.scheduled_date; $('editSlot').value=s.slot; $('editTime').value=s.time_label||'';
   $('editSessionTitle').value=s.title||''; $('editDuration').value=s.duration_min??0; $('editRpe').value=s.rpe??0; $('editElevation').value=s.elevation_m??0;
@@ -341,6 +474,7 @@ function openEdit(s,moveOnly=false){
 function closeEdit(){ $('editModal').classList.add('hidden'); }
 
 async function resetSingleSession(){
+  if(state.accessMode!=='owner'&&!state.demoMode) return toast('Lecture seule');
   const id=$('editId').value, s=state.sessions.find(x=>String(x.id)===id); if(!s) return;
   const o=s.original_data||{};
   if(!confirm('Revenir aux valeurs prévues dans le plan Excel pour cette séance ?')) return;
@@ -349,6 +483,7 @@ async function resetSingleSession(){
 }
 
 async function resetPlan(){
+  if(state.accessMode!=='owner'&&!state.demoMode) return toast('Lecture seule');
   if(!confirm('Supprimer toutes tes modifications et réimporter le plan Excel ?')) return;
   if(state.demoMode){ localStorage.removeItem(LOCAL_KEY); loadLocalSessions(); renderAll(); toast('Plan local réinitialisé'); return; }
   if(state.offline||!state.user) return toast('Connexion nécessaire');
@@ -425,6 +560,16 @@ function bindUI(){
     e.preventDefault(); $('authMessage').textContent='Connexion…';
     const {error}=await state.supabase.auth.signInWithPassword({email:$('emailInput').value.trim(),password:$('passwordInput').value});
     $('authMessage').textContent=error?error.message:'';
+  };
+  if($('signupBtn')) $('signupBtn').onclick=async()=>{
+    const email=$('emailInput').value.trim();
+    const password=$('passwordInput').value;
+    if(!email||password.length<6){ $('authMessage').textContent='Renseigne un email et un mot de passe d’au moins 6 caractères.'; return; }
+    $('authMessage').textContent='Création du compte…';
+    const {data,error}=await state.supabase.auth.signUp({email,password});
+    if(error){ $('authMessage').textContent=error.message; return; }
+    if(data?.session){ $('authMessage').textContent='Compte créé.'; }
+    else $('authMessage').textContent='Compte créé. Vérifie ton email si Supabase demande une confirmation, puis connecte-toi.';
   };
   window.addEventListener('online',()=>{state.offline=false;updateConnectionBadge();if(state.user)loadSessions();else renderToday();});
   window.addEventListener('offline',()=>{state.offline=true;updateConnectionBadge();renderToday();});
