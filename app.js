@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=6';
+const PLAN_URL = './training-plan.json?v=7';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -47,6 +47,11 @@ function planDay(date){ return state.plan?.days?.find(d => d.date === date) || n
 function routineForDate(date){ const name=DAY_NAMES[parseISO(date).getDay()]; return state.plan?.resources?.eveningRoutine?.find(r => r.day === name); }
 function weekForDate(date){ const d=planDay(date); if(d) return d.week; const start=parseISO(state.plan.meta.startDate); const target=parseISO(date); return Math.max(1, Math.min(12, Math.floor((target-start)/604800000)+1)); }
 function dateForWeekDay(week, dayIndex){ return addDays(state.plan.meta.startDate,(week-1)*7+dayIndex); }
+function referenceWeek(session){ return Number(session?.original_data?.week ?? session?.week ?? 0); }
+function updateCutoffWeek(){
+  const currentWeek=weekForDate(localISO(new Date()));
+  return Math.max(3,currentWeek+1);
+}
 function configReady(){ const c=window.APP_CONFIG||{}; return c.supabaseUrl?.startsWith('https://') && !c.supabaseUrl.includes('YOUR-PROJECT') && c.supabasePublishableKey && !c.supabasePublishableKey.includes('REPLACE_ME'); }
 function toast(msg){ const el=$('toast'); el.textContent=msg; el.classList.remove('hidden'); clearTimeout(toast.timer); toast.timer=setTimeout(()=>el.classList.add('hidden'),2400); }
 function updateConnectionBadge(){
@@ -227,6 +232,75 @@ async function seedPlan(){
   }
   toast('Plan Excel importé');
   await loadSessions();
+}
+
+async function updateFuturePlan(){
+  if(state.accessMode!=='owner'&&!state.demoMode) return toast('Lecture seule');
+  const cutoff=updateCutoffWeek();
+  if(cutoff>12) return toast('Aucune semaine future à mettre à jour');
+
+  const incoming=(state.plan.sessions||[]).filter(s=>Number(s.week)>=cutoff);
+  if(!incoming.length) return toast(`Aucune séance à partir de S${cutoff}`);
+
+  const currentByKey=new Map((state.sessions||[]).map(s=>[s.source_key,s]));
+  const protectedHistory=[];
+  const rows=[];
+
+  for(const source of incoming){
+    const existing=currentByKey.get(source.source_key);
+    // Une séance déjà réalisée/sautée constitue de l'historique : ne jamais la réécrire.
+    if(existing && (existing.status==='done'||existing.status==='skipped')){
+      protectedHistory.push(existing);
+      continue;
+    }
+    rows.push({
+      ...source,
+      user_id:state.demoMode?'local':state.user.id,
+      // Les notes appartiennent à l'utilisateur et survivent aux révisions du plan.
+      notes:existing?.notes||'',
+      status:'planned'
+    });
+  }
+
+  const currentWeek=weekForDate(localISO(new Date()));
+  const message=[
+    `Mettre à jour le plan à partir de la semaine ${cutoff} ?`,
+    '',
+    `Semaines 1 à ${Math.max(2,currentWeek)} : conservées.`,
+    'Séances déjà faites/sautées : conservées.',
+    'Notes personnelles : conservées.',
+    `${rows.length} séance(s) planifiée(s) seront recalées sur le nouveau training-plan.json.`
+  ].join('\n');
+  if(!confirm(message)) return;
+
+  if(state.demoMode){
+    const incomingKeys=new Set(incoming.map(s=>s.source_key));
+    const protectedKeys=new Set(protectedHistory.map(s=>s.source_key));
+    const untouched=state.sessions.filter(s=>referenceWeek(s)<cutoff || protectedKeys.has(s.source_key) || !incomingKeys.has(s.source_key));
+    state.sessions=[...untouched,...rows.map((r,i)=>({...r,id:currentByKey.get(r.source_key)?.id||`local-update-${cutoff}-${i+1}`}))].sort(sortSessions);
+    saveLocalSessions();
+    renderAll();
+    toast(`Plan mis à jour à partir de S${cutoff}`);
+    return;
+  }
+
+  if(state.offline||!state.user) return toast('Connexion nécessaire');
+
+  for(let i=0;i<rows.length;i+=50){
+    const chunk=rows.slice(i,i+50);
+    const {error}=await state.supabase
+      .from('training_sessions')
+      .upsert(chunk,{onConflict:'user_id,source_key',ignoreDuplicates:false});
+    if(error){
+      console.error(error);
+      toast(`Mise à jour interrompue : ${error.message}`);
+      return false;
+    }
+  }
+
+  await loadSessions();
+  toast(`Plan mis à jour dès S${cutoff} · historique conservé`);
+  return true;
 }
 
 async function persistSession(id,updates){
@@ -452,9 +526,11 @@ function renderSettings(){
   $('settingsContent').innerHTML=`
     <div class="settings-card"><h3>Synchronisation</h3><p>${mode}</p><p>Plan de référence : ${esc(state.plan.meta.sourceFile)}</p><p>${esc(formatDate(state.plan.meta.startDate,{day:'numeric',month:'long',year:'numeric'}))} → ${esc(formatDate(state.plan.meta.raceDate,{day:'numeric',month:'long',year:'numeric'}))}</p>${!state.demoMode&&state.user?'<span class="pill green">Propriétaire</span><button id="logoutBtn" class="secondary-btn full-btn">Se déconnecter</button>':''}</div>
     ${shareCard}
+    <div class="settings-card update-plan-card"><h3>Mise à jour du plan</h3><p>Le fichier GitHub chargé est la référence${state.plan.meta.revision?` : <strong>${esc(state.plan.meta.revision)}</strong>`:'.'}</p><p>Le bouton met à jour <strong>à partir de S${updateCutoffWeek()}</strong>. La semaine en cours et les précédentes restent intactes. Les séances déjà faites/sautées et toutes tes notes sont conservées.</p><button id="updatePlanBtn" class="primary-btn full-btn">Mettre à jour les semaines futures</button></div>
     <div class="settings-card"><h3>Sauvegarde</h3><p>Exporte toutes les séances actuelles, y compris tes modifications et notes, au format JSON.</p><button id="exportBtn" class="secondary-btn full-btn">Exporter mes données</button></div>
-    <div class="settings-card danger-zone"><h3>Réinitialisation</h3><p>Supprime les ajustements et recharge exactement le plan issu de l'Excel.</p><button id="resetPlanBtn" class="danger-btn full-btn">Réinitialiser depuis l'Excel</button></div>
+    <div class="settings-card danger-zone"><h3>Réinitialisation complète</h3><p>Supprime tous les ajustements et recharge tout le plan de référence. À utiliser uniquement si tu veux repartir de zéro.</p><button id="resetPlanBtn" class="danger-btn full-btn">Tout réinitialiser</button></div>
   `;
+  $('updatePlanBtn').onclick=updateFuturePlan;
   $('exportBtn').onclick=exportData;
   $('resetPlanBtn').onclick=resetPlan;
   if($('logoutBtn')) $('logoutBtn').onclick=()=>state.supabase.auth.signOut();
@@ -477,14 +553,14 @@ async function resetSingleSession(){
   if(state.accessMode!=='owner'&&!state.demoMode) return toast('Lecture seule');
   const id=$('editId').value, s=state.sessions.find(x=>String(x.id)===id); if(!s) return;
   const o=s.original_data||{};
-  if(!confirm('Revenir aux valeurs prévues dans le plan Excel pour cette séance ?')) return;
+  if(!confirm('Revenir aux valeurs prévues dans le plan de référence pour cette séance ?')) return;
   const updates={scheduled_date:o.original_date||o.scheduled_date,slot:o.original_slot||o.slot,time_label:o.time_label||'',title:o.title||s.title,duration_min:num(o.duration_min),rpe:num(o.rpe),elevation_m:num(o.elevation_m),nutrition:o.nutrition||'',instructions:o.instructions||'',status:'planned',notes:''};
   if(await persistSession(s.id,updates)){ closeEdit(); toast('Séance restaurée'); }
 }
 
 async function resetPlan(){
   if(state.accessMode!=='owner'&&!state.demoMode) return toast('Lecture seule');
-  if(!confirm('Supprimer toutes tes modifications et réimporter le plan Excel ?')) return;
+  if(!confirm('Supprimer TOUT ton historique de modifications, statuts et notes puis réimporter le plan de référence ?')) return;
   if(state.demoMode){ localStorage.removeItem(LOCAL_KEY); loadLocalSessions(); renderAll(); toast('Plan local réinitialisé'); return; }
   if(state.offline||!state.user) return toast('Connexion nécessaire');
   const {error}=await state.supabase.from('training_sessions').delete().eq('user_id',state.user.id);

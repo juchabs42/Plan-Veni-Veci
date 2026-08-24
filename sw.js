@@ -1,13 +1,13 @@
-const CACHE = 'veni-vici-v6-share';
+const CACHE = 'veni-vici-v7-plan-update';
 const ASSETS = [
   './',
   './index.html',
   './style.css?v=6',
   './config.js?v=6',
   './supabase-client.js?v=6',
-  './app.js?v=6',
+  './app.js?v=7',
   './manifest.json',
-  './training-plan.json?v=6',
+  './training-plan.json?v=7',
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];

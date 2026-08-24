@@ -1,0 +1,37 @@
+Veni Vici — mise à jour du plan sans perdre l'historique
+Version 7
+
+FICHIERS À REMPLACER À LA RACINE DU DÉPÔT GITHUB :
+- app.js
+- index.html
+- sw.js
+- training-plan.json
+
+NE PAS MODIFIER :
+- config.js
+- supabase.sql
+- supabase-client.js
+- style.css
+- les icônes
+
+AUCUNE REQUÊTE SQL À EXÉCUTER POUR CETTE MISE À JOUR.
+
+UTILISATION :
+1. Remplacer les 4 fichiers sur GitHub.
+2. Attendre la fin du déploiement GitHub Pages puis actualiser l'application.
+3. Aller dans Réglages > Mise à jour du plan.
+4. Cliquer « Mettre à jour les semaines futures ».
+5. Confirmer.
+
+AU 24/08/2026 :
+- la semaine courante est S2 ; la mise à jour démarre donc en S3 ;
+- S1 et S2 présentes dans Supabase ne sont pas réécrites ;
+- les séances déjà marquées Faite ou Sautée restent inchangées ;
+- les notes personnelles sont conservées ;
+- les séances futures encore Prévue sont remplacées par la nouvelle V3 OBJECTIF VICTOIRE ;
+- « Revenir au plan initial » utilisera ensuite les valeurs de cette nouvelle version pour les séances mises à jour.
+
+POUR LES MISES À JOUR HEBDOMADAIRES :
+Chaque dimanche, remplace training-plan.json par la nouvelle version fournie, actualise l'application puis utilise le même bouton. La semaine en cours et toutes les précédentes restent protégées ; seule la semaine suivante et les suivantes sont recalées.
+
+Le bouton « Tout réinitialiser » reste disponible mais efface l'historique, les statuts et les notes. Ne l'utiliser que pour repartir entièrement de zéro.
