@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=7';
+const PLAN_URL = './training-plan.json?v=8';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -50,7 +50,7 @@ function dateForWeekDay(week, dayIndex){ return addDays(state.plan.meta.startDat
 function referenceWeek(session){ return Number(session?.original_data?.week ?? session?.week ?? 0); }
 function updateCutoffWeek(){
   const currentWeek=weekForDate(localISO(new Date()));
-  return Math.max(3,currentWeek+1);
+  return Math.max(3,currentWeek);
 }
 function configReady(){ const c=window.APP_CONFIG||{}; return c.supabaseUrl?.startsWith('https://') && !c.supabaseUrl.includes('YOUR-PROJECT') && c.supabasePublishableKey && !c.supabasePublishableKey.includes('REPLACE_ME'); }
 function toast(msg){ const el=$('toast'); el.textContent=msg; el.classList.remove('hidden'); clearTimeout(toast.timer); toast.timer=setTimeout(()=>el.classList.add('hidden'),2400); }
@@ -266,7 +266,8 @@ async function updateFuturePlan(){
   const message=[
     `Mettre à jour le plan à partir de la semaine ${cutoff} ?`,
     '',
-    `Semaines 1 à ${Math.max(2,currentWeek)} : conservées.`,
+    `Semaines 1 à ${Math.max(2,currentWeek-1)} : conservées intégralement.`,
+    `Semaine ${currentWeek} : les séances encore prévues peuvent être mises à jour.`,
     'Séances déjà faites/sautées : conservées.',
     'Notes personnelles : conservées.',
     `${rows.length} séance(s) planifiée(s) seront recalées sur le nouveau training-plan.json.`
@@ -526,7 +527,7 @@ function renderSettings(){
   $('settingsContent').innerHTML=`
     <div class="settings-card"><h3>Synchronisation</h3><p>${mode}</p><p>Plan de référence : ${esc(state.plan.meta.sourceFile)}</p><p>${esc(formatDate(state.plan.meta.startDate,{day:'numeric',month:'long',year:'numeric'}))} → ${esc(formatDate(state.plan.meta.raceDate,{day:'numeric',month:'long',year:'numeric'}))}</p>${!state.demoMode&&state.user?'<span class="pill green">Propriétaire</span><button id="logoutBtn" class="secondary-btn full-btn">Se déconnecter</button>':''}</div>
     ${shareCard}
-    <div class="settings-card update-plan-card"><h3>Mise à jour du plan</h3><p>Le fichier GitHub chargé est la référence${state.plan.meta.revision?` : <strong>${esc(state.plan.meta.revision)}</strong>`:'.'}</p><p>Le bouton met à jour <strong>à partir de S${updateCutoffWeek()}</strong>. La semaine en cours et les précédentes restent intactes. Les séances déjà faites/sautées et toutes tes notes sont conservées.</p><button id="updatePlanBtn" class="primary-btn full-btn">Mettre à jour les semaines futures</button></div>
+    <div class="settings-card update-plan-card"><h3>Mise à jour du plan</h3><p>Le fichier GitHub chargé est la référence${state.plan.meta.revision?` : <strong>${esc(state.plan.meta.revision)}</strong>`:'.'}</p><p>Le bouton met à jour <strong>à partir de S${updateCutoffWeek()}</strong>. Les semaines terminées restent intactes ; dans la semaine en cours, seules les séances encore prévues peuvent être révisées. Les séances déjà faites/sautées et toutes tes notes sont conservées.</p><button id="updatePlanBtn" class="primary-btn full-btn">Mettre à jour les semaines futures</button></div>
     <div class="settings-card"><h3>Sauvegarde</h3><p>Exporte toutes les séances actuelles, y compris tes modifications et notes, au format JSON.</p><button id="exportBtn" class="secondary-btn full-btn">Exporter mes données</button></div>
     <div class="settings-card danger-zone"><h3>Réinitialisation complète</h3><p>Supprime tous les ajustements et recharge tout le plan de référence. À utiliser uniquement si tu veux repartir de zéro.</p><button id="resetPlanBtn" class="danger-btn full-btn">Tout réinitialiser</button></div>
   `;

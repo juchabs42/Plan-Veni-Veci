@@ -1,56 +1,7 @@
-Veni Vici App — vérification version partage lecture seule
-Date : 2026-08-19
-
-1. JavaScript
-- app.js : node --check OK
-- supabase-client.js : node --check OK
-- config.js : node --check OK
-
-2. Données
-- training-plan.json : JSON valide
-- manifest.json : JSON valide
-- 84 jours présents
-- 125 séances présentes
-
-3. Cohérence HTML / JS
-- 51 IDs HTML statiques détectés
-- 50 références document.getElementById/$() dans app.js
-- 0 ID requis manquant (les IDs dynamiques de Réglages sont inclus dans le contrôle)
-
-4. Ressources GitHub/PWA
-- index.html : présent
-- style.css : présent
-- app.js : présent
-- supabase-client.js : présent
-- config.js : présent
-- manifest.json : présent
-- sw.js : présent
-- training-plan.json : présent
-- icons/icon-192.png : présent
-- icons/icon-512.png : présent
-- toutes les ressources référencées par index.html existent
-- toutes les ressources listées dans le service worker existent
-- cache PWA : veni-vici-v6-share
-
-5. Tests d'exécution Node avec DOM simulé
-- démarrage en mode local : OK, 0 erreur d'exécution
-- mode propriétaire : encart Partage du plan affiché, boutons Modifier présents, 0 erreur
-- mode lecteur : Accès lecture seule affiché, boutons Modifier absents, bandeau Lecture seule, 0 erreur
-
-6. Client Supabase local
-- signUp() : requête /auth/v1/signup testée avec réponse simulée, OK
-- rpc() : appel /rest/v1/rpc/share_training_with_email testé avec réponse simulée, OK
-
-7. Contrôles SQL statiques
-- RLS training_sessions : présent
-- RLS training_shares : présent
-- SELECT propriétaire ou lecteur partagé : présent
-- INSERT/UPDATE/DELETE séances réservés au propriétaire : présents
-- aucun INSERT direct accordé sur training_shares : OK
-- fonction share_training_with_email : exécution accordée à authenticated uniquement
-- exécution révoquée pour public/anon
-- fonction SECURITY DEFINER avec search_path vide : présente
-
-Limite du test :
-- impossible de tester contre TON projet Supabase réel sans tes identifiants/URL/clés et sans exécuter le SQL sur ta base.
-- le schéma SQL est donc vérifié statiquement, pas exécuté sur ta base de production.
+JSON valide
+84 jours
+125 séances
+S1/S2 identiques V3
+S3 CAP: 315 min = 5.25 h
+S3 vélo: 150 min
+S3 force: 95 min
