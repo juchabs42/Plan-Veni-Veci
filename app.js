@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=8';
+const PLAN_URL = './training-plan.json?v=9';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -321,7 +321,7 @@ async function persistSession(id,updates){
 
 function isModified(s){
   const o=s.original_data||{};
-  const fields=['scheduled_date','slot','time_label','title','duration_min','rpe','elevation_m','nutrition','instructions'];
+  const fields=['scheduled_date','slot','time_label','title','duration_min','rpe','elevation_m','instructions'];
   return fields.some(k=>String(s[k]??'')!==String(o[k]??''));
 }
 function isMoved(s){ const o=s.original_data||{}; return s.scheduled_date!==o.scheduled_date || s.slot!==o.slot; }
@@ -355,16 +355,6 @@ function getHeatDetail(session){
   const day=session.original_data?.day_name || session.day_name || DAY_NAMES[parseISO(referenceDate).getDay()];
   return state.plan.resources.heat.find(x=>x.week===referenceWeek && (x.day===day || x.day.startsWith(day))) || null;
 }
-function getNutritionGuide(session){
-  const rows=state.plan.resources.nutrition.session||[];
-  const title=(session.title||'').toLowerCase();
-  if(title.includes('chaleur')||num(session.heat_min)>0) return rows.find(x=>x.situation==='Chaleur');
-  if(num(session.duration_min)>180||title.includes('sortie longue')) return rows.find(x=>x.situation==='Sortie >3 h');
-  if(num(session.rpe)>=6||title.includes('seuil')||title.includes('côte')) return rows.find(x=>x.situation.includes('Intensité'));
-  if(num(session.duration_min)>90) return rows.find(x=>x.situation.includes("90'–3 h"));
-  return rows.find(x=>x.situation.includes("Footing <75'"));
-}
-
 function renderAll(){ updateConnectionBadge(); updateInstallUI(); renderToday(); renderWeek(); renderResources(); renderSettings(); }
 function switchView(id){
   state.currentView=id;
@@ -400,7 +390,7 @@ function renderToday(){
 }
 
 function sessionCard(s){
-  const lib=getLibraryDetail(s), strength=getStrengthDetail(s), heat=getHeatDetail(s), ng=getNutritionGuide(s);
+  const lib=getLibraryDetail(s), strength=getStrengthDetail(s), heat=getHeatDetail(s);
   const badges=[];
   if(s.duration_min) badges.push(`<span class="pill">${s.duration_min} min</span>`);
   if(num(s.rpe)>0) badges.push(`<span class="pill">RPE ${String(s.rpe).replace('.',',')}</span>`);
@@ -408,13 +398,12 @@ function sessionCard(s){
   if(isMoved(s)) badges.push('<span class="pill amber">Déplacée</span>'); else if(isModified(s)) badges.push('<span class="pill amber">Modifiée</span>');
   if(s.status==='done') badges.push('<span class="pill green">✓ Faite</span>');
   if(s.status==='skipped') badges.push('<span class="pill red">Sautée</span>');
-  const detail=renderReferenceDetail(lib,strength,heat,ng);
+  const detail=renderReferenceDetail(lib,strength,heat);
   return `<article class="session-card ${esc(s.status)}" data-session-id="${esc(s.id)}">
     <div class="session-main">
       <div class="session-top"><div><div class="session-slot">${slotLabel(s.slot)}</div><div class="session-time">${esc(s.time_label||'Horaire libre')}</div></div><span class="pill ${s.status==='done'?'green':''}">${STATUS_LABELS[s.status]||'Prévue'}</span></div>
       <div class="session-title">${esc(s.title)}</div>
       <div class="badges">${badges.join('')}</div>
-      ${s.nutrition?`<div class="detail-block"><div class="detail-label">Nutrition du plan</div><div class="detail-text">${esc(s.nutrition)}</div></div>`:''}
       ${s.instructions?`<div class="detail-block"><div class="detail-label">Consignes clés</div><div class="detail-text">${esc(s.instructions)}</div></div>`:''}
       ${s.notes?`<div class="detail-block"><div class="detail-label">Mes notes</div><div class="detail-text">${esc(s.notes)}</div></div>`:''}
       ${detail}
@@ -428,8 +417,8 @@ function sessionCard(s){
   </article>`;
 }
 
-function renderReferenceDetail(lib,strength,heat,ng){
-  if(!lib&&!strength&&!heat&&!ng) return '';
+function renderReferenceDetail(lib,strength,heat){
+  if(!lib&&!strength&&!heat) return '';
   let blocks='';
   if(lib){
     blocks+=mini('Objectif',lib.objective)+mini('Échauffement',lib.warmup)+mini('Bloc principal',lib.mainBlock)+mini('Intensité',lib.intensity)+mini('Retour au calme',lib.cooldown)+mini('Adaptation',lib.adaptation);
@@ -439,9 +428,6 @@ function renderReferenceDetail(lib,strength,heat,ng){
   }
   if(heat){
     blocks+=mini('Protocole chaleur',`${heat.modality} · séance ${heat.sessionDuration} · exposition ${heat.heatExposure}\nIntensité : ${heat.intensity}\nHabillage : ${heat.clothing}\nHydratation : ${heat.hydration}\nContrôle : ${heat.control}\n${heat.decisionSafety}`);
-  }
-  if(ng){
-    blocks+=mini('Repères nutritionnels',`Avant : ${ng.before}\nPendant : ${ng.duringCarbs}\nSodium : ${ng.sodium}\nLiquides : ${ng.fluids}\nAprès : ${ng.after}\nLimite : ${ng.limits}`);
   }
   return `<details class="session-details"><summary>Voir le détail de la séance</summary><div class="detail-grid">${blocks}</div></details>`;
 }
@@ -485,23 +471,14 @@ function renderResources(){
   if(!state.plan) return;
   const r=state.plan.resources;
   $('resourcesContent').innerHTML=`
-    ${resourceDetails('Bibliothèque des séances',r.sessionLibrary.map(x=>`<div class="resource-item"><h4>${esc(x.name)}</h4><p><strong>Objectif :</strong> ${esc(x.objective)}</p><p><strong>Échauffement :</strong> ${esc(x.warmup)}</p><p><strong>Bloc :</strong> ${esc(x.mainBlock)}</p><p><strong>Intensité :</strong> ${esc(x.intensity)}</p><p><strong>Nutrition :</strong> ${esc(x.nutrition)}</p><p class="muted">${esc(x.adaptation)}</p></div>`).join(''))}
+    ${resourceDetails('Bibliothèque des séances',r.sessionLibrary.map(x=>`<div class="resource-item"><h4>${esc(x.name)}</h4><p><strong>Objectif :</strong> ${esc(x.objective)}</p><p><strong>Échauffement :</strong> ${esc(x.warmup)}</p><p><strong>Bloc :</strong> ${esc(x.mainBlock)}</p><p><strong>Intensité :</strong> ${esc(x.intensity)}</p><p class="muted">${esc(x.adaptation)}</p></div>`).join(''))}
     ${resourceDetails('Musculation',r.strength.map(x=>`<div class="resource-item"><h4>Semaine ${x.week} · ${esc(x.session)}</h4><p>Squat : ${esc(x.squat)} · SDT/RDL : ${esc(x.deadliftRdl)} · Mollets : ${esc(x.calves)}</p><p>Tractions : ${esc(x.pullups)} · Gainage : ${esc(x.core)}</p><p>Renfo léger : ${esc(x.lightSession)}</p><p class="muted">${esc(x.progression)}</p></div>`).join('')+`<div class="resource-item"><p>${esc(r.strengthRule)}</p></div>`)}
     ${resourceDetails('Chaleur',r.heat.map(x=>`<div class="resource-item"><h4>S${x.week} · ${esc(x.day)} · ${esc(x.phase)}</h4><p>${esc(x.modality)} · ${esc(x.sessionDuration)} · exposition ${esc(x.heatExposure)}</p><p>${esc(x.intensity)}</p><p><strong>Hydratation :</strong> ${esc(x.hydration)}</p><p class="muted">${esc(x.decisionSafety)}</p></div>`).join('')+`<div class="resource-item"><p>${esc(r.heatRecovery)}</p></div>`)}
-    ${resourceDetails('Nutrition',renderNutritionResources())}
-    ${resourceDetails('Affûtage',r.taper.map(x=>`<div class="resource-item"><h4>${esc(x.j)} · ${esc(formatDate(x.date,{day:'numeric',month:'short'}))}</h4><p>${esc(x.session)} · ${esc(x.duration)}</p><p><strong>Nutrition :</strong> ${esc(x.nutrition)}</p><p class="muted">${esc(x.alertAdaptation)}</p></div>`).join(''))}
+    ${resourceDetails('Affûtage',r.taper.map(x=>`<div class="resource-item"><h4>${esc(x.j)} · ${esc(formatDate(x.date,{day:'numeric',month:'short'}))}</h4><p>${esc(x.session)} · ${esc(x.duration)}</p><p class="muted">${esc(x.alertAdaptation)}</p></div>`).join(''))}
     ${resourceDetails('Routine du soir',r.eveningRoutine.map(x=>`<div class="resource-item"><h4>${esc(x.day)} · ${esc(x.type)} · ${esc(x.duration)}</h4><p>${esc(x.content)}</p><p class="muted">${esc(x.instruction)}</p></div>`).join(''))}
   `;
 }
 function resourceDetails(title,body){ return `<details class="resource-card"><summary>${esc(title)}</summary><div class="resource-body">${body}</div></details>`; }
-function renderNutritionResources(){
-  const n=state.plan.resources.nutrition;
-  let h=`<div class="resource-item"><h4>Poids de référence Excel : ${esc(n.weightKg)} kg</h4></div>`;
-  h+=n.session.map(x=>`<div class="resource-item"><h4>${esc(x.situation)}</h4><p><strong>Avant :</strong> ${esc(x.before)}</p><p><strong>Pendant :</strong> ${esc(x.duringCarbs)} · ${esc(x.sodium)} · ${esc(x.fluids)}</p><p><strong>Après :</strong> ${esc(x.after)}</p><p class="muted">${esc(x.limits)}</p></div>`).join('');
-  h+=`<div class="resource-item"><h4>Test de sudation</h4><p>${esc(n.sweatTest.formula)}</p><p>${esc(n.sweatTest.interpretation)}</p><p>${esc(n.sweatTest.after)}</p></div>`;
-  return h;
-}
-
 function renderSettings(){
   if(!state.plan) return;
   const account=state.user?.email?esc(state.user.email):'Non connecté';
@@ -544,7 +521,7 @@ function openEdit(s,moveOnly=false){
   $('editTitle').textContent=moveOnly?'Déplacer la séance':'Modifier la séance';
   $('editId').value=s.id; $('editDate').value=s.scheduled_date; $('editSlot').value=s.slot; $('editTime').value=s.time_label||'';
   $('editSessionTitle').value=s.title||''; $('editDuration').value=s.duration_min??0; $('editRpe').value=s.rpe??0; $('editElevation').value=s.elevation_m??0;
-  $('editNutrition').value=s.nutrition||''; $('editInstructions').value=s.instructions||''; $('editNotes').value=s.notes||''; $('editStatus').value=s.status||'planned';
+  $('editInstructions').value=s.instructions||''; $('editNotes').value=s.notes||''; $('editStatus').value=s.status||'planned';
   if(moveOnly){ $('editDate').focus(); }
   $('editModal').classList.remove('hidden');
 }
@@ -555,7 +532,7 @@ async function resetSingleSession(){
   const id=$('editId').value, s=state.sessions.find(x=>String(x.id)===id); if(!s) return;
   const o=s.original_data||{};
   if(!confirm('Revenir aux valeurs prévues dans le plan de référence pour cette séance ?')) return;
-  const updates={scheduled_date:o.original_date||o.scheduled_date,slot:o.original_slot||o.slot,time_label:o.time_label||'',title:o.title||s.title,duration_min:num(o.duration_min),rpe:num(o.rpe),elevation_m:num(o.elevation_m),nutrition:o.nutrition||'',instructions:o.instructions||'',status:'planned',notes:''};
+  const updates={scheduled_date:o.original_date||o.scheduled_date,slot:o.original_slot||o.slot,time_label:o.time_label||'',title:o.title||s.title,duration_min:num(o.duration_min),rpe:num(o.rpe),elevation_m:num(o.elevation_m),instructions:o.instructions||'',status:'planned',notes:''};
   if(await persistSession(s.id,updates)){ closeEdit(); toast('Séance restaurée'); }
 }
 
@@ -630,7 +607,7 @@ function bindUI(){
     e.preventDefault();
     const id=$('editId').value, s=state.sessions.find(x=>String(x.id)===id); if(!s) return;
     const date=$('editDate').value;
-    const updates={scheduled_date:date,slot:$('editSlot').value,time_label:$('editTime').value.trim(),title:$('editSessionTitle').value.trim(),duration_min:num($('editDuration').value),rpe:num($('editRpe').value),elevation_m:num($('editElevation').value),nutrition:$('editNutrition').value.trim(),instructions:$('editInstructions').value.trim(),notes:$('editNotes').value.trim(),status:$('editStatus').value,week:weekForDate(date),day_name:DAY_NAMES[parseISO(date).getDay()]};
+    const updates={scheduled_date:date,slot:$('editSlot').value,time_label:$('editTime').value.trim(),title:$('editSessionTitle').value.trim(),duration_min:num($('editDuration').value),rpe:num($('editRpe').value),elevation_m:num($('editElevation').value),instructions:$('editInstructions').value.trim(),notes:$('editNotes').value.trim(),status:$('editStatus').value,week:weekForDate(date),day_name:DAY_NAMES[parseISO(date).getDay()]};
     if(await persistSession(s.id,updates)){closeEdit();toast('Séance enregistrée');}
   };
   $('loginForm').onsubmit=async e=>{

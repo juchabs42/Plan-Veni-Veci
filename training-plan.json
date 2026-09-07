@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V3.1 objectif victoire — S3 2 forces lourdes + suivi chaîne gauche",
+    "revision": "V3.2 objectif victoire — S4 développement contrôlé, 2 forces lourdes",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -16,7 +16,7 @@
     "workingRaceDurationMin": 450,
     "workingRaceTime": "~7h25–7h35 comme scénario de performance/victoire, à recalibrer chaque semaine",
     "trainingHistoryNote": "Base récente ~4 h à 4 h 40 CAP/sem ; semaine 1 ~4 h 30 bien tolérée ; trail 60,6 km / 3325 D+ en 7h11 en mai ; expérience Veni Vici 2023. V3 augmente le volume jusqu’à 9h30 CAP en S10 sans dépasser 5h sur une sortie unique.",
-    "achillesNote": "S1 : aucune gêne au lever, aucune raideur matinale, aucune douleur en course ; sensibilité seulement à la pince juste après 2 h, absente le lendemain. Progression agressive autorisée uniquement si cette réponse reste stable à 24 h.",
+    "achillesNote": "S3 : semaine bien tolérée ; légère perception du tendon le lendemain de la sortie spécifique, sans aggravation signalée. S4 augmente surtout le volume facile, conserve une séance seuil et 2 séances de force lourde.",
     "weeklyReviewRule": "Chaque fin de semaine : bilan CAP/temps/D+, RPE, sommeil/fatigue, FC sur faciles, réponse du tendon au réveil et 24 h après la longue. La semaine suivante est un plafond, pas une obligation."
   },
   "days": [
@@ -34,7 +34,6 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 270,
-      "nutrition": "Repas normal, 25–30 g protéines après",
       "instructions": "Aucune course à pied. Charges RPE 7, laisser 2–3 répétitions en réserve."
     },
     {
@@ -51,7 +50,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180,
-      "nutrition": "Eau ; collation glucidique seulement si faim",
       "instructions": "FC 135–150, accélérations non maximales."
     },
     {
@@ -68,7 +66,6 @@
       "longRunMin": 0,
       "totalMin": 100,
       "sRPE": 775,
-      "nutrition": "30–45 g glucides entre les séances ; dîner riche en glucides",
       "instructions": "Matin au RPE 8,5–9. Soir FC 164–169, jamais à bloc."
     },
     {
@@ -85,7 +82,6 @@
       "longRunMin": 0,
       "totalMin": 65,
       "sRPE": 190,
-      "nutrition": "Hydratation normale",
       "instructions": "Douleur talon >3/10 : remplacer les sauts par fentes arrière contrôlées."
     },
     {
@@ -102,7 +98,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180,
-      "nutrition": "30 g glucides avant si repas éloigné",
       "instructions": "Terrain roulant, aucune dérive d'intensité."
     },
     {
@@ -119,7 +114,6 @@
       "longRunMin": 150,
       "totalMin": 150,
       "sRPE": 675,
-      "nutrition": "55–60 g glucides/h, 500–750 ml/h",
       "instructions": "Rester facile jusqu'aux 20 dernières minutes."
     },
     {
@@ -136,7 +130,6 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60,
-      "nutrition": "Eau",
       "instructions": "Cadence souple, jambes très faciles."
     },
     {
@@ -153,7 +146,6 @@
       "longRunMin": 0,
       "totalMin": 50,
       "sRPE": 300,
-      "nutrition": "25–30 g protéines après",
       "instructions": "Même charge que S1 ou +2,5 kg si technique parfaite."
     },
     {
@@ -170,7 +162,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225,
-      "nutrition": "Boisson et repas habituels",
       "instructions": "Rester en endurance basse, pas de sprint aux feux."
     },
     {
@@ -187,7 +178,6 @@
       "longRunMin": 0,
       "totalMin": 110,
       "sRPE": 852.5,
-      "nutrition": "40–60 g glucides entre séances",
       "instructions": "VO2 contrôlée ; soir FC 164–170."
     },
     {
@@ -204,7 +194,6 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 200,
-      "nutrition": "Hydratation normale",
       "instructions": "Très facile."
     },
     {
@@ -221,7 +210,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180,
-      "nutrition": "Eau",
       "instructions": "Accélérations courtes, récupération complète."
     },
     {
@@ -238,7 +226,6 @@
       "longRunMin": 160,
       "totalMin": 160,
       "sRPE": 640,
-      "nutrition": "60 g glucides/h",
       "instructions": "Finir avec la sensation de pouvoir continuer."
     },
     {
@@ -255,7 +242,6 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60,
-      "nutrition": "Eau",
       "instructions": "Très facile."
     },
     {
@@ -272,7 +258,6 @@
       "longRunMin": 0,
       "totalMin": 55,
       "sRPE": 357.5,
-      "nutrition": "Hydratation et alimentation normales | 25–30 g protéines après",
       "instructions": "Pas de course à pied. | RPE 7–7,5. Mollets lents et contrôlés ; pas de pliométrie cette semaine."
     },
     {
@@ -289,7 +274,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225.0,
-      "nutrition": "Repas glucidique normal",
       "instructions": "Endurance basse, cadence souple. | Endurance basse, aucune relance appuyée."
     },
     {
@@ -306,7 +290,6 @@
       "longRunMin": 0,
       "totalMin": 110,
       "sRPE": 770.0,
-      "nutrition": "30–45 g glucides après si séance du soir maintenue | 30–45 g glucides entre les deux séances ; dîner riche en glucides",
       "instructions": "Cadence 90–100 rpm. Intensité principale sans impact pour sécuriser la réintroduction à pied. | FC 162–167, plafond 168. Maintenir seulement si tendon identique au réveil et à l’échauffement ; sinon 50’ facile."
     },
     {
@@ -323,7 +306,6 @@
       "longRunMin": 0,
       "totalMin": 40,
       "sRPE": 260.0,
-      "nutrition": "25–30 g protéines après ; hydratation normale",
       "instructions": "Deuxième séance de force de la semaine. Pas de footing ce jour-là ; priorité à la qualité technique et à la consolidation."
     },
     {
@@ -340,7 +322,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180.0,
-      "nutrition": "Eau ; 20–30 g glucides si repas éloigné",
       "instructions": "FC 135–150. Aucun finish rapide."
     },
     {
@@ -357,7 +338,6 @@
       "longRunMin": 160,
       "totalMin": 160,
       "sRPE": 640.0,
-      "nutrition": "60–65 g glucides/h, 500–750 ml/h ; sodium 500–800 mg/h selon chaleur",
       "instructions": "Bosses surtout courables 3–8 %. Blocs allure course FC 148–158 sur roulant, montées ≤162. Les blocs sautent si le tendon réagit."
     },
     {
@@ -374,127 +354,119 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 90.0,
-      "nutrition": "Eau",
       "instructions": "Footing très facile et plat. À faire seulement si pied/Achille identiques au niveau habituel au réveil et après la sortie longue."
     },
     {
       "week": 4,
       "date": "2026-09-07",
       "dayName": "Lundi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "runMin": 0,
       "bikeMin": 0,
-      "strengthMobilityMin": 40,
+      "strengthMobilityMin": 0,
       "heatMin": 0,
       "elevationM": 0,
       "intensityMin": 0,
       "longRunMin": 0,
-      "totalMin": 40,
-      "sRPE": 200.0,
-      "nutrition": "Hydratation et alimentation normales | 25–30 g protéines après",
-      "instructions": "Pas de course à pied. | -10 à -15 % de charge. Sortir frais."
+      "totalMin": 0,
+      "sRPE": 0,
+      "instructions": "Ostéopathe l'après-midi. Repos sportif aujourd'hui."
     },
     {
       "week": 4,
       "date": "2026-09-08",
       "dayName": "Mardi",
-      "phase": "Assimilation active",
-      "runMin": 50,
+      "phase": "Développement contrôlé",
+      "runMin": 60,
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 80,
+      "elevationM": 100,
       "intensityMin": 2,
       "longRunMin": 0,
-      "totalMin": 50,
-      "sRPE": 150.0,
-      "nutrition": "Eau",
-      "instructions": "FC 135–150. Accélérations fluides, pas de sprint."
+      "totalMin": 60,
+      "sRPE": 180,
+      "instructions": "EF FC 135–150. 6×15'' relâchées seulement si tu te sens parfaitement normal après l'ostéo."
     },
     {
       "week": 4,
       "date": "2026-09-09",
       "dayName": "Mercredi",
-      "phase": "Assimilation active",
-      "runMin": 75,
+      "phase": "Développement contrôlé",
+      "runMin": 0,
       "bikeMin": 0,
-      "strengthMobilityMin": 0,
+      "strengthMobilityMin": 50,
       "heatMin": 0,
-      "elevationM": 270,
-      "intensityMin": 26,
+      "elevationM": 0,
+      "intensityMin": 0,
       "longRunMin": 0,
-      "totalMin": 75,
-      "sRPE": 507.5,
-      "nutrition": "Petit apport glucidique si séance à jeun impossible | 30–45 g glucides entre les deux séances",
-      "instructions": "Première vraie côte courue : RPE 7–7,5, cadence propre, aucune recherche de puissance maximale. | FC 162–167. Finir avec marge."
+      "totalMin": 50,
+      "sRPE": 375,
+      "instructions": "Force lourde bilatérale le matin. Médecin à 16h40 ; pas de deuxième entraînement."
     },
     {
       "week": 4,
       "date": "2026-09-10",
       "dayName": "Jeudi",
-      "phase": "Assimilation active",
-      "runMin": 35,
+      "phase": "Développement contrôlé",
+      "runMin": 55,
       "bikeMin": 0,
-      "strengthMobilityMin": 20,
+      "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 50,
-      "intensityMin": 0,
+      "elevationM": 100,
+      "intensityMin": 24,
       "longRunMin": 0,
       "totalMin": 55,
-      "sRPE": 160.0,
-      "nutrition": "Hydratation normale",
-      "instructions": "Aucun saut. | Très facile, FC 135–145."
+      "sRPE": 360,
+      "instructions": "Seuil bas sur plat/faux-plat. FC 162–167, finir avec marge."
     },
     {
       "week": 4,
       "date": "2026-09-11",
       "dayName": "Vendredi",
-      "phase": "Assimilation active",
-      "runMin": 40,
+      "phase": "Développement contrôlé",
+      "runMin": 45,
       "bikeMin": 0,
-      "strengthMobilityMin": 0,
+      "strengthMobilityMin": 45,
       "heatMin": 0,
       "elevationM": 80,
       "intensityMin": 0,
       "longRunMin": 0,
-      "totalMin": 40,
-      "sRPE": 100.0,
-      "nutrition": "Eau",
-      "instructions": "Souple, aucune pré-fatigue volontaire."
+      "totalMin": 90,
+      "sRPE": 430,
+      "instructions": "Footing très facile le matin puis force lourde unipodale le soir. Aucune série à l'échec."
     },
     {
       "week": 4,
       "date": "2026-09-12",
       "dayName": "Samedi",
-      "phase": "Assimilation active",
-      "runMin": 100,
+      "phase": "Développement contrôlé",
+      "runMin": 50,
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 350,
+      "elevationM": 100,
       "intensityMin": 0,
-      "longRunMin": 100,
-      "totalMin": 100,
-      "sRPE": 350.0,
-      "nutrition": "60 g glucides/h, boire selon soif et météo",
-      "instructions": "Terrain confortable, pas de bloc soutenu. Objectif assimilation."
+      "longRunMin": 0,
+      "totalMin": 50,
+      "sRPE": 125,
+      "instructions": "EF terrain roulant, garder beaucoup de fraîcheur avant la longue."
     },
     {
       "week": 4,
       "date": "2026-09-13",
       "dayName": "Dimanche",
-      "phase": "Assimilation active",
-      "runMin": 0,
-      "bikeMin": 40,
+      "phase": "Développement contrôlé",
+      "runMin": 130,
+      "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 0,
-      "intensityMin": 0,
-      "longRunMin": 0,
-      "totalMin": 40,
-      "sRPE": 80.0,
-      "nutrition": "Eau",
-      "instructions": "Très facile."
+      "elevationM": 500,
+      "intensityMin": 20,
+      "longRunMin": 130,
+      "totalMin": 130,
+      "sRPE": 520,
+      "instructions": "2h10 roulant/vallonné. Après 1h30, 2×10' effort Veni Vici récup. 5' seulement si pied/Achille/ischio restent stables."
     },
     {
       "week": 5,
@@ -510,7 +482,6 @@
       "longRunMin": 0,
       "totalMin": 50,
       "sRPE": 325.0,
-      "nutrition": "Hydratation et alimentation normales | 25–30 g protéines après",
       "instructions": "Pas de course à pied. | RPE 7,5–8, aucune répétition lente ou forcée."
     },
     {
@@ -527,7 +498,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225.0,
-      "nutrition": "30–45 g glucides/h si besoin",
       "instructions": "Volume aérobie sans impact. Cadence souple."
     },
     {
@@ -544,7 +514,6 @@
       "longRunMin": 0,
       "totalMin": 100,
       "sRPE": 750.0,
-      "nutrition": "Séance alimentée | 60 g glucides entre les deux séances",
       "instructions": "RPE 8–8,5. Pente courable, pas de mur. Si réaction du tendon à 24 h après S4 : remplacer par HT VO₂. | FC 162–168. Dernière répétition identique à la première."
     },
     {
@@ -561,7 +530,6 @@
       "longRunMin": 0,
       "totalMin": 55,
       "sRPE": 170.0,
-      "nutrition": "Hydratation normale",
       "instructions": "Contrôle excentrique en priorité ; pas de pliométrie sans validation au bilan hebdo. | FC 135–145."
     },
     {
@@ -578,7 +546,6 @@
       "longRunMin": 0,
       "totalMin": 35,
       "sRPE": 105.0,
-      "nutrition": "Eau",
       "instructions": "Très facile ; garder du jus pour samedi."
     },
     {
@@ -595,7 +562,6 @@
       "longRunMin": 190,
       "totalMin": 190,
       "sRPE": 855.0,
-      "nutrition": "70 g glucides/h, 500–800 mg sodium/h, 500–750 ml/h selon météo",
       "instructions": "Reproduire le profil Veni Vici : courir les 3–6 %, marcher seulement si pente/FC l’imposent. Descentes actives mais contrôlées."
     },
     {
@@ -612,7 +578,6 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60.0,
-      "nutrition": "Eau ; petit-déjeuner normal",
       "instructions": "Objectif courir sur jambes fatiguées sans ajouter d’intensité. Remplacer par HT si tendon ou quadriceps anormalement sensibles."
     },
     {
@@ -629,7 +594,6 @@
       "longRunMin": 0,
       "totalMin": 55,
       "sRPE": 357.5,
-      "nutrition": "Hydratation et alimentation normales | 25–30 g protéines",
       "instructions": "Pas de course à pied. | Technique stricte, RPE 7,5–8."
     },
     {
@@ -646,7 +610,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225.0,
-      "nutrition": "Boire régulièrement",
       "instructions": "Endurance basse. | Endurance basse, aucune relance."
     },
     {
@@ -663,7 +626,6 @@
       "longRunMin": 0,
       "totalMin": 110,
       "sRPE": 825.0,
-      "nutrition": "Séance alimentée ; 30–40 g glucides avant si besoin | 60–75 g glucides entre les séances",
       "instructions": "RPE 8–8,5. Garder une foulée courue et économique. | FC 163–168, plafond 169. Pas de dérive en fin de séance."
     },
     {
@@ -680,7 +642,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180.0,
-      "nutrition": "Hydratation normale",
       "instructions": "Accent quadriceps excentrique + soléaire. | FC 135–145."
     },
     {
@@ -697,7 +658,6 @@
       "longRunMin": 0,
       "totalMin": 35,
       "sRPE": 105.0,
-      "nutrition": "20–30 g glucides si repas éloigné",
       "instructions": "Pré-fatigue légère uniquement."
     },
     {
@@ -714,7 +674,6 @@
       "longRunMin": 220,
       "totalMin": 220,
       "sRPE": 990.0,
-      "nutrition": "75–80 g glucides/h, sodium 500–800 mg/h, hydratation individualisée",
       "instructions": "Montées 3–8 % majoritairement courues. Dans le dernier tiers, rechercher une foulée encore économique sur roulant."
     },
     {
@@ -731,7 +690,6 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60.0,
-      "nutrition": "Eau",
       "instructions": "Jambes lourdes acceptées, douleur tendineuse croissante non. Sinon HT 30’."
     },
     {
@@ -748,7 +706,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 420.0,
-      "nutrition": "Hydratation et alimentation normales | 25–30 g protéines",
       "instructions": "Pas de course à pied. | Dernière semaine de force lourde complète. Aucune série à l’échec."
     },
     {
@@ -765,7 +722,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225.0,
-      "nutrition": "Repas glucidique normal",
       "instructions": "Facile."
     },
     {
@@ -782,7 +738,6 @@
       "longRunMin": 0,
       "totalMin": 100,
       "sRPE": 750.0,
-      "nutrition": "Séance alimentée | 60–75 g glucides entre séances",
       "instructions": "RPE 8–8,5. Aucune répétition à bloc. | FC 163–168. Contrôle strict."
     },
     {
@@ -799,7 +754,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 195.0,
-      "nutrition": "Hydratation normale",
       "instructions": "Volume réduit, qualité maximale. | Très facile."
     },
     {
@@ -816,7 +770,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180.0,
-      "nutrition": "30–45 g glucides pendant si besoin",
       "instructions": "Pré-fatigue contrôlée, FC 135–150."
     },
     {
@@ -833,7 +786,6 @@
       "longRunMin": 255,
       "totalMin": 255,
       "sRPE": 1275.0,
-      "nutrition": "80–85 g glucides/h, sodium 500–800 mg/h, matériel proche course",
       "instructions": "Séance clé. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Descentes courues en contrôle."
     },
     {
@@ -850,7 +802,6 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60.0,
-      "nutrition": "Eau + petit-déjeuner complet",
       "instructions": "Récupération active avec impact léger. HT 30–40’ si réaction tendon/quadriceps."
     },
     {
@@ -867,7 +818,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 350.0,
-      "nutrition": "400–600 ml ; pesée avant/après | 25–30 g protéines",
       "instructions": "RPE thermique ≤6/10. Pas de combinaison imperméable. | -10 à -15 % de charge, aucune courbature recherchée."
     },
     {
@@ -884,7 +834,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180.0,
-      "nutrition": "500–750 ml ; sodium selon sudation",
       "instructions": "Très facile, RPE thermique ≤6/10."
     },
     {
@@ -901,7 +850,6 @@
       "longRunMin": 0,
       "totalMin": 80,
       "sRPE": 540.0,
-      "nutrition": "Petit apport glucidique si besoin | 40–60 g glucides entre séances",
       "instructions": "Rappel de puissance sans fatigue résiduelle. | FC 162–167. Semaine d’assimilation."
     },
     {
@@ -918,7 +866,6 @@
       "longRunMin": 0,
       "totalMin": 65,
       "sRPE": 222.5,
-      "nutrition": "Hydratation normale | Boire avant ; pesée avant/après",
       "instructions": "Très peu de volume. | FC basse. Arrêt si frissons, vertiges, nausée ou céphalée inhabituelle."
     },
     {
@@ -935,7 +882,6 @@
       "longRunMin": 0,
       "totalMin": 55,
       "sRPE": 137.5,
-      "nutrition": "Eau",
       "instructions": "Sans chaleur. Souple."
     },
     {
@@ -952,7 +898,6 @@
       "longRunMin": 165,
       "totalMin": 165,
       "sRPE": 660.0,
-      "nutrition": "75 g glucides/h, hydratation normale",
       "instructions": "Objectif fraîcheur. Les blocs sont contrôlés, jamais au seuil."
     },
     {
@@ -969,7 +914,6 @@
       "longRunMin": 0,
       "totalMin": 40,
       "sRPE": 80.0,
-      "nutrition": "400–600 ml ; pesée avant/après",
       "instructions": "4e exposition seulement si récupération bonne ; sinon footing normal sans chaleur."
     },
     {
@@ -986,7 +930,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 375.0,
-      "nutrition": "Hydratation mesurée | 25–30 g protéines",
       "instructions": "Induction/entretien, aucune fatigue musculaire. | Pas de progression de charge."
     },
     {
@@ -1003,7 +946,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 127.5,
-      "nutrition": "400–600 ml | Hydratation normale",
       "instructions": "Aucune fatigue résiduelle recherchée. | Routine douce, pas de massage direct du tendon."
     },
     {
@@ -1020,7 +962,6 @@
       "longRunMin": 0,
       "totalMin": 115,
       "sRPE": 860.0,
-      "nutrition": "Séance alimentée | 60–75 g glucides entre séances",
       "instructions": "RPE 8–8,5. Économie de course et puissance, pas de mur. | FC 163–168 ; dernière répétition sous contrôle."
     },
     {
@@ -1037,7 +978,6 @@
       "longRunMin": 0,
       "totalMin": 75,
       "sRPE": 257.5,
-      "nutrition": "Hydratation normale | Pesée avant/après",
       "instructions": "Entretien uniquement. | Très facile, exposition thermique modérée."
     },
     {
@@ -1054,7 +994,6 @@
       "longRunMin": 0,
       "totalMin": 55,
       "sRPE": 165.0,
-      "nutrition": "30–45 g glucides pendant si besoin",
       "instructions": "Pré-fatigue légère avant la grosse sortie."
     },
     {
@@ -1071,7 +1010,6 @@
       "longRunMin": 270,
       "totalMin": 270,
       "sRPE": 1350.0,
-      "nutrition": "85–90 g glucides/h, sodium 500–800 mg/h, stratégie de course et matériel complets",
       "instructions": "Répétition générale n°1. Courir efficacement après le bloc central ; 0–6 % prioritaire. Arrêts ravito courts et planifiés."
     },
     {
@@ -1088,7 +1026,6 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 90.0,
-      "nutrition": "500–750 ml ; petit-déjeuner complet",
       "instructions": "Courir seulement si jambes et tendon au niveau attendu au réveil ; sinon HT 45’. Chaleur seulement si récupération bonne."
     },
     {
@@ -1105,7 +1042,6 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 245.0,
-      "nutrition": "Boire normalement | 25–30 g protéines",
       "instructions": "Entretien thermique uniquement. | Aucune fatigue musculaire. Charges faciles et explosives techniquement."
     },
     {
@@ -1122,7 +1058,6 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225.0,
-      "nutrition": "Repas riche en glucides",
       "instructions": "Endurance basse."
     },
     {
@@ -1139,7 +1074,6 @@
       "longRunMin": 0,
       "totalMin": 100,
       "sRPE": 725.0,
-      "nutrition": "Séance alimentée | 60–75 g glucides entre séances",
       "instructions": "Volume d’intensité réduit : qualité maximale, aucune répétition à bloc. | FC 162–167. Cette séance ne doit pas laisser de fatigue vendredi."
     },
     {
@@ -1156,7 +1090,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 160.0,
-      "nutrition": "Hydratation normale",
       "instructions": "Dernier entretien excentrique significatif. Aucun saut. | Très facile. 2e et dernière exposition chaleur de la semaine si météo de course potentiellement chaude."
     },
     {
@@ -1173,7 +1106,6 @@
       "longRunMin": 0,
       "totalMin": 85,
       "sRPE": 255.0,
-      "nutrition": "50–60 g glucides/h ; dîner riche en glucides",
       "instructions": "FC 135–150. Aucun bloc rapide. Objectif arriver samedi avec une fatigue légère mais propre."
     },
     {
@@ -1190,7 +1122,6 @@
       "longRunMin": 300,
       "totalMin": 300,
       "sRPE": 1500.0,
-      "nutrition": "90 g glucides/h, sodium 500–800 mg/h à individualiser, hydratation et matériel de course complets",
       "instructions": "J-14. Séance la plus importante du plan. Les 3×40’ doivent être rapides mais maîtrisés (FC ~150–158 roulant, montées ≤162–163). Ne jamais prolonger au-delà de 5 h."
     },
     {
@@ -1207,7 +1138,6 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 90.0,
-      "nutrition": "Petit-déjeuner complet ; réhydratation",
       "instructions": "Seulement si récupération attendue au réveil ; sinon HT 45–60’. Cette séance clôt le pic."
     },
     {
@@ -1224,7 +1154,6 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 130.0,
-      "nutrition": "Boire normalement | 25 g protéines",
       "instructions": "Récupération. Chaleur facultative, jamais prioritaire sur la fraîcheur. | Dernière force ; aucune courbature acceptée."
     },
     {
@@ -1241,7 +1170,6 @@
       "longRunMin": 0,
       "totalMin": 60,
       "sRPE": 180.0,
-      "nutrition": "Eau",
       "instructions": "Réduction nette du volume, fréquence conservée."
     },
     {
@@ -1258,7 +1186,6 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 472.5,
-      "nutrition": "Petit apport glucidique si besoin | 40–50 g glucides entre séances",
       "instructions": "Rappel de puissance, aucune dette de fatigue. | Conserver l’intensité, couper le volume."
     },
     {
@@ -1275,7 +1202,6 @@
       "longRunMin": 0,
       "totalMin": 35,
       "sRPE": 70.0,
-      "nutrition": "Eau",
       "instructions": "Très facile."
     },
     {
@@ -1292,7 +1218,6 @@
       "longRunMin": 0,
       "totalMin": 40,
       "sRPE": 100.0,
-      "nutrition": "Eau",
       "instructions": "Finir frais."
     },
     {
@@ -1309,7 +1234,6 @@
       "longRunMin": 110,
       "totalMin": 110,
       "sRPE": 440.0,
-      "nutrition": "75–90 g glucides/h ; matériel course",
       "instructions": "J-7 : dernier rappel spécifique. Aucune fatigue finale."
     },
     {
@@ -1326,7 +1250,6 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60.0,
-      "nutrition": "Eau",
       "instructions": "Récupération. Chaleur seulement si prévision de course exceptionnellement chaude."
     },
     {
@@ -1343,7 +1266,6 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 70.0,
-      "nutrition": "Boire normalement",
       "instructions": "J-5. Supprimer si fatigue ou sommeil mauvais. Plus aucune chaleur ensuite. | Aucun renforcement chargé."
     },
     {
@@ -1360,7 +1282,6 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 135.0,
-      "nutrition": "Glucides habituels",
       "instructions": "J-4. Finir avec beaucoup de fraîcheur."
     },
     {
@@ -1377,7 +1298,6 @@
       "longRunMin": 0,
       "totalMin": 40,
       "sRPE": 260.0,
-      "nutrition": "Petit apport glucidique si besoin",
       "instructions": "Une seule séance. Rester très en contrôle."
     },
     {
@@ -1394,7 +1314,6 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60.0,
-      "nutrition": "Début hausse glucidique",
       "instructions": "J-2. Très facile."
     },
     {
@@ -1411,7 +1330,6 @@
       "longRunMin": 0,
       "totalMin": 20,
       "sRPE": 50.0,
-      "nutrition": "Charge glucidique, aliments familiers et peu fibreux",
       "instructions": "J-1. Aucun renforcement, aucune chaleur."
     },
     {
@@ -1428,7 +1346,6 @@
       "longRunMin": 450,
       "totalMin": 450,
       "sRPE": 3150.0,
-      "nutrition": "Objectif 90 g glucides/h ; hydratation selon météo ; sodium individualisé à partir des tests | Boire et manger dès que toléré",
       "instructions": "Départ discipliné : km 0–40 surtout 145–155 bpm, montées ≤160 ; bloc km 40–54 montées 158–163 plafond 165 ; progression après km 74 si jambes présentes. Arrêts ravito courts. | Récupération, pas de séance."
     },
     {
@@ -1445,7 +1362,6 @@
       "longRunMin": 0,
       "totalMin": 0,
       "sRPE": 0.0,
-      "nutrition": "Repas normaux, protéines et glucides suffisants | Hydratation normale",
       "instructions": "Repos. | Optionnel."
     }
   ],
@@ -1470,7 +1386,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas normal, 25–30 g protéines après",
       "instructions": "Aucune course à pied. Charges RPE 7, laisser 2–3 répétitions en réserve.",
       "notes": "",
       "status": "planned",
@@ -1494,7 +1409,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas normal, 25–30 g protéines après",
         "instructions": "Aucune course à pied. Charges RPE 7, laisser 2–3 répétitions en réserve."
       }
     },
@@ -1518,7 +1432,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas normal, 25–30 g protéines après",
       "instructions": "Aucune course à pied. Charges RPE 7, laisser 2–3 répétitions en réserve.",
       "notes": "",
       "status": "planned",
@@ -1542,7 +1455,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas normal, 25–30 g protéines après",
         "instructions": "Aucune course à pied. Charges RPE 7, laisser 2–3 répétitions en réserve."
       }
     },
@@ -1566,7 +1478,6 @@
       "heat_min": 0,
       "intensity_min": 3,
       "long_run_min": 0,
-      "nutrition": "Eau ; collation glucidique seulement si faim",
       "instructions": "FC 135–150, accélérations non maximales.",
       "notes": "",
       "status": "planned",
@@ -1590,7 +1501,6 @@
         "heat_min": 0,
         "intensity_min": 3,
         "long_run_min": 0,
-        "nutrition": "Eau ; collation glucidique seulement si faim",
         "instructions": "FC 135–150, accélérations non maximales."
       }
     },
@@ -1614,7 +1524,6 @@
       "heat_min": 0,
       "intensity_min": 42,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides entre les séances ; dîner riche en glucides",
       "instructions": "Matin au RPE 8,5–9. Soir FC 164–169, jamais à bloc.",
       "notes": "",
       "status": "planned",
@@ -1638,7 +1547,6 @@
         "heat_min": 0,
         "intensity_min": 42,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides entre les séances ; dîner riche en glucides",
         "instructions": "Matin au RPE 8,5–9. Soir FC 164–169, jamais à bloc."
       }
     },
@@ -1662,7 +1570,6 @@
       "heat_min": 0,
       "intensity_min": 42,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides entre les séances ; dîner riche en glucides",
       "instructions": "Matin au RPE 8,5–9. Soir FC 164–169, jamais à bloc.",
       "notes": "",
       "status": "planned",
@@ -1686,7 +1593,6 @@
         "heat_min": 0,
         "intensity_min": 42,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides entre les séances ; dîner riche en glucides",
         "instructions": "Matin au RPE 8,5–9. Soir FC 164–169, jamais à bloc."
       }
     },
@@ -1710,7 +1616,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Douleur talon >3/10 : remplacer les sauts par fentes arrière contrôlées.",
       "notes": "",
       "status": "planned",
@@ -1734,7 +1639,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Douleur talon >3/10 : remplacer les sauts par fentes arrière contrôlées."
       }
     },
@@ -1758,7 +1662,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Douleur talon >3/10 : remplacer les sauts par fentes arrière contrôlées.",
       "notes": "",
       "status": "planned",
@@ -1782,7 +1685,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Douleur talon >3/10 : remplacer les sauts par fentes arrière contrôlées."
       }
     },
@@ -1806,7 +1708,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "30 g glucides avant si repas éloigné",
       "instructions": "Terrain roulant, aucune dérive d'intensité.",
       "notes": "",
       "status": "planned",
@@ -1830,7 +1731,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "30 g glucides avant si repas éloigné",
         "instructions": "Terrain roulant, aucune dérive d'intensité."
       }
     },
@@ -1854,7 +1754,6 @@
       "heat_min": 0,
       "intensity_min": 20,
       "long_run_min": 150,
-      "nutrition": "55–60 g glucides/h, 500–750 ml/h",
       "instructions": "Rester facile jusqu'aux 20 dernières minutes.",
       "notes": "",
       "status": "planned",
@@ -1878,7 +1777,6 @@
         "heat_min": 0,
         "intensity_min": 20,
         "long_run_min": 150,
-        "nutrition": "55–60 g glucides/h, 500–750 ml/h",
         "instructions": "Rester facile jusqu'aux 20 dernières minutes."
       }
     },
@@ -1902,7 +1800,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Cadence souple, jambes très faciles.",
       "notes": "",
       "status": "planned",
@@ -1926,7 +1823,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Cadence souple, jambes très faciles."
       }
     },
@@ -1950,7 +1846,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines après",
       "instructions": "Même charge que S1 ou +2,5 kg si technique parfaite.",
       "notes": "",
       "status": "planned",
@@ -1974,7 +1869,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines après",
         "instructions": "Même charge que S1 ou +2,5 kg si technique parfaite."
       }
     },
@@ -1998,7 +1892,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines après",
       "instructions": "Même charge que S1 ou +2,5 kg si technique parfaite.",
       "notes": "",
       "status": "planned",
@@ -2022,7 +1915,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines après",
         "instructions": "Même charge que S1 ou +2,5 kg si technique parfaite."
       }
     },
@@ -2046,7 +1938,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boisson et repas habituels",
       "instructions": "Rester en endurance basse, pas de sprint aux feux.",
       "notes": "",
       "status": "planned",
@@ -2070,7 +1961,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boisson et repas habituels",
         "instructions": "Rester en endurance basse, pas de sprint aux feux."
       }
     },
@@ -2094,7 +1984,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boisson et repas habituels",
       "instructions": "Rester en endurance basse, pas de sprint aux feux.",
       "notes": "",
       "status": "planned",
@@ -2118,7 +2007,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boisson et repas habituels",
         "instructions": "Rester en endurance basse, pas de sprint aux feux."
       }
     },
@@ -2142,7 +2030,6 @@
       "heat_min": 0,
       "intensity_min": 50,
       "long_run_min": 0,
-      "nutrition": "40–60 g glucides entre séances",
       "instructions": "VO2 contrôlée ; soir FC 164–170.",
       "notes": "",
       "status": "planned",
@@ -2166,7 +2053,6 @@
         "heat_min": 0,
         "intensity_min": 50,
         "long_run_min": 0,
-        "nutrition": "40–60 g glucides entre séances",
         "instructions": "VO2 contrôlée ; soir FC 164–170."
       }
     },
@@ -2190,7 +2076,6 @@
       "heat_min": 0,
       "intensity_min": 50,
       "long_run_min": 0,
-      "nutrition": "40–60 g glucides entre séances",
       "instructions": "VO2 contrôlée ; soir FC 164–170.",
       "notes": "",
       "status": "planned",
@@ -2214,7 +2099,6 @@
         "heat_min": 0,
         "intensity_min": 50,
         "long_run_min": 0,
-        "nutrition": "40–60 g glucides entre séances",
         "instructions": "VO2 contrôlée ; soir FC 164–170."
       }
     },
@@ -2238,7 +2122,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Très facile.",
       "notes": "",
       "status": "planned",
@@ -2262,7 +2145,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Très facile."
       }
     },
@@ -2286,7 +2168,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Très facile.",
       "notes": "",
       "status": "planned",
@@ -2310,7 +2191,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Très facile."
       }
     },
@@ -2334,7 +2214,6 @@
       "heat_min": 0,
       "intensity_min": 2,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Accélérations courtes, récupération complète.",
       "notes": "",
       "status": "planned",
@@ -2358,7 +2237,6 @@
         "heat_min": 0,
         "intensity_min": 2,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Accélérations courtes, récupération complète."
       }
     },
@@ -2382,7 +2260,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 160,
-      "nutrition": "60 g glucides/h",
       "instructions": "Finir avec la sensation de pouvoir continuer.",
       "notes": "",
       "status": "planned",
@@ -2406,7 +2283,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 160,
-        "nutrition": "60 g glucides/h",
         "instructions": "Finir avec la sensation de pouvoir continuer."
       }
     },
@@ -2430,7 +2306,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Très facile.",
       "notes": "",
       "status": "planned",
@@ -2454,7 +2329,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Très facile."
       }
     },
@@ -2478,7 +2352,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation et alimentation normales",
       "instructions": "Pas de course à pied.",
       "notes": "",
       "status": "planned",
@@ -2502,7 +2375,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation et alimentation normales",
         "instructions": "Pas de course à pied."
       }
     },
@@ -2526,7 +2398,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines après",
       "instructions": "RPE 7–7,5. Mollets lents et contrôlés ; pas de pliométrie cette semaine.",
       "notes": "",
       "status": "planned",
@@ -2550,7 +2421,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines après",
         "instructions": "RPE 7–7,5. Mollets lents et contrôlés ; pas de pliométrie cette semaine."
       }
     },
@@ -2574,7 +2444,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas glucidique normal",
       "instructions": "Endurance basse, cadence souple.",
       "notes": "",
       "status": "planned",
@@ -2598,7 +2467,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas glucidique normal",
         "instructions": "Endurance basse, cadence souple."
       }
     },
@@ -2622,7 +2490,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas glucidique normal",
       "instructions": "Endurance basse, aucune relance appuyée.",
       "notes": "",
       "status": "planned",
@@ -2646,7 +2513,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas glucidique normal",
         "instructions": "Endurance basse, aucune relance appuyée."
       }
     },
@@ -2670,7 +2536,6 @@
       "heat_min": 0,
       "intensity_min": 44,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides après si séance du soir maintenue",
       "instructions": "Cadence 90–100 rpm. Intensité principale sans impact pour sécuriser la réintroduction à pied.",
       "notes": "",
       "status": "planned",
@@ -2694,7 +2559,6 @@
         "heat_min": 0,
         "intensity_min": 44,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides après si séance du soir maintenue",
         "instructions": "Cadence 90–100 rpm. Intensité principale sans impact pour sécuriser la réintroduction à pied."
       }
     },
@@ -2718,7 +2582,6 @@
       "heat_min": 0,
       "intensity_min": 44,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides entre les deux séances ; dîner riche en glucides",
       "instructions": "FC 162–167, plafond 168. Maintenir seulement si tendon identique au réveil et à l’échauffement ; sinon 50’ facile.",
       "notes": "",
       "status": "planned",
@@ -2742,7 +2605,6 @@
         "heat_min": 0,
         "intensity_min": 44,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides entre les deux séances ; dîner riche en glucides",
         "instructions": "FC 162–167, plafond 168. Maintenir seulement si tendon identique au réveil et à l’échauffement ; sinon 50’ facile."
       }
     },
@@ -2766,7 +2628,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines après",
       "instructions": "RPE 7 environ, aucune série à l’échec. Contrôle lent. Si la gêne pied/ischio augmente pendant la séance, réduire la charge ou l’amplitude.",
       "notes": "",
       "status": "planned",
@@ -2790,7 +2651,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines après",
         "instructions": "RPE 7 environ, aucune série à l’échec. Contrôle lent. Si la gêne pied/ischio augmente pendant la séance, réduire la charge ou l’amplitude."
       }
     },
@@ -2814,7 +2674,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Pas de footing. Mobilité douce uniquement, sans chercher à forcer les amplitudes.",
       "notes": "",
       "status": "planned",
@@ -2838,7 +2697,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Pas de footing. Mobilité douce uniquement, sans chercher à forcer les amplitudes."
       }
     },
@@ -2862,7 +2720,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau ; 20–30 g glucides si repas éloigné",
       "instructions": "FC 135–150. Aucun finish rapide.",
       "notes": "",
       "status": "planned",
@@ -2886,7 +2743,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau ; 20–30 g glucides si repas éloigné",
         "instructions": "FC 135–150. Aucun finish rapide."
       }
     },
@@ -2910,7 +2766,6 @@
       "heat_min": 0,
       "intensity_min": 24,
       "long_run_min": 160,
-      "nutrition": "60–65 g glucides/h, 500–750 ml/h ; sodium 500–800 mg/h selon chaleur",
       "instructions": "Bosses surtout courables 3–8 %. Blocs allure course FC 148–158 sur roulant, montées ≤162. Les blocs sautent si le tendon réagit.",
       "notes": "",
       "status": "planned",
@@ -2934,7 +2789,6 @@
         "heat_min": 0,
         "intensity_min": 24,
         "long_run_min": 160,
-        "nutrition": "60–65 g glucides/h, 500–750 ml/h ; sodium 500–800 mg/h selon chaleur",
         "instructions": "Bosses surtout courables 3–8 %. Blocs allure course FC 148–158 sur roulant, montées ≤162. Les blocs sautent si le tendon réagit."
       }
     },
@@ -2958,7 +2812,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "FC 135–145. Foulée relâchée. Si gêne pied/Achille nettement supérieure au niveau habituel, remplacer par 35–45' de HT très facile.",
       "notes": "",
       "status": "planned",
@@ -2982,7 +2835,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "FC 135–145. Foulée relâchée. Si gêne pied/Achille nettement supérieure au niveau habituel, remplacer par 35–45' de HT très facile."
       }
     },
@@ -2994,20 +2846,19 @@
       "slot": "am",
       "week": 4,
       "day_name": "Lundi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "",
-      "title": "Repos",
+      "title": "Repos — ostéopathe cet après-midi",
       "duration_min": 0,
-      "rpe": 0.0,
+      "rpe": 0,
       "elevation_m": 0,
       "run_min": 0,
       "bike_min": 0,
-      "strength_min": 40,
+      "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation et alimentation normales",
-      "instructions": "Pas de course à pied.",
+      "instructions": "Pas d'entraînement aujourd'hui.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3018,20 +2869,19 @@
         "slot": "am",
         "week": 4,
         "day_name": "Lundi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "",
-        "title": "Repos",
+        "title": "Repos — ostéopathe cet après-midi",
         "duration_min": 0,
-        "rpe": 0.0,
+        "rpe": 0,
         "elevation_m": 0,
         "run_min": 0,
         "bike_min": 0,
-        "strength_min": 40,
+        "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation et alimentation normales",
-        "instructions": "Pas de course à pied."
+        "instructions": "Pas d'entraînement aujourd'hui."
       }
     },
     {
@@ -3042,20 +2892,19 @@
       "slot": "pm",
       "week": 4,
       "day_name": "Lundi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "18:15",
-      "title": "Force allégée : squat 3×4, SDT 2×4, mollets 3×10, gainage",
-      "duration_min": 40,
-      "rpe": 5.0,
+      "title": "Repos après ostéopathe",
+      "duration_min": 0,
+      "rpe": 0,
       "elevation_m": 0,
       "run_min": 0,
       "bike_min": 0,
-      "strength_min": 40,
+      "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines après",
-      "instructions": "-10 à -15 % de charge. Sortir frais.",
+      "instructions": "Laisser le corps tranquille après la séance d'ostéopathie.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3066,20 +2915,19 @@
         "slot": "pm",
         "week": 4,
         "day_name": "Lundi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "18:15",
-        "title": "Force allégée : squat 3×4, SDT 2×4, mollets 3×10, gainage",
-        "duration_min": 40,
-        "rpe": 5.0,
+        "title": "Repos après ostéopathe",
+        "duration_min": 0,
+        "rpe": 0,
         "elevation_m": 0,
         "run_min": 0,
         "bike_min": 0,
-        "strength_min": 40,
+        "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines après",
-        "instructions": "-10 à -15 % de charge. Sortir frais."
+        "instructions": "Laisser le corps tranquille après la séance d'ostéopathie."
       }
     },
     {
@@ -3090,20 +2938,19 @@
       "slot": "pm",
       "week": 4,
       "day_name": "Mardi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "18:15",
-      "title": "Footing facile 50' + 6×15'' relâchées sur plat si tendon stable",
-      "duration_min": 50,
-      "rpe": 3.0,
-      "elevation_m": 80,
-      "run_min": 50,
+      "title": "Footing facile 60' + 6×15'' relâchées si parfaitement normal",
+      "duration_min": 60,
+      "rpe": 3,
+      "elevation_m": 100,
+      "run_min": 60,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 2,
       "long_run_min": 0,
-      "nutrition": "Eau",
-      "instructions": "FC 135–150. Accélérations fluides, pas de sprint.",
+      "instructions": "FC 135–150. Les 6×15'' sont relâchées, récupération complète ; les supprimer si tu sens une réaction à l'ostéo.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3114,20 +2961,19 @@
         "slot": "pm",
         "week": 4,
         "day_name": "Mardi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "18:15",
-        "title": "Footing facile 50' + 6×15'' relâchées sur plat si tendon stable",
-        "duration_min": 50,
-        "rpe": 3.0,
-        "elevation_m": 80,
-        "run_min": 50,
+        "title": "Footing facile 60' + 6×15'' relâchées si parfaitement normal",
+        "duration_min": 60,
+        "rpe": 3,
+        "elevation_m": 100,
+        "run_min": 60,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 2,
         "long_run_min": 0,
-        "nutrition": "Eau",
-        "instructions": "FC 135–150. Accélérations fluides, pas de sprint."
+        "instructions": "FC 135–150. Les 6×15'' sont relâchées, récupération complète ; les supprimer si tu sens une réaction à l'ostéo."
       }
     },
     {
@@ -3138,20 +2984,19 @@
       "slot": "am",
       "week": 4,
       "day_name": "Mercredi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "07:00",
-      "title": "Côte contrôlée : 5×2' à 4–6 %, récup. 2'",
-      "duration_min": 40,
-      "rpe": 7.0,
-      "elevation_m": 270,
-      "run_min": 75,
+      "title": "Force lourde bilatérale : squat 4×4, SDT/RDL 3×4, mollets 4×6, tractions, gainage",
+      "duration_min": 50,
+      "rpe": 7.5,
+      "elevation_m": 0,
+      "run_min": 0,
       "bike_min": 0,
-      "strength_min": 0,
+      "strength_min": 50,
       "heat_min": 0,
-      "intensity_min": 26,
+      "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Petit apport glucidique si séance à jeun impossible",
-      "instructions": "Première vraie côte courue : RPE 7–7,5, cadence propre, aucune recherche de puissance maximale.",
+      "instructions": "RPE 7–8, 2–3 min de récupération sur squat/SDT. Aucune série à l'échec.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3162,20 +3007,19 @@
         "slot": "am",
         "week": 4,
         "day_name": "Mercredi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "07:00",
-        "title": "Côte contrôlée : 5×2' à 4–6 %, récup. 2'",
-        "duration_min": 40,
-        "rpe": 7.0,
-        "elevation_m": 270,
-        "run_min": 75,
+        "title": "Force lourde bilatérale : squat 4×4, SDT/RDL 3×4, mollets 4×6, tractions, gainage",
+        "duration_min": 50,
+        "rpe": 7.5,
+        "elevation_m": 0,
+        "run_min": 0,
         "bike_min": 0,
-        "strength_min": 0,
+        "strength_min": 50,
         "heat_min": 0,
-        "intensity_min": 26,
+        "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Petit apport glucidique si séance à jeun impossible",
-        "instructions": "Première vraie côte courue : RPE 7–7,5, cadence propre, aucune recherche de puissance maximale."
+        "instructions": "RPE 7–8, 2–3 min de récupération sur squat/SDT. Aucune série à l'échec."
       }
     },
     {
@@ -3186,20 +3030,19 @@
       "slot": "pm",
       "week": 4,
       "day_name": "Mercredi",
-      "phase": "Assimilation active",
-      "time_label": "17:45",
-      "title": "Seuil bas : 2×8' plat/faux-plat 0–3 %, récup. 3'",
-      "duration_min": 35,
-      "rpe": 6.5,
-      "elevation_m": 270,
-      "run_min": 75,
+      "phase": "Développement contrôlé",
+      "time_label": "16:40",
+      "title": "Repos — médecin à 16h40",
+      "duration_min": 0,
+      "rpe": 0,
+      "elevation_m": 0,
+      "run_min": 0,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
-      "intensity_min": 26,
+      "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides entre les deux séances",
-      "instructions": "FC 162–167. Finir avec marge.",
+      "instructions": "Pas de deuxième entraînement aujourd'hui.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3210,20 +3053,19 @@
         "slot": "pm",
         "week": 4,
         "day_name": "Mercredi",
-        "phase": "Assimilation active",
-        "time_label": "17:45",
-        "title": "Seuil bas : 2×8' plat/faux-plat 0–3 %, récup. 3'",
-        "duration_min": 35,
-        "rpe": 6.5,
-        "elevation_m": 270,
-        "run_min": 75,
+        "phase": "Développement contrôlé",
+        "time_label": "16:40",
+        "title": "Repos — médecin à 16h40",
+        "duration_min": 0,
+        "rpe": 0,
+        "elevation_m": 0,
+        "run_min": 0,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
-        "intensity_min": 26,
+        "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides entre les deux séances",
-        "instructions": "FC 162–167. Finir avec marge."
+        "instructions": "Pas de deuxième entraînement aujourd'hui."
       }
     },
     {
@@ -3234,20 +3076,19 @@
       "slot": "am",
       "week": 4,
       "day_name": "Jeudi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "06:55",
-      "title": "Renforcement léger réduit : step-down, fentes arrière, mollets fléchis, gainage",
-      "duration_min": 20,
-      "rpe": 4.5,
-      "elevation_m": 50,
-      "run_min": 35,
+      "title": "Repos",
+      "duration_min": 0,
+      "rpe": 0,
+      "elevation_m": 0,
+      "run_min": 0,
       "bike_min": 0,
-      "strength_min": 20,
+      "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
-      "instructions": "Aucun saut.",
+      "instructions": "Garder de la fraîcheur pour le seuil du soir.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3258,20 +3099,19 @@
         "slot": "am",
         "week": 4,
         "day_name": "Jeudi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "06:55",
-        "title": "Renforcement léger réduit : step-down, fentes arrière, mollets fléchis, gainage",
-        "duration_min": 20,
-        "rpe": 4.5,
-        "elevation_m": 50,
-        "run_min": 35,
+        "title": "Repos",
+        "duration_min": 0,
+        "rpe": 0,
+        "elevation_m": 0,
+        "run_min": 0,
         "bike_min": 0,
-        "strength_min": 20,
+        "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
-        "instructions": "Aucun saut."
+        "instructions": "Garder de la fraîcheur pour le seuil du soir."
       }
     },
     {
@@ -3282,20 +3122,19 @@
       "slot": "pm",
       "week": 4,
       "day_name": "Jeudi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "18:15",
-      "title": "Footing récupération 35'",
-      "duration_min": 35,
-      "rpe": 2.0,
-      "elevation_m": 50,
-      "run_min": 35,
+      "title": "Seuil bas 55' : 15' éch. + 3×8' plat/faux-plat 0–3 %, récup. 3' + retour au calme",
+      "duration_min": 55,
+      "rpe": 6.5,
+      "elevation_m": 100,
+      "run_min": 55,
       "bike_min": 0,
-      "strength_min": 20,
+      "strength_min": 0,
       "heat_min": 0,
-      "intensity_min": 0,
+      "intensity_min": 24,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
-      "instructions": "Très facile, FC 135–145.",
+      "instructions": "FC 162–167 sur les blocs. Rester contrôlé, dernière répétition aussi propre que la première.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3306,20 +3145,65 @@
         "slot": "pm",
         "week": 4,
         "day_name": "Jeudi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "18:15",
-        "title": "Footing récupération 35'",
-        "duration_min": 35,
-        "rpe": 2.0,
-        "elevation_m": 50,
-        "run_min": 35,
+        "title": "Seuil bas 55' : 15' éch. + 3×8' plat/faux-plat 0–3 %, récup. 3' + retour au calme",
+        "duration_min": 55,
+        "rpe": 6.5,
+        "elevation_m": 100,
+        "run_min": 55,
         "bike_min": 0,
-        "strength_min": 20,
+        "strength_min": 0,
+        "heat_min": 0,
+        "intensity_min": 24,
+        "long_run_min": 0,
+        "instructions": "FC 162–167 sur les blocs. Rester contrôlé, dernière répétition aussi propre que la première."
+      }
+    },
+    {
+      "source_key": "2026-09-11-am",
+      "original_date": "2026-09-11",
+      "scheduled_date": "2026-09-11",
+      "original_slot": "am",
+      "slot": "am",
+      "week": 4,
+      "day_name": "Vendredi",
+      "phase": "Développement contrôlé",
+      "time_label": "07:00",
+      "title": "Footing très facile 45'",
+      "duration_min": 45,
+      "rpe": 2.5,
+      "elevation_m": 80,
+      "run_min": 45,
+      "bike_min": 0,
+      "strength_min": 0,
+      "heat_min": 0,
+      "intensity_min": 0,
+      "long_run_min": 0,
+      "instructions": "FC 135–145, terrain roulant. Objectif : volume facile, aucune pré-fatigue volontaire.",
+      "notes": "",
+      "status": "planned",
+      "original_data": {
+        "source_key": "2026-09-11-am",
+        "original_date": "2026-09-11",
+        "scheduled_date": "2026-09-11",
+        "original_slot": "am",
+        "slot": "am",
+        "week": 4,
+        "day_name": "Vendredi",
+        "phase": "Développement contrôlé",
+        "time_label": "07:00",
+        "title": "Footing très facile 45'",
+        "duration_min": 45,
+        "rpe": 2.5,
+        "elevation_m": 80,
+        "run_min": 45,
+        "bike_min": 0,
+        "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
-        "instructions": "Très facile, FC 135–145."
+        "instructions": "FC 135–145, terrain roulant. Objectif : volume facile, aucune pré-fatigue volontaire."
       }
     },
     {
@@ -3330,20 +3214,19 @@
       "slot": "pm",
       "week": 4,
       "day_name": "Vendredi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "17:00",
-      "title": "Footing facile 40' terrain roulant",
-      "duration_min": 40,
-      "rpe": 2.5,
-      "elevation_m": 80,
-      "run_min": 40,
+      "title": "Force lourde unipodale : Bulgarian split squat 3×5/jambe, hip thrust unipodal 3×6, mollet fléchi 4×6–8, step-down 3×6, gainage",
+      "duration_min": 45,
+      "rpe": 7,
+      "elevation_m": 0,
+      "run_min": 0,
       "bike_min": 0,
-      "strength_min": 0,
+      "strength_min": 45,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
-      "instructions": "Souple, aucune pré-fatigue volontaire.",
+      "instructions": "Charge lourde mais technique stricte. Aucune série à l'échec ; contrôler particulièrement la stabilité gauche.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3354,20 +3237,19 @@
         "slot": "pm",
         "week": 4,
         "day_name": "Vendredi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "17:00",
-        "title": "Footing facile 40' terrain roulant",
-        "duration_min": 40,
-        "rpe": 2.5,
-        "elevation_m": 80,
-        "run_min": 40,
+        "title": "Force lourde unipodale : Bulgarian split squat 3×5/jambe, hip thrust unipodal 3×6, mollet fléchi 4×6–8, step-down 3×6, gainage",
+        "duration_min": 45,
+        "rpe": 7,
+        "elevation_m": 0,
+        "run_min": 0,
         "bike_min": 0,
-        "strength_min": 0,
+        "strength_min": 45,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
-        "instructions": "Souple, aucune pré-fatigue volontaire."
+        "instructions": "Charge lourde mais technique stricte. Aucune série à l'échec ; contrôler particulièrement la stabilité gauche."
       }
     },
     {
@@ -3378,20 +3260,19 @@
       "slot": "am",
       "week": 4,
       "day_name": "Samedi",
-      "phase": "Assimilation active",
+      "phase": "Développement contrôlé",
       "time_label": "08:30",
-      "title": "Sortie longue allégée 1h40 roulante",
-      "duration_min": 100,
-      "rpe": 3.5,
-      "elevation_m": 350,
-      "run_min": 100,
+      "title": "Endurance facile 50' terrain roulant",
+      "duration_min": 50,
+      "rpe": 2.5,
+      "elevation_m": 100,
+      "run_min": 50,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
-      "long_run_min": 100,
-      "nutrition": "60 g glucides/h, boire selon soif et météo",
-      "instructions": "Terrain confortable, pas de bloc soutenu. Objectif assimilation.",
+      "long_run_min": 0,
+      "instructions": "FC 135–150. Finir frais pour la sortie longue du dimanche.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3402,20 +3283,19 @@
         "slot": "am",
         "week": 4,
         "day_name": "Samedi",
-        "phase": "Assimilation active",
+        "phase": "Développement contrôlé",
         "time_label": "08:30",
-        "title": "Sortie longue allégée 1h40 roulante",
-        "duration_min": 100,
-        "rpe": 3.5,
-        "elevation_m": 350,
-        "run_min": 100,
+        "title": "Endurance facile 50' terrain roulant",
+        "duration_min": 50,
+        "rpe": 2.5,
+        "elevation_m": 100,
+        "run_min": 50,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
-        "long_run_min": 100,
-        "nutrition": "60 g glucides/h, boire selon soif et météo",
-        "instructions": "Terrain confortable, pas de bloc soutenu. Objectif assimilation."
+        "long_run_min": 0,
+        "instructions": "FC 135–150. Finir frais pour la sortie longue du dimanche."
       }
     },
     {
@@ -3426,20 +3306,19 @@
       "slot": "am",
       "week": 4,
       "day_name": "Dimanche",
-      "phase": "Assimilation active",
-      "time_label": "09:30",
-      "title": "Home trainer facile 40'",
-      "duration_min": 40,
-      "rpe": 2.0,
-      "elevation_m": 0,
-      "run_min": 0,
-      "bike_min": 40,
+      "phase": "Développement contrôlé",
+      "time_label": "09:00",
+      "title": "Sortie longue 2h10 roulante/vallonnée, 2×10' effort Veni Vici si stable",
+      "duration_min": 130,
+      "rpe": 4,
+      "elevation_m": 500,
+      "run_min": 130,
+      "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
-      "intensity_min": 0,
-      "long_run_min": 0,
-      "nutrition": "Eau",
-      "instructions": "Très facile.",
+      "intensity_min": 20,
+      "long_run_min": 130,
+      "instructions": "0–1h30 facile. Si pied/Achille/ischio restent identiques : 2×10' effort Veni Vici, récup. 5' facile, puis retour au calme. Viser environ 400–550 m D+.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3450,20 +3329,19 @@
         "slot": "am",
         "week": 4,
         "day_name": "Dimanche",
-        "phase": "Assimilation active",
-        "time_label": "09:30",
-        "title": "Home trainer facile 40'",
-        "duration_min": 40,
-        "rpe": 2.0,
-        "elevation_m": 0,
-        "run_min": 0,
-        "bike_min": 40,
+        "phase": "Développement contrôlé",
+        "time_label": "09:00",
+        "title": "Sortie longue 2h10 roulante/vallonnée, 2×10' effort Veni Vici si stable",
+        "duration_min": 130,
+        "rpe": 4,
+        "elevation_m": 500,
+        "run_min": 130,
+        "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
-        "intensity_min": 0,
-        "long_run_min": 0,
-        "nutrition": "Eau",
-        "instructions": "Très facile."
+        "intensity_min": 20,
+        "long_run_min": 130,
+        "instructions": "0–1h30 facile. Si pied/Achille/ischio restent identiques : 2×10' effort Veni Vici, récup. 5' facile, puis retour au calme. Viser environ 400–550 m D+."
       }
     },
     {
@@ -3486,7 +3364,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation et alimentation normales",
       "instructions": "Pas de course à pied.",
       "notes": "",
       "status": "planned",
@@ -3510,7 +3387,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation et alimentation normales",
         "instructions": "Pas de course à pied."
       }
     },
@@ -3534,7 +3410,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines après",
       "instructions": "RPE 7,5–8, aucune répétition lente ou forcée.",
       "notes": "",
       "status": "planned",
@@ -3558,7 +3433,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines après",
         "instructions": "RPE 7,5–8, aucune répétition lente ou forcée."
       }
     },
@@ -3582,7 +3456,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides/h si besoin",
       "instructions": "Volume aérobie sans impact. Cadence souple.",
       "notes": "",
       "status": "planned",
@@ -3606,7 +3479,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides/h si besoin",
         "instructions": "Volume aérobie sans impact. Cadence souple."
       }
     },
@@ -3630,7 +3502,6 @@
       "heat_min": 0,
       "intensity_min": 45,
       "long_run_min": 0,
-      "nutrition": "Séance alimentée",
       "instructions": "RPE 8–8,5. Pente courable, pas de mur. Si réaction du tendon à 24 h après S4 : remplacer par HT VO₂.",
       "notes": "",
       "status": "planned",
@@ -3654,7 +3525,6 @@
         "heat_min": 0,
         "intensity_min": 45,
         "long_run_min": 0,
-        "nutrition": "Séance alimentée",
         "instructions": "RPE 8–8,5. Pente courable, pas de mur. Si réaction du tendon à 24 h après S4 : remplacer par HT VO₂."
       }
     },
@@ -3678,7 +3548,6 @@
       "heat_min": 0,
       "intensity_min": 45,
       "long_run_min": 0,
-      "nutrition": "60 g glucides entre les deux séances",
       "instructions": "FC 162–168. Dernière répétition identique à la première.",
       "notes": "",
       "status": "planned",
@@ -3702,7 +3571,6 @@
         "heat_min": 0,
         "intensity_min": 45,
         "long_run_min": 0,
-        "nutrition": "60 g glucides entre les deux séances",
         "instructions": "FC 162–168. Dernière répétition identique à la première."
       }
     },
@@ -3726,7 +3594,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Contrôle excentrique en priorité ; pas de pliométrie sans validation au bilan hebdo.",
       "notes": "",
       "status": "planned",
@@ -3750,7 +3617,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Contrôle excentrique en priorité ; pas de pliométrie sans validation au bilan hebdo."
       }
     },
@@ -3774,7 +3640,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "FC 135–145.",
       "notes": "",
       "status": "planned",
@@ -3798,7 +3663,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "FC 135–145."
       }
     },
@@ -3822,7 +3686,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Très facile ; garder du jus pour samedi.",
       "notes": "",
       "status": "planned",
@@ -3846,7 +3709,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Très facile ; garder du jus pour samedi."
       }
     },
@@ -3870,7 +3732,6 @@
       "heat_min": 0,
       "intensity_min": 45,
       "long_run_min": 190,
-      "nutrition": "70 g glucides/h, 500–800 mg sodium/h, 500–750 ml/h selon météo",
       "instructions": "Reproduire le profil Veni Vici : courir les 3–6 %, marcher seulement si pente/FC l’imposent. Descentes actives mais contrôlées.",
       "notes": "",
       "status": "planned",
@@ -3894,7 +3755,6 @@
         "heat_min": 0,
         "intensity_min": 45,
         "long_run_min": 190,
-        "nutrition": "70 g glucides/h, 500–800 mg sodium/h, 500–750 ml/h selon météo",
         "instructions": "Reproduire le profil Veni Vici : courir les 3–6 %, marcher seulement si pente/FC l’imposent. Descentes actives mais contrôlées."
       }
     },
@@ -3918,7 +3778,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau ; petit-déjeuner normal",
       "instructions": "Objectif courir sur jambes fatiguées sans ajouter d’intensité. Remplacer par HT si tendon ou quadriceps anormalement sensibles.",
       "notes": "",
       "status": "planned",
@@ -3942,7 +3801,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau ; petit-déjeuner normal",
         "instructions": "Objectif courir sur jambes fatiguées sans ajouter d’intensité. Remplacer par HT si tendon ou quadriceps anormalement sensibles."
       }
     },
@@ -3966,7 +3824,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation et alimentation normales",
       "instructions": "Pas de course à pied.",
       "notes": "",
       "status": "planned",
@@ -3990,7 +3847,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation et alimentation normales",
         "instructions": "Pas de course à pied."
       }
     },
@@ -4014,7 +3870,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines",
       "instructions": "Technique stricte, RPE 7,5–8.",
       "notes": "",
       "status": "planned",
@@ -4038,7 +3893,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines",
         "instructions": "Technique stricte, RPE 7,5–8."
       }
     },
@@ -4062,7 +3916,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boire régulièrement",
       "instructions": "Endurance basse.",
       "notes": "",
       "status": "planned",
@@ -4086,7 +3939,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boire régulièrement",
         "instructions": "Endurance basse."
       }
     },
@@ -4110,7 +3962,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boire régulièrement",
       "instructions": "Endurance basse, aucune relance.",
       "notes": "",
       "status": "planned",
@@ -4134,7 +3985,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boire régulièrement",
         "instructions": "Endurance basse, aucune relance."
       }
     },
@@ -4158,7 +4008,6 @@
       "heat_min": 0,
       "intensity_min": 56,
       "long_run_min": 0,
-      "nutrition": "Séance alimentée ; 30–40 g glucides avant si besoin",
       "instructions": "RPE 8–8,5. Garder une foulée courue et économique.",
       "notes": "",
       "status": "planned",
@@ -4182,7 +4031,6 @@
         "heat_min": 0,
         "intensity_min": 56,
         "long_run_min": 0,
-        "nutrition": "Séance alimentée ; 30–40 g glucides avant si besoin",
         "instructions": "RPE 8–8,5. Garder une foulée courue et économique."
       }
     },
@@ -4206,7 +4054,6 @@
       "heat_min": 0,
       "intensity_min": 56,
       "long_run_min": 0,
-      "nutrition": "60–75 g glucides entre les séances",
       "instructions": "FC 163–168, plafond 169. Pas de dérive en fin de séance.",
       "notes": "",
       "status": "planned",
@@ -4230,7 +4077,6 @@
         "heat_min": 0,
         "intensity_min": 56,
         "long_run_min": 0,
-        "nutrition": "60–75 g glucides entre les séances",
         "instructions": "FC 163–168, plafond 169. Pas de dérive en fin de séance."
       }
     },
@@ -4254,7 +4100,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Accent quadriceps excentrique + soléaire.",
       "notes": "",
       "status": "planned",
@@ -4278,7 +4123,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Accent quadriceps excentrique + soléaire."
       }
     },
@@ -4302,7 +4146,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "FC 135–145.",
       "notes": "",
       "status": "planned",
@@ -4326,7 +4169,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "FC 135–145."
       }
     },
@@ -4350,7 +4192,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "20–30 g glucides si repas éloigné",
       "instructions": "Pré-fatigue légère uniquement.",
       "notes": "",
       "status": "planned",
@@ -4374,7 +4215,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "20–30 g glucides si repas éloigné",
         "instructions": "Pré-fatigue légère uniquement."
       }
     },
@@ -4398,7 +4238,6 @@
       "heat_min": 0,
       "intensity_min": 60,
       "long_run_min": 220,
-      "nutrition": "75–80 g glucides/h, sodium 500–800 mg/h, hydratation individualisée",
       "instructions": "Montées 3–8 % majoritairement courues. Dans le dernier tiers, rechercher une foulée encore économique sur roulant.",
       "notes": "",
       "status": "planned",
@@ -4422,7 +4261,6 @@
         "heat_min": 0,
         "intensity_min": 60,
         "long_run_min": 220,
-        "nutrition": "75–80 g glucides/h, sodium 500–800 mg/h, hydratation individualisée",
         "instructions": "Montées 3–8 % majoritairement courues. Dans le dernier tiers, rechercher une foulée encore économique sur roulant."
       }
     },
@@ -4446,7 +4284,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Jambes lourdes acceptées, douleur tendineuse croissante non. Sinon HT 30’.",
       "notes": "",
       "status": "planned",
@@ -4470,7 +4307,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Jambes lourdes acceptées, douleur tendineuse croissante non. Sinon HT 30’."
       }
     },
@@ -4494,7 +4330,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation et alimentation normales",
       "instructions": "Pas de course à pied.",
       "notes": "",
       "status": "planned",
@@ -4518,7 +4353,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation et alimentation normales",
         "instructions": "Pas de course à pied."
       }
     },
@@ -4542,7 +4376,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines",
       "instructions": "Dernière semaine de force lourde complète. Aucune série à l’échec.",
       "notes": "",
       "status": "planned",
@@ -4566,7 +4399,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines",
         "instructions": "Dernière semaine de force lourde complète. Aucune série à l’échec."
       }
     },
@@ -4590,7 +4422,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas glucidique normal",
       "instructions": "Facile.",
       "notes": "",
       "status": "planned",
@@ -4614,7 +4445,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas glucidique normal",
         "instructions": "Facile."
       }
     },
@@ -4638,7 +4468,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas glucidique normal",
       "instructions": "Facile.",
       "notes": "",
       "status": "planned",
@@ -4662,7 +4491,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas glucidique normal",
         "instructions": "Facile."
       }
     },
@@ -4686,7 +4514,6 @@
       "heat_min": 0,
       "intensity_min": 54,
       "long_run_min": 0,
-      "nutrition": "Séance alimentée",
       "instructions": "RPE 8–8,5. Aucune répétition à bloc.",
       "notes": "",
       "status": "planned",
@@ -4710,7 +4537,6 @@
         "heat_min": 0,
         "intensity_min": 54,
         "long_run_min": 0,
-        "nutrition": "Séance alimentée",
         "instructions": "RPE 8–8,5. Aucune répétition à bloc."
       }
     },
@@ -4734,7 +4560,6 @@
       "heat_min": 0,
       "intensity_min": 54,
       "long_run_min": 0,
-      "nutrition": "60–75 g glucides entre séances",
       "instructions": "FC 163–168. Contrôle strict.",
       "notes": "",
       "status": "planned",
@@ -4758,7 +4583,6 @@
         "heat_min": 0,
         "intensity_min": 54,
         "long_run_min": 0,
-        "nutrition": "60–75 g glucides entre séances",
         "instructions": "FC 163–168. Contrôle strict."
       }
     },
@@ -4782,7 +4606,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Volume réduit, qualité maximale.",
       "notes": "",
       "status": "planned",
@@ -4806,7 +4629,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Volume réduit, qualité maximale."
       }
     },
@@ -4830,7 +4652,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Très facile.",
       "notes": "",
       "status": "planned",
@@ -4854,7 +4675,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Très facile."
       }
     },
@@ -4878,7 +4698,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides pendant si besoin",
       "instructions": "Pré-fatigue contrôlée, FC 135–150.",
       "notes": "",
       "status": "planned",
@@ -4902,7 +4721,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides pendant si besoin",
         "instructions": "Pré-fatigue contrôlée, FC 135–150."
       }
     },
@@ -4926,7 +4744,6 @@
       "heat_min": 0,
       "intensity_min": 75,
       "long_run_min": 255,
-      "nutrition": "80–85 g glucides/h, sodium 500–800 mg/h, matériel proche course",
       "instructions": "Séance clé. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Descentes courues en contrôle.",
       "notes": "",
       "status": "planned",
@@ -4950,7 +4767,6 @@
         "heat_min": 0,
         "intensity_min": 75,
         "long_run_min": 255,
-        "nutrition": "80–85 g glucides/h, sodium 500–800 mg/h, matériel proche course",
         "instructions": "Séance clé. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Descentes courues en contrôle."
       }
     },
@@ -4974,7 +4790,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau + petit-déjeuner complet",
       "instructions": "Récupération active avec impact léger. HT 30–40’ si réaction tendon/quadriceps.",
       "notes": "",
       "status": "planned",
@@ -4998,7 +4813,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau + petit-déjeuner complet",
         "instructions": "Récupération active avec impact léger. HT 30–40’ si réaction tendon/quadriceps."
       }
     },
@@ -5022,7 +4836,6 @@
       "heat_min": 40,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "400–600 ml ; pesée avant/après",
       "instructions": "RPE thermique ≤6/10. Pas de combinaison imperméable.",
       "notes": "",
       "status": "planned",
@@ -5046,7 +4859,6 @@
         "heat_min": 40,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "400–600 ml ; pesée avant/après",
         "instructions": "RPE thermique ≤6/10. Pas de combinaison imperméable."
       }
     },
@@ -5070,7 +4882,6 @@
       "heat_min": 40,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines",
       "instructions": "-10 à -15 % de charge, aucune courbature recherchée.",
       "notes": "",
       "status": "planned",
@@ -5094,7 +4905,6 @@
         "heat_min": 40,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines",
         "instructions": "-10 à -15 % de charge, aucune courbature recherchée."
       }
     },
@@ -5118,7 +4928,6 @@
       "heat_min": 45,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "500–750 ml ; sodium selon sudation",
       "instructions": "Très facile, RPE thermique ≤6/10.",
       "notes": "",
       "status": "planned",
@@ -5142,7 +4951,6 @@
         "heat_min": 45,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "500–750 ml ; sodium selon sudation",
         "instructions": "Très facile, RPE thermique ≤6/10."
       }
     },
@@ -5166,7 +4974,6 @@
       "heat_min": 0,
       "intensity_min": 30,
       "long_run_min": 0,
-      "nutrition": "Petit apport glucidique si besoin",
       "instructions": "Rappel de puissance sans fatigue résiduelle.",
       "notes": "",
       "status": "planned",
@@ -5190,7 +4997,6 @@
         "heat_min": 0,
         "intensity_min": 30,
         "long_run_min": 0,
-        "nutrition": "Petit apport glucidique si besoin",
         "instructions": "Rappel de puissance sans fatigue résiduelle."
       }
     },
@@ -5214,7 +5020,6 @@
       "heat_min": 0,
       "intensity_min": 30,
       "long_run_min": 0,
-      "nutrition": "40–60 g glucides entre séances",
       "instructions": "FC 162–167. Semaine d’assimilation.",
       "notes": "",
       "status": "planned",
@@ -5238,7 +5043,6 @@
         "heat_min": 0,
         "intensity_min": 30,
         "long_run_min": 0,
-        "nutrition": "40–60 g glucides entre séances",
         "instructions": "FC 162–167. Semaine d’assimilation."
       }
     },
@@ -5262,7 +5066,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Très peu de volume.",
       "notes": "",
       "status": "planned",
@@ -5286,7 +5089,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Très peu de volume."
       }
     },
@@ -5310,7 +5112,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boire avant ; pesée avant/après",
       "instructions": "FC basse. Arrêt si frissons, vertiges, nausée ou céphalée inhabituelle.",
       "notes": "",
       "status": "planned",
@@ -5334,7 +5135,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boire avant ; pesée avant/après",
         "instructions": "FC basse. Arrêt si frissons, vertiges, nausée ou céphalée inhabituelle."
       }
     },
@@ -5358,7 +5158,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Sans chaleur. Souple.",
       "notes": "",
       "status": "planned",
@@ -5382,7 +5181,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Sans chaleur. Souple."
       }
     },
@@ -5406,7 +5204,6 @@
       "heat_min": 0,
       "intensity_min": 30,
       "long_run_min": 165,
-      "nutrition": "75 g glucides/h, hydratation normale",
       "instructions": "Objectif fraîcheur. Les blocs sont contrôlés, jamais au seuil.",
       "notes": "",
       "status": "planned",
@@ -5430,7 +5227,6 @@
         "heat_min": 0,
         "intensity_min": 30,
         "long_run_min": 165,
-        "nutrition": "75 g glucides/h, hydratation normale",
         "instructions": "Objectif fraîcheur. Les blocs sont contrôlés, jamais au seuil."
       }
     },
@@ -5454,7 +5250,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "400–600 ml ; pesée avant/après",
       "instructions": "4e exposition seulement si récupération bonne ; sinon footing normal sans chaleur.",
       "notes": "",
       "status": "planned",
@@ -5478,7 +5273,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "400–600 ml ; pesée avant/après",
         "instructions": "4e exposition seulement si récupération bonne ; sinon footing normal sans chaleur."
       }
     },
@@ -5502,7 +5296,6 @@
       "heat_min": 40,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation mesurée",
       "instructions": "Induction/entretien, aucune fatigue musculaire.",
       "notes": "",
       "status": "planned",
@@ -5526,7 +5319,6 @@
         "heat_min": 40,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation mesurée",
         "instructions": "Induction/entretien, aucune fatigue musculaire."
       }
     },
@@ -5550,7 +5342,6 @@
       "heat_min": 40,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines",
       "instructions": "Pas de progression de charge.",
       "notes": "",
       "status": "planned",
@@ -5574,7 +5365,6 @@
         "heat_min": 40,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines",
         "instructions": "Pas de progression de charge."
       }
     },
@@ -5598,7 +5388,6 @@
       "heat_min": 45,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "400–600 ml",
       "instructions": "Aucune fatigue résiduelle recherchée.",
       "notes": "",
       "status": "planned",
@@ -5622,7 +5411,6 @@
         "heat_min": 45,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "400–600 ml",
         "instructions": "Aucune fatigue résiduelle recherchée."
       }
     },
@@ -5646,7 +5434,6 @@
       "heat_min": 45,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Routine douce, pas de massage direct du tendon.",
       "notes": "",
       "status": "planned",
@@ -5670,7 +5457,6 @@
         "heat_min": 45,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Routine douce, pas de massage direct du tendon."
       }
     },
@@ -5694,7 +5480,6 @@
       "heat_min": 0,
       "intensity_min": 56,
       "long_run_min": 0,
-      "nutrition": "Séance alimentée",
       "instructions": "RPE 8–8,5. Économie de course et puissance, pas de mur.",
       "notes": "",
       "status": "planned",
@@ -5718,7 +5503,6 @@
         "heat_min": 0,
         "intensity_min": 56,
         "long_run_min": 0,
-        "nutrition": "Séance alimentée",
         "instructions": "RPE 8–8,5. Économie de course et puissance, pas de mur."
       }
     },
@@ -5742,7 +5526,6 @@
       "heat_min": 0,
       "intensity_min": 56,
       "long_run_min": 0,
-      "nutrition": "60–75 g glucides entre séances",
       "instructions": "FC 163–168 ; dernière répétition sous contrôle.",
       "notes": "",
       "status": "planned",
@@ -5766,7 +5549,6 @@
         "heat_min": 0,
         "intensity_min": 56,
         "long_run_min": 0,
-        "nutrition": "60–75 g glucides entre séances",
         "instructions": "FC 163–168 ; dernière répétition sous contrôle."
       }
     },
@@ -5790,7 +5572,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Entretien uniquement.",
       "notes": "",
       "status": "planned",
@@ -5814,7 +5595,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Entretien uniquement."
       }
     },
@@ -5838,7 +5618,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Pesée avant/après",
       "instructions": "Très facile, exposition thermique modérée.",
       "notes": "",
       "status": "planned",
@@ -5862,7 +5641,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Pesée avant/après",
         "instructions": "Très facile, exposition thermique modérée."
       }
     },
@@ -5886,7 +5664,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "30–45 g glucides pendant si besoin",
       "instructions": "Pré-fatigue légère avant la grosse sortie.",
       "notes": "",
       "status": "planned",
@@ -5910,7 +5687,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "30–45 g glucides pendant si besoin",
         "instructions": "Pré-fatigue légère avant la grosse sortie."
       }
     },
@@ -5934,7 +5710,6 @@
       "heat_min": 0,
       "intensity_min": 90,
       "long_run_min": 270,
-      "nutrition": "85–90 g glucides/h, sodium 500–800 mg/h, stratégie de course et matériel complets",
       "instructions": "Répétition générale n°1. Courir efficacement après le bloc central ; 0–6 % prioritaire. Arrêts ravito courts et planifiés.",
       "notes": "",
       "status": "planned",
@@ -5958,7 +5733,6 @@
         "heat_min": 0,
         "intensity_min": 90,
         "long_run_min": 270,
-        "nutrition": "85–90 g glucides/h, sodium 500–800 mg/h, stratégie de course et matériel complets",
         "instructions": "Répétition générale n°1. Courir efficacement après le bloc central ; 0–6 % prioritaire. Arrêts ravito courts et planifiés."
       }
     },
@@ -5982,7 +5756,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "500–750 ml ; petit-déjeuner complet",
       "instructions": "Courir seulement si jambes et tendon au niveau attendu au réveil ; sinon HT 45’. Chaleur seulement si récupération bonne.",
       "notes": "",
       "status": "planned",
@@ -6006,7 +5779,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "500–750 ml ; petit-déjeuner complet",
         "instructions": "Courir seulement si jambes et tendon au niveau attendu au réveil ; sinon HT 45’. Chaleur seulement si récupération bonne."
       }
     },
@@ -6030,7 +5802,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boire normalement",
       "instructions": "Entretien thermique uniquement.",
       "notes": "",
       "status": "planned",
@@ -6054,7 +5825,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boire normalement",
         "instructions": "Entretien thermique uniquement."
       }
     },
@@ -6078,7 +5848,6 @@
       "heat_min": 35,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25–30 g protéines",
       "instructions": "Aucune fatigue musculaire. Charges faciles et explosives techniquement.",
       "notes": "",
       "status": "planned",
@@ -6102,7 +5871,6 @@
         "heat_min": 35,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25–30 g protéines",
         "instructions": "Aucune fatigue musculaire. Charges faciles et explosives techniquement."
       }
     },
@@ -6126,7 +5894,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas riche en glucides",
       "instructions": "Endurance basse.",
       "notes": "",
       "status": "planned",
@@ -6150,7 +5917,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas riche en glucides",
         "instructions": "Endurance basse."
       }
     },
@@ -6174,7 +5940,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas riche en glucides",
       "instructions": "Endurance basse.",
       "notes": "",
       "status": "planned",
@@ -6198,7 +5963,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas riche en glucides",
         "instructions": "Endurance basse."
       }
     },
@@ -6222,7 +5986,6 @@
       "heat_min": 0,
       "intensity_min": 46,
       "long_run_min": 0,
-      "nutrition": "Séance alimentée",
       "instructions": "Volume d’intensité réduit : qualité maximale, aucune répétition à bloc.",
       "notes": "",
       "status": "planned",
@@ -6246,7 +6009,6 @@
         "heat_min": 0,
         "intensity_min": 46,
         "long_run_min": 0,
-        "nutrition": "Séance alimentée",
         "instructions": "Volume d’intensité réduit : qualité maximale, aucune répétition à bloc."
       }
     },
@@ -6270,7 +6032,6 @@
       "heat_min": 0,
       "intensity_min": 46,
       "long_run_min": 0,
-      "nutrition": "60–75 g glucides entre séances",
       "instructions": "FC 162–167. Cette séance ne doit pas laisser de fatigue vendredi.",
       "notes": "",
       "status": "planned",
@@ -6294,7 +6055,6 @@
         "heat_min": 0,
         "intensity_min": 46,
         "long_run_min": 0,
-        "nutrition": "60–75 g glucides entre séances",
         "instructions": "FC 162–167. Cette séance ne doit pas laisser de fatigue vendredi."
       }
     },
@@ -6318,7 +6078,6 @@
       "heat_min": 30,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Dernier entretien excentrique significatif. Aucun saut.",
       "notes": "",
       "status": "planned",
@@ -6342,7 +6101,6 @@
         "heat_min": 30,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Dernier entretien excentrique significatif. Aucun saut."
       }
     },
@@ -6366,7 +6124,6 @@
       "heat_min": 30,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Très facile. 2e et dernière exposition chaleur de la semaine si météo de course potentiellement chaude.",
       "notes": "",
       "status": "planned",
@@ -6390,7 +6147,6 @@
         "heat_min": 30,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Très facile. 2e et dernière exposition chaleur de la semaine si météo de course potentiellement chaude."
       }
     },
@@ -6414,7 +6170,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "50–60 g glucides/h ; dîner riche en glucides",
       "instructions": "FC 135–150. Aucun bloc rapide. Objectif arriver samedi avec une fatigue légère mais propre.",
       "notes": "",
       "status": "planned",
@@ -6438,7 +6193,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "50–60 g glucides/h ; dîner riche en glucides",
         "instructions": "FC 135–150. Aucun bloc rapide. Objectif arriver samedi avec une fatigue légère mais propre."
       }
     },
@@ -6462,7 +6216,6 @@
       "heat_min": 0,
       "intensity_min": 120,
       "long_run_min": 300,
-      "nutrition": "90 g glucides/h, sodium 500–800 mg/h à individualiser, hydratation et matériel de course complets",
       "instructions": "J-14. Séance la plus importante du plan. Les 3×40’ doivent être rapides mais maîtrisés (FC ~150–158 roulant, montées ≤162–163). Ne jamais prolonger au-delà de 5 h.",
       "notes": "",
       "status": "planned",
@@ -6486,7 +6239,6 @@
         "heat_min": 0,
         "intensity_min": 120,
         "long_run_min": 300,
-        "nutrition": "90 g glucides/h, sodium 500–800 mg/h à individualiser, hydratation et matériel de course complets",
         "instructions": "J-14. Séance la plus importante du plan. Les 3×40’ doivent être rapides mais maîtrisés (FC ~150–158 roulant, montées ≤162–163). Ne jamais prolonger au-delà de 5 h."
       }
     },
@@ -6510,7 +6262,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Petit-déjeuner complet ; réhydratation",
       "instructions": "Seulement si récupération attendue au réveil ; sinon HT 45–60’. Cette séance clôt le pic.",
       "notes": "",
       "status": "planned",
@@ -6534,7 +6285,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Petit-déjeuner complet ; réhydratation",
         "instructions": "Seulement si récupération attendue au réveil ; sinon HT 45–60’. Cette séance clôt le pic."
       }
     },
@@ -6558,7 +6308,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boire normalement",
       "instructions": "Récupération. Chaleur facultative, jamais prioritaire sur la fraîcheur.",
       "notes": "",
       "status": "planned",
@@ -6582,7 +6331,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boire normalement",
         "instructions": "Récupération. Chaleur facultative, jamais prioritaire sur la fraîcheur."
       }
     },
@@ -6606,7 +6354,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "25 g protéines",
       "instructions": "Dernière force ; aucune courbature acceptée.",
       "notes": "",
       "status": "planned",
@@ -6630,7 +6377,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "25 g protéines",
         "instructions": "Dernière force ; aucune courbature acceptée."
       }
     },
@@ -6654,7 +6400,6 @@
       "heat_min": 0,
       "intensity_min": 2,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Réduction nette du volume, fréquence conservée.",
       "notes": "",
       "status": "planned",
@@ -6678,7 +6423,6 @@
         "heat_min": 0,
         "intensity_min": 2,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Réduction nette du volume, fréquence conservée."
       }
     },
@@ -6702,7 +6446,6 @@
       "heat_min": 0,
       "intensity_min": 20,
       "long_run_min": 0,
-      "nutrition": "Petit apport glucidique si besoin",
       "instructions": "Rappel de puissance, aucune dette de fatigue.",
       "notes": "",
       "status": "planned",
@@ -6726,7 +6469,6 @@
         "heat_min": 0,
         "intensity_min": 20,
         "long_run_min": 0,
-        "nutrition": "Petit apport glucidique si besoin",
         "instructions": "Rappel de puissance, aucune dette de fatigue."
       }
     },
@@ -6750,7 +6492,6 @@
       "heat_min": 0,
       "intensity_min": 20,
       "long_run_min": 0,
-      "nutrition": "40–50 g glucides entre séances",
       "instructions": "Conserver l’intensité, couper le volume.",
       "notes": "",
       "status": "planned",
@@ -6774,7 +6515,6 @@
         "heat_min": 0,
         "intensity_min": 20,
         "long_run_min": 0,
-        "nutrition": "40–50 g glucides entre séances",
         "instructions": "Conserver l’intensité, couper le volume."
       }
     },
@@ -6798,7 +6538,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Très facile.",
       "notes": "",
       "status": "planned",
@@ -6822,7 +6561,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Très facile."
       }
     },
@@ -6846,7 +6584,6 @@
       "heat_min": 0,
       "intensity_min": 1,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Finir frais.",
       "notes": "",
       "status": "planned",
@@ -6870,7 +6607,6 @@
         "heat_min": 0,
         "intensity_min": 1,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Finir frais."
       }
     },
@@ -6894,7 +6630,6 @@
       "heat_min": 0,
       "intensity_min": 30,
       "long_run_min": 110,
-      "nutrition": "75–90 g glucides/h ; matériel course",
       "instructions": "J-7 : dernier rappel spécifique. Aucune fatigue finale.",
       "notes": "",
       "status": "planned",
@@ -6918,7 +6653,6 @@
         "heat_min": 0,
         "intensity_min": 30,
         "long_run_min": 110,
-        "nutrition": "75–90 g glucides/h ; matériel course",
         "instructions": "J-7 : dernier rappel spécifique. Aucune fatigue finale."
       }
     },
@@ -6942,7 +6676,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Eau",
       "instructions": "Récupération. Chaleur seulement si prévision de course exceptionnellement chaude.",
       "notes": "",
       "status": "planned",
@@ -6966,7 +6699,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Eau",
         "instructions": "Récupération. Chaleur seulement si prévision de course exceptionnellement chaude."
       }
     },
@@ -6990,7 +6722,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boire normalement",
       "instructions": "J-5. Supprimer si fatigue ou sommeil mauvais. Plus aucune chaleur ensuite.",
       "notes": "",
       "status": "planned",
@@ -7014,7 +6745,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boire normalement",
         "instructions": "J-5. Supprimer si fatigue ou sommeil mauvais. Plus aucune chaleur ensuite."
       }
     },
@@ -7038,7 +6768,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Boire normalement",
       "instructions": "Aucun renforcement chargé.",
       "notes": "",
       "status": "planned",
@@ -7062,7 +6791,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Boire normalement",
         "instructions": "Aucun renforcement chargé."
       }
     },
@@ -7086,7 +6814,6 @@
       "heat_min": 0,
       "intensity_min": 1,
       "long_run_min": 0,
-      "nutrition": "Glucides habituels",
       "instructions": "J-4. Finir avec beaucoup de fraîcheur.",
       "notes": "",
       "status": "planned",
@@ -7110,7 +6837,6 @@
         "heat_min": 0,
         "intensity_min": 1,
         "long_run_min": 0,
-        "nutrition": "Glucides habituels",
         "instructions": "J-4. Finir avec beaucoup de fraîcheur."
       }
     },
@@ -7134,7 +6860,6 @@
       "heat_min": 0,
       "intensity_min": 9,
       "long_run_min": 0,
-      "nutrition": "Petit apport glucidique si besoin",
       "instructions": "Une seule séance. Rester très en contrôle.",
       "notes": "",
       "status": "planned",
@@ -7158,7 +6883,6 @@
         "heat_min": 0,
         "intensity_min": 9,
         "long_run_min": 0,
-        "nutrition": "Petit apport glucidique si besoin",
         "instructions": "Une seule séance. Rester très en contrôle."
       }
     },
@@ -7182,7 +6906,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Début hausse glucidique",
       "instructions": "J-2. Très facile.",
       "notes": "",
       "status": "planned",
@@ -7206,7 +6929,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Début hausse glucidique",
         "instructions": "J-2. Très facile."
       }
     },
@@ -7230,7 +6952,6 @@
       "heat_min": 0,
       "intensity_min": 1,
       "long_run_min": 0,
-      "nutrition": "Charge glucidique, aliments familiers et peu fibreux",
       "instructions": "J-1. Aucun renforcement, aucune chaleur.",
       "notes": "",
       "status": "planned",
@@ -7254,7 +6975,6 @@
         "heat_min": 0,
         "intensity_min": 1,
         "long_run_min": 0,
-        "nutrition": "Charge glucidique, aliments familiers et peu fibreux",
         "instructions": "J-1. Aucun renforcement, aucune chaleur."
       }
     },
@@ -7278,7 +6998,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 450,
-      "nutrition": "Objectif 90 g glucides/h ; hydratation selon météo ; sodium individualisé à partir des tests",
       "instructions": "Départ discipliné : km 0–40 surtout 145–155 bpm, montées ≤160 ; bloc km 40–54 montées 158–163 plafond 165 ; progression après km 74 si jambes présentes. Arrêts ravito courts.",
       "notes": "",
       "status": "planned",
@@ -7302,7 +7021,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 450,
-        "nutrition": "Objectif 90 g glucides/h ; hydratation selon météo ; sodium individualisé à partir des tests",
         "instructions": "Départ discipliné : km 0–40 surtout 145–155 bpm, montées ≤160 ; bloc km 40–54 montées 158–163 plafond 165 ; progression après km 74 si jambes présentes. Arrêts ravito courts."
       }
     },
@@ -7326,7 +7044,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 450,
-      "nutrition": "Boire et manger dès que toléré",
       "instructions": "Récupération, pas de séance.",
       "notes": "",
       "status": "planned",
@@ -7350,7 +7067,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 450,
-        "nutrition": "Boire et manger dès que toléré",
         "instructions": "Récupération, pas de séance."
       }
     },
@@ -7374,7 +7090,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Repas normaux, protéines et glucides suffisants",
       "instructions": "Repos.",
       "notes": "",
       "status": "planned",
@@ -7398,7 +7113,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Repas normaux, protéines et glucides suffisants",
         "instructions": "Repos."
       }
     },
@@ -7422,7 +7136,6 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "nutrition": "Hydratation normale",
       "instructions": "Optionnel.",
       "notes": "",
       "status": "planned",
@@ -7446,7 +7159,6 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "nutrition": "Hydratation normale",
         "instructions": "Optionnel."
       }
     }
@@ -7460,7 +7172,6 @@
         "mainBlock": "6×3' en côte 6–10 %, récup. 3' en descente/trottant",
         "intensity": "RPE 8–8,5 ; ne pas piloter au cardio. Fin de répétitions souvent ~170–178 bpm",
         "cooldown": "10–15' facile",
-        "nutrition": "30–60 g glucides entre les deux séances du mercredi",
         "adaptation": "Choisir une pente qui reste courable ; réduire à 5 répétitions si la vitesse ou la technique chutent."
       },
       {
@@ -7470,7 +7181,6 @@
         "mainBlock": "5×4' à 5–8 %, récup. 3'",
         "intensity": "RPE 8–8,5 ; cadence et posture propres",
         "cooldown": "10' facile",
-        "nutrition": "Séance alimentée, surtout si double journée",
         "adaptation": "Éviter les murs : le parcours demande surtout de courir efficacement entre 3 et 8 %."
       },
       {
@@ -7480,7 +7190,6 @@
         "mainBlock": "8×2' à 8–10 %, récup. 2'",
         "intensity": "RPE 8–8,5, sans sprint",
         "cooldown": "10–15' facile",
-        "nutrition": "Eau ou boisson légère",
         "adaptation": "Ne pas dépasser 10 % systématiquement ; priorité à la qualité et à la tolérance de l'Achille."
       },
       {
@@ -7490,7 +7199,6 @@
         "mainBlock": "2×20' sur plat/faux-plat 0–3 %, récup. 3'",
         "intensity": "FC 162–167 bpm ; plafond 168–170, RPE ~7",
         "cooldown": "10' facile",
-        "nutrition": "30–45 g glucides avant ou pendant",
         "adaptation": "Le soir d'une double journée, ralentir pour respecter la FC plutôt que forcer l'allure."
       },
       {
@@ -7500,7 +7208,6 @@
         "mainBlock": "3×12–15' plat/faux-plat 0–3 %, récup. 2–3'",
         "intensity": "FC 162–168 bpm ; plafond 170",
         "cooldown": "10' facile",
-        "nutrition": "Boisson glucidique conseillée",
         "adaptation": "Réduire à 3×12' ou 2×15' si fatigue ou réaction tendineuse."
       },
       {
@@ -7510,7 +7217,6 @@
         "mainBlock": "Course continue",
         "intensity": "FC 135–150 bpm, RPE 2–3",
         "cooldown": "—",
-        "nutrition": "Eau ; glucides si >75–90'",
         "adaptation": "Privilégier terrain roulant ; les footings faciles servent à accumuler la course sans dérive d'intensité."
       },
       {
@@ -7520,7 +7226,6 @@
         "mainBlock": "Blocs de 15 à 40' sur terrain roulant",
         "intensity": "Roulant : FC 148–158 ; montées courables : 156–162 ; plafond 165 avant la dernière heure",
         "cooldown": "Retour facile",
-        "nutrition": "Nutrition course complète",
         "adaptation": "Marcher vite les passages très raides si courir fait fortement monter le coût énergétique."
       },
       {
@@ -7530,7 +7235,6 @@
         "mainBlock": "Structure type : 25–35 % roulant facile → 30–35 % montées/descentes → 30–40 % roulant/casse-pattes avec blocs allure course",
         "intensity": "RPE moyen 4–5 ; allure course FC 148–158 sur roulant ; montées 156–162",
         "cooldown": "10–20' faciles en fin",
-        "nutrition": "Progression vers 85–90 g glucides/h ; hydratation et sodium individualisés",
         "adaptation": "Cible D+ moyenne ~250–300 m/h, mais surtout concentrer une partie du D+ au milieu et courir les descentes en contrôle."
       },
       {
@@ -7540,7 +7244,6 @@
         "mainBlock": "2×45' faciles",
         "intensity": "RPE 2–3",
         "cooldown": "—",
-        "nutrition": "Repas normal",
         "adaptation": "Pas de sprint ; cadence souple."
       },
       {
@@ -7550,7 +7253,6 @@
         "mainBlock": "30–120' très faciles",
         "intensity": "120–145 W, cadence 85–95 rpm, RPE 2–3",
         "cooldown": "—",
-        "nutrition": "Eau, glucides si >90'",
         "adaptation": "Réduire encore si jambes lourdes ou tendon réactif."
       },
       {
@@ -7560,7 +7262,6 @@
         "mainBlock": "5×4' à 225–235 W, récup. 3' à 100–125 W",
         "intensity": "RPE 7,5–8 ; cadence 90–100 rpm",
         "cooldown": "10' à 110–140 W",
-        "nutrition": "30–45 g glucides après si une deuxième séance est prévue",
         "adaptation": "Utilisé comme transition tant que l'intensité à pied n'est pas totalement tolérée."
       }
     ],
@@ -7600,14 +7301,14 @@
       },
       {
         "week": 4,
-        "session": "Allégée",
-        "squat": "3×4 à -10/15 %",
-        "deadliftRdl": "2×4 à -10/15 %",
-        "calves": "3×10",
-        "pullups": "3×5",
-        "core": "3×45''",
-        "lightSession": "2–3 séries : fentes arrière + step-down + Swiss ball + mollets fléchis",
-        "progression": "Assimilation et consolidation du tendon."
+        "session": "2 séances lourdes : bilatérale + unipodale",
+        "squat": "Bilatérale : 4×4, RPE 7–8",
+        "deadliftRdl": "Bilatérale : SDT/RDL 3×4, RPE 7–8",
+        "calves": "Bilatérale debout 4×6 + unipodale genou fléchi 4×6–8",
+        "pullups": "Bilatérale : 4×5",
+        "core": "3×45–60''",
+        "lightSession": "Unipodale : Bulgarian split squat 3×5/jambe + hip thrust unipodal 3×6 + step-down 3×6/jambe",
+        "progression": "Deux séances lourdes mais sans échec. Mercredi bilatéral ; vendredi unipodal. Priorité à la qualité technique et à la stabilité de la jambe gauche."
       },
       {
         "week": 5,
@@ -7885,241 +7586,6 @@
     ],
     "heatRecovery": "Après chaque séance : remplacer progressivement environ 125–150 % du déficit hydrique mesuré sur les heures suivantes, avec sodium et repas normaux. Ne pas tenter de remplacer intégralement la sudation pendant l'exercice et ne jamais terminer plus lourd qu'au départ.",
     "heatSources": "Sources : https://bjsm.bmj.com/content/57/1/8 — au moins 4 expositions/semaine pour induire les adaptations et 2/semaine pour les maintenir ; https://pubmed.ncbi.nlm.nih.gov/29129022/ — décroissance progressive des adaptations après l'arrêt.",
-    "nutrition": {
-      "weightKg": 73,
-      "daily": [
-        {
-          "dayType": "Repos / récupération",
-          "carbMinGkg": 3,
-          "carbMaxGkg": 5,
-          "carbMinG": 219,
-          "carbMaxG": 365,
-          "proteinGkg": 1.6,
-          "proteinG": 116.80000000000001,
-          "application": "Lundi sans course, semaines allégées"
-        },
-        {
-          "dayType": "Endurance modérée",
-          "carbMinGkg": 5,
-          "carbMaxGkg": 7,
-          "carbMinG": 365,
-          "carbMaxG": 511,
-          "proteinGkg": 1.6,
-          "proteinG": 116.80000000000001,
-          "application": "Séance de 60–120 min"
-        },
-        {
-          "dayType": "Double intensité",
-          "carbMinGkg": 6,
-          "carbMaxGkg": 8,
-          "carbMinG": 438,
-          "carbMaxG": 584,
-          "proteinGkg": 1.7,
-          "proteinG": 124.1,
-          "application": "Mercredi : ravitailler entre les deux séances"
-        },
-        {
-          "dayType": "Longue 3–5 h",
-          "carbMinGkg": 7,
-          "carbMaxGkg": 9,
-          "carbMinG": 511,
-          "carbMaxG": 657,
-          "proteinGkg": 1.7,
-          "proteinG": 124.1,
-          "application": "Vendredi + samedi spécifique"
-        },
-        {
-          "dayType": "Très gros bloc / charge glucidique",
-          "carbMinGkg": 8,
-          "carbMaxGkg": 10,
-          "carbMinG": 584,
-          "carbMaxG": 730,
-          "proteinGkg": 1.8,
-          "proteinG": 131.4,
-          "application": "S9–S10 et 36–48 h avant course"
-        }
-      ],
-      "session": [
-        {
-          "situation": "Footing <75' facile",
-          "before": "Repas normal",
-          "duringCarbs": "0–30 g/h selon contexte",
-          "sodium": "Selon repas",
-          "fluids": "À la soif",
-          "after": "Repas normal",
-          "goal": "Ne pas sous-alimenter la semaine",
-          "limits": "Éviter le jeûne avant une double journée."
-        },
-        {
-          "situation": "Intensité 60–90'",
-          "before": "1–2 g/kg dans les 2–3 h ou collation 30–60 g",
-          "duringCarbs": "30–60 g/h",
-          "sodium": "400–700 mg/h si chaud",
-          "fluids": "400–750 ml/h",
-          "after": "1 g/kg glucides + 0,3 g/kg protéines",
-          "goal": "Qualité de séance",
-          "limits": "Adapter à la tolérance digestive."
-        },
-        {
-          "situation": "Endurance 90'–3 h",
-          "before": "1–3 g/kg 2–3 h avant",
-          "duringCarbs": "50–75 g/h",
-          "sodium": "500–900 mg/h",
-          "fluids": "500–850 ml/h",
-          "after": "Repas riche en glucides + 25–30 g protéines",
-          "goal": "Maintenir les réserves",
-          "limits": "Ne jamais forcer à boire au-delà de la soif."
-        },
-        {
-          "situation": "Sortie >3 h",
-          "before": "2–3 g/kg 2–3 h avant",
-          "duringCarbs": "75–90 g/h, progression vers 85–90 g/h sur les sorties spécifiques",
-          "sodium": "À individualiser ; 500–800 mg/h comme base tant que le test de sudation/sodium n'est pas précisé",
-          "fluids": "Environ 500–800 ml/h selon test de sudation et météo ; ne pas forcer à boire",
-          "after": "1–1,2 g/kg glucides + 0,3–0,4 g/kg protéines",
-          "goal": "Gut training et stratégie course",
-          "limits": "Ne pas prendre de nouveaux produits le jour J ; éviter de copier une dose de sodium non testée."
-        },
-        {
-          "situation": "Chaleur",
-          "before": "Commencer hydraté, urine claire à jaune pâle",
-          "duringCarbs": "Selon durée totale",
-          "sodium": "Boisson sodée adaptée à la sudation",
-          "fluids": "Pesée avant/après",
-          "after": "125–150 % du déficit sur plusieurs heures",
-          "goal": "Restaurer sans surboire",
-          "limits": "Arrêter si symptômes thermiques."
-        }
-      ],
-      "gutTraining": [
-        {
-          "week": 1,
-          "longDuration": "2h30",
-          "carbsPerHour": "55–60 g",
-          "sodiumPerHour": "500–750 mg",
-          "fluidsPerHour": "500–750 ml",
-          "format": "Boisson + 1 gel/h",
-          "success": "Aucun ballonnement",
-          "adjustment": "Conserver si toléré"
-        },
-        {
-          "week": 2,
-          "longDuration": "2h40",
-          "carbsPerHour": "60 g",
-          "sodiumPerHour": "600–800 mg",
-          "fluidsPerHour": "500–800 ml",
-          "format": "Boisson + gels",
-          "success": "Faim absente",
-          "adjustment": "Augmenter progressivement"
-        },
-        {
-          "week": 3,
-          "longDuration": "2h40",
-          "carbsPerHour": "60–65 g",
-          "sodiumPerHour": "500–800 mg",
-          "fluidsPerHour": "500–750 ml",
-          "format": "Boisson + gels",
-          "success": "Tolérance digestive + tendon stable",
-          "adjustment": "Passer à 70 g/h si parfait"
-        },
-        {
-          "week": 4,
-          "longDuration": "1h45",
-          "carbsPerHour": "55–60 g",
-          "sodiumPerHour": "Selon météo",
-          "fluidsPerHour": "À la soif",
-          "format": "Semaine légère",
-          "success": "Tolérance facile",
-          "adjustment": "Pas de progression"
-        },
-        {
-          "week": 5,
-          "longDuration": "3h",
-          "carbsPerHour": "70 g",
-          "sodiumPerHour": "500–800 mg selon sudation",
-          "fluidsPerHour": "500–800 ml",
-          "format": "Boisson + gels + petit solide",
-          "success": "Énergie stable",
-          "adjustment": "Noter exactement les produits"
-        },
-        {
-          "week": 6,
-          "longDuration": "3h45",
-          "carbsPerHour": "75 g",
-          "sodiumPerHour": "500–800 mg selon sudation",
-          "fluidsPerHour": "500–800 ml",
-          "format": "Même stratégie",
-          "success": "Pas de chute énergétique",
-          "adjustment": "Augmenter seulement si parfait"
-        },
-        {
-          "week": 7,
-          "longDuration": "4h15",
-          "carbsPerHour": "80 g",
-          "sodiumPerHour": "500–800 mg selon sudation",
-          "fluidsPerHour": "500–800 ml",
-          "format": "Mélange glucose/fructose",
-          "success": "Tolérance >4 h",
-          "adjustment": "Préparer 85–90 g/h"
-        },
-        {
-          "week": 8,
-          "longDuration": "2h30",
-          "carbsPerHour": "70–75 g",
-          "sodiumPerHour": "Selon météo",
-          "fluidsPerHour": "À la soif",
-          "format": "Assimilation",
-          "success": "Aucun stress digestif",
-          "adjustment": "Rester facile"
-        },
-        {
-          "week": 9,
-          "longDuration": "4h30",
-          "carbsPerHour": "85–90 g",
-          "sodiumPerHour": "500–800 mg/h de base, à individualiser",
-          "fluidsPerHour": "Selon test de sudation et météo",
-          "format": "Stratégie course complète",
-          "success": "Tolérance et énergie stables",
-          "adjustment": "Valider les quantités"
-        },
-        {
-          "week": 10,
-          "longDuration": "5h15",
-          "carbsPerHour": "90 g",
-          "sodiumPerHour": "Individualisé après test ; 500–800 mg/h comme base",
-          "fluidsPerHour": "Selon test, sans gain de poids",
-          "format": "Répétition générale complète",
-          "success": "Aucun symptôme majeur",
-          "adjustment": "Référence course"
-        },
-        {
-          "week": 11,
-          "longDuration": "1h45",
-          "carbsPerHour": "75–90 g",
-          "sodiumPerHour": "Selon météo",
-          "fluidsPerHour": "Selon météo",
-          "format": "Rappel produits validés",
-          "success": "Produits familiers",
-          "adjustment": "Ne rien changer"
-        },
-        {
-          "week": 12,
-          "longDuration": "Course",
-          "carbsPerHour": "85–90 g si toléré",
-          "sodiumPerHour": "Individualisé",
-          "fluidsPerHour": "Individualisé",
-          "format": "Uniquement stratégie validée",
-          "success": "Énergie stable",
-          "adjustment": "Baisser temporairement en cas de nausée"
-        }
-      ],
-      "sweatTest": {
-        "formula": "Sudation (L/h) = [poids avant − poids après + boisson ingérée − urine] ÷ durée (h)",
-        "interpretation": "Viser généralement 60–80 % des pertes sur les longues séances ; le poids ne doit pas augmenter pendant l'effort.",
-        "after": "Réhydratation progressive ; ne pas boire de grandes quantités d'eau sans sodium."
-      },
-      "taperNutrition": "Affûtage nutritionnel : J-2 et J-1, viser 8–10 g de glucides/kg/jour si bien toléré, répartis sur la journée, avec aliments familiers, moins fibreux et moins gras. Petit-déjeuner course 2–3 g/kg environ 3 h avant, puis petites prises jusqu'au départ selon tolérance. Sources : https://jissn.biomedcentral.com/articles/10.1186/s12970-019-0312-9"
-    },
     "taper": [
       {
         "j": "J-14",
@@ -8130,7 +7596,6 @@
         "relativeVolume": "100 % du pic spécifique",
         "heat": "Non",
         "strength": "Non",
-        "nutrition": "90 g glucides/h, stratégie course complète",
         "objective": "Dernier stimulus majeur spécifique au profil Veni Vici",
         "alertAdaptation": "Ne pas prolonger ; blocs supprimés si réaction tendon ou fatigue anormale."
       },
@@ -8143,7 +7608,6 @@
         "relativeVolume": "Début de baisse",
         "heat": "Non",
         "strength": "Non",
-        "nutrition": "Réhydratation + repas complet",
         "objective": "Courir sur fatigue sans créer de dommage",
         "alertAdaptation": "HT si jambes/tendon ne sont pas au niveau attendu."
       },
@@ -8156,7 +7620,6 @@
         "relativeVolume": "S11 ≈55 % du volume CAP de S10",
         "heat": "Non",
         "strength": "Non",
-        "nutrition": "75–90 g glucides/h, matériel course",
         "objective": "Dernier rappel spécifique",
         "alertAdaptation": "Aucune fatigue finale."
       },
@@ -8169,7 +7632,6 @@
         "relativeVolume": "Minimal",
         "heat": "Non",
         "strength": "Non",
-        "nutrition": "Charge glucidique, aliments familiers",
         "objective": "Déverrouillage",
         "alertAdaptation": "Supprimer si fatigue ou douleur."
       }
@@ -8180,17 +7642,17 @@
         "day": "Lundi",
         "type": "Mobilité",
         "duration": "10 min",
-        "objective": "Hanches + chevilles",
-        "content": "Knee to Wall 2' • 90/90 dynamique 2' • Fente basse rétroversion 2' • Frog Stretch 2' • Cossack Squat 2'",
-        "instruction": "Chercher de l'amplitude sans douleur."
+        "objective": "Chevilles + hanches + ischios",
+        "content": "Knee to Wall 2' • 90/90 dynamique 2' • Fente basse avec rétroversion du bassin 2' • Frog Stretch 2' • Flossing ischio dynamique 2'",
+        "instruction": "Amplitude confortable, sans à-coup. Sur l'ischio : mouvement dynamique, pas d'étirement agressif."
       },
       {
         "day": "Mardi",
         "type": "Mobilité",
         "duration": "10 min",
-        "objective": "Hanches + chevilles",
-        "content": "Même routine que lundi",
-        "instruction": "Mouvements lents, respiration calme."
+        "objective": "Chevilles + hanches + ischios",
+        "content": "Knee to Wall 2' • 90/90 dynamique 2' • Fente basse avec rétroversion du bassin 2' • Frog Stretch 2' • Flossing ischio dynamique 2'",
+        "instruction": "Amplitude confortable, sans à-coup. Sur l'ischio : mouvement dynamique, pas d'étirement agressif."
       },
       {
         "day": "Mercredi",
@@ -8204,9 +7666,9 @@
         "day": "Jeudi",
         "type": "Mobilité",
         "duration": "10 min",
-        "objective": "Hanches + chevilles",
-        "content": "Knee to Wall 2' • 90/90 dynamique 2' • Fente basse rétroversion 2' • Frog Stretch 2' • Cossack Squat 2'",
-        "instruction": "Priorité à la qualité des amplitudes."
+        "objective": "Chevilles + hanches + ischios",
+        "content": "Knee to Wall 2' • 90/90 dynamique 2' • Fente basse avec rétroversion du bassin 2' • Frog Stretch 2' • Flossing ischio dynamique 2'",
+        "instruction": "Amplitude confortable, sans à-coup. Sur l'ischio : mouvement dynamique, pas d'étirement agressif."
       },
       {
         "day": "Vendredi",
@@ -8228,12 +7690,12 @@
         "day": "Dimanche",
         "type": "Mobilité",
         "duration": "10 min",
-        "objective": "Hanches + chevilles",
-        "content": "Knee to Wall 2' • 90/90 dynamique 2' • Fente basse rétroversion 2' • Frog Stretch 2' • Cossack Squat 2'",
-        "instruction": "Séance facile, sans forcer après la sortie longue."
+        "objective": "Chevilles + hanches + ischios",
+        "content": "Knee to Wall 2' • 90/90 dynamique 2' • Fente basse avec rétroversion du bassin 2' • Frog Stretch 2' • Flossing ischio dynamique 2'",
+        "instruction": "Amplitude confortable, sans à-coup. Sur l'ischio : mouvement dynamique, pas d'étirement agressif."
       }
     ],
-    "eveningRoutineNote": "Répartition : 4 jours de mobilité, 1 jour d'étirements doux et 2 jours de récupération mécanique. La mobilité reste prioritaire pour gagner de l'amplitude aux hanches et aux chevilles.",
+    "eveningRoutineNote": "Les jours Mobilité utilisent désormais 5 exercices bas du corps (10 min au total). Les autres soirs restent orientés récupération/relâchement.",
     "courseSpecific": {
       "source": "COURSE_438476939.gpx + données officielles Veni Vici 2026",
       "principles": [

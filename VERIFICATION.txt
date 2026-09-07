@@ -1,7 +1,9 @@
-JSON valide
-84 jours
-125 séances
-S1/S2 identiques V3
-S3 CAP: 315 min = 5.25 h
-S3 vélo: 150 min
-S3 force: 95 min
+JSON valide : OUI
+Sessions totales : 126
+S4 phase : Développement contrôlé
+S4 CAP prévu : 340 min = 5.67 h
+S4 force planifiée : 95 min
+Donnée nutritionnelle dans training-plan.json : NON
+Affichage nutrition dans app.js/index.html : NON
+Exercice Cossack dans la routine : NON
+Version cache : v9

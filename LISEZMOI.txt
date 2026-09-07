@@ -1,22 +1,19 @@
-MISE À JOUR S3 — 2 SÉANCES DE FORCE
+MISE À JOUR V3.2 — S4 développement contrôlé
 
 À remplacer sur GitHub :
-- training-plan.json
 - app.js
 - index.html
 - sw.js
+- training-plan.json
 
-Ne pas remplacer : config.js, supabase-client.js, style.css, supabase.sql, icônes.
+Puis attendre le redéploiement GitHub Pages, ouvrir l'application et aller dans :
+Réglages > Mise à jour du plan > Mettre à jour les semaines futures.
 
-Après le déploiement GitHub Pages :
-1. Ouvrir l'application.
-2. Réglages > Mise à jour du plan.
-3. Cliquer « Mettre à jour les semaines futures ».
-
-Le bouton peut désormais mettre à jour la semaine en cours, mais uniquement les séances encore prévues. Les séances déjà faites/sautées et les notes sont conservées.
-
-Modification S3 :
-- jeudi : deuxième séance de force lourde/consolidation 40 min, pas de footing ;
-- dimanche : footing plat très facile 45 min si la réponse du pied/Achille reste stable, sinon HT facile ;
-- CAP S3 prévue : 5 h 15 ;
-- 2 séances de force : lundi + jeudi.
+Cette version :
+- met à jour S4 avec 5h40 de CAP environ ;
+- garde 2 séances de force lourde : bilatérale mercredi, unipodale vendredi ;
+- tient compte de l'ostéopathe lundi et du médecin mercredi 16h40 ;
+- supprime l'affichage et l'édition de la nutrition ;
+- supprime les données nutritionnelles du training-plan.json ;
+- remplace la mobilité par 5 exercices bas du corps, sans Cossack squat ;
+- conserve le mécanisme qui protège les séances déjà faites/sautées et les notes personnelles.
