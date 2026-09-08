@@ -1,9 +1,10 @@
+VÉRIFICATION V4
 JSON valide : OUI
-Sessions totales : 126
-S4 phase : Développement contrôlé
-S4 CAP prévu : 340 min = 5.67 h
-S4 force planifiée : 95 min
-Donnée nutritionnelle dans training-plan.json : NON
-Affichage nutrition dans app.js/index.html : NON
-Exercice Cossack dans la routine : NON
-Version cache : v9
+84 jours : OUI
+S4 CAP : 325 min = 5h25
+S4 vélo : 60 min
+S4 renforcement : 95 min
+Pied/cheville midi : mardi, jeudi, samedi
+Routine du soir : 2 mobilité / 2 pistolet / 2 étirements / 1 repos
+Nutrition dans le plan : NON
+app.js syntaxe Node : OK

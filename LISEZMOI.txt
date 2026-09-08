@@ -1,4 +1,4 @@
-MISE À JOUR V3.2 — S4 développement contrôlé
+MISE À JOUR V4 — PIED/CHEVILLE MIDI + FORCE TRAIL
 
 À remplacer sur GitHub :
 - app.js
@@ -6,14 +6,40 @@ MISE À JOUR V3.2 — S4 développement contrôlé
 - sw.js
 - training-plan.json
 
-Puis attendre le redéploiement GitHub Pages, ouvrir l'application et aller dans :
-Réglages > Mise à jour du plan > Mettre à jour les semaines futures.
+Ne pas remplacer :
+- config.js
+- supabase-client.js
+- style.css
+- manifest.json
+- supabase.sql
+- icons/
 
-Cette version :
-- met à jour S4 avec 5h40 de CAP environ ;
-- garde 2 séances de force lourde : bilatérale mercredi, unipodale vendredi ;
-- tient compte de l'ostéopathe lundi et du médecin mercredi 16h40 ;
-- supprime l'affichage et l'édition de la nutrition ;
-- supprime les données nutritionnelles du training-plan.json ;
-- remplace la mobilité par 5 exercices bas du corps, sans Cossack squat ;
-- conserve le mécanisme qui protège les séances déjà faites/sautées et les notes personnelles.
+Après le déploiement GitHub Pages :
+Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
+
+Semaine 4 :
+- Mardi : 15 min de course très facile avec Marie.
+- Mercredi : 1 h de home trainer facile + médecin 16h40.
+- Jeudi : 45 min EF + Force A lourde bilatérale.
+- Vendredi : 1h15 EF + renforcement spécifique trail.
+- Samedi : 55 min EF.
+- Dimanche : sortie longue 2h15, 2×10 min effort Veni Vici seulement si stable.
+
+Pied/cheville :
+- 10 min à MIDI les mardi, jeudi et samedi.
+- Short foot, toe yoga, équilibre unipodal + reaches, éversion élastique, tibialis raises.
+
+Routine du soir :
+- Lundi/jeudi : mobilité.
+- Mardi/vendredi : pistolet.
+- Mercredi/samedi : étirements doux.
+- Dimanche : repos.
+- Aucun Cossack squat.
+
+Musculation :
+- Une séance lourde bilatérale conservée.
+- Deuxième séance = renforcement spécifique trail (Bulgarian, single-leg RDL, Swiss ball, mollet fléchi, step-down, step-up, suitcase carry).
+- Volume spécifique réduit progressivement à partir de S8.
+
+Nutrition :
+- Toujours supprimée du plan et du détail des séances.

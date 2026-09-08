@@ -45,6 +45,11 @@ function num(v){ const n=Number(v); return Number.isFinite(n) ? n : 0; }
 function sortSessions(a,b){ const order={am:0,pm:1}; return a.scheduled_date.localeCompare(b.scheduled_date) || (order[a.slot]??9)-(order[b.slot]??9) || (a.time_label||'').localeCompare(b.time_label||''); }
 function planDay(date){ return state.plan?.days?.find(d => d.date === date) || null; }
 function routineForDate(date){ const name=DAY_NAMES[parseISO(date).getDay()]; return state.plan?.resources?.eveningRoutine?.find(r => r.day === name); }
+function middayFootRoutineForDate(date){
+  const name=DAY_NAMES[parseISO(date).getDay()];
+  const r=state.plan?.resources?.middayFootRoutine;
+  return r && (r.days||[]).includes(name) ? r : null;
+}
 function weekForDate(date){ const d=planDay(date); if(d) return d.week; const start=parseISO(state.plan.meta.startDate); const target=parseISO(date); return Math.max(1, Math.min(12, Math.floor((target-start)/604800000)+1)); }
 function dateForWeekDay(week, dayIndex){ return addDays(state.plan.meta.startDate,(week-1)*7+dayIndex); }
 function referenceWeek(session){ return Number(session?.original_data?.week ?? session?.week ?? 0); }
@@ -384,6 +389,8 @@ function renderToday(){
   } else html+=items.map(sessionCard).join('');
   $('todaySessions').innerHTML=html;
 
+  const midday=state.accessMode==='unauthorized'?null:middayFootRoutineForDate(state.currentDate);
+  $('middayRoutine').innerHTML=midday?`<article class="routine-card"><span class="eyebrow">Ce midi · ${esc(midday.time)} · ${esc(midday.duration)}</span><h3>${esc(midday.type)}</h3><p><strong>${esc(midday.objective)}</strong></p><p>${esc(midday.content)}</p><p class="muted">${esc(midday.instruction)}</p></article>`:'';
   const routine=state.accessMode==='unauthorized'?null:routineForDate(state.currentDate);
   $('eveningRoutine').innerHTML=routine?`<article class="routine-card"><span class="eyebrow">Ce soir · ${esc(routine.duration)}</span><h3>${esc(routine.type)}</h3><p><strong>${esc(routine.objective)}</strong></p><p>${esc(routine.content)}</p><p class="muted">${esc(routine.instruction)}</p></article>`:'';
   bindDynamicSessionButtons();
@@ -424,7 +431,7 @@ function renderReferenceDetail(lib,strength,heat){
     blocks+=mini('Objectif',lib.objective)+mini('Échauffement',lib.warmup)+mini('Bloc principal',lib.mainBlock)+mini('Intensité',lib.intensity)+mini('Retour au calme',lib.cooldown)+mini('Adaptation',lib.adaptation);
   }
   if(strength){
-    blocks+=mini(`Musculation S${strength.week}`,`Squat : ${strength.squat}\nSDT / RDL : ${strength.deadliftRdl}\nMollets : ${strength.calves}\nTractions : ${strength.pullups}\nGainage : ${strength.core}\nRenforcement léger : ${strength.lightSession}\nProgression : ${strength.progression}`);
+    blocks+=mini(`Musculation S${strength.week}`,`Squat : ${strength.squat}\nSDT / RDL : ${strength.deadliftRdl}\nMollets : ${strength.calves}\nTractions : ${strength.pullups}\nGainage : ${strength.core}\nSéance spécifique trail : ${strength.lightSession}\nProgression : ${strength.progression}`);
   }
   if(heat){
     blocks+=mini('Protocole chaleur',`${heat.modality} · séance ${heat.sessionDuration} · exposition ${heat.heatExposure}\nIntensité : ${heat.intensity}\nHabillage : ${heat.clothing}\nHydratation : ${heat.hydration}\nContrôle : ${heat.control}\n${heat.decisionSafety}`);
@@ -472,9 +479,10 @@ function renderResources(){
   const r=state.plan.resources;
   $('resourcesContent').innerHTML=`
     ${resourceDetails('Bibliothèque des séances',r.sessionLibrary.map(x=>`<div class="resource-item"><h4>${esc(x.name)}</h4><p><strong>Objectif :</strong> ${esc(x.objective)}</p><p><strong>Échauffement :</strong> ${esc(x.warmup)}</p><p><strong>Bloc :</strong> ${esc(x.mainBlock)}</p><p><strong>Intensité :</strong> ${esc(x.intensity)}</p><p class="muted">${esc(x.adaptation)}</p></div>`).join(''))}
-    ${resourceDetails('Musculation',r.strength.map(x=>`<div class="resource-item"><h4>Semaine ${x.week} · ${esc(x.session)}</h4><p>Squat : ${esc(x.squat)} · SDT/RDL : ${esc(x.deadliftRdl)} · Mollets : ${esc(x.calves)}</p><p>Tractions : ${esc(x.pullups)} · Gainage : ${esc(x.core)}</p><p>Renfo léger : ${esc(x.lightSession)}</p><p class="muted">${esc(x.progression)}</p></div>`).join('')+`<div class="resource-item"><p>${esc(r.strengthRule)}</p></div>`)}
+    ${resourceDetails('Musculation',r.strength.map(x=>`<div class="resource-item"><h4>Semaine ${x.week} · ${esc(x.session)}</h4><p>Squat : ${esc(x.squat)} · SDT/RDL : ${esc(x.deadliftRdl)} · Mollets : ${esc(x.calves)}</p><p>Tractions : ${esc(x.pullups)} · Gainage : ${esc(x.core)}</p><p><strong>Séance spécifique trail :</strong> ${esc(x.lightSession)}</p><p class="muted">${esc(x.progression)}</p></div>`).join('')+`<div class="resource-item"><p>${esc(r.strengthRule)}</p></div>`)}
     ${resourceDetails('Chaleur',r.heat.map(x=>`<div class="resource-item"><h4>S${x.week} · ${esc(x.day)} · ${esc(x.phase)}</h4><p>${esc(x.modality)} · ${esc(x.sessionDuration)} · exposition ${esc(x.heatExposure)}</p><p>${esc(x.intensity)}</p><p><strong>Hydratation :</strong> ${esc(x.hydration)}</p><p class="muted">${esc(x.decisionSafety)}</p></div>`).join('')+`<div class="resource-item"><p>${esc(r.heatRecovery)}</p></div>`)}
     ${resourceDetails('Affûtage',r.taper.map(x=>`<div class="resource-item"><h4>${esc(x.j)} · ${esc(formatDate(x.date,{day:'numeric',month:'short'}))}</h4><p>${esc(x.session)} · ${esc(x.duration)}</p><p class="muted">${esc(x.alertAdaptation)}</p></div>`).join(''))}
+    ${r.middayFootRoutine?resourceDetails('Pied / cheville — midi',`<div class="resource-item"><h4>${esc((r.middayFootRoutine.days||[]).join(' · '))} · ${esc(r.middayFootRoutine.time)} · ${esc(r.middayFootRoutine.duration)}</h4><p><strong>${esc(r.middayFootRoutine.objective)}</strong></p><p>${esc(r.middayFootRoutine.content)}</p><p class="muted">${esc(r.middayFootRoutine.instruction)}</p></div>`):''}
     ${resourceDetails('Routine du soir',r.eveningRoutine.map(x=>`<div class="resource-item"><h4>${esc(x.day)} · ${esc(x.type)} · ${esc(x.duration)}</h4><p>${esc(x.content)}</p><p class="muted">${esc(x.instruction)}</p></div>`).join(''))}
   `;
 }
