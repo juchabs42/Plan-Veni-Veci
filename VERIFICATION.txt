@@ -1,10 +1,12 @@
-VÉRIFICATION V4
+VÉRIFICATION V5
 JSON valide : OUI
-84 jours : OUI
-S4 CAP : 325 min = 5h25
-S4 vélo : 60 min
-S4 renforcement : 95 min
+S5 CAP : 390 min = 6h30
+S5 vélo : 90 min = 1h30
+S5 renforcement : 95 min = 1h35
+Total structuré : 575 min = 9h35
+Double qualité mercredi : OUI
+Sortie spécifique samedi : 3h10 / 3×15' allure course
 Pied/cheville midi : mardi, jeudi, samedi
 Routine du soir : 2 mobilité / 2 pistolet / 2 étirements / 1 repos
-Nutrition dans le plan : NON
-app.js syntaxe Node : OK
+Nutrition : absente
+Syntaxe app.js : OK

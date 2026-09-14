@@ -1,4 +1,4 @@
-MISE À JOUR V4 — PIED/CHEVILLE MIDI + FORCE TRAIL
+MISE À JOUR V5 — SEMAINE 5 PERFORMANCE / OBJECTIF VICTOIRE
 
 À remplacer sur GitHub :
 - app.js
@@ -14,32 +14,31 @@ Ne pas remplacer :
 - supabase.sql
 - icons/
 
-Après le déploiement GitHub Pages :
+Après déploiement GitHub Pages :
 Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
 
-Semaine 4 :
-- Mardi : 15 min de course très facile avec Marie.
-- Mercredi : 1 h de home trainer facile + médecin 16h40.
-- Jeudi : 45 min EF + Force A lourde bilatérale.
-- Vendredi : 1h15 EF + renforcement spécifique trail.
-- Samedi : 55 min EF.
-- Dimanche : sortie longue 2h15, 2×10 min effort Veni Vici seulement si stable.
+S5 :
+- Lundi : force lourde A 50'.
+- Mardi : HT/vélotaf endurance 90' facile.
+- Mercredi : 5×3' VO₂ côte le matin + 3×10' seuil bas le soir.
+- Jeudi : renforcement spécifique trail 45' + footing récupération 35'.
+- Vendredi : 35' endurance facile.
+- Samedi : 3h10 spécifique Veni Vici, 600–800 m D+, 3×15' allure course dans la dernière partie.
+- Dimanche : 30' récupération très facile.
+
+Charge S5 :
+- Course à pied : 6h30.
+- Vélo : 1h30.
+- Renforcement : 1h35.
+- Total structuré : 9h35.
 
 Pied/cheville :
-- 10 min à MIDI les mardi, jeudi et samedi.
+- Toujours 10' le MIDI mardi, jeudi et samedi.
 - Short foot, toe yoga, équilibre unipodal + reaches, éversion élastique, tibialis raises.
 
 Routine du soir :
-- Lundi/jeudi : mobilité.
-- Mardi/vendredi : pistolet.
-- Mercredi/samedi : étirements doux.
-- Dimanche : repos.
+- 2 mobilité / 2 pistolet / 2 étirements / 1 repos.
 - Aucun Cossack squat.
 
-Musculation :
-- Une séance lourde bilatérale conservée.
-- Deuxième séance = renforcement spécifique trail (Bulgarian, single-leg RDL, Swiss ball, mollet fléchi, step-down, step-up, suitcase carry).
-- Volume spécifique réduit progressivement à partir de S8.
-
 Nutrition :
-- Toujours supprimée du plan et du détail des séances.
+- Toujours absente du plan et du détail des séances.

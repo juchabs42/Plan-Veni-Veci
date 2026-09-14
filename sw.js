@@ -1,13 +1,13 @@
-const CACHE = 'veni-vici-v10-s4-pied-force-trail';
+const CACHE = 'veni-vici-v11-performance-s5';
 const ASSETS = [
   './',
   './index.html',
   './style.css?v=6',
   './config.js?v=6',
   './supabase-client.js?v=6',
-  './app.js?v=10',
+  './app.js?v=11',
   './manifest.json',
-  './training-plan.json?v=10',
+  './training-plan.json?v=11',
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];

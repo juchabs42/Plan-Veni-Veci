@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V4 — S4 ajustée après ostéo + pied/cheville midi + force trail",
+    "revision": "V5 — S5 développement performance / objectif victoire",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -16,8 +16,8 @@
     "workingRaceDurationMin": 450,
     "workingRaceTime": "~7h25–7h35 comme scénario de performance/victoire, à recalibrer chaque semaine",
     "trainingHistoryNote": "Base récente ~4 h à 4 h 40 CAP/sem ; semaine 1 ~4 h 30 bien tolérée ; trail 60,6 km / 3325 D+ en 7h11 en mai ; expérience Veni Vici 2023. V3 augmente le volume jusqu’à 9h30 CAP en S10 sans dépasser 5h sur une sortie unique.",
-    "achillesNote": "S3 : semaine bien tolérée ; légère perception du tendon le lendemain de la sortie spécifique, sans aggravation signalée. S4 augmente surtout le volume facile, conserve une séance seuil et 2 séances de force lourde.",
-    "weeklyReviewRule": "Chaque fin de semaine : bilan CAP/temps/D+, RPE, sommeil/fatigue, FC sur faciles, réponse du tendon au réveil et 24 h après la longue. La semaine suivante est un plafond, pas une obligation."
+    "achillesNote": "S5 : pas de douleur particulière au repos le 14/09 ; gêne habituelle des chevilles/Achille, douleur du flanc externe du pied gauche disparue. Objectif performance maintenu avec suivi de la réponse locale.",
+    "weeklyReviewRule": "Chaque fin de semaine : bilan charge réelle, qualité des séances, fatigue musculaire, sommeil/VFC, réponse des chevilles/Achille et du pied au réveil et à 24 h. Ajuster pour maximiser la continuité de l'entraînement."
   },
   "days": [
     {
@@ -475,14 +475,14 @@
       "phase": "Développement performance",
       "runMin": 0,
       "bikeMin": 0,
-      "strengthMobilityMin": 100,
+      "strengthMobilityMin": 50,
       "heatMin": 0,
       "elevationM": 0,
       "intensityMin": 0,
       "longRunMin": 0,
       "totalMin": 50,
-      "sRPE": 325.0,
-      "instructions": "Pas de course à pied. | RPE 7,5–8, aucune répétition lente ou forcée."
+      "sRPE": 375.0,
+      "instructions": "Repos matin + force lourde A le soir."
     },
     {
       "week": 5,
@@ -498,23 +498,23 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225.0,
-      "instructions": "Volume aérobie sans impact. Cadence souple."
+      "instructions": "90' endurance vélo/HT. Pied/cheville 10' à midi."
     },
     {
       "week": 5,
       "date": "2026-09-16",
       "dayName": "Mercredi",
       "phase": "Développement performance",
-      "runMin": 200,
+      "runMin": 100,
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 700,
-      "intensityMin": 90,
+      "elevationM": 290,
+      "intensityMin": 45,
       "longRunMin": 0,
       "totalMin": 100,
       "sRPE": 750.0,
-      "instructions": "RPE 8–8,5. Pente courable, pas de mur. Si réaction du tendon à 24 h après S4 : remplacer par HT VO₂. | FC 162–168. Dernière répétition identique à la première."
+      "instructions": "Journée double qualité : VO₂ côte matin + seuil bas soir."
     },
     {
       "week": 5,
@@ -523,14 +523,14 @@
       "phase": "Développement performance",
       "runMin": 35,
       "bikeMin": 0,
-      "strengthMobilityMin": 65,
+      "strengthMobilityMin": 45,
       "heatMin": 0,
-      "elevationM": 60,
+      "elevationM": 50,
       "intensityMin": 0,
       "longRunMin": 0,
       "totalMin": 80,
-      "sRPE": 340.0,
-      "instructions": "Contrôle excentrique en priorité ; pas de pliométrie sans validation au bilan hebdo. | FC 135–145."
+      "sRPE": 362.5,
+      "instructions": "Renforcement spécifique trail matin + récupération 35' soir. Pied/cheville 10' à midi."
     },
     {
       "week": 5,
@@ -541,12 +541,12 @@
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 80,
+      "elevationM": 60,
       "intensityMin": 0,
       "longRunMin": 0,
       "totalMin": 35,
-      "sRPE": 105.0,
-      "instructions": "Très facile ; garder du jus pour samedi."
+      "sRPE": 87.5,
+      "instructions": "35' faciles, préserver la fraîcheur pour samedi."
     },
     {
       "week": 5,
@@ -557,12 +557,12 @@
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 750,
+      "elevationM": 700,
       "intensityMin": 45,
       "longRunMin": 190,
       "totalMin": 190,
       "sRPE": 855.0,
-      "instructions": "Reproduire le profil Veni Vici : courir les 3–6 %, marcher seulement si pente/FC l’imposent. Descentes actives mais contrôlées."
+      "instructions": "Séance clé 3h10 spécifique Veni Vici. Pied/cheville à midi après récupération."
     },
     {
       "week": 5,
@@ -573,12 +573,12 @@
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
-      "elevationM": 50,
+      "elevationM": 30,
       "intensityMin": 0,
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60.0,
-      "instructions": "Objectif courir sur jambes fatiguées sans ajouter d’intensité. Remplacer par HT si tendon ou quadriceps anormalement sensibles."
+      "instructions": "30' récupération très facile, 40' max si jambes excellentes."
     },
     {
       "week": 6,
@@ -3356,15 +3356,15 @@
       "time_label": "",
       "title": "Repos",
       "duration_min": 0,
-      "rpe": 0.0,
+      "rpe": 0,
       "elevation_m": 0,
       "run_min": 0,
       "bike_min": 0,
-      "strength_min": 50,
+      "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Pas de course à pied.",
+      "instructions": "Repos le matin.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3379,15 +3379,15 @@
         "time_label": "",
         "title": "Repos",
         "duration_min": 0,
-        "rpe": 0.0,
+        "rpe": 0,
         "elevation_m": 0,
         "run_min": 0,
         "bike_min": 0,
-        "strength_min": 50,
+        "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "instructions": "Pas de course à pied."
+        "instructions": "Repos le matin."
       }
     },
     {
@@ -3400,9 +3400,9 @@
       "day_name": "Lundi",
       "phase": "Développement performance",
       "time_label": "18:15",
-      "title": "Force lourde A : squat 4×3, SDT 3×3, mollets lourds lents, tractions, gainage",
+      "title": "Force lourde A : squat 4×3, SDT/RDL 3×3, mollets lourds lents 4×6, tractions 4×5, gainage",
       "duration_min": 50,
-      "rpe": 6.5,
+      "rpe": 7.5,
       "elevation_m": 0,
       "run_min": 0,
       "bike_min": 0,
@@ -3410,7 +3410,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "RPE 7,5–8, aucune répétition lente ou forcée.",
+      "instructions": "RPE 7,5–8. Récup. 2'30–3' squat/SDT-RDL, 1'30–2' mollets, 2' tractions. Aucune répétition forcée.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3423,9 +3423,9 @@
         "day_name": "Lundi",
         "phase": "Développement performance",
         "time_label": "18:15",
-        "title": "Force lourde A : squat 4×3, SDT 3×3, mollets lourds lents, tractions, gainage",
+        "title": "Force lourde A : squat 4×3, SDT/RDL 3×3, mollets lourds lents 4×6, tractions 4×5, gainage",
         "duration_min": 50,
-        "rpe": 6.5,
+        "rpe": 7.5,
         "elevation_m": 0,
         "run_min": 0,
         "bike_min": 0,
@@ -3433,7 +3433,7 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "instructions": "RPE 7,5–8, aucune répétition lente ou forcée."
+        "instructions": "RPE 7,5–8. Récup. 2'30–3' squat/SDT-RDL, 1'30–2' mollets, 2' tractions. Aucune répétition forcée."
       }
     },
     {
@@ -3456,7 +3456,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Volume aérobie sans impact. Cadence souple.",
+      "instructions": "HT : 120–145 W, cadence 90–100 rpm. Volume aérobie facile sans fatigue résiduelle. Pied/cheville 10' le midi.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3479,7 +3479,7 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "instructions": "Volume aérobie sans impact. Cadence souple."
+        "instructions": "HT : 120–145 W, cadence 90–100 rpm. Volume aérobie facile sans fatigue résiduelle. Pied/cheville 10' le midi."
       }
     },
     {
@@ -3494,15 +3494,15 @@
       "time_label": "07:00",
       "title": "Côte VO₂ : 5×3' à 5–7 %, récup. 3'",
       "duration_min": 50,
-      "rpe": 8.0,
-      "elevation_m": 350,
-      "run_min": 100,
+      "rpe": 8,
+      "elevation_m": 250,
+      "run_min": 50,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
-      "intensity_min": 45,
+      "intensity_min": 15,
       "long_run_min": 0,
-      "instructions": "RPE 8–8,5. Pente courable, pas de mur. Si réaction du tendon à 24 h après S4 : remplacer par HT VO₂.",
+      "instructions": "20' échauffement puis 5×3' sur pente régulière 5–7 %, récup. 3' facile. RPE ~8/10 ; fins de répétitions ~172–178 bpm. Retour au calme.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3517,15 +3517,15 @@
         "time_label": "07:00",
         "title": "Côte VO₂ : 5×3' à 5–7 %, récup. 3'",
         "duration_min": 50,
-        "rpe": 8.0,
-        "elevation_m": 350,
-        "run_min": 100,
+        "rpe": 8,
+        "elevation_m": 250,
+        "run_min": 50,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
-        "intensity_min": 45,
+        "intensity_min": 15,
         "long_run_min": 0,
-        "instructions": "RPE 8–8,5. Pente courable, pas de mur. Si réaction du tendon à 24 h après S4 : remplacer par HT VO₂."
+        "instructions": "20' échauffement puis 5×3' sur pente régulière 5–7 %, récup. 3' facile. RPE ~8/10 ; fins de répétitions ~172–178 bpm. Retour au calme."
       }
     },
     {
@@ -3540,15 +3540,15 @@
       "time_label": "17:45",
       "title": "Seuil bas : 3×10' plat/faux-plat 0–3 %, récup. 2'",
       "duration_min": 50,
-      "rpe": 7.0,
-      "elevation_m": 350,
-      "run_min": 100,
+      "rpe": 7,
+      "elevation_m": 40,
+      "run_min": 50,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
-      "intensity_min": 45,
+      "intensity_min": 30,
       "long_run_min": 0,
-      "instructions": "FC 162–168. Dernière répétition identique à la première.",
+      "instructions": "FC 162–168. Effort régulier et contrôlé ; la 3e répétition doit rester aussi propre que la 1re.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3563,15 +3563,15 @@
         "time_label": "17:45",
         "title": "Seuil bas : 3×10' plat/faux-plat 0–3 %, récup. 2'",
         "duration_min": 50,
-        "rpe": 7.0,
-        "elevation_m": 350,
-        "run_min": 100,
+        "rpe": 7,
+        "elevation_m": 40,
+        "run_min": 50,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
-        "intensity_min": 45,
+        "intensity_min": 30,
         "long_run_min": 0,
-        "instructions": "FC 162–168. Dernière répétition identique à la première."
+        "instructions": "FC 162–168. Effort régulier et contrôlé ; la 3e répétition doit rester aussi propre que la 1re."
       }
     },
     {
@@ -3586,7 +3586,7 @@
       "time_label": "06:55",
       "title": "Renforcement spécifique trail 45' : Bulgarian, ischio unipodal, Swiss ball, mollet fléchi, step-down, step-up, abdos",
       "duration_min": 45,
-      "rpe": 6,
+      "rpe": 6.5,
       "elevation_m": 0,
       "run_min": 0,
       "bike_min": 0,
@@ -3594,7 +3594,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Bulgarian split squat 3×6/j • single-leg RDL haltère 3×6–8/j • leg curl Swiss ball 2×8–10 • mollet genou fléchi unipodal 4×8/j • step-down lent 3×6/j • step-up haut + montée de genou 3×6/j • suitcase carry 3×30–45''/côté. RPE 6–7, technique stricte.",
+      "instructions": "Bulgarian split squat 3×6/jambe • single-leg RDL haltère 3×6–8/jambe • leg curl Swiss ball 2×8–10 • mollet genou fléchi unipodal 4×8/jambe • step-down lent 3×6/jambe • step-up haut + montée de genou 3×6/jambe • suitcase carry 3×30–45''/côté. RPE 6–7. Pied/cheville 10' le midi.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3609,7 +3609,7 @@
         "time_label": "06:55",
         "title": "Renforcement spécifique trail 45' : Bulgarian, ischio unipodal, Swiss ball, mollet fléchi, step-down, step-up, abdos",
         "duration_min": 45,
-        "rpe": 6,
+        "rpe": 6.5,
         "elevation_m": 0,
         "run_min": 0,
         "bike_min": 0,
@@ -3617,7 +3617,7 @@
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "instructions": "Bulgarian split squat 3×6/j • single-leg RDL haltère 3×6–8/j • leg curl Swiss ball 2×8–10 • mollet genou fléchi unipodal 4×8/j • step-down lent 3×6/j • step-up haut + montée de genou 3×6/j • suitcase carry 3×30–45''/côté. RPE 6–7, technique stricte."
+        "instructions": "Bulgarian split squat 3×6/jambe • single-leg RDL haltère 3×6–8/jambe • leg curl Swiss ball 2×8–10 • mollet genou fléchi unipodal 4×8/jambe • step-down lent 3×6/jambe • step-up haut + montée de genou 3×6/jambe • suitcase carry 3×30–45''/côté. RPE 6–7. Pied/cheville 10' le midi."
       }
     },
     {
@@ -3632,15 +3632,15 @@
       "time_label": "18:15",
       "title": "Footing récupération 35'",
       "duration_min": 35,
-      "rpe": 2.0,
-      "elevation_m": 60,
+      "rpe": 2,
+      "elevation_m": 50,
       "run_min": 35,
       "bike_min": 0,
-      "strength_min": 20,
+      "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "FC 135–145.",
+      "instructions": "Très facile, terrain plat/roulant. FC idéalement <140–145.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3655,15 +3655,15 @@
         "time_label": "18:15",
         "title": "Footing récupération 35'",
         "duration_min": 35,
-        "rpe": 2.0,
-        "elevation_m": 60,
+        "rpe": 2,
+        "elevation_m": 50,
         "run_min": 35,
         "bike_min": 0,
-        "strength_min": 20,
+        "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "instructions": "FC 135–145."
+        "instructions": "Très facile, terrain plat/roulant. FC idéalement <140–145."
       }
     },
     {
@@ -3678,15 +3678,15 @@
       "time_label": "17:00",
       "title": "Endurance 35' terrain roulant",
       "duration_min": 35,
-      "rpe": 3.0,
-      "elevation_m": 80,
+      "rpe": 2.5,
+      "elevation_m": 60,
       "run_min": 35,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Très facile ; garder du jus pour samedi.",
+      "instructions": "Très facile. Objectif : arriver avec du jus pour la séance clé du samedi.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3701,15 +3701,15 @@
         "time_label": "17:00",
         "title": "Endurance 35' terrain roulant",
         "duration_min": 35,
-        "rpe": 3.0,
-        "elevation_m": 80,
+        "rpe": 2.5,
+        "elevation_m": 60,
         "run_min": 35,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "instructions": "Très facile ; garder du jus pour samedi."
+        "instructions": "Très facile. Objectif : arriver avec du jus pour la séance clé du samedi."
       }
     },
     {
@@ -3722,17 +3722,17 @@
       "day_name": "Samedi",
       "phase": "Développement performance",
       "time_label": "08:00",
-      "title": "Sortie longue spécifique 3h10 : 60' roulant + 70' bosses courables + 60' roulant, 3×15' allure course dans les 90 dernières minutes",
+      "title": "Sortie longue spécifique 3h10 : 60' roulant + 55' bosses courables + 75' spécifique, 3×15' allure course",
       "duration_min": 190,
       "rpe": 4.5,
-      "elevation_m": 750,
+      "elevation_m": 700,
       "run_min": 190,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 45,
       "long_run_min": 190,
-      "instructions": "Reproduire le profil Veni Vici : courir les 3–6 %, marcher seulement si pente/FC l’imposent. Descentes actives mais contrôlées.",
+      "instructions": "0–60' roulant facile • 60–115' vallonné avec bosses courables • 115–190' très spécifique Veni Vici : 5' facile + 15' allure course + 10' facile + 15' allure course + 10' facile + 15' allure course + 5' facile. Blocs ~150–158 bpm, jusqu'à ~160 dans une petite bosse. Viser ~600–800 m D+. Pied/cheville à midi après récupération.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3745,17 +3745,17 @@
         "day_name": "Samedi",
         "phase": "Développement performance",
         "time_label": "08:00",
-        "title": "Sortie longue spécifique 3h10 : 60' roulant + 70' bosses courables + 60' roulant, 3×15' allure course dans les 90 dernières minutes",
+        "title": "Sortie longue spécifique 3h10 : 60' roulant + 55' bosses courables + 75' spécifique, 3×15' allure course",
         "duration_min": 190,
         "rpe": 4.5,
-        "elevation_m": 750,
+        "elevation_m": 700,
         "run_min": 190,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 45,
         "long_run_min": 190,
-        "instructions": "Reproduire le profil Veni Vici : courir les 3–6 %, marcher seulement si pente/FC l’imposent. Descentes actives mais contrôlées."
+        "instructions": "0–60' roulant facile • 60–115' vallonné avec bosses courables • 115–190' très spécifique Veni Vici : 5' facile + 15' allure course + 10' facile + 15' allure course + 10' facile + 15' allure course + 5' facile. Blocs ~150–158 bpm, jusqu'à ~160 dans une petite bosse. Viser ~600–800 m D+. Pied/cheville à midi après récupération."
       }
     },
     {
@@ -3770,15 +3770,15 @@
       "time_label": "09:00",
       "title": "Footing récupération 30' très facile",
       "duration_min": 30,
-      "rpe": 2.0,
-      "elevation_m": 50,
+      "rpe": 2,
+      "elevation_m": 30,
       "run_min": 30,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Objectif courir sur jambes fatiguées sans ajouter d’intensité. Remplacer par HT si tendon ou quadriceps anormalement sensibles.",
+      "instructions": "30' très faciles sur plat. Maximum 40' uniquement si les jambes sont très bonnes.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -3793,15 +3793,15 @@
         "time_label": "09:00",
         "title": "Footing récupération 30' très facile",
         "duration_min": 30,
-        "rpe": 2.0,
-        "elevation_m": 50,
+        "rpe": 2,
+        "elevation_m": 30,
         "run_min": 30,
         "bike_min": 0,
         "strength_min": 0,
         "heat_min": 0,
         "intensity_min": 0,
         "long_run_min": 0,
-        "instructions": "Objectif courir sur jambes fatiguées sans ajouter d’intensité. Remplacer par HT si tendon ou quadriceps anormalement sensibles."
+        "instructions": "30' très faciles sur plat. Maximum 40' uniquement si les jambes sont très bonnes."
       }
     },
     {
