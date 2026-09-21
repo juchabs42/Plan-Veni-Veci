@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=9';
+const PLAN_URL = './training-plan.json?v=12';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -45,11 +45,7 @@ function num(v){ const n=Number(v); return Number.isFinite(n) ? n : 0; }
 function sortSessions(a,b){ const order={am:0,pm:1}; return a.scheduled_date.localeCompare(b.scheduled_date) || (order[a.slot]??9)-(order[b.slot]??9) || (a.time_label||'').localeCompare(b.time_label||''); }
 function planDay(date){ return state.plan?.days?.find(d => d.date === date) || null; }
 function routineForDate(date){ const name=DAY_NAMES[parseISO(date).getDay()]; return state.plan?.resources?.eveningRoutine?.find(r => r.day === name); }
-function middayFootRoutineForDate(date){
-  const name=DAY_NAMES[parseISO(date).getDay()];
-  const r=state.plan?.resources?.middayFootRoutine;
-  return r && (r.days||[]).includes(name) ? r : null;
-}
+function ortonRoutineForDate(date){ const name=DAY_NAMES[parseISO(date).getDay()]; return state.plan?.resources?.ortonMorningRoutine?.find(r => r.day === name); }
 function weekForDate(date){ const d=planDay(date); if(d) return d.week; const start=parseISO(state.plan.meta.startDate); const target=parseISO(date); return Math.max(1, Math.min(12, Math.floor((target-start)/604800000)+1)); }
 function dateForWeekDay(week, dayIndex){ return addDays(state.plan.meta.startDate,(week-1)*7+dayIndex); }
 function referenceWeek(session){ return Number(session?.original_data?.week ?? session?.week ?? 0); }
@@ -389,8 +385,8 @@ function renderToday(){
   } else html+=items.map(sessionCard).join('');
   $('todaySessions').innerHTML=html;
 
-  const midday=state.accessMode==='unauthorized'?null:middayFootRoutineForDate(state.currentDate);
-  $('middayRoutine').innerHTML=midday?`<article class="routine-card"><span class="eyebrow">Ce midi · ${esc(midday.time)} · ${esc(midday.duration)}</span><h3>${esc(midday.type)}</h3><p><strong>${esc(midday.objective)}</strong></p><p>${esc(midday.content)}</p><p class="muted">${esc(midday.instruction)}</p></article>`:'';
+  const orton=state.accessMode==='unauthorized'?null:ortonRoutineForDate(state.currentDate);
+  $('morningRoutine').innerHTML=orton?`<article class="routine-card"><span class="eyebrow">Au réveil · ${esc(orton.duration)}</span><h3>${esc(orton.type)}</h3><p><strong>${esc(orton.objective)}</strong></p><p>${esc(orton.content)}</p><p class="muted">${esc(orton.instruction)}</p></article>`:'';
   const routine=state.accessMode==='unauthorized'?null:routineForDate(state.currentDate);
   $('eveningRoutine').innerHTML=routine?`<article class="routine-card"><span class="eyebrow">Ce soir · ${esc(routine.duration)}</span><h3>${esc(routine.type)}</h3><p><strong>${esc(routine.objective)}</strong></p><p>${esc(routine.content)}</p><p class="muted">${esc(routine.instruction)}</p></article>`:'';
   bindDynamicSessionButtons();
@@ -482,8 +478,8 @@ function renderResources(){
     ${resourceDetails('Musculation',r.strength.map(x=>`<div class="resource-item"><h4>Semaine ${x.week} · ${esc(x.session)}</h4><p>Squat : ${esc(x.squat)} · SDT/RDL : ${esc(x.deadliftRdl)} · Mollets : ${esc(x.calves)}</p><p>Tractions : ${esc(x.pullups)} · Gainage : ${esc(x.core)}</p><p><strong>Séance spécifique trail :</strong> ${esc(x.lightSession)}</p><p class="muted">${esc(x.progression)}</p></div>`).join('')+`<div class="resource-item"><p>${esc(r.strengthRule)}</p></div>`)}
     ${resourceDetails('Chaleur',r.heat.map(x=>`<div class="resource-item"><h4>S${x.week} · ${esc(x.day)} · ${esc(x.phase)}</h4><p>${esc(x.modality)} · ${esc(x.sessionDuration)} · exposition ${esc(x.heatExposure)}</p><p>${esc(x.intensity)}</p><p><strong>Hydratation :</strong> ${esc(x.hydration)}</p><p class="muted">${esc(x.decisionSafety)}</p></div>`).join('')+`<div class="resource-item"><p>${esc(r.heatRecovery)}</p></div>`)}
     ${resourceDetails('Affûtage',r.taper.map(x=>`<div class="resource-item"><h4>${esc(x.j)} · ${esc(formatDate(x.date,{day:'numeric',month:'short'}))}</h4><p>${esc(x.session)} · ${esc(x.duration)}</p><p class="muted">${esc(x.alertAdaptation)}</p></div>`).join(''))}
-    ${r.middayFootRoutine?resourceDetails('Pied / cheville — midi',`<div class="resource-item"><h4>${esc((r.middayFootRoutine.days||[]).join(' · '))} · ${esc(r.middayFootRoutine.time)} · ${esc(r.middayFootRoutine.duration)}</h4><p><strong>${esc(r.middayFootRoutine.objective)}</strong></p><p>${esc(r.middayFootRoutine.content)}</p><p class="muted">${esc(r.middayFootRoutine.instruction)}</p></div>`):''}
-    ${resourceDetails('Routine du soir',r.eveningRoutine.map(x=>`<div class="resource-item"><h4>${esc(x.day)} · ${esc(x.type)} · ${esc(x.duration)}</h4><p>${esc(x.content)}</p><p class="muted">${esc(x.instruction)}</p></div>`).join(''))}
+    ${r.ortonMorningRoutine?resourceDetails('Eric Orton — routines au réveil ≤15 min',r.ortonMorningRoutine.map(x=>`<div class="resource-item"><h4>${esc(x.day)} · ${esc(x.type)} · ${esc(x.duration)}</h4><p><strong>${esc(x.objective)}</strong></p><p>${esc(x.content)}</p><p class="muted">${esc(x.instruction)}</p></div>`).join('')):''}
+    ${resourceDetails('Routine récupération — 1 de chaque / semaine',r.eveningRoutine.map(x=>`<div class="resource-item"><h4>${esc(x.day)} · ${esc(x.type)} · ${esc(x.duration)}</h4><p>${esc(x.content)}</p><p class="muted">${esc(x.instruction)}</p></div>`).join(''))}
   `;
 }
 function resourceDetails(title,body){ return `<details class="resource-card"><summary>${esc(title)}</summary><div class="resource-body">${body}</div></details>`; }

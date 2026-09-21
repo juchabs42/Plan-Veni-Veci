@@ -1,4 +1,4 @@
-MISE À JOUR V5 — SEMAINE 5 PERFORMANCE / OBJECTIF VICTOIRE
+MISE À JOUR V6 — S6 + COURSE DIMANCHE + ORTON MATIN
 
 À remplacer sur GitHub :
 - app.js
@@ -14,31 +14,21 @@ Ne pas remplacer :
 - supabase.sql
 - icons/
 
-Après déploiement GitHub Pages :
+Après déploiement :
 Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
 
-S5 :
-- Lundi : force lourde A 50'.
-- Mardi : HT/vélotaf endurance 90' facile.
-- Mercredi : 5×3' VO₂ côte le matin + 3×10' seuil bas le soir.
-- Jeudi : renforcement spécifique trail 45' + footing récupération 35'.
-- Vendredi : 35' endurance facile.
-- Samedi : 3h10 spécifique Veni Vici, 600–800 m D+, 3×15' allure course dans la dernière partie.
-- Dimanche : 30' récupération très facile.
+SEMAINE 6
+- Lundi : force lourde 55' ; Orton bas A au réveil.
+- Mardi : vélotaf 2×45' ; Orton haut A au réveil.
+- Mercredi TT : 5×4' VO2 côte + 3×12' seuil bas.
+- Jeudi : 40' récupération matin + renforcement spécifique trail 45' soir.
+- Vendredi TT : Orton bas B au réveil + 60' endurance roulante à midi.
+- Samedi : 30' très facile + 4×15'' progressives tôt le matin.
+- Dimanche : 2h préfatigue puis course 17 km / 300 D+ progressive à 09:15 (~3h20 total).
 
-Charge S5 :
-- Course à pied : 6h30.
-- Vélo : 1h30.
-- Renforcement : 1h35.
-- Total structuré : 9h35.
-
-Pied/cheville :
-- Toujours 10' le MIDI mardi, jeudi et samedi.
-- Short foot, toe yoga, équilibre unipodal + reaches, éversion élastique, tibialis raises.
-
-Routine du soir :
-- 2 mobilité / 2 pistolet / 2 étirements / 1 repos.
-- Aucun Cossack squat.
-
-Nutrition :
-- Toujours absente du plan et du détail des séances.
+STRUCTURE HEBDOMADAIRE
+- 2 séances de renforcement : 1 lourde + 1 spécifique trail.
+- Eric Orton : routines au réveil, 15 min maximum.
+- Suppression complète des séances pied/cheville du midi.
+- Récupération : 1 mobilité + 1 rouleau + 1 pistolet + 1 étirements par semaine.
+- Nutrition toujours absente du plan et du détail des séances.

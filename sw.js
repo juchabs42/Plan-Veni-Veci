@@ -1,13 +1,13 @@
-const CACHE = 'veni-vici-v11-performance-s5';
+const CACHE = 'veni-vici-v12-s6-course-orton';
 const ASSETS = [
   './',
   './index.html',
   './style.css?v=6',
   './config.js?v=6',
   './supabase-client.js?v=6',
-  './app.js?v=11',
+  './app.js?v=12',
   './manifest.json',
-  './training-plan.json?v=11',
+  './training-plan.json?v=12',
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];

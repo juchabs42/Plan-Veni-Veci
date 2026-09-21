@@ -1,12 +1,12 @@
-VÉRIFICATION V5
+VÉRIFICATION V6
 JSON valide : OUI
-S5 CAP : 390 min = 6h30
-S5 vélo : 90 min = 1h30
-S5 renforcement : 95 min = 1h35
-Total structuré : 575 min = 9h35
+S6 CAP : 440 min = 7h20
+S6 vélo : 90 min = 1h30
+S6 renforcement principal : 100 min = 1h40
 Double qualité mercredi : OUI
-Sortie spécifique samedi : 3h10 / 3×15' allure course
-Pied/cheville midi : mardi, jeudi, samedi
-Routine du soir : 2 mobilité / 2 pistolet / 2 étirements / 1 repos
+Dimanche : 2h préfatigue + course 17 km / 300 D+ progressive
+Pied/cheville midi : SUPPRIMÉ
+Eric Orton matin : lundi / mardi / vendredi, ≤15 min
+Routines récupération : 1 mobilité / 1 rouleau / 1 pistolet / 1 étirements
 Nutrition : absente
 Syntaxe app.js : OK
