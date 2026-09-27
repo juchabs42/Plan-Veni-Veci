@@ -1,34 +1,25 @@
-MISE À JOUR V6 — S6 + COURSE DIMANCHE + ORTON MATIN
+MISE À JOUR V7 — BILAN S6 + S7 GROS BLOC AJUSTÉ
 
-À remplacer sur GitHub :
-- app.js
-- index.html
-- sw.js
-- training-plan.json
-
-Ne pas remplacer :
-- config.js
-- supabase-client.js
-- style.css
-- manifest.json
-- supabase.sql
-- icons/
+Fichier modifié sur GitHub :
+- training-plan.json (uniquement)
 
 Après déploiement :
 Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
 
-SEMAINE 6
-- Lundi : force lourde 55' ; Orton bas A au réveil.
-- Mardi : vélotaf 2×45' ; Orton haut A au réveil.
-- Mercredi TT : 5×4' VO2 côte + 3×12' seuil bas.
-- Jeudi : 40' récupération matin + renforcement spécifique trail 45' soir.
-- Vendredi TT : Orton bas B au réveil + 60' endurance roulante à midi.
-- Samedi : 30' très facile + 4×15'' progressives tôt le matin.
-- Dimanche : 2h préfatigue puis course 17 km / 300 D+ progressive à 09:15 (~3h20 total).
+BILAN S6
+- CAP ≈ 7h00, D+ ≈ 1 500 m.
+- Mercredi double réussi (VO₂ 4×4', seuil avec pointes à 170).
+- Renfo spécifique jeudi sauté.
+- Dimanche : 1h45 préfatigue + course 17 km / 416 D+ en 1h17 (FC moy 170) → 3e.
+- VFC 46 (équilibrée), FC repos 49 : récupération OK.
 
-STRUCTURE HEBDOMADAIRE
-- 2 séances de renforcement : 1 lourde + 1 spécifique trail.
-- Eric Orton : routines au réveil, 15 min maximum.
-- Suppression complète des séances pied/cheville du midi.
-- Récupération : 1 mobilité + 1 rouleau + 1 pistolet + 1 étirements par semaine.
-- Nutrition toujours absente du plan et du détail des séances.
+SEMAINE 7 — CE QUI CHANGE
+- Lundi : force lourde allégée (squat 3×3 au lieu de 4×3), lendemain de course.
+- Mardi : vélotaf 2×45' (inchangé).
+- Mercredi : VO₂ côte 5–6×3' + seuil bas 2×15' (au lieu de 2×18').
+- Jeudi : renforcement spécifique trail PRIORITAIRE (version courte 20' si besoin) + footing 35'.
+- Vendredi : 60' roulant (D+ gardé pour samedi).
+- Samedi : sortie spécifique 4h15 inchangée, ~1 100–1 200 m D+, + règle Achille.
+- Dimanche : footing récupération 30'.
+
+Nutrition toujours absente du plan et du détail des séances.

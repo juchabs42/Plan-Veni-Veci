@@ -1,12 +1,10 @@
-VÉRIFICATION V6
+VÉRIFICATION V7
 JSON valide : OUI
-S6 CAP : 440 min = 7h20
-S6 vélo : 90 min = 1h30
-S6 renforcement principal : 100 min = 1h40
-Double qualité mercredi : OUI
-Dimanche : 2h préfatigue + course 17 km / 300 D+ progressive
-Pied/cheville midi : SUPPRIMÉ
-Eric Orton matin : lundi / mardi / vendredi, ≤15 min
-Routines récupération : 1 mobilité / 1 rouleau / 1 pistolet / 1 étirements
+Semaines 1 à 6 : inchangées
+S7 CAP : 475 min = 7h55 (S6 réelle ≈ 7h00)
+S7 D+ : ≈ 1 720 m (S6 réelle ≈ 1 500 m)
+S7 vélo : 90 min = 1h30
+S7 renforcement : 100 min (force lourde 55' + spécifique trail 45')
+S7 sortie longue : 4h15 (samedi)
+Semaines 8 à 12 : inchangées (recalage au prochain bilan)
 Nutrition : absente
-Syntaxe app.js : OK
