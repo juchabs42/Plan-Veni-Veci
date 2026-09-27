@@ -1,4 +1,4 @@
-MISE À JOUR V7.1 — BILAN S6 + S7 RECALÉE SUR TES CONTRAINTES
+MISE À JOUR V7.2 — BILAN S6 + S7 RECALÉE SUR TES CONTRAINTES
 
 Fichier modifié sur GitHub :
 - training-plan.json (uniquement)
@@ -16,9 +16,11 @@ BILAN S6
 SEMAINE 7 — CE QUI CHANGE
 - Lundi (TT) : vélo d'intérieur 45' facile à midi + force lourde allégée le soir (squat 3×3).
 - Mardi : repos (RDV médecin du sport, pas de vélotaf).
-- Mercredi : VO₂ côte 5–6×3' + seuil bas 2×15' (au lieu de 2×18').
-- Jeudi (TT) : renforcement spécifique trail PRIORITAIRE le matin + footing 40' à midi.
-- Vendredi : 60' roulant (D+ gardé pour samedi).
+- Mercredi (bureau) : renforcement spécifique trail PRIORITAIRE le matin + footing 40' le soir.
+- Jeudi (TT) : VO₂ côte 5–6×3' le matin + seuil bas 2×15' le soir (au lieu de 2×18').
+- Vendredi : 50' roulant (double qualité la veille).
+
+RÈGLE : télétravail en milieu de semaine = jour des grosses séances.
 - Samedi : sortie spécifique 4h15 inchangée, ~1 100–1 200 m D+, + règle Achille.
 - Dimanche : footing récupération 30'.
 
