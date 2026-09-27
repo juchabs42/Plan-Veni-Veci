@@ -1,9 +1,9 @@
-VÉRIFICATION V7
+VÉRIFICATION V7.1
 JSON valide : OUI
 Semaines 1 à 6 : inchangées
-S7 CAP : 475 min = 7h55 (S6 réelle ≈ 7h00)
+S7 CAP : 480 min = 8h00 (S6 réelle ≈ 7h00)
 S7 D+ : ≈ 1 720 m (S6 réelle ≈ 1 500 m)
-S7 vélo : 90 min = 1h30
+S7 vélo : 45 min (mardi sans vélotaf)
 S7 renforcement : 100 min (force lourde 55' + spécifique trail 45')
 S7 sortie longue : 4h15 (samedi)
 Semaines 8 à 12 : inchangées (recalage au prochain bilan)
