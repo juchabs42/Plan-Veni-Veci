@@ -1,4 +1,4 @@
-MISE À JOUR V7.2 — BILAN S6 + S7 RECALÉE SUR TES CONTRAINTES
+MISE À JOUR V7.3 — BILAN S6 + S7 RECALÉE SUR TES CONTRAINTES
 
 Fichier modifié sur GitHub :
 - training-plan.json (uniquement)

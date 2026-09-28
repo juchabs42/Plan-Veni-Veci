@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V7.2 — S7 : qualité déplacée au jeudi (TT), renfo + footing mercredi",
+    "revision": "V7.3 — S7 + stratégie FC Veni Vici",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -24,7 +24,8 @@
         "summary": "CAP ≈ 7h00 réelles, D+ ≈ 1 500 m. Mercredi double réussi (4×4' au lieu de 5, seuil avec pointes à 170). Renfo spécifique jeudi sauté. Dimanche : 1h45 préfatigue FC 137 + course 17 km / 416 D+ en 1h17, FC moy 170, 3e. Allure OK, montées tenues, prudence en descente technique. VFC 46 (équilibrée), FC repos 49, sommeil 7,5–8,2 h.",
         "decision": "S7 maintenue quasi intégralement : force lundi allégée, seuil mercredi 2×15', renfo spécifique prioritaire, vendredi roulant, sortie 4h15 samedi avec règle Achille. V7.1 : lundi TT = vélo 45' + force ; mardi repos (RDV médecin du sport, pas de vélotaf) ; jeudi TT = renfo matin + footing 40' midi. V7.2 : mercredi (bureau) renfo + footing 40', jeudi (TT) VO₂ + seuil, vendredi 50' roulant."
       }
-    ]
+    ],
+    "raceHrStrategy": "Veni Vici : plafond 165 jusqu'au km ~60 (sauf quelques secondes en haut de bosse). Côtes 155–165 (marcher si >165 sur pente raide), plat/roulant 150–158, descentes 140–152 (piloter à la foulée, pas à la FC). Après km 60 : libre jusqu'à 168–170 si jambes OK. Référence : Veni Vici 2023 FC moy 163 sur 6h11 ; course 17 km du 27/09 FC 170 = effort seuil."
   },
   "days": [
     {
@@ -793,7 +794,7 @@
       "longRunMin": 255,
       "totalMin": 255,
       "sRPE": 1275.0,
-      "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici, FC ~150–158, pas plus. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes."
+      "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici : plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes."
     },
     {
       "week": 7,
@@ -4751,7 +4752,7 @@
       "heat_min": 0,
       "intensity_min": 75,
       "long_run_min": 255,
-      "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici, FC ~150–158, pas plus. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes.",
+      "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici : plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -4774,7 +4775,7 @@
         "heat_min": 0,
         "intensity_min": 75,
         "long_run_min": 255,
-        "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici, FC ~150–158, pas plus. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes."
+        "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici : plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes."
       }
     },
     {

@@ -1,4 +1,4 @@
-VÉRIFICATION V7.2
+VÉRIFICATION V7.3
 JSON valide : OUI
 Semaines 1 à 6 : inchangées
 S7 CAP : 470 min = 7h50 (S6 réelle ≈ 7h00)
