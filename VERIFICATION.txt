@@ -1,10 +1,10 @@
-VÉRIFICATION V7.3
+VÉRIFICATION V8
 JSON valide : OUI
-Semaines 1 à 6 : inchangées
-S7 CAP : 470 min = 7h50 (S6 réelle ≈ 7h00)
-S7 D+ : ≈ 1 700 m (S6 réelle ≈ 1 500 m)
-S7 vélo : 45 min (mardi sans vélotaf)
-S7 renforcement : 100 min (force lourde 55' + spécifique trail 45')
-S7 sortie longue : 4h15 (samedi)
-Semaines 8 à 12 : inchangées (recalage au prochain bilan)
+Semaines 1 à 7 : inchangées
+Chaleur : 0 minute de S8 à S12, aucune mention dans les séances
+S8 CAP : 7h05 (assimilation, sortie longue 2h45)
+S9 CAP : 9h25 (sortie clé 4h30)
+S10 CAP : 9h30 (répétition générale 5h)
+S11 CAP : 5h15 (affûtage)
+Règle Achille : ne pas faire bondir volume ET D+ la même semaine
 Nutrition : absente

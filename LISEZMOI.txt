@@ -1,4 +1,4 @@
-MISE À JOUR V7.3 — BILAN S6 + S7 RECALÉE SUR TES CONTRAINTES
+MISE À JOUR V8 — CHALEUR RETIRÉE, VOLUME À PIED
 
 Fichier modifié sur GitHub :
 - training-plan.json (uniquement)
@@ -6,22 +6,20 @@ Fichier modifié sur GitHub :
 Après déploiement :
 Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
 
-BILAN S6
-- CAP ≈ 7h00, D+ ≈ 1 500 m.
-- Mercredi double réussi (VO₂ 4×4', seuil avec pointes à 170).
-- Renfo spécifique jeudi sauté.
-- Dimanche : 1h45 préfatigue + course 17 km / 416 D+ en 1h17 (FC moy 170) → 3e.
-- VFC 46 (équilibrée), FC repos 49 : récupération OK.
+DÉCISION DU 28/09
+Protocole chaleur abandonné : priorité au sommeil et au volume de course à pied
+(séances limitées à 45' sur home trainer, gain attendu jugé trop faible, course au frais en novembre).
 
-SEMAINE 7 — CE QUI CHANGE
-- Lundi (TT) : vélo d'intérieur 45' facile à midi + force lourde allégée le soir (squat 3×3).
-- Mardi : repos (RDV médecin du sport, pas de vélotaf).
-- Mercredi (bureau) : renforcement spécifique trail PRIORITAIRE le matin + footing 40' le soir.
-- Jeudi (TT) : VO₂ côte 5–6×3' le matin + seuil bas 2×15' le soir (au lieu de 2×18').
-- Vendredi : 50' roulant (double qualité la veille).
+CE QUI CHANGE (S8 à S12)
+- S8 : HT chaleur lundi → HT 40' très facile ; HT chaleur mardi → footing facile 45' plat ;
+  footing chaleur jeudi → footing facile 40' ; dimanche → footing récup 40' sans chaleur.
+- S9 : HT chaleur lundi → HT 40' très facile ; HT chaleur mardi → footing facile 35' plat ;
+  footing chaleur jeudi → footing facile 45' ; dimanche → footing récup 45'.
+- S10 : HT lundi et footing jeudi sans chaleur.
+- S11–S12 : plus aucune mention de chaleur.
 
-RÈGLE : télétravail en milieu de semaine = jour des grosses séances.
-- Samedi : sortie spécifique 4h15 inchangée, ~1 100–1 200 m D+, + règle Achille.
-- Dimanche : footing récupération 30'.
+VOLUME CAP (course à pied)
+S7 7h50 → S8 7h05 (assimilation) → S9 9h25 → S10 9h30 (pic) → S11 5h15 → S12 course.
 
+S7 (en cours) : inchangée.
 Nutrition toujours absente du plan et du détail des séances.
