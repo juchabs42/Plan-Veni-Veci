@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V8 — Chaleur retirée (S8–S12), remplacée par du volume à pied",
+    "revision": "V9 — Appli épurée (consignes clés seules, sans boutons) + sortie de samedi détaillée",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -794,7 +794,7 @@
       "longRunMin": 255,
       "totalMin": 255,
       "sRPE": 1275.0,
-      "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici : plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes."
+      "instructions": "Séance clé · ~1 100–1 200 m D+ au total.\n\n1) 0–80' ROULANT (~150 m D+)\nPlat et faux-plats entre −3 et +3 %, jamais plus de 10–15 m D+ par km. Endurance FC 135–150, on court tout.\n\n2) 80–180' MONTÉES / DESCENTES (~750 m D+)\nCôtes longues de 1 à 3 km à 5–12 % (80 à 250 m D+ chacune), descentes courues à 6–12 %.\nMontées FC 150–162 ; marche active si pente >12–15 % ou FC >165. Descentes relâchées, pas courts, en contrôle.\n→ 1er bloc allure course : 110'–135' (côtes 155–165, descentes relâchées).\n→ Récup 10' en endurance (FC <145) : 135'–145'.\n\n3) 180–255' ROULANT CASSE-PATTES (~250 m D+)\nEnchaînement de petites bosses courtes (20–50 m D+, 30'' à 3' à 4–10 %) et de faux-plats, sans vraie récupération entre elles : on relance en haut de chaque bosse.\n→ 180'–185' endurance\n→ 2e bloc allure course : 185'–210'\n→ Récup 10' en endurance (FC <145) : 210'–220'\n→ 3e bloc allure course : 220'–245'\n→ Retour au calme 10' très facile.\n\nAllure course = plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Priorité à la vitesse sur le roulant malgré la fatigue.\n\nRègle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc 2."
     },
     {
       "week": 7,
@@ -4742,7 +4742,7 @@
       "day_name": "Samedi",
       "phase": "Gros bloc 1",
       "time_label": "07:30",
-      "title": "Grosse sortie spécifique 4h15 : 80' roulant + 100' bloc montées/descentes + 75' roulant/casse-pattes, 3×25' allure course dans les 2h30 finales",
+      "title": "Sortie spécifique 4h15 : 80' roulant + 100' montées/descentes + 75' casse-pattes, dont 3×25' allure course (récup 10')",
       "duration_min": 255,
       "rpe": 5.0,
       "elevation_m": 1150,
@@ -4752,7 +4752,7 @@
       "heat_min": 0,
       "intensity_min": 75,
       "long_run_min": 255,
-      "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici : plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes.",
+      "instructions": "Séance clé · ~1 100–1 200 m D+ au total.\n\n1) 0–80' ROULANT (~150 m D+)\nPlat et faux-plats entre −3 et +3 %, jamais plus de 10–15 m D+ par km. Endurance FC 135–150, on court tout.\n\n2) 80–180' MONTÉES / DESCENTES (~750 m D+)\nCôtes longues de 1 à 3 km à 5–12 % (80 à 250 m D+ chacune), descentes courues à 6–12 %.\nMontées FC 150–162 ; marche active si pente >12–15 % ou FC >165. Descentes relâchées, pas courts, en contrôle.\n→ 1er bloc allure course : 110'–135' (côtes 155–165, descentes relâchées).\n→ Récup 10' en endurance (FC <145) : 135'–145'.\n\n3) 180–255' ROULANT CASSE-PATTES (~250 m D+)\nEnchaînement de petites bosses courtes (20–50 m D+, 30'' à 3' à 4–10 %) et de faux-plats, sans vraie récupération entre elles : on relance en haut de chaque bosse.\n→ 180'–185' endurance\n→ 2e bloc allure course : 185'–210'\n→ Récup 10' en endurance (FC <145) : 210'–220'\n→ 3e bloc allure course : 220'–245'\n→ Retour au calme 10' très facile.\n\nAllure course = plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Priorité à la vitesse sur le roulant malgré la fatigue.\n\nRègle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc 2.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -4765,7 +4765,7 @@
         "day_name": "Samedi",
         "phase": "Gros bloc 1",
         "time_label": "07:30",
-        "title": "Grosse sortie spécifique 4h15 : 80' roulant + 100' bloc montées/descentes + 75' roulant/casse-pattes, 3×25' allure course dans les 2h30 finales",
+        "title": "Sortie spécifique 4h15 : 80' roulant + 100' montées/descentes + 75' casse-pattes, dont 3×25' allure course (récup 10')",
         "duration_min": 255,
         "rpe": 5.0,
         "elevation_m": 1150,
@@ -4775,7 +4775,7 @@
         "heat_min": 0,
         "intensity_min": 75,
         "long_run_min": 255,
-        "instructions": "Séance clé. ~1 100–1 200 m D+. Après le bloc vallonné, priorité à la vitesse de course sur terrain roulant malgré la fatigue. Allure course = effort Veni Vici : plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Descentes courues en contrôle. Règle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc montées/descentes."
+        "instructions": "Séance clé · ~1 100–1 200 m D+ au total.\n\n1) 0–80' ROULANT (~150 m D+)\nPlat et faux-plats entre −3 et +3 %, jamais plus de 10–15 m D+ par km. Endurance FC 135–150, on court tout.\n\n2) 80–180' MONTÉES / DESCENTES (~750 m D+)\nCôtes longues de 1 à 3 km à 5–12 % (80 à 250 m D+ chacune), descentes courues à 6–12 %.\nMontées FC 150–162 ; marche active si pente >12–15 % ou FC >165. Descentes relâchées, pas courts, en contrôle.\n→ 1er bloc allure course : 110'–135' (côtes 155–165, descentes relâchées).\n→ Récup 10' en endurance (FC <145) : 135'–145'.\n\n3) 180–255' ROULANT CASSE-PATTES (~250 m D+)\nEnchaînement de petites bosses courtes (20–50 m D+, 30'' à 3' à 4–10 %) et de faux-plats, sans vraie récupération entre elles : on relance en haut de chaque bosse.\n→ 180'–185' endurance\n→ 2e bloc allure course : 185'–210'\n→ Récup 10' en endurance (FC <145) : 210'–220'\n→ 3e bloc allure course : 220'–245'\n→ Retour au calme 10' très facile.\n\nAllure course = plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans chercher la FC. Priorité à la vitesse sur le roulant malgré la fatigue.\n\nRègle Achille : douleur >2/10 en descente ou raideur matinale nouvelle vendredi/samedi → version 3h30 roulante sans le bloc 2."
       }
     },
     {

@@ -1,25 +1,21 @@
-MISE À JOUR V8 — CHALEUR RETIRÉE, VOLUME À PIED
+MISE À JOUR V9 — APPLI ÉPURÉE + SORTIE DE SAMEDI DÉTAILLÉE
 
-Fichier modifié sur GitHub :
-- training-plan.json (uniquement)
+Fichiers modifiés sur GitHub :
+- app.js, index.html, sw.js (affichage)
+- training-plan.json (sortie du samedi 3/10)
 
 Après déploiement :
-Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
+1. Recharger l'appli (fermer/rouvrir ; cache passé en veni-vici-v13-epure).
+2. Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
 
-DÉCISION DU 28/09
-Protocole chaleur abandonné : priorité au sommeil et au volume de course à pied
-(séances limitées à 45' sur home trainer, gain attendu jugé trop faible, course au frais en novembre).
+AFFICHAGE
+- Chaque séance n'affiche plus que ses consignes clés (plus de « Voir le détail de la séance »).
+- Boutons Modifier / Déplacer / Fait / Sauter retirés des cartes.
 
-CE QUI CHANGE (S8 à S12)
-- S8 : HT chaleur lundi → HT 40' très facile ; HT chaleur mardi → footing facile 45' plat ;
-  footing chaleur jeudi → footing facile 40' ; dimanche → footing récup 40' sans chaleur.
-- S9 : HT chaleur lundi → HT 40' très facile ; HT chaleur mardi → footing facile 35' plat ;
-  footing chaleur jeudi → footing facile 45' ; dimanche → footing récup 45'.
-- S10 : HT lundi et footing jeudi sans chaleur.
-- S11–S12 : plus aucune mention de chaleur.
-
-VOLUME CAP (course à pied)
-S7 7h50 → S8 7h05 (assimilation) → S9 9h25 → S10 9h30 (pic) → S11 5h15 → S12 course.
-
-S7 (en cours) : inchangée.
-Nutrition toujours absente du plan et du détail des séances.
+SAMEDI 3/10 — SORTIE SPÉCIFIQUE 4h15 (~1 100–1 200 m D+)
+1) 0–80' roulant : −3 à +3 %, ≤10–15 m D+/km, FC 135–150.
+2) 80–180' montées/descentes : côtes de 1–3 km à 5–12 % (80–250 m D+), descentes 6–12 %.
+   1er bloc allure course 110'–135', récup 10'.
+3) 180–255' casse-pattes : bosses de 20–50 m D+ (30'' à 3', 4–10 %) enchaînées.
+   2e bloc 185'–210', récup 10', 3e bloc 220'–245', retour au calme 10'.
+Allure course : plat 150–158, côtes 155–165 (plafond 165).

@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=12';
+const PLAN_URL = './training-plan.json?v=13';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -393,7 +393,6 @@ function renderToday(){
 }
 
 function sessionCard(s){
-  const lib=getLibraryDetail(s), strength=getStrengthDetail(s), heat=getHeatDetail(s);
   const badges=[];
   if(s.duration_min) badges.push(`<span class="pill">${s.duration_min} min</span>`);
   if(num(s.rpe)>0) badges.push(`<span class="pill">RPE ${String(s.rpe).replace('.',',')}</span>`);
@@ -401,7 +400,6 @@ function sessionCard(s){
   if(isMoved(s)) badges.push('<span class="pill amber">Déplacée</span>'); else if(isModified(s)) badges.push('<span class="pill amber">Modifiée</span>');
   if(s.status==='done') badges.push('<span class="pill green">✓ Faite</span>');
   if(s.status==='skipped') badges.push('<span class="pill red">Sautée</span>');
-  const detail=renderReferenceDetail(lib,strength,heat);
   return `<article class="session-card ${esc(s.status)}" data-session-id="${esc(s.id)}">
     <div class="session-main">
       <div class="session-top"><div><div class="session-slot">${slotLabel(s.slot)}</div><div class="session-time">${esc(s.time_label||'Horaire libre')}</div></div><span class="pill ${s.status==='done'?'green':''}">${STATUS_LABELS[s.status]||'Prévue'}</span></div>
@@ -409,14 +407,8 @@ function sessionCard(s){
       <div class="badges">${badges.join('')}</div>
       ${s.instructions?`<div class="detail-block"><div class="detail-label">Consignes clés</div><div class="detail-text">${esc(s.instructions)}</div></div>`:''}
       ${s.notes?`<div class="detail-block"><div class="detail-label">Mes notes</div><div class="detail-text">${esc(s.notes)}</div></div>`:''}
-      ${detail}
     </div>
-    ${state.accessMode==='owner'||state.demoMode?`<div class="session-actions">
-      <button data-action="edit" data-id="${esc(s.id)}">Modifier</button>
-      <button data-action="move" data-id="${esc(s.id)}">Déplacer</button>
-      <button class="done-btn" data-action="done" data-id="${esc(s.id)}">${s.status==='done'?'Annuler ✓':'Fait ✓'}</button>
-      <button class="skip-btn" data-action="skip" data-id="${esc(s.id)}">${s.status==='skipped'?'Rétablir':'Sauter'}</button>
-    </div>`:`<div class="readonly-strip">Lecture seule · aucune modification possible</div>`}
+    ${state.accessMode==='viewer'?`<div class="readonly-strip">Lecture seule</div>`:''}
   </article>`;
 }
 
