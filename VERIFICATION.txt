@@ -1,4 +1,4 @@
-VÉRIFICATION V9
+VÉRIFICATION V10
 JSON valide : OUI
 Semaines 1 à 7 : inchangées
 Chaleur : 0 minute de S8 à S12, aucune mention dans les séances
@@ -10,3 +10,4 @@ Règle Achille : ne pas faire bondir volume ET D+ la même semaine
 Nutrition : absente
 Appli : cartes sans détail ni boutons (node --check OK)
 Samedi 3/10 : structure détaillée + récup 10' entre les 3×25'
+S8–S11 : accélérations, endurance longue S9, descentes, mollets ajoutés ; S9 ~9h40, S10 ~9h45

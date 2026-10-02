@@ -1,21 +1,16 @@
-MISE À JOUR V9 — APPLI ÉPURÉE + SORTIE DE SAMEDI DÉTAILLÉE
+MISE À JOUR V10 — RÉSISTANCE À LA FATIGUE (S8 à S11)
 
-Fichiers modifiés sur GitHub :
-- app.js, index.html, sw.js (affichage)
-- training-plan.json (sortie du samedi 3/10)
+Fichier modifié sur GitHub : training-plan.json
+Après déploiement : Réglages → Mettre à jour les semaines futures.
 
-Après déploiement :
-1. Recharger l'appli (fermer/rouvrir ; cache passé en veni-vici-v13-epure).
-2. Réglages → Mise à jour du plan → Mettre à jour les semaines futures.
+LES 4 AJOUTS
+1. Accélérations : 5×20'' relâchées en fin de 2 footings par semaine (S8 mar/ven, S9 mar/ven, S10 jeu).
+2. Endurance longue facile : 75' plat en S9, le lendemain de la double qualité (FC 135–145).
+   Vendredi S9 raccourci à 25' + accélérations.
+3. Descentes rapides contrôlées en fin de séance de côte :
+   S8 4×45'', S9 5×1', S10 5×1' (pente roulante 6–10 %, remontée en marche/trot).
+4. Circuit mollets endurance 10–12' juste après 2 footings par semaine (S8–S10), version courte en S11 :
+   mollet genou fléchi, mollet jambe tendue en descente lente, tenue sur pointes, équilibre yeux fermés.
 
-AFFICHAGE
-- Chaque séance n'affiche plus que ses consignes clés (plus de « Voir le détail de la séance »).
-- Boutons Modifier / Déplacer / Fait / Sauter retirés des cartes.
-
-SAMEDI 3/10 — SORTIE SPÉCIFIQUE 4h15 (~1 100–1 200 m D+)
-1) 0–80' roulant : −3 à +3 %, ≤10–15 m D+/km, FC 135–150.
-2) 80–180' montées/descentes : côtes de 1–3 km à 5–12 % (80–250 m D+), descentes 6–12 %.
-   1er bloc allure course 110'–135', récup 10'.
-3) 180–255' casse-pattes : bosses de 20–50 m D+ (30'' à 3', 4–10 %) enchaînées.
-   2e bloc 185'–210', récup 10', 3e bloc 220'–245', retour au calme 10'.
-Allure course : plat 150–158, côtes 155–165 (plafond 165).
+VOLUME COURSE : S8 ~7h20 · S9 ~9h40 · S10 ~9h45 (pic) · S11 ~5h15
+S7 (en cours) : inchangée.
