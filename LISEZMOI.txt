@@ -1,16 +1,16 @@
-MISE À JOUR V10 — RÉSISTANCE À LA FATIGUE (S8 à S11)
+MISE À JOUR V11 — AJUSTEMENTS « RÉSISTANCE À LA FATIGUE » (vidéo D. Roche)
 
 Fichier modifié sur GitHub : training-plan.json
 Après déploiement : Réglages → Mettre à jour les semaines futures.
 
-LES 4 AJOUTS
-1. Accélérations : 5×20'' relâchées en fin de 2 footings par semaine (S8 mar/ven, S9 mar/ven, S10 jeu).
-2. Endurance longue facile : 75' plat en S9, le lendemain de la double qualité (FC 135–145).
-   Vendredi S9 raccourci à 25' + accélérations.
-3. Descentes rapides contrôlées en fin de séance de côte :
-   S8 4×45'', S9 5×1', S10 5×1' (pente roulante 6–10 %, remontée en marche/trot).
-4. Circuit mollets endurance 10–12' juste après 2 footings par semaine (S8–S10), version courte en S11 :
-   mollet genou fléchi, mollet jambe tendue en descente lente, tenue sur pointes, équilibre yeux fermés.
+CHANGEMENTS
+1. S9 : endurance longue facile portée à 90' (75' si le tendon d'Achille réagit).
+2. Fin des sorties longues S8 (2h45) et S11 (1h50) : gel 15' avant la fin, puis 4×30'' en côte, redescente en marchant.
+3. Circuit après footing : step-ups unipodaux 3×8/jambe ajoutés aux mollets (≈14').
+4. S9, sortie de 4h30 : test 100 g/h si les 90 g/h du 3/10 passent bien.
 
-VOLUME COURSE : S8 ~7h20 · S9 ~9h40 · S10 ~9h45 (pic) · S11 ~5h15
-S7 (en cours) : inchangée.
+RAPPEL V10 (toujours en place)
+- 5×20'' accélérations en fin de 2 footings/semaine.
+- Descentes rapides en fin de séance de côte (S8 4×45'', S9–S10 5×1').
+
+VOLUME COURSE : S8 ~7h25 · S9 ~9h55 · S10 ~9h45 · S11 ~5h20
