@@ -1,14 +1,10 @@
-VÉRIFICATION V11
+VÉRIFICATION V12
 JSON valide : OUI
 Semaines 1 à 7 : inchangées
-Chaleur : 0 minute de S8 à S12, aucune mention dans les séances
-S8 CAP : 7h05 (assimilation, sortie longue 2h45)
-S9 CAP : 9h25 (sortie clé 4h30)
-S10 CAP : 9h30 (répétition générale 5h)
-S11 CAP : 5h15 (affûtage)
-Règle Achille : ne pas faire bondir volume ET D+ la même semaine
-Nutrition : seulement gel avant les 4×30'' (S8, S11) et test 100 g/h (S9)
-Appli : cartes sans détail ni boutons (node --check OK)
-Samedi 3/10 : structure détaillée + récup 10' entre les 3×25'
-S8–S11 : accélérations, endurance longue S9, descentes, mollets ajoutés ; S9 ~9h40, S10 ~9h45
-V11 : endurance longue S9 90', 4×30'' fin de sortie S8/S11, step-ups, test 100 g/h S9
+S8 : ~7h30 de course, ~1 100 m D+, sortie longue 2h45 (assimilation)
+S9 : ~10h00, ~1 900 m D+, sortie 4h30 (3×30' allure course, test 100 g/h)
+S10 : ~9h45, ~2 150 m D+, répétition générale 5h le 24/10
+S11 : ~5h20 (affûtage) ; S12 : course le 7/11
+Consignes détaillées : toutes les séances S8–S12
+Nutrition : stratégie de course validée sur les sorties longues ; test 100 g/h le 17/10
+Talon gauche : ondes de choc prévues en novembre, après la course
