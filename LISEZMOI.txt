@@ -1,27 +1,18 @@
-MISE À JOUR V12 — S8 RECALÉE + CONSIGNES DÉTAILLÉES (S8 à S12)
+MISE À JOUR V13 — SORTIE LONGUE DÉCALÉE AU DIMANCHE + VENDREDI ADAPTÉ (MOLLETS)
 
 Fichier modifié sur GitHub : training-plan.json
 Après déploiement : Réglages → Mettre à jour les semaines futures.
 
-S8 (5–11 oct.) — ASSIMILATION (~7h30 de course, ~1 100 m D+)
-- Lundi (TT) : HT 40' très facile, pas de force (quadriceps).
-- Mardi : footing 40' + 5×20'', puis force allégée juste après.
-- Mercredi (TT) : côtes 5×2' + 4×45'' en descente (si quadriceps OK) / seuil 2×10'.
-- Jeudi : renforcement réduit + footing 40'.
-- Vendredi : 55' + 5×20''.
-- Samedi : 2h45 avec 2×15' allure course + gel + 4×30'' en côte. Pesée avant/après.
-- Dimanche : footing récup 40' + circuit step-ups/mollets.
+CE QUI CHANGE EN S8 (5–11 oct.)
+- Vendredi 09/10 : footing 50' (au lieu de 55') + test de 2 accélérations progressives avant les 5×20''. Arrêt si douleur ≥ 3/10 (mollet, Achille, talon). Ajout d'une routine « APRÈS LA SÉANCE » (marche, balle/rouleau sur les mollets, voûte plantaire, étirement très doux, repas protéiné) : aucun renfort des mollets avant lundi.
+- Samedi 10/10 : footing facile 40' (FC < 135) + 10' de mobilité douce sans charge ; préparation nutrition/matériel pour la sortie longue. Plus de circuit step-ups/mollets.
+- Dimanche 11/10, 08:30 : sortie longue 2h45 (2×15' allure course + gel + 4×30'' en côte) avec décision au réveil :
+  mollet ≤ 3/10 et Achille silencieux → séance complète ; mollet tendu → sans les 4×30'' ; Achille > 2/10 → 2h00 d'endurance seule.
+  Pesée avant/après et nutrition 90 g/h inchangées.
 
-CONSIGNES DÉTAILLÉES POUR TOUTES LES SÉANCES S8 À S12
-Échauffement, corps de séance, récupérations, retour au calme, repères FC/VAP/RPE et adaptations.
-
-RÉCUPÉRATIONS
-- 5×20'' accélérations : 1'–1'30 trot très lent ou marche, repartir quand FC < 130.
-- 4×30'' en côte (fin de sortie longue) : 2' (redescente trot puis marche), repartir quand FC < 135.
-- Descentes (4×45'' ou 5×1') : remontée en marche active ≈ 1'30–2'.
-
-NUTRITION DE COURSE VALIDÉE (04/10) : alternance gel 45 g / iso 45 g toutes les 30' (≈ 90 g/h).
-Test 100 g/h (toutes les 27') et caféine fractionnée le 17/10.
-
-TALON GAUCHE : traitement par ondes de choc prévu en novembre, après la course (noté dans le plan).
-S9–S10 : placement des doubles séances à ajuster selon les jours de télétravail au bilan.
+À RETENIR
+- Mollets chargés après le travail lesté (20 kg, excentrique) : éviter ce type de travail dans les 72 h avant une séance clé.
+- S9–S10 : mollets en isométrique ou montées lentes sans charge lourde.
+- Cuisse gauche : silencieuse depuis jeudi ; pas de squats/fentes tant qu'elle n'est pas 100 %.
+- Talon gauche : ondes de choc prévues en novembre, après la course.
+- Bilan hebdomadaire S8 décalé au dimanche soir / lundi (après la sortie longue).

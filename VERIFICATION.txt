@@ -1,10 +1,8 @@
-VÉRIFICATION V12
+VÉRIFICATION V13
 JSON valide : OUI
-Semaines 1 à 7 : inchangées
-S8 : ~7h30 de course, ~1 100 m D+, sortie longue 2h45 (assimilation)
-S9 : ~10h00, ~1 900 m D+, sortie 4h30 (3×30' allure course, test 100 g/h)
-S10 : ~9h45, ~2 150 m D+, répétition générale 5h le 24/10
-S11 : ~5h20 (affûtage) ; S12 : course le 7/11
-Consignes détaillées : toutes les séances S8–S12
-Nutrition : stratégie de course validée sur les sorties longues ; test 100 g/h le 17/10
+Semaines 1 à 7 : inchangées ; S9–S12 : inchangées
+S8 : vendredi 09/10 adapté (50' + test mollet + routine post-séance), samedi 10/10 footing 40' + mobilité, dimanche 11/10 sortie longue 2h45 (08:30)
+Totaux journaliers (jours 09, 10, 11/10) recalculés ; volume S8 quasi inchangé
+Statuts des séances : planned (aucune séance faite écrasée)
+Mollet droit : travail lesté exclu avant lundi ; décision au réveil dimanche
 Talon gauche : ondes de choc prévues en novembre, après la course
