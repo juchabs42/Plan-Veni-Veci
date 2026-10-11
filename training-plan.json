@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V13 — S8 : sortie longue décalée au dimanche matin (11/10), vendredi adapté (mollets) + routine post-séance",
+    "revision": "V14 — S9 calée : TT lundi, double qualité mercredi, vendredi 30' max, sortie clé 4h30 décalée au dimanche 18/10",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -28,12 +28,18 @@
         "week": 7,
         "summary": "CAP 8h13 (93 km, ~1 900 m D+). Jeudi double réussi (VO₂ 6×3' FC fin 176–178, VAP ≈ 18,7 km/h ; seuil 2×15' ≈ 3:50/km VAP à FC 165). Samedi 44' / 144 m D+ (au lieu de 30' très facile). Dimanche (sortie décalée à cause de la pluie) : 47,0 km / 1 130 m D+ en 4h10, blocs 3×25' VAP 4:42 / 4:36 / 4:40 à FC 153 / 158 / 160 (rendement −3,7 %, caféine 200 mg à 2h30), foulée stable, descentes tenues 4:04–4:10/km. Nutrition alternance gel/iso toutes les 30' : estomac 9/10. Quadriceps entamés (1 113 m D−). VFC 7 j 46 → 51 (équilibrée), sommeil 7–8 h, FC repos 44–51.",
         "decision": "S8 assimilation maintenue (~7h20, ~1 100 m D+, sortie 2h45). Lundi (TT) HT seul ; force allégée mardi juste après le footing ; mercredi (TT) double qualité légère, descentes seulement si quadriceps OK. Consignes détaillées (échauffement, corps, récupérations, repères FC/VAP, adaptations) pour toutes les séances S8–S12."
+      },
+      {
+        "week": 8,
+        "summary": "CAP 7h10 (83 km, 1 257 m D+) + 40' vélo. Mercredi double : côtes 5×2' FC 159–161 (fin 167–175) + 4×45'' descentes à ~20 km/h ; seuil 2×10' à 3:55 / 3:58 /km FC 161 / 162. Vendredi 45' + 5×20'' (17,6–18,3 km/h, récups trop rapides). Samedi 40' FC 136. Dimanche 2h34, 29,4 km, 583 m D+, FC 142 : blocs 2×15' 4:44 (net montant) / 4:20 (net descendant) à FC 155 / 153, 4×30'' côte cadence 185. Nutrition gel/iso toutes les 30' (90 g/h) sans souci ; pas de pesée. VFC 45–56 puis 40 le 11/10 (sous la zone 41–53), FC repos 47 → 52, sommeil 6,6–7,8 h (score 70–71) les 2 dernières nuits. Cuisse gauche OK, mollet 0–1/10, Achille silencieux au repos ; talon gauche 1–2/10 à la marche, 3–4/10 après la sortie longue.",
+        "decision": "S9 : lundi (TT) HT + force (mollets en isométrique, test cuisse au squat) ; mardi footing + accélérations + circuit léger ; mercredi double qualité (descentes seulement si talon ≤ 2/10) ; jeudi renfo + 90' ; vendredi 30' max ; samedi footing 40' ; sortie clé 4h30 le dimanche 18/10 (test 100 g/h + caféine 2×100 mg), décision au réveil selon le talon. Surveillance VFC/FC repos lundi matin."
       }
     ],
     "raceHrStrategy": "Veni Vici : plafond 165 jusqu'au km ~60 (sauf quelques secondes en haut de bosse). Côtes 155–165 (marcher si >165 sur pente raide), plat/roulant 150–158, descentes 140–152 (piloter à la foulée, pas à la FC). Après km 60 : libre jusqu'à 168–170 si jambes OK. Référence : Veni Vici 2023 FC moy 163 sur 6h11 ; course 17 km du 27/09 FC 170 = effort seuil.",
     "durabilityAdditions": "02/10 (vidéo D. Roche) : 2×5×20'' accélérations/sem en fin de footing ; endurance longue facile 80' le lendemain de la double qualité en S9 ; descentes rapides contrôlées en fin de séance de côte (S8 4×45'', S9–S10 5×1') ; circuit mollets endurance 10–12' juste après 2 footings/sem (S8–S10), version courte en S11. Pas d'antioxydants à forte dose ni d'AINS ; fer selon prise de sang. 02/10 (transcription lue) : endurance longue S9 portée à 90' ; gel + 4×30'' côte en fin de sortie longue S8 et S11 ; step-ups unipodaux ajoutés au circuit post-footing ; test 100 g/h sur la 4h30 de S9. Marqueur de résistance à la fatigue suivi : VAP à FC 155–160 dans les blocs allure course vs seuil frais (3:50/km à FC 165).",
     "raceNutrition": "Validée le 04/10 (4h10, 47 km) : alternance gel 45 g / iso 45 g (bue en 10–15') toutes les 30' ≈ 90 g/h, estomac 9/10 aux intensités de course (FC 153–160). Caféine : 200 mg d'un coup à 2h30, bien tolérés. Test 100 g/h (prise toutes les 27') et caféine fractionnée (100 mg à 2h + 100 mg à 3h15) le 17/10.",
-    "calfNote": "09/10 : mollet droit chargé (séries lestées 20 kg sur marche surélevée, excentrique), Achille silencieux, talon très peu gêné, cuisse gauche OK depuis jeudi. Footing du 08/10 parfait (FC 131 moy, 142 max). Décisions : vendredi 50' + test avant les 5×20'' ; samedi footing 40' + mobilité douce ; sortie longue dimanche 11/10 08:30 avec décision au réveil. Éviter le travail lesté/excentrique des mollets dans les 72 h avant une séance clé ; S9–S10 : mollets en isométrique ou montées lentes sans charge lourde."
+    "calfNote": "09/10 : mollet droit chargé (séries lestées 20 kg sur marche surélevée, excentrique), Achille silencieux, talon très peu gêné, cuisse gauche OK depuis jeudi. Footing du 08/10 parfait (FC 131 moy, 142 max). Décisions : vendredi 50' + test avant les 5×20'' ; samedi footing 40' + mobilité douce ; sortie longue dimanche 11/10 08:30 avec décision au réveil. Éviter le travail lesté/excentrique des mollets dans les 72 h avant une séance clé ; S9–S10 : mollets en isométrique ou montées lentes sans charge lourde.",
+    "heelNote": "11/10 : talon gauche 1–2/10 à la marche, rien au repos, 3–4/10 après la sortie longue de 2h34. Décision de Julien : course maintenue quoi qu'il arrive, ondes de choc en novembre. Règles : pas de talon sous le niveau de la marche (étirements, excentrique), chaussures avec drop pour les sorties longues, descentes en contrôle ; talon > 2/10 à la marche au réveil → pas de descentes rapides ; ≥ 4/10 ou boiterie → sortie raccourcie sur le roulant."
   },
   "days": [
     {
@@ -946,7 +952,7 @@
       "longRunMin": 0,
       "totalMin": 85,
       "sRPE": 347.5,
-      "instructions": "0–10' : 110–120 W, puis 120–135 W, cadence 85–95 rpm, FC < 130. Récupération active, aucune relance. | Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets debout lourds 3×8, repos 1'30.\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec."
+      "instructions": "0–10' : 110–120 W, puis 120–135 W, cadence 85–95 rpm, FC < 130. Récupération active, aucune relance.\nCONDITION : VFC du matin < 41 ou FC repos ≥ 52 → pas de force ce soir, seulement 15' de mobilité.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'. TEST CUISSE GAUCHE sur la série à 50 % : la moindre pointe → remplacer par goblet squat léger 3×6 ou supprimer.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets : tenue isométrique sur pointes à mi-hauteur, au sol (pas sur une marche), 4×30–45'' par jambe, sans charge ou avec 10 kg maximum. PAS de mollets lourds lestés (cf. 20 kg la semaine dernière → mollets chargés 72 h).\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec."
     },
     {
       "week": 9,
@@ -955,14 +961,14 @@
       "phase": "Gros bloc spécifique Veni Vici",
       "runMin": 40,
       "bikeMin": 45,
-      "strengthMobilityMin": 30,
+      "strengthMobilityMin": 25,
       "heatMin": 0,
       "elevationM": 40,
       "intensityMin": 0,
       "longRunMin": 0,
-      "totalMin": 70,
+      "totalMin": 65,
       "sRPE": 152.5,
-      "instructions": "FOOTING : 35' plat, FC 135–145.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nCIRCUIT STEP-UPS + MOLLETS (14', juste après, 30'' entre les exercices) :\n• Step-up unipodal sur banc à hauteur de genou 3×8/jambe (monter sans pousser avec la jambe restée au sol, redescendre en 2'').\n• Mollet genou fléchi unipodal 3×12–15/jambe.\n• Mollet jambe tendue, descente lente en 3'' 3×12–15/jambe.\n• Tenue sur pointes à mi-hauteur 3×30–45''/jambe.\n• Équilibre unipodal yeux fermés 3×30–45''/jambe.\nADAPTER : Achille ou talon > 2/10 pendant les mollets → amplitude réduite (talon jamais sous le niveau de la marche).\nVeille de la double qualité : doit laisser frais. | Hanches, ischios, mollets (sans forcer), puis 5' de rouleau sur quadriceps et mollets. Pas de massage direct du tendon d'Achille ni du talon."
+      "instructions": "FOOTING : 35' plat, FC 135–145.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:25–3:40/km), pas un sprint.\nRÉCUP : 1'–1'30 en MARCHANT ou en trottinant très lentement (≈ 6:30–7:00/km) ; repartir seulement quand FC < 130. (Vendredi dernier : récup trop rapide, FC restée à 143–147.)\nCIRCUIT LÉGER (10', juste après, 30'' entre les exercices) :\n• Step-up unipodal sur banc à hauteur de genou 2×8/jambe.\n• Mollet genou fléchi unipodal 2×12/jambe, au sol, sans charge.\n• Tenue sur pointes à mi-hauteur 3×30''/jambe.\n• Équilibre unipodal yeux fermés 2×30''/jambe.\nPAS de mollet jambe tendue en excentrique ni de talon sous le niveau de la marche (talon gauche).\nADAPTER : talon ou Achille > 2/10 pendant le circuit → seulement l'isométrique et l'équilibre.\nVeille de la double qualité : doit laisser frais.\nHanches, ischios, mollets (sans forcer), puis 5' de rouleau sur quadriceps et mollets. Pas de massage direct du tendon d'Achille ni du talon."
     },
     {
       "week": 9,
@@ -978,7 +984,7 @@
       "longRunMin": 0,
       "totalMin": 130,
       "sRPE": 980.0,
-      "instructions": "ÉCHAUFFEMENT : 20' facile (FC < 145) + 3 accélérations de 15''.\nCORPS : 5×4' en côte régulière à 5–8 %, RPE 8–8,5. VAP ≈ 18,5–19,5 km/h ; jamais plus de 20 km/h dans la 1re minute (départ progressif, accélérer sur la 2e moitié). FC en fin de répétition ≈ 174–182.\nRÉCUP : 3' en redescendant au trot (FC < 135 avant de repartir).\nDESCENTES : 5×1' en descente roulante non technique à 6–10 %, vite et relâché : pas courts et rapides (cadence ≥ 180), regard loin, buste légèrement en avant, sans freiner sur les talons.\nRÉCUP : remontée en marche active (≈ 1'30–2'), repartir quand les jambes sont relâchées.\nRETOUR AU CALME : 10' facile.\nADAPTER : VAP qui chute de plus de 1 km/h ou FC qui ne monte plus → arrêter à 4 répétitions. | ÉCHAUFFEMENT : 15' facile (FC < 145) + 2 accélérations de 15''.\nCORPS : 3×12' sur plat/faux-plat 0–3 %, FC 163–168 (≈ 3:50/km sur le plat, indicatif).\nRÉCUP : 2' en trottinant.\nRETOUR AU CALME : 10' facile.\nADAPTER : FC > 168 au début du 3e bloc à allure égale → 3e bloc en endurance."
+      "instructions": "ÉCHAUFFEMENT : 20' facile (FC < 145) + 3 accélérations de 15''.\nCORPS : 5×4' en côte régulière à 5–8 %, RPE 8–8,5. VAP ≈ 18,5–19,5 km/h ; jamais plus de 20 km/h dans la 1re minute (départ progressif, accélérer sur la 2e moitié). FC en fin de répétition ≈ 174–182.\nRÉCUP : 3' en redescendant au trot (FC < 135 avant de repartir).\nDESCENTES : 5×1' en descente roulante non technique à 6–10 %, vite et relâché : pas courts et rapides (cadence ≥ 180), regard loin, buste légèrement en avant, sans freiner sur les talons.\nRÉCUP : remontée en marche active (≈ 1'30–2'), repartir quand les jambes sont relâchées.\nRETOUR AU CALME : 10' facile.\nADAPTER : VAP qui chute de plus de 1 km/h ou FC qui ne monte plus → arrêter à 4 répétitions.\nCONDITIONS : talon gauche > 2/10 à la marche au réveil → pas de descentes (seulement les côtes). VFC < 41 deux matins de suite → 4×4' au lieu de 5×4' et seuil du soir 2×12'.\nÉCHAUFFEMENT : 15' facile (FC < 145) + 2 accélérations de 15''.\nCORPS : 3×12' sur plat/faux-plat 0–3 %, FC 163–168 (≈ 3:50/km sur le plat, indicatif).\nRÉCUP : 2' en trottinant.\nRETOUR AU CALME : 10' facile.\nADAPTER : FC > 168 au début du 3e bloc à allure égale → 3e bloc en endurance."
     },
     {
       "week": 9,
@@ -1010,12 +1016,28 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 90.0,
-      "instructions": "FOOTING : 25' très facile, FC < 140.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nVeille de la grosse sortie : rien de plus."
+      "instructions": "FOOTING : 20' très facile, FC < 140.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier, vite et relâché (≈ 3:25–3:40/km), pas un sprint.\nRÉCUP : 1' en marchant ou en trottinant très lentement ; repartir quand FC < 130.\nTotal 30' maximum. Deux jours avant la sortie clé : rien de plus."
     },
     {
       "week": 9,
       "date": "2026-10-17",
       "dayName": "Samedi",
+      "phase": "Gros bloc spécifique Veni Vici",
+      "runMin": 40,
+      "bikeMin": 0,
+      "strengthMobilityMin": 10,
+      "heatMin": 0,
+      "elevationM": 50,
+      "intensityMin": 0,
+      "longRunMin": 0,
+      "totalMin": 50,
+      "sRPE": 100.0,
+      "instructions": "FOOTING : 40' très facile sur le plat, FC < 135 (≈ 5:15–5:45/km). Aucune accélération. (Samedi dernier : FC 136 à 5:03/km → ralentir.)\nMOBILITÉ DOUCE (10', sans charge) : chevilles, balle de tennis sous la voûte plantaire 1'/pied, rouleau sur mollets et quadriceps, équilibre unipodal 2×30''/jambe.\nPRÉPARER LA SORTIE CLÉ : 10 prises pour le test 100 g/h (5 gels 45 g + 5 iso 45 g), 2×100 mg de caféine, flasques, frontale si départ avant le jour. Dîner riche en glucides, boire régulièrement, coucher tôt."
+    },
+    {
+      "week": 9,
+      "date": "2026-10-18",
+      "dayName": "Dimanche",
       "phase": "Gros bloc spécifique Veni Vici",
       "runMin": 270,
       "bikeMin": 0,
@@ -1026,23 +1048,7 @@
       "longRunMin": 270,
       "totalMin": 270,
       "sRPE": 1350.0,
-      "instructions": "PARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0–90' : ROULANT (−3 à +3 %), endurance FC 135–145.\n90–195' : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n125–155' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n155–165' : récup 10' (FC < 145).\n195–270' : ROULANT/CASSE-PATTES.\n195–225' : BLOC 2 allure course.\n225–235' : récup 10' (FC < 145).\n235–265' : BLOC 3 allure course.\n265–270' : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes."
-    },
-    {
-      "week": 9,
-      "date": "2026-10-18",
-      "dayName": "Dimanche",
-      "phase": "Gros bloc spécifique Veni Vici",
-      "runMin": 45,
-      "bikeMin": 0,
-      "strengthMobilityMin": 15,
-      "heatMin": 0,
-      "elevationM": 70,
-      "intensityMin": 0,
-      "longRunMin": 0,
-      "totalMin": 55,
-      "sRPE": 110.0,
-      "instructions": "Seulement si jambes et tendon au niveau attendu au réveil ; sinon HT 45' à 110–130 W.\nFOOTING : 40' très facile sur le plat, FC < 135.\nCIRCUIT STEP-UPS + MOLLETS (14', juste après, 30'' entre les exercices) :\n• Step-up unipodal sur banc à hauteur de genou 3×8/jambe (monter sans pousser avec la jambe restée au sol, redescendre en 2'').\n• Mollet genou fléchi unipodal 3×12–15/jambe.\n• Mollet jambe tendue, descente lente en 3'' 3×12–15/jambe.\n• Tenue sur pointes à mi-hauteur 3×30–45''/jambe.\n• Équilibre unipodal yeux fermés 3×30–45''/jambe.\nADAPTER : Achille ou talon > 2/10 pendant les mollets → amplitude réduite (talon jamais sous le niveau de la marche)."
+      "instructions": "DÉCISION AU RÉVEIL : talon gauche ≤ 2/10 à la marche et Achille silencieux → séance complète. Talon 3/10 → séance complète mais descentes en marche rapide si la douleur monte. Talon ≥ 4/10 ou boiterie → 3h00 d'endurance sur le roulant, sans blocs.\nPARCOURS POSSIBLE : boucles A + B + C (≈ 43 km, ≈ 1 060 m D+) + 15–20' roulant à la fin, en passant par l'atelier pour tester les ravitos du 24/10.\nPARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0–90' : ROULANT (−3 à +3 %), endurance FC 135–145.\n90–195' : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n125–155' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n155–165' : récup 10' (FC < 145).\n195–270' : ROULANT/CASSE-PATTES.\n195–225' : BLOC 2 allure course.\n225–235' : récup 10' (FC < 145).\n235–265' : BLOC 3 allure course.\n265–270' : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes.\nTALON PENDANT LA SORTIE : > 4/10 ou foulée modifiée → finir au plus court en trot/marche.\nAPRÈS : marche 10', rouleau sur mollets/quadriceps, repas glucides + protéines dans l'heure. Noter le talon le soir et le lendemain matin (0–10)."
     },
     {
       "week": 10,
@@ -1058,7 +1064,7 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 245.0,
-      "instructions": "110–130 W, cadence 85–95 rpm, FC < 130. Récupération active. | Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire."
+      "instructions": "110–130 W, cadence 85–95 rpm, FC < 130. Récupération active.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde."
     },
     {
       "week": 10,
@@ -5348,7 +5354,7 @@
       "day_name": "Lundi",
       "phase": "Gros bloc spécifique Veni Vici",
       "time_label": "18:15",
-      "title": "Force entretien : squat, soulevé de terre, mollets, tractions, gainage",
+      "title": "Force entretien : squat, soulevé de terre, mollets isométriques, tractions, gainage",
       "duration_min": 45,
       "rpe": 5.5,
       "elevation_m": 0,
@@ -5358,7 +5364,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets debout lourds 3×8, repos 1'30.\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec.",
+      "instructions": "CONDITION : VFC du matin < 41 ou FC repos ≥ 52 → pas de force ce soir, seulement 15' de mobilité.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'. TEST CUISSE GAUCHE sur la série à 50 % : la moindre pointe → remplacer par goblet squat léger 3×6 ou supprimer.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets : tenue isométrique sur pointes à mi-hauteur, au sol (pas sur une marche), 4×30–45'' par jambe, sans charge ou avec 10 kg maximum. PAS de mollets lourds lestés (cf. 20 kg la semaine dernière → mollets chargés 72 h).\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5394,7 +5400,7 @@
       "day_name": "Mardi",
       "phase": "Gros bloc spécifique Veni Vici",
       "time_label": "06:45",
-      "title": "Footing 35' plat + 5×20'' + step-ups/mollets",
+      "title": "Footing 35' plat + 5×20'' + circuit mollets léger",
       "duration_min": 55,
       "rpe": 2.5,
       "elevation_m": 40,
@@ -5404,7 +5410,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "FOOTING : 35' plat, FC 135–145.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nCIRCUIT STEP-UPS + MOLLETS (14', juste après, 30'' entre les exercices) :\n• Step-up unipodal sur banc à hauteur de genou 3×8/jambe (monter sans pousser avec la jambe restée au sol, redescendre en 2'').\n• Mollet genou fléchi unipodal 3×12–15/jambe.\n• Mollet jambe tendue, descente lente en 3'' 3×12–15/jambe.\n• Tenue sur pointes à mi-hauteur 3×30–45''/jambe.\n• Équilibre unipodal yeux fermés 3×30–45''/jambe.\nADAPTER : Achille ou talon > 2/10 pendant les mollets → amplitude réduite (talon jamais sous le niveau de la marche).\nVeille de la double qualité : doit laisser frais.",
+      "instructions": "FOOTING : 35' plat, FC 135–145.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:25–3:40/km), pas un sprint.\nRÉCUP : 1'–1'30 en MARCHANT ou en trottinant très lentement (≈ 6:30–7:00/km) ; repartir seulement quand FC < 130. (Vendredi dernier : récup trop rapide, FC restée à 143–147.)\nCIRCUIT LÉGER (10', juste après, 30'' entre les exercices) :\n• Step-up unipodal sur banc à hauteur de genou 2×8/jambe.\n• Mollet genou fléchi unipodal 2×12/jambe, au sol, sans charge.\n• Tenue sur pointes à mi-hauteur 3×30''/jambe.\n• Équilibre unipodal yeux fermés 2×30''/jambe.\nPAS de mollet jambe tendue en excentrique ni de talon sous le niveau de la marche (talon gauche).\nADAPTER : talon ou Achille > 2/10 pendant le circuit → seulement l'isométrique et l'équilibre.\nVeille de la double qualité : doit laisser frais.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5496,7 +5502,7 @@
       "heat_min": 0,
       "intensity_min": 25,
       "long_run_min": 0,
-      "instructions": "ÉCHAUFFEMENT : 20' facile (FC < 145) + 3 accélérations de 15''.\nCORPS : 5×4' en côte régulière à 5–8 %, RPE 8–8,5. VAP ≈ 18,5–19,5 km/h ; jamais plus de 20 km/h dans la 1re minute (départ progressif, accélérer sur la 2e moitié). FC en fin de répétition ≈ 174–182.\nRÉCUP : 3' en redescendant au trot (FC < 135 avant de repartir).\nDESCENTES : 5×1' en descente roulante non technique à 6–10 %, vite et relâché : pas courts et rapides (cadence ≥ 180), regard loin, buste légèrement en avant, sans freiner sur les talons.\nRÉCUP : remontée en marche active (≈ 1'30–2'), repartir quand les jambes sont relâchées.\nRETOUR AU CALME : 10' facile.\nADAPTER : VAP qui chute de plus de 1 km/h ou FC qui ne monte plus → arrêter à 4 répétitions.",
+      "instructions": "ÉCHAUFFEMENT : 20' facile (FC < 145) + 3 accélérations de 15''.\nCORPS : 5×4' en côte régulière à 5–8 %, RPE 8–8,5. VAP ≈ 18,5–19,5 km/h ; jamais plus de 20 km/h dans la 1re minute (départ progressif, accélérer sur la 2e moitié). FC en fin de répétition ≈ 174–182.\nRÉCUP : 3' en redescendant au trot (FC < 135 avant de repartir).\nDESCENTES : 5×1' en descente roulante non technique à 6–10 %, vite et relâché : pas courts et rapides (cadence ≥ 180), regard loin, buste légèrement en avant, sans freiner sur les talons.\nRÉCUP : remontée en marche active (≈ 1'30–2'), repartir quand les jambes sont relâchées.\nRETOUR AU CALME : 10' facile.\nADAPTER : VAP qui chute de plus de 1 km/h ou FC qui ne monte plus → arrêter à 4 répétitions.\nCONDITIONS : talon gauche > 2/10 à la marche au réveil → pas de descentes (seulement les côtes). VFC < 41 deux matins de suite → 4×4' au lieu de 5×4' et seuil du soir 2×12'.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5670,7 +5676,7 @@
       "day_name": "Vendredi",
       "phase": "Gros bloc spécifique Veni Vici",
       "time_label": "17:00",
-      "title": "Footing 25' + 5×20''",
+      "title": "Footing 20' + 5×20'' (30' maximum)",
       "duration_min": 30,
       "rpe": 3.0,
       "elevation_m": 40,
@@ -5680,7 +5686,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "FOOTING : 25' très facile, FC < 140.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nVeille de la grosse sortie : rien de plus.",
+      "instructions": "FOOTING : 20' très facile, FC < 140.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier, vite et relâché (≈ 3:25–3:40/km), pas un sprint.\nRÉCUP : 1' en marchant ou en trottinant très lentement ; repartir quand FC < 130.\nTotal 30' maximum. Deux jours avant la sortie clé : rien de plus.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5715,18 +5721,18 @@
       "week": 9,
       "day_name": "Samedi",
       "phase": "Gros bloc spécifique Veni Vici",
-      "time_label": "07:00",
-      "title": "Sortie clé 4h30 : 3×30' allure course",
-      "duration_min": 270,
-      "rpe": 5.0,
-      "elevation_m": 1200,
-      "run_min": 270,
+      "time_label": "09:00",
+      "title": "Footing facile 40' + mobilité (veille de la sortie clé)",
+      "duration_min": 50,
+      "rpe": 2.0,
+      "elevation_m": 50,
+      "run_min": 40,
       "bike_min": 0,
-      "strength_min": 0,
+      "strength_min": 10,
       "heat_min": 0,
-      "intensity_min": 90,
-      "long_run_min": 270,
-      "instructions": "PARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0–90' : ROULANT (−3 à +3 %), endurance FC 135–145.\n90–195' : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n125–155' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n155–165' : récup 10' (FC < 145).\n195–270' : ROULANT/CASSE-PATTES.\n195–225' : BLOC 2 allure course.\n225–235' : récup 10' (FC < 145).\n235–265' : BLOC 3 allure course.\n265–270' : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes.",
+      "intensity_min": 0,
+      "long_run_min": 0,
+      "instructions": "FOOTING : 40' très facile sur le plat, FC < 135 (≈ 5:15–5:45/km). Aucune accélération. (Samedi dernier : FC 136 à 5:03/km → ralentir.)\nMOBILITÉ DOUCE (10', sans charge) : chevilles, balle de tennis sous la voûte plantaire 1'/pied, rouleau sur mollets et quadriceps, équilibre unipodal 2×30''/jambe.\nPRÉPARER LA SORTIE CLÉ : 10 prises pour le test 100 g/h (5 gels 45 g + 5 iso 45 g), 2×100 mg de caféine, flasques, frontale si départ avant le jour. Dîner riche en glucides, boire régulièrement, coucher tôt.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5761,18 +5767,18 @@
       "week": 9,
       "day_name": "Dimanche",
       "phase": "Gros bloc spécifique Veni Vici",
-      "time_label": "09:00",
-      "title": "Footing récupération 40' + step-ups/mollets",
-      "duration_min": 55,
-      "rpe": 2.0,
-      "elevation_m": 70,
-      "run_min": 45,
+      "time_label": "08:00",
+      "title": "Sortie clé 4h30 : 3×30' allure course",
+      "duration_min": 270,
+      "rpe": 5.0,
+      "elevation_m": 1200,
+      "run_min": 270,
       "bike_min": 0,
-      "strength_min": 15,
+      "strength_min": 0,
       "heat_min": 0,
-      "intensity_min": 0,
-      "long_run_min": 0,
-      "instructions": "Seulement si jambes et tendon au niveau attendu au réveil ; sinon HT 45' à 110–130 W.\nFOOTING : 40' très facile sur le plat, FC < 135.\nCIRCUIT STEP-UPS + MOLLETS (14', juste après, 30'' entre les exercices) :\n• Step-up unipodal sur banc à hauteur de genou 3×8/jambe (monter sans pousser avec la jambe restée au sol, redescendre en 2'').\n• Mollet genou fléchi unipodal 3×12–15/jambe.\n• Mollet jambe tendue, descente lente en 3'' 3×12–15/jambe.\n• Tenue sur pointes à mi-hauteur 3×30–45''/jambe.\n• Équilibre unipodal yeux fermés 3×30–45''/jambe.\nADAPTER : Achille ou talon > 2/10 pendant les mollets → amplitude réduite (talon jamais sous le niveau de la marche).",
+      "intensity_min": 90,
+      "long_run_min": 270,
+      "instructions": "DÉCISION AU RÉVEIL : talon gauche ≤ 2/10 à la marche et Achille silencieux → séance complète. Talon 3/10 → séance complète mais descentes en marche rapide si la douleur monte. Talon ≥ 4/10 ou boiterie → 3h00 d'endurance sur le roulant, sans blocs.\nPARCOURS POSSIBLE : boucles A + B + C (≈ 43 km, ≈ 1 060 m D+) + 15–20' roulant à la fin, en passant par l'atelier pour tester les ravitos du 24/10.\nPARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0–90' : ROULANT (−3 à +3 %), endurance FC 135–145.\n90–195' : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n125–155' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n155–165' : récup 10' (FC < 145).\n195–270' : ROULANT/CASSE-PATTES.\n195–225' : BLOC 2 allure course.\n225–235' : récup 10' (FC < 145).\n235–265' : BLOC 3 allure course.\n265–270' : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes.\nTALON PENDANT LA SORTIE : > 4/10 ou foulée modifiée → finir au plus court en trot/marche.\nAPRÈS : marche 10', rouleau sur mollets/quadriceps, repas glucides + protéines dans l'heure. Noter le talon le soir et le lendemain matin (0–10).",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5864,7 +5870,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.",
+      "instructions": "Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.",
       "notes": "",
       "status": "planned",
       "original_data": {

@@ -1,8 +1,7 @@
-VÉRIFICATION V13
+VÉRIFICATION V14
 JSON valide : OUI
-Semaines 1 à 7 : inchangées ; S9–S12 : inchangées
-S8 : vendredi 09/10 adapté (50' + test mollet + routine post-séance), samedi 10/10 footing 40' + mobilité, dimanche 11/10 sortie longue 2h45 (08:30)
-Totaux journaliers (jours 09, 10, 11/10) recalculés ; volume S8 quasi inchangé
-Statuts des séances : planned (aucune séance faite écrasée)
-Mollet droit : travail lesté exclu avant lundi ; décision au réveil dimanche
-Talon gauche : ondes de choc prévues en novembre, après la course
+Semaines 1 à 8 : inchangées (séances faites conservées)
+S9 : lundi–vendredi adaptés, sortie clé 4h30 déplacée du samedi 17 au dimanche 18/10 (08:00), samedi 17 = footing 40' + mobilité
+S10 : seul le lundi 19 (force) reçoit une consigne d'adaptation ; répétition générale toujours le samedi 24/10 (à confirmer)
+Totaux journaliers recalculés pour les jours modifiés
+Bilan S8 ajouté dans le journal hebdomadaire ; suivi du talon gauche ajouté
