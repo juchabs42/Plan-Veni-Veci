@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V17 — repères de charge en force (28/09 : squat 90, SDT 94, mollets 20 kg/jambe), charges demandées à chaque bilan",
+    "revision": "V18 — échauffement renforcé avant la force (cuisse gauche), alternative au squat si tension",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -47,6 +47,13 @@
         "deadlift_kg": 94,
         "calf_kg_per_leg": 20,
         "note": "Charges de travail déclarées par Julien. Matériel : barre 10 kg, disques 2×20, 2×10, 4×5, 4×2, 6×1 (charges paires uniquement, max 104 kg)."
+      },
+      {
+        "date": "2026-10-12",
+        "squat_kg": null,
+        "deadlift_kg": null,
+        "calf_kg_per_leg": null,
+        "note": "Squat abandonné à l'échauffement : tension sur l'extérieur de la cuisse gauche (localisation différente de la semaine précédente). Échauffement renforcé (vélo + hanche + fessiers) ajouté avant toutes les séances de force."
       }
     ]
   },
@@ -1009,7 +1016,7 @@
       "longRunMin": 0,
       "totalMin": 120,
       "sRPE": 375.0,
-      "instructions": "Échauffement : 5' de mobilité + 10 squats au poids du corps.\n2 séries de chaque, repos 60–90'' :\n• Fente bulgare 2×6/jambe (haltères, RPE 6).\n• Soulevé de terre jambe tendue unipodal (haltère) 2×6–8/jambe.\n• Leg curl sur Swiss ball 2×8–10.\n• Mollet genou fléchi unipodal 2×8/jambe (descente lente).\n• Step-down lent (3'' en descente) 2×6/jambe.\n• Step-up haut + montée de genou 2×6/jambe.\n• Suitcase carry 2×30–40''/côté.\nRPE 5–6, technique stricte, aucune courbature recherchée. | 1 h 30 sur plat/roulant, FC 135–145 (≈ 4:55–5:15/km), allure régulière, aucune accélération. Lendemain de la double qualité : résistance à la fatigue sur jambes entamées.\nNUTRITION : boire, et 1 gel ou 1 iso (40–60 g) après 45'.\nADAPTER : Achille ou talon qui réagit → 1 h 15. Si la qualité est déplacée pour le télétravail, garder cette sortie le lendemain de la qualité."
+      "instructions": "ÉCHAUFFEMENT : 5–6 min de vélo (HT) ou rameur facile + 5 min de mobilité de hanche et activation fessiers (élastique, ponts). Fente bulgare remplacée par step-up si la cuisse gauche tire.\n2 séries de chaque, repos 60–90'' :\n• Fente bulgare 2×6/jambe (haltères, RPE 6).\n• Soulevé de terre jambe tendue unipodal (haltère) 2×6–8/jambe.\n• Leg curl sur Swiss ball 2×8–10.\n• Mollet genou fléchi unipodal 2×8/jambe (descente lente).\n• Step-down lent (3'' en descente) 2×6/jambe.\n• Step-up haut + montée de genou 2×6/jambe.\n• Suitcase carry 2×30–40''/côté.\nRPE 5–6, technique stricte, aucune courbature recherchée.\n1 h 30 sur plat/roulant, FC 135–145 (≈ 4:55–5:15/km), allure régulière, aucune accélération. Lendemain de la double qualité : résistance à la fatigue sur jambes entamées.\nNUTRITION : boire, et 1 gel ou 1 iso (40–60 g) après 45'.\nADAPTER : Achille ou talon qui réagit → 1 h 15. Si la qualité est déplacée pour le télétravail, garder cette sortie le lendemain de la qualité."
     },
     {
       "week": 9,
@@ -1073,7 +1080,7 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 245.0,
-      "instructions": "110–130 W, cadence 85–95 rpm, FC < 130. Récupération active.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.\nREPÈRES DE CHARGE (lendemain de la sortie clé) : squat 2×3 et soulevé de terre 2×3 à la charge de lundi dernier moins 5 kg ; mollets debout 3×8 à 10–15 kg/jambe seulement si talon et Achille ≤ 1/10, sinon isométrique.\nNOTE tes charges finales pour le bilan."
+      "instructions": "110–130 W, cadence 85–95 rpm, FC < 130. Récupération active.\nÉCHAUFFEMENT RENFORCÉ (12 min, cuisse gauche sensible) :\n• 5–6 min de vélo (HT) ou de rameur facile, jusqu'à transpirer légèrement.\n• Mobilité de hanche : 10 balancés de jambe avant/arrière et latéraux par jambe, 8 « 90/90 » par côté.\n• Activation fessiers : 15 pas latéraux avec élastique, 10 ponts fessiers, 10 clamshells par côté.\n• Goblet squat léger 2×6 (8–12 kg), en descendant lentement.\n• TEST : la moindre tension sur le côté ou l'avant de la cuisse gauche à la série à la barre seule ou à 50 % → pas de squat ce jour-là, remplacer par hip thrust 3×6 (ou pont fessier lesté) et leg curl, sans forcer.\nPuis séries montantes à la barre (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.\nREPÈRES DE CHARGE (lendemain de la sortie clé) : squat 2×3 et soulevé de terre 2×3 à la charge de lundi dernier moins 5 kg ; mollets debout 3×8 à 10–15 kg/jambe seulement si talon et Achille ≤ 1/10, sinon isométrique.\nNOTE tes charges finales pour le bilan."
     },
     {
       "week": 10,
@@ -1121,7 +1128,7 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 215.0,
-      "instructions": "Échauffement : 5' de mobilité.\n1–2 séries, repos 60'' :\n• Fente bulgare 6/jambe (charge légère).\n• Mollet genou fléchi unipodal 8/jambe.\n• Step-down lent 6/jambe.\n• Step-up haut 6/jambe.\n• Suitcase carry 30''/côté.\nCharge légère, aucune courbature : objectif maintien. | FOOTING : 40' très facile sur le plat, FC < 135.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\n(Pas de circuit mollets aujourd'hui : déjà dans le renforcement du matin.)"
+      "instructions": "ÉCHAUFFEMENT : 5–6 min de vélo (HT) ou rameur facile + 5 min de mobilité de hanche et activation fessiers (élastique, ponts). Fente bulgare remplacée par step-up si la cuisse gauche tire.\n1–2 séries, repos 60'' :\n• Fente bulgare 6/jambe (charge légère).\n• Mollet genou fléchi unipodal 8/jambe.\n• Step-down lent 6/jambe.\n• Step-up haut 6/jambe.\n• Suitcase carry 30''/côté.\nCharge légère, aucune courbature : objectif maintien.\nFOOTING : 40' très facile sur le plat, FC < 135.\nACCÉLÉRATIONS : 5×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\n(Pas de circuit mollets aujourd'hui : déjà dans le renforcement du matin.)"
     },
     {
       "week": 10,
@@ -1185,7 +1192,7 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 130.0,
-      "instructions": "110–125 W, cadence 85–95 rpm, FC < 125. | Échauffement : 5' de mobilité + 2 séries montantes.\n• Squat 2×3 léger (RPE 5–6), repos 2'.\n• Mollets debout 2×8, repos 1'30.\n• Gainage 2×40''.\nDernière séance de force : aucune courbature acceptée."
+      "instructions": "110–125 W, cadence 85–95 rpm, FC < 125.\nÉCHAUFFEMENT RENFORCÉ (12 min, cuisse gauche sensible) :\n• 5–6 min de vélo (HT) ou de rameur facile, jusqu'à transpirer légèrement.\n• Mobilité de hanche : 10 balancés de jambe avant/arrière et latéraux par jambe, 8 « 90/90 » par côté.\n• Activation fessiers : 15 pas latéraux avec élastique, 10 ponts fessiers, 10 clamshells par côté.\n• Goblet squat léger 2×6 (8–12 kg), en descendant lentement.\n• TEST : la moindre tension sur le côté ou l'avant de la cuisse gauche à la série à la barre seule ou à 50 % → pas de squat ce jour-là, remplacer par hip thrust 3×6 (ou pont fessier lesté) et leg curl, sans forcer.\nPuis séries montantes à la barre (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 léger (RPE 5–6), repos 2'.\n• Mollets debout 2×8, repos 1'30.\n• Gainage 2×40''.\nDernière séance de force : aucune courbature acceptée."
     },
     {
       "week": 11,
@@ -5603,7 +5610,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Échauffement : 5' de mobilité + 10 squats au poids du corps.\n2 séries de chaque, repos 60–90'' :\n• Fente bulgare 2×6/jambe (haltères, RPE 6).\n• Soulevé de terre jambe tendue unipodal (haltère) 2×6–8/jambe.\n• Leg curl sur Swiss ball 2×8–10.\n• Mollet genou fléchi unipodal 2×8/jambe (descente lente).\n• Step-down lent (3'' en descente) 2×6/jambe.\n• Step-up haut + montée de genou 2×6/jambe.\n• Suitcase carry 2×30–40''/côté.\nRPE 5–6, technique stricte, aucune courbature recherchée.",
+      "instructions": "ÉCHAUFFEMENT : 5–6 min de vélo (HT) ou rameur facile + 5 min de mobilité de hanche et activation fessiers (élastique, ponts). Fente bulgare remplacée par step-up si la cuisse gauche tire.\n2 séries de chaque, repos 60–90'' :\n• Fente bulgare 2×6/jambe (haltères, RPE 6).\n• Soulevé de terre jambe tendue unipodal (haltère) 2×6–8/jambe.\n• Leg curl sur Swiss ball 2×8–10.\n• Mollet genou fléchi unipodal 2×8/jambe (descente lente).\n• Step-down lent (3'' en descente) 2×6/jambe.\n• Step-up haut + montée de genou 2×6/jambe.\n• Suitcase carry 2×30–40''/côté.\nRPE 5–6, technique stricte, aucune courbature recherchée.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5879,7 +5886,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.\nREPÈRES DE CHARGE (lendemain de la sortie clé) : squat 2×3 et soulevé de terre 2×3 à la charge de lundi dernier moins 5 kg ; mollets debout 3×8 à 10–15 kg/jambe seulement si talon et Achille ≤ 1/10, sinon isométrique.\nNOTE tes charges finales pour le bilan.",
+      "instructions": "ÉCHAUFFEMENT RENFORCÉ (12 min, cuisse gauche sensible) :\n• 5–6 min de vélo (HT) ou de rameur facile, jusqu'à transpirer légèrement.\n• Mobilité de hanche : 10 balancés de jambe avant/arrière et latéraux par jambe, 8 « 90/90 » par côté.\n• Activation fessiers : 15 pas latéraux avec élastique, 10 ponts fessiers, 10 clamshells par côté.\n• Goblet squat léger 2×6 (8–12 kg), en descendant lentement.\n• TEST : la moindre tension sur le côté ou l'avant de la cuisse gauche à la série à la barre seule ou à 50 % → pas de squat ce jour-là, remplacer par hip thrust 3×6 (ou pont fessier lesté) et leg curl, sans forcer.\nPuis séries montantes à la barre (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.\nREPÈRES DE CHARGE (lendemain de la sortie clé) : squat 2×3 et soulevé de terre 2×3 à la charge de lundi dernier moins 5 kg ; mollets debout 3×8 à 10–15 kg/jambe seulement si talon et Achille ≤ 1/10, sinon isométrique.\nNOTE tes charges finales pour le bilan.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6109,7 +6116,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Échauffement : 5' de mobilité.\n1–2 séries, repos 60'' :\n• Fente bulgare 6/jambe (charge légère).\n• Mollet genou fléchi unipodal 8/jambe.\n• Step-down lent 6/jambe.\n• Step-up haut 6/jambe.\n• Suitcase carry 30''/côté.\nCharge légère, aucune courbature : objectif maintien.",
+      "instructions": "ÉCHAUFFEMENT : 5–6 min de vélo (HT) ou rameur facile + 5 min de mobilité de hanche et activation fessiers (élastique, ponts). Fente bulgare remplacée par step-up si la cuisse gauche tire.\n1–2 séries, repos 60'' :\n• Fente bulgare 6/jambe (charge légère).\n• Mollet genou fléchi unipodal 8/jambe.\n• Step-down lent 6/jambe.\n• Step-up haut 6/jambe.\n• Suitcase carry 30''/côté.\nCharge légère, aucune courbature : objectif maintien.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6385,7 +6392,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Échauffement : 5' de mobilité + 2 séries montantes.\n• Squat 2×3 léger (RPE 5–6), repos 2'.\n• Mollets debout 2×8, repos 1'30.\n• Gainage 2×40''.\nDernière séance de force : aucune courbature acceptée.",
+      "instructions": "ÉCHAUFFEMENT RENFORCÉ (12 min, cuisse gauche sensible) :\n• 5–6 min de vélo (HT) ou de rameur facile, jusqu'à transpirer légèrement.\n• Mobilité de hanche : 10 balancés de jambe avant/arrière et latéraux par jambe, 8 « 90/90 » par côté.\n• Activation fessiers : 15 pas latéraux avec élastique, 10 ponts fessiers, 10 clamshells par côté.\n• Goblet squat léger 2×6 (8–12 kg), en descendant lentement.\n• TEST : la moindre tension sur le côté ou l'avant de la cuisse gauche à la série à la barre seule ou à 50 % → pas de squat ce jour-là, remplacer par hip thrust 3×6 (ou pont fessier lesté) et leg curl, sans forcer.\nPuis séries montantes à la barre (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 léger (RPE 5–6), repos 2'.\n• Mollets debout 2×8, repos 1'30.\n• Gainage 2×40''.\nDernière séance de force : aucune courbature acceptée.",
       "notes": "",
       "status": "planned",
       "original_data": {
