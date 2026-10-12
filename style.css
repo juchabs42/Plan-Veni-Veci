@@ -116,3 +116,11 @@ details.session-details summary{font-weight:800;color:var(--red);font-size:.88re
 .ws-item span{font-size:.75rem;color:#6b7280;font-weight:600}.ws-item strong{font-size:1.05rem}
 .ws-total{background:var(--red-soft)}.ws-total strong{color:var(--red)}
 @media(min-width:640px){.week-summary{grid-template-columns:repeat(4,1fr)}}
+.calc-block .calc-lift{margin-top:10px}
+.calc-block label{display:flex;flex-direction:column;gap:5px;font-size:.82rem;font-weight:700;color:#4b5563}
+.calc-input{width:100%;max-width:160px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;font-size:1rem}
+.calc-out{margin-top:6px;display:grid;gap:4px}
+.calc-row{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:6px 9px;border-radius:9px;background:#f7f7f8;font-size:.86rem}
+.calc-row em{grid-column:1/-1;font-style:normal;color:#6b7280;font-size:.76rem}
+.calc-row.work{background:var(--red-soft)}.calc-row.work strong{color:var(--red)}
+.calc-empty,.calc-note{font-size:.78rem;color:#6b7280;margin-top:4px}

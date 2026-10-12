@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=14';
+const PLAN_URL = './training-plan.json?v=15';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -387,6 +387,7 @@ function renderToday(){
 
   $('morningRoutine').innerHTML='';
   $('eveningRoutine').innerHTML='';
+  bindCalculators();
   bindDynamicSessionButtons();
 }
 
@@ -404,6 +405,47 @@ function splitSession(s){
   }
   return {run:0,bike:0,str:dur};
 }
+
+/* ---- Calculette d'échauffement (séances de force) ---- */
+const LIFTS=[
+  {key:'squat',label:'Squat',bar:20,steps:[['Barre seule',0,8],['≈ 50 %',0.5,5],['≈ 70 %',0.7,3],['≈ 85 % (si charge ≥ 80 kg)',0.85,1]]},
+  {key:'deadlift',label:'Soulevé de terre',bar:20,steps:[['Barre seule',0,8],['≈ 50 %',0.5,5],['≈ 70 %',0.7,3],['≈ 85 % (si charge ≥ 80 kg)',0.85,1]]},
+  {key:'calves',label:'Mollets',bar:0,steps:[['Poids du corps',0,15],['≈ 50 %',0.5,10],['≈ 75 %',0.75,6]]}
+];
+function isStrengthSession(s){ return /(force|squat|soulevé|souleve)/i.test(s.title||''); }
+function loadLift(k){ try{ return localStorage.getItem('vv-lift-'+k)||''; }catch(e){ return ''; } }
+function saveLift(k,v){ try{ localStorage.setItem('vv-lift-'+k,v); }catch(e){} }
+function round25(x){ return Math.round(x/2.5)*2.5; }
+function platesPerSide(total,bar){
+  if(!bar) return '';
+  let side=(total-bar)/2; if(side<=0) return 'barre seule';
+  const out=[]; for(const p of [20,15,10,5,2.5,1.25]){ while(side>=p-1e-9){ out.push(p); side-=p; } }
+  return out.length?out.map(fmtKg).join(' + ')+' par côté':'';
+}
+function fmtKg(x){ return String(x).replace('.',','); }
+function warmupRows(lift,work){
+  const w=parseFloat(String(work).replace(',','.'));
+  if(!(w>0)) return '<div class="calc-empty">Entre ta charge de travail.</div>';
+  return lift.steps.filter(([lab,pct])=>!(pct===0.85&&w<80)).map(([lab,pct,reps])=>{
+    let kg=pct===0?lift.bar:Math.max(lift.bar,round25(w*pct));
+    const plates=lift.bar?platesPerSide(kg,lift.bar):'';
+    const val=lift.bar||pct?`${fmtKg(kg)} kg × ${reps}`:`× ${reps}`;
+    return `<div class="calc-row"><span>${esc(lab)}</span><strong>${val}</strong>${plates?`<em>${esc(plates)}</em>`:''}</div>`;
+  }).join('')+`<div class="calc-row work"><span>Travail</span><strong>${fmtKg(w)} kg</strong>${lift.bar?`<em>${esc(platesPerSide(w,lift.bar))}</em>`:''}</div>`;
+}
+function warmupCalculator(){
+  return `<div class="detail-block calc-block"><div class="detail-label">Calculette d'échauffement</div>
+    ${LIFTS.map(l=>`<div class="calc-lift" data-lift="${l.key}"><label>${esc(l.label)} — charge de travail (kg)<input type="number" inputmode="decimal" step="0.5" min="0" class="calc-input" data-lift="${l.key}" value="${esc(loadLift(l.key))}" placeholder="ex. 80"></label><div class="calc-out" data-out="${l.key}">${warmupRows(l,loadLift(l.key))}</div></div>`).join('')}
+    <div class="calc-note">Arrondi à 2,5 kg. Barre de 20 kg pour squat et soulevé de terre ; mollets en charge ajoutée (haltères ou machine).</div></div>`;
+}
+function bindCalculators(){
+  document.querySelectorAll('.calc-input').forEach(inp=>inp.oninput=()=>{
+    const lift=LIFTS.find(l=>l.key===inp.dataset.lift); saveLift(lift.key,inp.value);
+    document.querySelectorAll(`[data-out="${lift.key}"]`).forEach(o=>o.innerHTML=warmupRows(lift,inp.value));
+    document.querySelectorAll(`.calc-input[data-lift="${lift.key}"]`).forEach(o=>{ if(o!==inp) o.value=inp.value; });
+  });
+}
+
 function sessionCard(s){
   const badges=[];
   if(s.duration_min) badges.push(`<span class="pill">${fmtDur(s.duration_min)}</span>`);
@@ -418,6 +460,7 @@ function sessionCard(s){
       <div class="session-title">${esc(s.title)}</div>
       <div class="badges">${badges.join('')}</div>
       ${s.instructions?`<div class="detail-block"><div class="detail-label">Consignes clés</div><div class="detail-text">${esc(s.instructions)}</div></div>`:''}
+      ${isStrengthSession(s)?warmupCalculator():''}
       ${s.notes?`<div class="detail-block"><div class="detail-label">Mes notes</div><div class="detail-text">${esc(s.notes)}</div></div>`:''}
     </div>
     ${state.accessMode==='viewer'?`<div class="readonly-strip">Lecture seule</div>`:''}
