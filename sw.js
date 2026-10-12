@@ -1,13 +1,13 @@
-const CACHE = 'veni-vici-v16-disques';
+const CACHE = 'veni-vici-v17';
 const ASSETS = [
   './',
   './index.html',
-  './style.css?v=8',
+  './style.css?v=9',
   './config.js?v=6',
   './supabase-client.js?v=6',
-  './app.js?v=16',
+  './app.js?v=17',
   './manifest.json',
-  './training-plan.json?v=15',
+  './training-plan.json?v=17',
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];

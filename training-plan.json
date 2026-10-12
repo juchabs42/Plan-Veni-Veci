@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V16 — répétition 5 h du samedi 24/10 sur les boucles A+B+C+D (ravitos à l'atelier), S10 allégée (6 jours après la sortie clé du 18)",
+    "revision": "V17 — repères de charge en force (28/09 : squat 90, SDT 94, mollets 20 kg/jambe), charges demandées à chaque bilan",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -17,7 +17,7 @@
     "workingRaceTime": "~7h25–7h35 comme scénario de performance/victoire, à recalibrer chaque semaine",
     "trainingHistoryNote": "Base récente ~4 h à 4 h 40 CAP/sem ; semaine 1 ~4 h 30 bien tolérée ; trail 60,6 km / 3325 D+ en 7h11 en mai ; expérience Veni Vici 2023. V3 augmente le volume jusqu’à 9h30 CAP en S10 sans dépasser 5h sur une sortie unique. Printemps 2026 : 8–12,6 h CAP/sem et 3 000–4 600 m D+/sem avant Brissac. Arrêt 2 semaines après Brissac puis tendinite d'Achille à la reprise ; été en entretien (0–4 h/sem). Reprise structurée fin août. Veni Vici 2023 (format 72 km / 1 916 D+) : 2e en 6h11 → extrapolation parcours actuel ≈ 7h40.",
     "achillesNote": "S6 (27/09) : Achille droit sans douleur ni gêne, sensible seulement à la palpation, marche normale au réveil. Antécédent : tendinite à la reprise après Brissac (juin 2026). Règle : ne pas faire bondir volume ET D+ la même semaine ; surveiller réveil et J+1 après séances à fort D+. S7 (04/10) : après 4h10 / 1 130 m D+, légère gêne Achille droit sans douleur ni modification de foulée ; talon gauche plus sensible les 5 dernières minutes. Talon gauche : pathologie suivie par le médecin du sport, traitement par ondes de choc prévu en novembre après la course. Julien prend le départ quoi qu'il arrive : le talon sert d'indicateur pour doser la charge (D+, descentes, vitesse), pas pour remettre en cause la course.",
-    "weeklyReviewRule": "Bilan hebdomadaire : charge réelle, qualité des séances, fatigue musculaire, sommeil/VFC, réponse pied/chevilles/Achille au réveil et à 24 h. Objectif : maximiser la continuité et la spécificité Veni Vici. Règle d'organisation : les jours de télétravail en milieu de semaine accueillent les grosses séances (double qualité) ; les jours au bureau reçoivent renfo + footing facile.",
+    "weeklyReviewRule": "Bilan hebdomadaire : charge réelle, qualité des séances, fatigue musculaire, sommeil/VFC, réponse pied/chevilles/Achille au réveil et à 24 h. Objectif : maximiser la continuité et la spécificité Veni Vici. Règle d'organisation : les jours de télétravail en milieu de semaine accueillent les grosses séances (double qualité) ; les jours au bureau reçoivent renfo + footing facile. À chaque bilan : demander les charges finales de squat, soulevé de terre et mollets (kg/jambe) pour régler la semaine suivante.",
     "weeklyLog": [
       {
         "week": 6,
@@ -39,7 +39,16 @@
     "durabilityAdditions": "02/10 (vidéo D. Roche) : 2×5×20'' accélérations/sem en fin de footing ; endurance longue facile 80' le lendemain de la double qualité en S9 ; descentes rapides contrôlées en fin de séance de côte (S8 4×45'', S9–S10 5×1') ; circuit mollets endurance 10–12' juste après 2 footings/sem (S8–S10), version courte en S11. Pas d'antioxydants à forte dose ni d'AINS ; fer selon prise de sang. 02/10 (transcription lue) : endurance longue S9 portée à 90' ; gel + 4×30'' côte en fin de sortie longue S8 et S11 ; step-ups unipodaux ajoutés au circuit post-footing ; test 100 g/h sur la 4h30 de S9. Marqueur de résistance à la fatigue suivi : VAP à FC 155–160 dans les blocs allure course vs seuil frais (3:50/km à FC 165).",
     "raceNutrition": "Validée le 04/10 (4h10, 47 km) : alternance gel 45 g / iso 45 g (bue en 10–15') toutes les 30' ≈ 90 g/h, estomac 9/10 aux intensités de course (FC 153–160). Caféine : 200 mg d'un coup à 2h30, bien tolérés. Test 100 g/h (prise toutes les 27') et caféine fractionnée (100 mg à 2h + 100 mg à 3h15) le 17/10.",
     "calfNote": "09/10 : mollet droit chargé (séries lestées 20 kg sur marche surélevée, excentrique), Achille silencieux, talon très peu gêné, cuisse gauche OK depuis jeudi. Footing du 08/10 parfait (FC 131 moy, 142 max). Décisions : vendredi 50' + test avant les 5×20'' ; samedi footing 40' + mobilité douce ; sortie longue dimanche 11/10 08:30 avec décision au réveil. Éviter le travail lesté/excentrique des mollets dans les 72 h avant une séance clé ; S9–S10 : mollets en isométrique ou montées lentes sans charge lourde.",
-    "heelNote": "11/10 : talon gauche 1–2/10 à la marche, rien au repos, 3–4/10 après la sortie longue de 2h34. Décision de Julien : course maintenue quoi qu'il arrive, ondes de choc en novembre. Règles : pas de talon sous le niveau de la marche (étirements, excentrique), chaussures avec drop pour les sorties longues, descentes en contrôle ; talon > 2/10 à la marche au réveil → pas de descentes rapides ; ≥ 4/10 ou boiterie → sortie raccourcie sur le roulant."
+    "heelNote": "11/10 : talon gauche 1–2/10 à la marche, rien au repos, 3–4/10 après la sortie longue de 2h34. Décision de Julien : course maintenue quoi qu'il arrive, ondes de choc en novembre. Règles : pas de talon sous le niveau de la marche (étirements, excentrique), chaussures avec drop pour les sorties longues, descentes en contrôle ; talon > 2/10 à la marche au réveil → pas de descentes rapides ; ≥ 4/10 ou boiterie → sortie raccourcie sur le roulant.",
+    "strengthLog": [
+      {
+        "date": "2026-09-28",
+        "squat_kg": 90,
+        "deadlift_kg": 94,
+        "calf_kg_per_leg": 20,
+        "note": "Charges de travail déclarées par Julien. Matériel : barre 10 kg, disques 2×20, 2×10, 4×5, 4×2,5, 4×1 (max 104 kg)."
+      }
+    ]
   },
   "days": [
     {
@@ -952,7 +961,7 @@
       "longRunMin": 0,
       "totalMin": 85,
       "sRPE": 347.5,
-      "instructions": "0–10' : 110–120 W, puis 120–135 W, cadence 85–95 rpm, FC < 130. Récupération active, aucune relance.\nCONDITION : VFC du matin < 41 ou FC repos ≥ 52 → pas de force ce soir, seulement 15' de mobilité.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'. TEST CUISSE GAUCHE sur la série à 50 % : la moindre pointe → remplacer par goblet squat léger 3×6 ou supprimer.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets : tenue isométrique sur pointes à mi-hauteur, au sol (pas sur une marche), 4×30–45'' par jambe, sans charge ou avec 10 kg maximum. PAS de mollets lourds lestés (cf. 20 kg la semaine dernière → mollets chargés 72 h).\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec."
+      "instructions": "0–10' : 110–120 W, puis 120–135 W, cadence 85–95 rpm, FC < 130. Récupération active, aucune relance.\nCONDITION : VFC du matin < 41 ou FC repos ≥ 52 → pas de force ce soir, seulement 15' de mobilité.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'. TEST CUISSE GAUCHE sur la série à 50 % : la moindre pointe → remplacer par goblet squat léger 3×6 ou supprimer.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets : tenue isométrique sur pointes à mi-hauteur, au sol (pas sur une marche), 4×30–45'' par jambe, sans charge ou avec 10 kg maximum. PAS de mollets lourds lestés (cf. 20 kg la semaine dernière → mollets chargés 72 h).\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec.\nREPÈRES DE CHARGE (dernière séance du 28/09 : squat 90 kg, soulevé de terre 94 kg, mollets 20 kg/jambe) :\n• Squat 3×3 à 80–85 kg (reprise prudente après la cuisse gauche ; 90 kg seulement si la série à 85 kg est facile et sans douleur).\n• Soulevé de terre 2×3 à 85–90 kg.\n• Mollets : isométrique au sol, sans charge ou 10 kg maximum.\nNOTE tes charges finales : je te les demande au bilan de dimanche pour régler la semaine suivante."
     },
     {
       "week": 9,
@@ -1064,7 +1073,7 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 245.0,
-      "instructions": "110–130 W, cadence 85–95 rpm, FC < 130. Récupération active.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde."
+      "instructions": "110–130 W, cadence 85–95 rpm, FC < 130. Récupération active.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.\nREPÈRES DE CHARGE (lendemain de la sortie clé) : squat 2×3 et soulevé de terre 2×3 à la charge de lundi dernier moins 5 kg ; mollets debout 3×8 à 10–15 kg/jambe seulement si talon et Achille ≤ 1/10, sinon isométrique.\nNOTE tes charges finales pour le bilan."
     },
     {
       "week": 10,
@@ -5364,7 +5373,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "CONDITION : VFC du matin < 41 ou FC repos ≥ 52 → pas de force ce soir, seulement 15' de mobilité.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'. TEST CUISSE GAUCHE sur la série à 50 % : la moindre pointe → remplacer par goblet squat léger 3×6 ou supprimer.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets : tenue isométrique sur pointes à mi-hauteur, au sol (pas sur une marche), 4×30–45'' par jambe, sans charge ou avec 10 kg maximum. PAS de mollets lourds lestés (cf. 20 kg la semaine dernière → mollets chargés 72 h).\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec.",
+      "instructions": "CONDITION : VFC du matin < 41 ou FC repos ≥ 52 → pas de force ce soir, seulement 15' de mobilité.\nÉchauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 3×3 à RPE 7 (≈ 3 répétitions en réserve), repos 2'30–3'. TEST CUISSE GAUCHE sur la série à 50 % : la moindre pointe → remplacer par goblet squat léger 3×6 ou supprimer.\n• Soulevé de terre 2×3 à RPE 7, repos 2'30–3'.\n• Mollets : tenue isométrique sur pointes à mi-hauteur, au sol (pas sur une marche), 4×30–45'' par jambe, sans charge ou avec 10 kg maximum. PAS de mollets lourds lestés (cf. 20 kg la semaine dernière → mollets chargés 72 h).\n• Tractions 3×5, repos 1'30.\n• Gainage 3×45'', repos 45''.\nPas de progression de charge, aucune série à l'échec.\nREPÈRES DE CHARGE (dernière séance du 28/09 : squat 90 kg, soulevé de terre 94 kg, mollets 20 kg/jambe) :\n• Squat 3×3 à 80–85 kg (reprise prudente après la cuisse gauche ; 90 kg seulement si la série à 85 kg est facile et sans douleur).\n• Soulevé de terre 2×3 à 85–90 kg.\n• Mollets : isométrique au sol, sans charge ou 10 kg maximum.\nNOTE tes charges finales : je te les demande au bilan de dimanche pour régler la semaine suivante.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5870,7 +5879,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.",
+      "instructions": "Échauffement : 5' de mobilité (hanches, chevilles) + séries montantes (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 à RPE 6–7, repos 2'30.\n• Soulevé de terre 2×3 à RPE 6–7, repos 2'30.\n• Mollets debout 3×8, repos 1'30.\n• Tractions 3×5 (optionnel).\n• Gainage 2×45''.\nCharges faciles, exécution rapide et propre. Aucune fatigue musculaire.\nLENDEMAIN DE LA SORTIE CLÉ (décalée au dimanche) : jambes lourdes ou talon > 3/10 → remplacer par 15' de mobilité/automassage. Mollets : isométrique uniquement, pas de charge lourde.\nREPÈRES DE CHARGE (lendemain de la sortie clé) : squat 2×3 et soulevé de terre 2×3 à la charge de lundi dernier moins 5 kg ; mollets debout 3×8 à 10–15 kg/jambe seulement si talon et Achille ≤ 1/10, sinon isométrique.\nNOTE tes charges finales pour le bilan.",
       "notes": "",
       "status": "planned",
       "original_data": {
