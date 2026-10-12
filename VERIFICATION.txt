@@ -1,6 +1,5 @@
-VÉRIFICATION V15
-JSON valide : OUI ; app.js : syntaxe OK
-Semaines 1 à 8 : inchangées
-Semaines 9 à 12 : contenu des séances inchangé, seules les durées > 60 min sont réécrites en h min
-Encadré semaine : S8 9 h 27 · S9 12 h 35 · S10 12 h 52 · S11 6 h 45 (total prévu)
-Cache de l'appli : veni-vici-v14-semaine (app.js?v=14, style.css?v=7, training-plan.json?v=14)
+VÉRIFICATION V16
+JSON valide : OUI
+Semaines 1 à 9 : inchangées
+S10 : mercredi 21 soir (seuil 2×10'), vendredi 23 (footing 45 min), samedi 24 (répétition 5 h sur boucles A+B+C+D, 07:30), dimanche 25 (facultatif)
+Totaux journaliers recalculés pour les jours modifiés
