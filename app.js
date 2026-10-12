@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=13';
+const PLAN_URL = './training-plan.json?v=14';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -385,16 +385,28 @@ function renderToday(){
   } else html+=items.map(sessionCard).join('');
   $('todaySessions').innerHTML=html;
 
-  const orton=state.accessMode==='unauthorized'?null:ortonRoutineForDate(state.currentDate);
-  $('morningRoutine').innerHTML=orton?`<article class="routine-card"><span class="eyebrow">Au réveil · ${esc(orton.duration)}</span><h3>${esc(orton.type)}</h3><p><strong>${esc(orton.objective)}</strong></p><p>${esc(orton.content)}</p><p class="muted">${esc(orton.instruction)}</p></article>`:'';
-  const routine=state.accessMode==='unauthorized'?null:routineForDate(state.currentDate);
-  $('eveningRoutine').innerHTML=routine?`<article class="routine-card"><span class="eyebrow">Ce soir · ${esc(routine.duration)}</span><h3>${esc(routine.type)}</h3><p><strong>${esc(routine.objective)}</strong></p><p>${esc(routine.content)}</p><p class="muted">${esc(routine.instruction)}</p></article>`:'';
+  $('morningRoutine').innerHTML='';
+  $('eveningRoutine').innerHTML='';
   bindDynamicSessionButtons();
 }
 
+function fmtDur(min){ min=Math.round(num(min)); if(min<60) return `${min} min`; const h=Math.floor(min/60), m=min%60; return m?`${h} h ${String(m).padStart(2,'0')}`:`${h} h`; }
+function planSessionFor(s){ return (state.plan?.sessions||[]).find(p=>p.source_key===s.source_key)||null; }
+function splitSession(s){
+  const dur=num(s.duration_min), t=(s.title||'').toLowerCase();
+  if(/(^ht\b|\bht\b|home.?trainer|vélo|velo|vélotaf|velotaf|cycl)/.test(t)) return {run:0,bike:dur,str:0};
+  const isRun=/(footing|endurance|sortie|côte|cote|seuil|vo₂|vo2|course à pied|accélération|répétition|allure|fartlek|trail running)/.test(t);
+  if(!isRun&&/(force|renfo|muscu|mobilit|automassage|gainage|step-up|mollets)/.test(t)) return {run:0,bike:0,str:dur};
+  if(isRun||/trail/.test(t)){
+    const p=planSessionFor(s); let run=dur;
+    if(p&&num(p.run_min)>0&&num(p.run_min)<dur&&/(mobilit|circuit|step|renfo|mollet|gainage)/.test(t)) run=num(p.run_min);
+    return {run,bike:0,str:dur-run};
+  }
+  return {run:0,bike:0,str:dur};
+}
 function sessionCard(s){
   const badges=[];
-  if(s.duration_min) badges.push(`<span class="pill">${s.duration_min} min</span>`);
+  if(s.duration_min) badges.push(`<span class="pill">${fmtDur(s.duration_min)}</span>`);
   if(num(s.rpe)>0) badges.push(`<span class="pill">RPE ${String(s.rpe).replace('.',',')}</span>`);
   if(num(s.elevation_m)>0) badges.push(`<span class="pill">D+ ${s.elevation_m} m</span>`);
   if(isMoved(s)) badges.push('<span class="pill amber">Déplacée</span>'); else if(isModified(s)) badges.push('<span class="pill amber">Modifiée</span>');
@@ -446,13 +458,17 @@ function renderWeek(){
   const first=dateForWeekDay(state.selectedWeek,0), last=dateForWeekDay(state.selectedWeek,6);
   $('weekTitle').textContent=`Semaine ${state.selectedWeek} · ${formatDate(first,{day:'numeric',month:'short'})} → ${formatDate(last,{day:'numeric',month:'short'})}`;
   const phase=state.plan.days.find(d=>d.week===state.selectedWeek)?.phase||'';
-  $('weekPhase').innerHTML=`<span class="pill red">S${state.selectedWeek}</span><span class="pill">${esc(phase)}</span>`;
+  const wk=state.sessions.filter(s=>s.scheduled_date>=first&&s.scheduled_date<=last&&s.status!=='skipped');
+  const tot=wk.reduce((a,s)=>{const x=splitSession(s);a.run+=x.run;a.bike+=x.bike;a.str+=x.str;return a;},{run:0,bike:0,str:0});
+  const all=tot.run+tot.bike+tot.str;
+  $('weekPhase').innerHTML=`<span class="pill red">S${state.selectedWeek}</span><span class="pill">${esc(phase)}</span>
+    <div class="week-summary"><div class="ws-item"><span>Course à pied</span><strong>${fmtDur(tot.run)}</strong></div><div class="ws-item"><span>Vélo</span><strong>${fmtDur(tot.bike)}</strong></div><div class="ws-item"><span>Muscu / mobilité</span><strong>${fmtDur(tot.str)}</strong></div><div class="ws-item ws-total"><span>Total semaine</span><strong>${fmtDur(all)}</strong></div></div>`;
   const today=localISO(new Date());
   let html='';
   for(let i=0;i<7;i++){
     const date=dateForWeekDay(state.selectedWeek,i);
     const items=state.sessions.filter(s=>s.scheduled_date===date).sort(sortSessions);
-    html+=`<article class="day-card ${date===today?'today':''}" data-date="${date}"><div class="day-card-head"><strong>${esc(DAY_NAMES[parseISO(date).getDay()])}</strong><span>${esc(formatDate(date,{day:'numeric',month:'short'}))}</span></div>${items.length?items.map(s=>`<div class="week-session" data-open-id="${esc(s.id)}"><div class="week-time">${esc(s.time_label||slotLabel(s.slot))}</div><div><div class="week-session-title">${esc(s.title)}</div><div class="week-session-meta">${s.duration_min?`${s.duration_min} min · `:''}${s.rpe?`RPE ${String(s.rpe).replace('.',',')} · `:''}${isMoved(s)?'Déplacée · ':isModified(s)?'Modifiée · ':''}${STATUS_LABELS[s.status]}</div></div></div>`).join(''):'<div class="muted">Repos / aucune séance</div>'}</article>`;
+    html+=`<article class="day-card ${date===today?'today':''}" data-date="${date}"><div class="day-card-head"><strong>${esc(DAY_NAMES[parseISO(date).getDay()])}</strong><span>${esc(formatDate(date,{day:'numeric',month:'short'}))}</span></div>${items.length?items.map(s=>`<div class="week-session" data-open-id="${esc(s.id)}"><div class="week-time">${esc(s.time_label||slotLabel(s.slot))}</div><div><div class="week-session-title">${esc(s.title)}</div><div class="week-session-meta">${s.duration_min?`${fmtDur(s.duration_min)} · `:''}${s.rpe?`RPE ${String(s.rpe).replace('.',',')} · `:''}${isMoved(s)?'Déplacée · ':isModified(s)?'Modifiée · ':''}${STATUS_LABELS[s.status]}</div></div></div>`).join(''):'<div class="muted">Repos / aucune séance</div>'}</article>`;
   }
   $('weekDays').innerHTML=html;
   document.querySelectorAll('[data-open-id]').forEach(el=>el.onclick=()=>{

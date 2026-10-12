@@ -1,7 +1,6 @@
-VÉRIFICATION V14
-JSON valide : OUI
-Semaines 1 à 8 : inchangées (séances faites conservées)
-S9 : lundi–vendredi adaptés, sortie clé 4h30 déplacée du samedi 17 au dimanche 18/10 (08:00), samedi 17 = footing 40' + mobilité
-S10 : seul le lundi 19 (force) reçoit une consigne d'adaptation ; répétition générale toujours le samedi 24/10 (à confirmer)
-Totaux journaliers recalculés pour les jours modifiés
-Bilan S8 ajouté dans le journal hebdomadaire ; suivi du talon gauche ajouté
+VÉRIFICATION V15
+JSON valide : OUI ; app.js : syntaxe OK
+Semaines 1 à 8 : inchangées
+Semaines 9 à 12 : contenu des séances inchangé, seules les durées > 60 min sont réécrites en h min
+Encadré semaine : S8 9 h 27 · S9 12 h 35 · S10 12 h 52 · S11 6 h 45 (total prévu)
+Cache de l'appli : veni-vici-v14-semaine (app.js?v=14, style.css?v=7, training-plan.json?v=14)

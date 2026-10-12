@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V14 — S9 calée : TT lundi, double qualité mercredi, vendredi 30' max, sortie clé 4h30 décalée au dimanche 18/10",
+    "revision": "V15 — durées > 60 min exprimées en heures/minutes, S9 calée (sortie clé 4h30 le dimanche 18/10)",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -1000,7 +1000,7 @@
       "longRunMin": 0,
       "totalMin": 120,
       "sRPE": 375.0,
-      "instructions": "Échauffement : 5' de mobilité + 10 squats au poids du corps.\n2 séries de chaque, repos 60–90'' :\n• Fente bulgare 2×6/jambe (haltères, RPE 6).\n• Soulevé de terre jambe tendue unipodal (haltère) 2×6–8/jambe.\n• Leg curl sur Swiss ball 2×8–10.\n• Mollet genou fléchi unipodal 2×8/jambe (descente lente).\n• Step-down lent (3'' en descente) 2×6/jambe.\n• Step-up haut + montée de genou 2×6/jambe.\n• Suitcase carry 2×30–40''/côté.\nRPE 5–6, technique stricte, aucune courbature recherchée. | 90' sur plat/roulant, FC 135–145 (≈ 4:55–5:15/km), allure régulière, aucune accélération. Lendemain de la double qualité : résistance à la fatigue sur jambes entamées.\nNUTRITION : boire, et 1 gel ou 1 iso (40–60 g) après 45'.\nADAPTER : Achille ou talon qui réagit → 75'. Si la qualité est déplacée pour le télétravail, garder cette sortie le lendemain de la qualité."
+      "instructions": "Échauffement : 5' de mobilité + 10 squats au poids du corps.\n2 séries de chaque, repos 60–90'' :\n• Fente bulgare 2×6/jambe (haltères, RPE 6).\n• Soulevé de terre jambe tendue unipodal (haltère) 2×6–8/jambe.\n• Leg curl sur Swiss ball 2×8–10.\n• Mollet genou fléchi unipodal 2×8/jambe (descente lente).\n• Step-down lent (3'' en descente) 2×6/jambe.\n• Step-up haut + montée de genou 2×6/jambe.\n• Suitcase carry 2×30–40''/côté.\nRPE 5–6, technique stricte, aucune courbature recherchée. | 1 h 30 sur plat/roulant, FC 135–145 (≈ 4:55–5:15/km), allure régulière, aucune accélération. Lendemain de la double qualité : résistance à la fatigue sur jambes entamées.\nNUTRITION : boire, et 1 gel ou 1 iso (40–60 g) après 45'.\nADAPTER : Achille ou talon qui réagit → 1 h 15. Si la qualité est déplacée pour le télétravail, garder cette sortie le lendemain de la qualité."
     },
     {
       "week": 9,
@@ -1048,7 +1048,7 @@
       "longRunMin": 270,
       "totalMin": 270,
       "sRPE": 1350.0,
-      "instructions": "DÉCISION AU RÉVEIL : talon gauche ≤ 2/10 à la marche et Achille silencieux → séance complète. Talon 3/10 → séance complète mais descentes en marche rapide si la douleur monte. Talon ≥ 4/10 ou boiterie → 3h00 d'endurance sur le roulant, sans blocs.\nPARCOURS POSSIBLE : boucles A + B + C (≈ 43 km, ≈ 1 060 m D+) + 15–20' roulant à la fin, en passant par l'atelier pour tester les ravitos du 24/10.\nPARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0–90' : ROULANT (−3 à +3 %), endurance FC 135–145.\n90–195' : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n125–155' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n155–165' : récup 10' (FC < 145).\n195–270' : ROULANT/CASSE-PATTES.\n195–225' : BLOC 2 allure course.\n225–235' : récup 10' (FC < 145).\n235–265' : BLOC 3 allure course.\n265–270' : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes.\nTALON PENDANT LA SORTIE : > 4/10 ou foulée modifiée → finir au plus court en trot/marche.\nAPRÈS : marche 10', rouleau sur mollets/quadriceps, repas glucides + protéines dans l'heure. Noter le talon le soir et le lendemain matin (0–10)."
+      "instructions": "DÉCISION AU RÉVEIL : talon gauche ≤ 2/10 à la marche et Achille silencieux → séance complète. Talon 3/10 → séance complète mais descentes en marche rapide si la douleur monte. Talon ≥ 4/10 ou boiterie → 3h00 d'endurance sur le roulant, sans blocs.\nPARCOURS POSSIBLE : boucles A + B + C (≈ 43 km, ≈ 1 060 m D+) + 15–20' roulant à la fin, en passant par l'atelier pour tester les ravitos du 24/10.\nPARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0 h 00 – 1 h 30 : ROULANT (−3 à +3 %), endurance FC 135–145.\n1 h 30 – 3 h 15 : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n2 h 05 – 2 h 35 : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n2 h 35 – 2 h 45 : récup 10' (FC < 145).\n3 h 15 – 4 h 30 : ROULANT/CASSE-PATTES.\n3 h 15 – 3 h 45 : BLOC 2 allure course.\n3 h 45 – 3 h 55 : récup 10' (FC < 145).\n3 h 55 – 4 h 25 : BLOC 3 allure course.\n4 h 25 – 4 h 30 : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes.\nTALON PENDANT LA SORTIE : > 4/10 ou foulée modifiée → finir au plus court en trot/marche.\nAPRÈS : marche 10', rouleau sur mollets/quadriceps, repas glucides + protéines dans l'heure. Noter le talon le soir et le lendemain matin (0–10)."
     },
     {
       "week": 10,
@@ -1080,7 +1080,7 @@
       "longRunMin": 0,
       "totalMin": 90,
       "sRPE": 225.0,
-      "instructions": "45' très facile, cadence 85–95 rpm, FC < 130, aucune relance.\nSi télétravail : remplacer les deux trajets par 60' de HT à 110–130 W. | 45' très facile, cadence 85–95 rpm, FC < 130, aucune relance."
+      "instructions": "45' très facile, cadence 85–95 rpm, FC < 130, aucune relance.\nSi télétravail : remplacer les deux trajets par 1 h de HT à 110–130 W. | 45' très facile, cadence 85–95 rpm, FC < 130, aucune relance."
     },
     {
       "week": 10,
@@ -1128,7 +1128,7 @@
       "longRunMin": 0,
       "totalMin": 85,
       "sRPE": 255.0,
-      "instructions": "85' roulant/vallonné (≈ 250 m D+), FC 135–150. Aucun bloc rapide, aucune accélération.\nNUTRITION : 1 gel ou 1 iso vers 45'.\nObjectif : arriver samedi avec une fatigue légère mais propre."
+      "instructions": "1 h 25 roulant/vallonné (≈ 250 m D+), FC 135–150. Aucun bloc rapide, aucune accélération.\nNUTRITION : 1 gel ou 1 iso vers 45'.\nObjectif : arriver samedi avec une fatigue légère mais propre."
     },
     {
       "week": 10,
@@ -1144,7 +1144,7 @@
       "longRunMin": 300,
       "totalMin": 300,
       "sRPE": 1500.0,
-      "instructions": "J-14 : séance la plus importante du plan, en conditions de course (chaussures, sac, nutrition et caféine du jour J).\nPARCOURS : ~1 300–1 400 m D+ — début roulant, bloc vallonné au milieu, fin roulante/casse-pattes.\n0–90' : ROULANT, endurance FC 135–145.\n90–195' : VALLONNÉ (côtes 5–12 %, descentes en contrôle).\n125–165' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n165–175' : récup 10' (FC < 145).\n195–300' : ROULANT/CASSE-PATTES.\n200–240' : BLOC 2 allure course.\n240–250' : récup 10'.\n250–290' : BLOC 3 allure course.\n290–300' : retour au calme.\nNe jamais prolonger au-delà de 5 h.\nNUTRITION : stratégie retenue après le test du 17/10 (alternance gel/iso toutes les 27' ou 30').\nCAFÉINE : plan de course validé au bilan du 18/10.\nRAVITOS : arrêts < 1'. PESÉE avant et après."
+      "instructions": "J-14 : séance la plus importante du plan, en conditions de course (chaussures, sac, nutrition et caféine du jour J).\nPARCOURS : ~1 300–1 400 m D+ — début roulant, bloc vallonné au milieu, fin roulante/casse-pattes.\n0 h 00 – 1 h 30 : ROULANT, endurance FC 135–145.\n1 h 30 – 3 h 15 : VALLONNÉ (côtes 5–12 %, descentes en contrôle).\n2 h 05 – 2 h 45 : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n2 h 45 – 2 h 55 : récup 10' (FC < 145).\n3 h 15 – 5 h 00 : ROULANT/CASSE-PATTES.\n3 h 20 – 4 h 00 : BLOC 2 allure course.\n4 h 00 – 4 h 10 : récup 10'.\n4 h 10 – 4 h 50 : BLOC 3 allure course.\n4 h 50 – 5 h 00 : retour au calme.\nNe jamais prolonger au-delà de 5 h.\nNUTRITION : stratégie retenue après le test du 17/10 (alternance gel/iso toutes les 27' ou 30').\nCAFÉINE : plan de course validé au bilan du 18/10.\nRAVITOS : arrêts < 1'. PESÉE avant et après."
     },
     {
       "week": 10,
@@ -1160,7 +1160,7 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 90.0,
-      "instructions": "Seulement si la récupération est au niveau attendu au réveil ; sinon HT 45–60' à 110–130 W.\n45' très facile sur le plat, FC < 135. Cette séance clôt le pic."
+      "instructions": "Seulement si la récupération est au niveau attendu au réveil ; sinon HT 0 h 45 – 1 h 00 à 110–130 W.\n45' très facile sur le plat, FC < 135. Cette séance clôt le pic."
     },
     {
       "week": 11,
@@ -1192,7 +1192,7 @@
       "longRunMin": 0,
       "totalMin": 70,
       "sRPE": 210.0,
-      "instructions": "ENDURANCE : 60' facile roulant, FC 135–145.\nACCÉLÉRATIONS : 6×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nCIRCUIT COURT (10') : step-up unipodal 2×8/jambe + 2 séries de chaque exercice mollets du circuit habituel, sans fatigue."
+      "instructions": "ENDURANCE : 1 h facile roulant, FC 135–145.\nACCÉLÉRATIONS : 6×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nCIRCUIT COURT (10') : step-up unipodal 2×8/jambe + 2 séries de chaque exercice mollets du circuit habituel, sans fatigue."
     },
     {
       "week": 11,
@@ -1256,7 +1256,7 @@
       "longRunMin": 110,
       "totalMin": 115,
       "sRPE": 460.0,
-      "instructions": "J-7 : dernier rappel spécifique, aucune fatigue finale.\n0–40' : endurance, FC 135–145.\n40–55' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n55–65' : récup 10' (FC < 145).\n65–80' : BLOC 2 allure course.\n80–93' : endurance.\n93' : prendre un gel.\n95–105' : 4×30'' en côte à 6–10 %, dur mais relâché (RPE 8, pas un sprint).\nRÉCUP : 2' (redescente au trot puis en marchant) ; repartir quand FC < 135.\n105–110' : retour au calme.\nNUTRITION : stratégie de course validée — gel 45 g et iso 45 g (bue en 10–15') en alternance toutes les 30' (≈ 90 g/h) ; eau à la soif avec chaque gel."
+      "instructions": "J-7 : dernier rappel spécifique, aucune fatigue finale.\n0–40' : endurance, FC 135–145.\n40–55' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n0 h 55 – 1 h 05 : récup 10' (FC < 145).\n1 h 05 – 1 h 20 : BLOC 2 allure course.\n1 h 20 – 1 h 33 : endurance.\n1 h 33 : prendre un gel.\n1 h 35 – 1 h 45 : 4×30'' en côte à 6–10 %, dur mais relâché (RPE 8, pas un sprint).\nRÉCUP : 2' (redescente au trot puis en marchant) ; repartir quand FC < 135.\n1 h 45 – 1 h 50 : retour au calme.\nNUTRITION : stratégie de course validée — gel 45 g et iso 45 g (bue en 10–15') en alternance toutes les 30' (≈ 90 g/h) ; eau à la soif avec chaque gel."
     },
     {
       "week": 11,
@@ -5630,7 +5630,7 @@
       "day_name": "Jeudi",
       "phase": "Gros bloc spécifique Veni Vici",
       "time_label": "18:15",
-      "title": "Endurance longue facile 90' plat",
+      "title": "Endurance longue facile 1 h 30 plat",
       "duration_min": 90,
       "rpe": 2.5,
       "elevation_m": 90,
@@ -5640,7 +5640,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "90' sur plat/roulant, FC 135–145 (≈ 4:55–5:15/km), allure régulière, aucune accélération. Lendemain de la double qualité : résistance à la fatigue sur jambes entamées.\nNUTRITION : boire, et 1 gel ou 1 iso (40–60 g) après 45'.\nADAPTER : Achille ou talon qui réagit → 75'. Si la qualité est déplacée pour le télétravail, garder cette sortie le lendemain de la qualité.",
+      "instructions": "1 h 30 sur plat/roulant, FC 135–145 (≈ 4:55–5:15/km), allure régulière, aucune accélération. Lendemain de la double qualité : résistance à la fatigue sur jambes entamées.\nNUTRITION : boire, et 1 gel ou 1 iso (40–60 g) après 45'.\nADAPTER : Achille ou talon qui réagit → 1 h 15. Si la qualité est déplacée pour le télétravail, garder cette sortie le lendemain de la qualité.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5778,7 +5778,7 @@
       "heat_min": 0,
       "intensity_min": 90,
       "long_run_min": 270,
-      "instructions": "DÉCISION AU RÉVEIL : talon gauche ≤ 2/10 à la marche et Achille silencieux → séance complète. Talon 3/10 → séance complète mais descentes en marche rapide si la douleur monte. Talon ≥ 4/10 ou boiterie → 3h00 d'endurance sur le roulant, sans blocs.\nPARCOURS POSSIBLE : boucles A + B + C (≈ 43 km, ≈ 1 060 m D+) + 15–20' roulant à la fin, en passant par l'atelier pour tester les ravitos du 24/10.\nPARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0–90' : ROULANT (−3 à +3 %), endurance FC 135–145.\n90–195' : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n125–155' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n155–165' : récup 10' (FC < 145).\n195–270' : ROULANT/CASSE-PATTES.\n195–225' : BLOC 2 allure course.\n225–235' : récup 10' (FC < 145).\n235–265' : BLOC 3 allure course.\n265–270' : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes.\nTALON PENDANT LA SORTIE : > 4/10 ou foulée modifiée → finir au plus court en trot/marche.\nAPRÈS : marche 10', rouleau sur mollets/quadriceps, repas glucides + protéines dans l'heure. Noter le talon le soir et le lendemain matin (0–10).",
+      "instructions": "DÉCISION AU RÉVEIL : talon gauche ≤ 2/10 à la marche et Achille silencieux → séance complète. Talon 3/10 → séance complète mais descentes en marche rapide si la douleur monte. Talon ≥ 4/10 ou boiterie → 3h00 d'endurance sur le roulant, sans blocs.\nPARCOURS POSSIBLE : boucles A + B + C (≈ 43 km, ≈ 1 060 m D+) + 15–20' roulant à la fin, en passant par l'atelier pour tester les ravitos du 24/10.\nPARCOURS : ~1 100–1 200 m D+ — début roulant, bloc central montées/descentes, fin roulante/casse-pattes.\n0 h 00 – 1 h 30 : ROULANT (−3 à +3 %), endurance FC 135–145.\n1 h 30 – 3 h 15 : MONTÉES/DESCENTES (côtes 5–12 %, descentes courues en contrôle). Hors blocs : montées FC 145–155, marche active si pente > 12–15 %.\n2 h 05 – 2 h 35 : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n2 h 35 – 2 h 45 : récup 10' (FC < 145).\n3 h 15 – 4 h 30 : ROULANT/CASSE-PATTES.\n3 h 15 – 3 h 45 : BLOC 2 allure course.\n3 h 45 – 3 h 55 : récup 10' (FC < 145).\n3 h 55 – 4 h 25 : BLOC 3 allure course.\n4 h 25 – 4 h 30 : retour au calme.\nNUTRITION (test 100 g/h) : même alternance gel 45 g / iso 45 g, mais toutes les 27' au lieu de 30' ; si estomac < 7/10, revenir à 30'.\nCAFÉINE (test course) : 100 mg vers 2h00, 100 mg vers 3h15.\nRAVITOS : arrêts < 1'30. PESÉE avant et après.\nADAPTER (Achille) : douleur > 2/10 en descente → finir sur le roulant, sans le bloc montées/descentes.\nTALON PENDANT LA SORTIE : > 4/10 ou foulée modifiée → finir au plus court en trot/marche.\nAPRÈS : marche 10', rouleau sur mollets/quadriceps, repas glucides + protéines dans l'heure. Noter le talon le soir et le lendemain matin (0–10).",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -5916,7 +5916,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "45' très facile, cadence 85–95 rpm, FC < 130, aucune relance.\nSi télétravail : remplacer les deux trajets par 60' de HT à 110–130 W.",
+      "instructions": "45' très facile, cadence 85–95 rpm, FC < 130, aucune relance.\nSi télétravail : remplacer les deux trajets par 1 h de HT à 110–130 W.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6192,7 +6192,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "85' roulant/vallonné (≈ 250 m D+), FC 135–150. Aucun bloc rapide, aucune accélération.\nNUTRITION : 1 gel ou 1 iso vers 45'.\nObjectif : arriver samedi avec une fatigue légère mais propre.",
+      "instructions": "1 h 25 roulant/vallonné (≈ 250 m D+), FC 135–150. Aucun bloc rapide, aucune accélération.\nNUTRITION : 1 gel ou 1 iso vers 45'.\nObjectif : arriver samedi avec une fatigue légère mais propre.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6238,7 +6238,7 @@
       "heat_min": 0,
       "intensity_min": 120,
       "long_run_min": 300,
-      "instructions": "J-14 : séance la plus importante du plan, en conditions de course (chaussures, sac, nutrition et caféine du jour J).\nPARCOURS : ~1 300–1 400 m D+ — début roulant, bloc vallonné au milieu, fin roulante/casse-pattes.\n0–90' : ROULANT, endurance FC 135–145.\n90–195' : VALLONNÉ (côtes 5–12 %, descentes en contrôle).\n125–165' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n165–175' : récup 10' (FC < 145).\n195–300' : ROULANT/CASSE-PATTES.\n200–240' : BLOC 2 allure course.\n240–250' : récup 10'.\n250–290' : BLOC 3 allure course.\n290–300' : retour au calme.\nNe jamais prolonger au-delà de 5 h.\nNUTRITION : stratégie retenue après le test du 17/10 (alternance gel/iso toutes les 27' ou 30').\nCAFÉINE : plan de course validé au bilan du 18/10.\nRAVITOS : arrêts < 1'. PESÉE avant et après.",
+      "instructions": "J-14 : séance la plus importante du plan, en conditions de course (chaussures, sac, nutrition et caféine du jour J).\nPARCOURS : ~1 300–1 400 m D+ — début roulant, bloc vallonné au milieu, fin roulante/casse-pattes.\n0 h 00 – 1 h 30 : ROULANT, endurance FC 135–145.\n1 h 30 – 3 h 15 : VALLONNÉ (côtes 5–12 %, descentes en contrôle).\n2 h 05 – 2 h 45 : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n2 h 45 – 2 h 55 : récup 10' (FC < 145).\n3 h 15 – 5 h 00 : ROULANT/CASSE-PATTES.\n3 h 20 – 4 h 00 : BLOC 2 allure course.\n4 h 00 – 4 h 10 : récup 10'.\n4 h 10 – 4 h 50 : BLOC 3 allure course.\n4 h 50 – 5 h 00 : retour au calme.\nNe jamais prolonger au-delà de 5 h.\nNUTRITION : stratégie retenue après le test du 17/10 (alternance gel/iso toutes les 27' ou 30').\nCAFÉINE : plan de course validé au bilan du 18/10.\nRAVITOS : arrêts < 1'. PESÉE avant et après.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6284,7 +6284,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Seulement si la récupération est au niveau attendu au réveil ; sinon HT 45–60' à 110–130 W.\n45' très facile sur le plat, FC < 135. Cette séance clôt le pic.",
+      "instructions": "Seulement si la récupération est au niveau attendu au réveil ; sinon HT 0 h 45 – 1 h 00 à 110–130 W.\n45' très facile sur le plat, FC < 135. Cette séance clôt le pic.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6412,7 +6412,7 @@
       "day_name": "Mardi",
       "phase": "Affûtage 1",
       "time_label": "18:15",
-      "title": "Endurance 60' + 6×20'' + step-ups/mollets légers",
+      "title": "Endurance 1 h + 6×20'' + step-ups/mollets légers",
       "duration_min": 70,
       "rpe": 3.0,
       "elevation_m": 100,
@@ -6422,7 +6422,7 @@
       "heat_min": 0,
       "intensity_min": 2,
       "long_run_min": 0,
-      "instructions": "ENDURANCE : 60' facile roulant, FC 135–145.\nACCÉLÉRATIONS : 6×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nCIRCUIT COURT (10') : step-up unipodal 2×8/jambe + 2 séries de chaque exercice mollets du circuit habituel, sans fatigue.",
+      "instructions": "ENDURANCE : 1 h facile roulant, FC 135–145.\nACCÉLÉRATIONS : 6×20'' sur terrain plat et régulier. Monter en vitesse sur 5'', puis tenir vite et relâché (≈ 3:15–3:30/km, allure 3 000 m), pas un sprint.\nRÉCUP : 1'–1'30 en trottinant très lentement ou en marchant ; repartir quand la respiration est calmée (FC < 130).\nCIRCUIT COURT (10') : step-up unipodal 2×8/jambe + 2 séries de chaque exercice mollets du circuit habituel, sans fatigue.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6652,7 +6652,7 @@
       "heat_min": 0,
       "intensity_min": 30,
       "long_run_min": 110,
-      "instructions": "J-7 : dernier rappel spécifique, aucune fatigue finale.\n0–40' : endurance, FC 135–145.\n40–55' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n55–65' : récup 10' (FC < 145).\n65–80' : BLOC 2 allure course.\n80–93' : endurance.\n93' : prendre un gel.\n95–105' : 4×30'' en côte à 6–10 %, dur mais relâché (RPE 8, pas un sprint).\nRÉCUP : 2' (redescente au trot puis en marchant) ; repartir quand FC < 135.\n105–110' : retour au calme.\nNUTRITION : stratégie de course validée — gel 45 g et iso 45 g (bue en 10–15') en alternance toutes les 30' (≈ 90 g/h) ; eau à la soif avec chaque gel.",
+      "instructions": "J-7 : dernier rappel spécifique, aucune fatigue finale.\n0–40' : endurance, FC 135–145.\n40–55' : BLOC 1 allure course — plat 150–158, côtes 155–165 (plafond 165), descentes relâchées sans regarder la FC.\n0 h 55 – 1 h 05 : récup 10' (FC < 145).\n1 h 05 – 1 h 20 : BLOC 2 allure course.\n1 h 20 – 1 h 33 : endurance.\n1 h 33 : prendre un gel.\n1 h 35 – 1 h 45 : 4×30'' en côte à 6–10 %, dur mais relâché (RPE 8, pas un sprint).\nRÉCUP : 2' (redescente au trot puis en marchant) ; repartir quand FC < 135.\n1 h 45 – 1 h 50 : retour au calme.\nNUTRITION : stratégie de course validée — gel 45 g et iso 45 g (bue en 10–15') en alternance toutes les 30' (≈ 90 g/h) ; eau à la soif avec chaque gel.",
       "notes": "",
       "status": "planned",
       "original_data": {

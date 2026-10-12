@@ -1,16 +1,11 @@
-MISE À JOUR V14 — SEMAINE 9 CALÉE (12–18 oct.)
+MISE À JOUR V15 — APPLI ÉPURÉE + DURÉES EN HEURES + BILAN DE LA SEMAINE
 
-Fichier modifié sur GitHub : training-plan.json
-Après déploiement : Réglages → Mettre à jour les semaines futures.
+Fichiers modifiés sur GitHub : app.js, index.html, style.css, sw.js, training-plan.json
+Après déploiement : fermer et rouvrir l'appli (nouvelle version v14 du cache), puis Réglages → Mettre à jour les semaines futures.
 
-S9
-- Lundi 12 (TT) : HT 40' le matin ; force le soir avec mollets en isométrique (plus de mollets lourds lestés) et test de la cuisse gauche au squat. Pas de force si VFC < 41 ou FC repos ≥ 52 au réveil.
-- Mardi 13 : footing 35' + 5×20'' (récupérations en marchant, FC < 130) + circuit mollets léger, sans excentrique talon sous la marche.
-- Mercredi 14 : double qualité (côtes VO₂ 5×4' + 5×1' en descente le matin, seuil 3×12' le soir). Descentes seulement si talon ≤ 2/10 à la marche au réveil.
-- Jeudi 15 : renforcement 30' + endurance 90'.
-- Vendredi 16 : 30' maximum (footing 20' + 5×20'').
-- Samedi 17 : footing 40' + mobilité, préparation de la sortie clé.
-- Dimanche 18, 08:00 : sortie clé 4h30 (3×30' allure course, test 100 g/h, caféine 2×100 mg), décision au réveil selon le talon. Parcours possible : boucles A + B + C + 15–20' roulant, avec passages à l'atelier.
-- Lundi 19 : force adaptée si jambes lourdes ou talon > 3/10 le lendemain de la sortie clé.
-
-BILAN S8 : 7h10 de course, 83 km, 1 257 m D+. Nutrition 90 g/h validée sans souci. Talon gauche 1–2/10 à la marche, 3–4/10 après la sortie longue (suivi ajouté dans le plan).
+CHANGEMENTS
+- Onglet Aujourd'hui : les encadrés « Au réveil » et « Ce soir » ne s'affichent plus.
+- Consignes : toutes les durées de plus de 60 min sont écrites en heures et minutes (ex. sortie clé du 18/10 : 0 h 00 – 1 h 30, bloc 1 de 2 h 05 à 2 h 35…), à partir de la semaine 9.
+- Badges de durée des séances (Aujourd'hui et Semaine) : 4 h 30 au lieu de 270 min.
+- Onglet Semaine : nouvel encadré avec le temps prévu en course à pied, vélo, muscu/mobilité et le total de la semaine (séances sautées exclues).
+  Repères : S9 ≈ 10 h de course, 40 min de vélo, 1 h 55 de muscu/mobilité, 12 h 35 au total.
