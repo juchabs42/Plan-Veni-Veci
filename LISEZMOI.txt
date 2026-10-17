@@ -1,10 +1,6 @@
-MISE À JOUR V19 — S9 : DOUBLE QUALITÉ DÉPLACÉE AU JEUDI
+MISE À JOUR V20 — TESTS DE SUDATION
 
-Fichiers modifiés sur GitHub : training-plan.json, app.js, index.html, sw.js (numéros de version)
+Fichiers modifiés : training-plan.json, app.js, sw.js (numéros de version)
 Après déploiement : Réglages → Mettre à jour les semaines futures.
 
-- Mardi 13 : inchangé (footing 35' + circuit léger, mobilité le soir).
-- Mercredi 14 : 06:55 renforcement trail 30' (RPE 5 max) ; 18:00 endurance facile 1 h 15 plat (FC 135–140).
-- Jeudi 15 : 07:00 côtes VO₂ 5×4' + 5×1' en descente ; 18:00 seuil 3×12'.
-- Vendredi 16 : footing 25' très facile + 3×20'' seulement si jambes fraîches (30' max).
-- Samedi 17 et dimanche 18 (sortie clé 4 h 30) : inchangés.
+Protocole de test de sudation ajouté aux consignes de : dim 18/10 (sortie clé), mer 21/10 (côtes), jeu 22/10, ven 23/10, sam 24/10 (répétition), mar 27/10, sam 31/10, mar 03/11.
