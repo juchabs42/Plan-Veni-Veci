@@ -1,6 +1,6 @@
-MISE À JOUR V20 — TESTS DE SUDATION
+MISE À JOUR V21 — SEMAINE 10
 
-Fichiers modifiés : training-plan.json, app.js, sw.js (numéros de version)
 Après déploiement : Réglages → Mettre à jour les semaines futures.
-
-Protocole de test de sudation ajouté aux consignes de : dim 18/10 (sortie clé), mer 21/10 (côtes), jeu 22/10, ven 23/10, sam 24/10 (répétition), mar 27/10, sam 31/10, mar 03/11.
+- Mer 21 : pas de descentes si Achille ou talon > 2/10.
+- Sam 24 : hydratation 950 ml/h, caféine 3×100 mg, Tecton X3 toute la sortie.
+- Dim 25 : footing 20–25 min facultatif tôt le matin ou repos (journée sur la route).
