@@ -1,5 +1,4 @@
-MISE À JOUR V22 — SEMAINE 10
+MISE À JOUR V22b — CORRECTION DE LA BULLE SEMAINE
 
-Après déploiement : Réglages → Mettre à jour les semaines futures.
-- Mar 20 : footing 1 h très facile (+ vélo 20–30 min facultatif) au lieu du vélotaf.
-- Mer 21 soir : seuil 2×12 min au lieu de 2×10 min.
+Une séance de course dont le titre mentionne aussi le vélo était comptée en vélo.
+Après déploiement : recharger l appli, puis Réglages → Mettre à jour les semaines futures.

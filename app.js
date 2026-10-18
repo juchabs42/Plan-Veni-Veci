@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=21';
+const PLAN_URL = './training-plan.json?v=22';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -394,8 +394,10 @@ function fmtDur(min){ min=Math.round(num(min)); if(min<60) return `${min} min`; 
 function planSessionFor(s){ return (state.plan?.sessions||[]).find(p=>p.source_key===s.source_key)||null; }
 function splitSession(s){
   const dur=num(s.duration_min), t=(s.title||'').toLowerCase();
-  if(/(^ht\b|\bht\b|home.?trainer|vélo|velo|vélotaf|velotaf|cycl)/.test(t)) return {run:0,bike:dur,str:0};
-  const isRun=/(footing|endurance|sortie|côte|cote|seuil|vo₂|vo2|course à pied|accélération|répétition|allure|fartlek|trail running)/.test(t);
+  const bikeIdx=t.search(/(^ht\b|\bht\b|home.?trainer|vélo|velo|vélotaf|velotaf|cycl)/);
+  const runIdx=t.search(/(footing|endurance|sortie|côte|cote|seuil|vo₂|vo2|course à pied|accélération|répétition|allure|fartlek|trail running)/);
+  if(bikeIdx>=0&&(runIdx<0||bikeIdx<runIdx)) return {run:0,bike:dur,str:0};
+  const isRun=runIdx>=0;
   if(!isRun&&/(force|renfo|muscu|mobilit|automassage|gainage|step-up|mollets)/.test(t)) return {run:0,bike:0,str:dur};
   if(isRun||/trail/.test(t)){
     const p=planSessionFor(s); let run=dur;
