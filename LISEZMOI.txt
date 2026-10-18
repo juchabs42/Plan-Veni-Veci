@@ -1,6 +1,5 @@
-MISE À JOUR V21 — SEMAINE 10
+MISE À JOUR V22 — SEMAINE 10
 
 Après déploiement : Réglages → Mettre à jour les semaines futures.
-- Mer 21 : pas de descentes si Achille ou talon > 2/10.
-- Sam 24 : hydratation 950 ml/h, caféine 3×100 mg, Tecton X3 toute la sortie.
-- Dim 25 : footing 20–25 min facultatif tôt le matin ou repos (journée sur la route).
+- Mar 20 : footing 1 h très facile (+ vélo 20–30 min facultatif) au lieu du vélotaf.
+- Mer 21 soir : seuil 2×12 min au lieu de 2×10 min.
