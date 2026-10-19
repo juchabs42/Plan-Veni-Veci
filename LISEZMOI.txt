@@ -1,4 +1,4 @@
-MISE À JOUR V22b — CORRECTION DE LA BULLE SEMAINE
+MISE À JOUR V23
 
-Une séance de course dont le titre mentionne aussi le vélo était comptée en vélo.
-Après déploiement : recharger l appli, puis Réglages → Mettre à jour les semaines futures.
+Après déploiement : Réglages → Mettre à jour les semaines futures.
+- Lun 26/10 : séance de force réécrite simplement, avec les disques à mettre de chaque côté.

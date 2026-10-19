@@ -8,7 +8,7 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V22b — correction du classement course/vélo dans la bulle de la semaine",
+    "revision": "V23 — séance de force du 26/10 réécrite (charges et disques par côté), journal de force du 19/10",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
@@ -54,9 +54,17 @@
         "deadlift_kg": 90,
         "calf_kg_per_leg": null,
         "note": "Squat abandonné à l'échauffement : tension sur l'extérieur de la cuisse gauche (localisation différente de la semaine précédente). Échauffement renforcé (vélo + hanche + fessiers) ajouté avant toutes les séances de force. Soulevé de terre 2×3 à 90 kg sans douleur. Cuisse : 0/10 au repos, légère gêne au pistol squat."
+      },
+      {
+        "date": "2026-10-19",
+        "squat_kg": 76,
+        "deadlift_kg": 84,
+        "calf_kg_per_leg": 10,
+        "note": "Lendemain de la sortie clé de 4 h 30 : squat 2×3 à 76 kg, soulevé de terre 2×3 à 84 kg, mollets 3×8 à 10 kg/jambe (charges prescrites, séance jugée parfaite). Échauffement renforcé très apprécié. Toujours indiquer les disques à mettre de chaque côté."
       }
     ],
-    "sweatTestNote": "Tests de sudation 18/10 → 03/11 (pesée nu avant/après, boissons, température, FC). Peu de traces blanches de sel déclarées (17/10) → perte de sodium probablement modérée."
+    "sweatTestNote": "Tests de sudation 18/10 → 03/11 (pesée nu avant/après, boissons, température, FC). Peu de traces blanches de sel déclarées (17/10) → perte de sodium probablement modérée.",
+    "strengthRule": "À chaque séance de force : consignes courtes (échauffement → exercices séries × répétitions × kg) et disques à mettre de chaque côté de la barre pour chaque charge, montée en charge comprise."
   },
   "days": [
     {
@@ -1193,7 +1201,7 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 130.0,
-      "instructions": "110–125 W, cadence 85–95 rpm, FC < 125.\nÉCHAUFFEMENT RENFORCÉ (12 min, cuisse gauche sensible) :\n• 5–6 min de vélo (HT) ou de rameur facile, jusqu'à transpirer légèrement.\n• Mobilité de hanche : 10 balancés de jambe avant/arrière et latéraux par jambe, 8 « 90/90 » par côté.\n• Activation fessiers : 15 pas latéraux avec élastique, 10 ponts fessiers, 10 clamshells par côté.\n• Goblet squat léger 2×6 (8–12 kg), en descendant lentement.\n• TEST : la moindre tension sur le côté ou l'avant de la cuisse gauche à la série à la barre seule ou à 50 % → pas de squat ce jour-là, remplacer par hip thrust 3×6 (ou pont fessier lesté) et leg curl, sans forcer.\nPuis séries montantes à la barre (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 léger (RPE 5–6), repos 2'.\n• Mollets debout 2×8, repos 1'30.\n• Gainage 2×40''.\nDernière séance de force : aucune courbature acceptée."
+      "instructions": "110–125 W, cadence 85–95 rpm, FC < 125.\n1. ÉCHAUFFEMENT (10 min)\n• 5 min de vélo facile.\n• 10 balancés de jambe par jambe, 10 ponts fessiers.\n• Goblet squat léger 2×6.\n• Test : la cuisse gauche tire à la barre seule → pas de squat, 3×6 pont fessier lesté à la place.\n\n2. SQUAT\n• Montée : barre seule ×8 → 40 kg ×5 (par côté : 10 + 5) → 56 kg ×3 (par côté : 20 + 2 + 1).\n• 2×3 à 70 kg — par côté : 20 + 10. Repos 2 min.\n\n3. MOLLETS DEBOUT\n• 2×8 à 10 kg par jambe, repos 1 min 30 (Achille ou talon > 1/10 → 3×30 s sur pointes sans charge).\n\n4. GAINAGE : 2×40 s.\n\nDernière séance de force avant la course : facile, aucune courbature. Note tes charges finales."
     },
     {
       "week": 11,
@@ -6393,7 +6401,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "ÉCHAUFFEMENT RENFORCÉ (12 min, cuisse gauche sensible) :\n• 5–6 min de vélo (HT) ou de rameur facile, jusqu'à transpirer légèrement.\n• Mobilité de hanche : 10 balancés de jambe avant/arrière et latéraux par jambe, 8 « 90/90 » par côté.\n• Activation fessiers : 15 pas latéraux avec élastique, 10 ponts fessiers, 10 clamshells par côté.\n• Goblet squat léger 2×6 (8–12 kg), en descendant lentement.\n• TEST : la moindre tension sur le côté ou l'avant de la cuisse gauche à la série à la barre seule ou à 50 % → pas de squat ce jour-là, remplacer par hip thrust 3×6 (ou pont fessier lesté) et leg curl, sans forcer.\nPuis séries montantes à la barre (barre seule ×8, ~50 % ×5, ~70 % ×3).\n• Squat 2×3 léger (RPE 5–6), repos 2'.\n• Mollets debout 2×8, repos 1'30.\n• Gainage 2×40''.\nDernière séance de force : aucune courbature acceptée.",
+      "instructions": "1. ÉCHAUFFEMENT (10 min)\n• 5 min de vélo facile.\n• 10 balancés de jambe par jambe, 10 ponts fessiers.\n• Goblet squat léger 2×6.\n• Test : la cuisse gauche tire à la barre seule → pas de squat, 3×6 pont fessier lesté à la place.\n\n2. SQUAT\n• Montée : barre seule ×8 → 40 kg ×5 (par côté : 10 + 5) → 56 kg ×3 (par côté : 20 + 2 + 1).\n• 2×3 à 70 kg — par côté : 20 + 10. Repos 2 min.\n\n3. MOLLETS DEBOUT\n• 2×8 à 10 kg par jambe, repos 1 min 30 (Achille ou talon > 1/10 → 3×30 s sur pointes sans charge).\n\n4. GAINAGE : 2×40 s.\n\nDernière séance de force avant la course : facile, aucune courbature. Note tes charges finales.",
       "notes": "",
       "status": "planned",
       "original_data": {
