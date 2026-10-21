@@ -64,7 +64,22 @@
       }
     ],
     "sweatTestNote": "Tests de sudation 18/10 → 03/11 (pesée nu avant/après, boissons, température, FC). Peu de traces blanches de sel déclarées (17/10) → perte de sodium probablement modérée.",
-    "strengthRule": "À chaque séance de force : consignes courtes (échauffement → exercices séries × répétitions × kg) et disques à mettre de chaque côté de la barre pour chaque charge, montée en charge comprise."
+    "strengthRule": "À chaque séance de force : consignes courtes (échauffement → exercices séries × répétitions × kg) et disques à mettre de chaque côté de la barre pour chaque charge, montée en charge comprise.",
+    "raceBenchmark": {
+      "source": "Strava 12860143234 — Emmanuel Gault, vainqueur Veni Vici 2024 : 79,9 km, 2216 m D+, 6h55, FC moy. ~145",
+      "commonSections": "≈52 km communs avec le parcours 2026 : Gault 4h47 vs modèle central 4h40 (modèle 2,6 % plus rapide). Départ km 0–21 : Gault 11–14 % plus rapide ; km 60–78 : modèle 7 % trop rapide ; Sernhac (42–46) juste.",
+      "technicalZones2026km": [
+        "35.5–37.5",
+        "42–44 (montée + descente raide Sernhac)",
+        "51–53",
+        "61–62 (descente lente)",
+        "67–70.5",
+        "72.5–74",
+        "76.5–77"
+      ],
+      "projection": "Avec zones techniques : ≈7h23 (Argilliers 1h06, Castillon 2h03, St-Bonnet 3h07, Lédenon 4h26, Cabrières 5h06, Escattes 6h10). Fourchette 7h15–7h30. À valider après la répétition du 24/10.",
+      "rule": "Référence la plus représentative du terrain — à utiliser pour les temps de passage et le PacePro de course."
+    }
   },
   "days": [
     {
