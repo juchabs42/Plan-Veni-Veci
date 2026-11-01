@@ -8,13 +8,13 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V24 — semaine du 26/10 sans home trainer ni charges, sortie spécifique le dimanche 01/11",
+    "revision": "V25 — semaine de course : séances expliquées, sommeil recalé, plan de course final (passages, hydratation, caféine)",
     "courseGpx": "COURSE_438476939.gpx",
     "gpxDistanceKm": 87.79,
     "gpxRawElevationGainM": 1464,
     "officialElevationGainM": 2250,
-    "workingRaceDurationMin": 450,
-    "workingRaceTime": "~7h25–7h35 comme scénario de performance/victoire, à recalibrer chaque semaine",
+    "workingRaceDurationMin": 436,
+    "workingRaceTime": "7h16 objectif (fourchette 7h03–7h28) — temps de passage validés le 26/10",
     "trainingHistoryNote": "Base récente ~4 h à 4 h 40 CAP/sem ; semaine 1 ~4 h 30 bien tolérée ; trail 60,6 km / 3325 D+ en 7h11 en mai ; expérience Veni Vici 2023. V3 augmente le volume jusqu’à 9h30 CAP en S10 sans dépasser 5h sur une sortie unique. Printemps 2026 : 8–12,6 h CAP/sem et 3 000–4 600 m D+/sem avant Brissac. Arrêt 2 semaines après Brissac puis tendinite d'Achille à la reprise ; été en entretien (0–4 h/sem). Reprise structurée fin août. Veni Vici 2023 (format 72 km / 1 916 D+) : 2e en 6h11 → extrapolation parcours actuel ≈ 7h40.",
     "achillesNote": "S6 (27/09) : Achille droit sans douleur ni gêne, sensible seulement à la palpation, marche normale au réveil. Antécédent : tendinite à la reprise après Brissac (juin 2026). Règle : ne pas faire bondir volume ET D+ la même semaine ; surveiller réveil et J+1 après séances à fort D+. S7 (04/10) : après 4h10 / 1 130 m D+, légère gêne Achille droit sans douleur ni modification de foulée ; talon gauche plus sensible les 5 dernières minutes. Talon gauche : pathologie suivie par le médecin du sport, traitement par ondes de choc prévu en novembre après la course. Julien prend le départ quoi qu'il arrive : le talon sert d'indicateur pour doser la charge (D+, descentes, vitesse), pas pour remettre en cause la course.",
     "weeklyReviewRule": "Bilan hebdomadaire : charge réelle, qualité des séances, fatigue musculaire, sommeil/VFC, réponse pied/chevilles/Achille au réveil et à 24 h. Objectif : maximiser la continuité et la spécificité Veni Vici. Règle d'organisation : les jours de télétravail en milieu de semaine accueillent les grosses séances (double qualité) ; les jours au bureau reçoivent renfo + footing facile. À chaque bilan : demander les charges finales de squat, soulevé de terre et mollets (kg/jambe) pour régler la semaine suivante.",
@@ -38,11 +38,16 @@
         "week": 10,
         "summary": "Répétition 5 h du 24/10 : 51,9 km, 1 376 m D+, 4 h 37 de mouvement (4 h 45 total), FC 145. Blocs allure course 6,9 / 7,4 / 7,3 km à FC 156 / 157 / 158 (bloc 1 coupé à 34' : programmé en km). Cadence 178–179 et contact au sol 255 → 251 ms tenus, descentes 13,6 → 14,3 km/h. Sueur ≈ 1,04 l/h, boisson 0,82 l/h, poids 73,95 → 73,2 kg (−1 %). ~90 g/h de glucides, ventre 10/10, talon 3/10 en fin, jambes fatiguées les 5 dernières minutes. Dimanche 25 : repos (10 000 pas).",
         "decision": "S11 hors de Garrigues (ni home trainer ni charges) : HT supprimés, force remplacée par renfo au poids du corps lundi, sortie spécifique déplacée au dimanche 01/11 (J-6), samedi footing 30'. Blocs d'allure programmés en minutes."
+      },
+      {
+        "week": 11,
+        "summary": "Affûtage hors de Garrigues : 72,2 km, 6 h 29, 1 579 m D+, charge 708 (−27 %). Toutes les séances faites. Côtes 4×2' sur 10–16 % (18–20,5 km/h équivalent plat), seuil 2×6' à 16,5 km/h équivalent plat FC 163. Dimanche 01/11 : 1 h 50, 20,8 km, blocs 2×15' à 14,7 et 14,1 km/h équivalent plat, FC 160 et 158 (max 168). Sommeil 8 h 29/nuit, score 82. VFC 7 jours 48 → 42 (bas de zone 42–54, « déséquilibrée » les 30–31/10), FC repos 51–54 (47–49 début octobre), Body Battery max 71–81. Beaucoup de marche (≈ 23 000 pas hors course mardi). Sudation 01/11 ≈ 1,4 l/h.",
+        "decision": "Semaine de course : charge inchangée, contrôle VFC/FC repos mercredi (2×3' si VFC < 40 ou FC repos ≥ 55), sommeil recalé sur réveil 5 h, moins de 10 000 pas/jour hors séances, plafond FC 160 la 1re heure de course."
       }
     ],
     "raceHrStrategy": "Veni Vici : plafond 165 jusqu'au km ~60 (sauf quelques secondes en haut de bosse). Côtes 155–165 (marcher si >165 sur pente raide), plat/roulant 150–158, descentes 140–152 (piloter à la foulée, pas à la FC). Après km 60 : libre jusqu'à 168–170 si jambes OK. Référence : Veni Vici 2023 FC moy 163 sur 6h11 ; course 17 km du 27/09 FC 170 = effort seuil.",
     "durabilityAdditions": "02/10 (vidéo D. Roche) : 2×5×20'' accélérations/sem en fin de footing ; endurance longue facile 80' le lendemain de la double qualité en S9 ; descentes rapides contrôlées en fin de séance de côte (S8 4×45'', S9–S10 5×1') ; circuit mollets endurance 10–12' juste après 2 footings/sem (S8–S10), version courte en S11. Pas d'antioxydants à forte dose ni d'AINS ; fer selon prise de sang. 02/10 (transcription lue) : endurance longue S9 portée à 90' ; gel + 4×30'' côte en fin de sortie longue S8 et S11 ; step-ups unipodaux ajoutés au circuit post-footing ; test 100 g/h sur la 4h30 de S9. Marqueur de résistance à la fatigue suivi : VAP à FC 155–160 dans les blocs allure course vs seuil frais (3:50/km à FC 165).",
-    "raceNutrition": "Validée le 04/10 (4h10, 47 km) : alternance gel 45 g / iso 45 g (bue en 10–15') toutes les 30' ≈ 90 g/h, estomac 9/10 aux intensités de course (FC 153–160). Caféine : 200 mg d'un coup à 2h30, bien tolérés. Test 100 g/h (prise toutes les 27') et caféine fractionnée (100 mg à 2h + 100 mg à 3h15) le 17/10.",
+    "raceNutrition": "Gel 45 g à 30', puis alternance iso 45 g / gel 45 g toutes les 30' (≈ 90 g/h), validée le 24/10 (ventre 10/10). Hydratation ≈ 0,95 l/h, +250 ml/h si soleil et > 16 °C. Caféine 100 mg à 7 h, Castillon, Lédenon (+100 mg à Escattes si besoin). Paracétamol 1 g à 7 h et 1 g à Lédenon.",
     "calfNote": "09/10 : mollet droit chargé (séries lestées 20 kg sur marche surélevée, excentrique), Achille silencieux, talon très peu gêné, cuisse gauche OK depuis jeudi. Footing du 08/10 parfait (FC 131 moy, 142 max). Décisions : vendredi 50' + test avant les 5×20'' ; samedi footing 40' + mobilité douce ; sortie longue dimanche 11/10 08:30 avec décision au réveil. Éviter le travail lesté/excentrique des mollets dans les 72 h avant une séance clé ; S9–S10 : mollets en isométrique ou montées lentes sans charge lourde.",
     "heelNote": "11/10 : talon gauche 1–2/10 à la marche, rien au repos, 3–4/10 après la sortie longue de 2h34. Décision de Julien : course maintenue quoi qu'il arrive, ondes de choc en novembre. Règles : pas de talon sous le niveau de la marche (étirements, excentrique), chaussures avec drop pour les sorties longues, descentes en contrôle ; talon > 2/10 à la marche au réveil → pas de descentes rapides ; ≥ 4/10 ou boiterie → sortie raccourcie sur le roulant.",
     "strengthLog": [
@@ -68,7 +73,7 @@
         "note": "Lendemain de la sortie clé de 4 h 30 : squat 2×3 à 76 kg, soulevé de terre 2×3 à 84 kg, mollets 3×8 à 10 kg/jambe (charges prescrites, séance jugée parfaite). Échauffement renforcé très apprécié. Toujours indiquer les disques à mettre de chaque côté."
       }
     ],
-    "sweatTestNote": "Tests de sudation 18/10 → 03/11 (pesée nu avant/après, boissons, température, FC). Peu de traces blanches de sel déclarées (17/10) → perte de sodium probablement modérée.",
+    "sweatTestNote": "Sudation mesurée : 18/10 ≈ 1,15 l/h (11–16 °C, couvert) ; 24/10 1,04 l/h (10–16 °C, nuageux, vent 12 km/h), −1 % de poids en buvant 0,82 l/h ; 01/11 ≈ 1,4 l/h (13–17 °C, plein soleil, sans vent, blocs à FC 158–161), −1,3 % en buvant 0,78 l/h. Peu de traces de sel.",
     "strengthRule": "À chaque séance de force : consignes courtes (échauffement → exercices séries × répétitions × kg) et disques à mettre de chaque côté de la barre pour chaque charge, montée en charge comprise.",
     "raceBenchmark": {
       "source": "Strava 12860143234 — Emmanuel Gault, vainqueur Veni Vici 2024 : 79,9 km, 2216 m D+, 6h55, FC moy. ~145",
@@ -1325,15 +1330,15 @@
       "dayName": "Lundi",
       "phase": "Affûtage final / course",
       "runMin": 0,
-      "bikeMin": 50,
-      "strengthMobilityMin": 40,
+      "bikeMin": 25,
+      "strengthMobilityMin": 20,
       "heatMin": 0,
       "elevationM": 0,
       "intensityMin": 0,
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 70.0,
-      "instructions": "J-5. 110–125 W, FC < 125. Supprimer si fatigue ou sommeil mauvais. | Hanches, mollets, ischios, respiration. Aucun renforcement chargé, pas de rouleau appuyé."
+      "instructions": "J-5. 25' de vélo à 110–125 W, cadence 85–95 rpm, FC < 125.\nBut : faire circuler le sang dans les jambes après dimanche, sans impact.\nSaute-le si ta VFC est sous 40 ou si tu as mal dormi.\nHanches, mollets, ischios, respiration + routine pieds habituelle. Aucun renforcement chargé, pas de rouleau appuyé.\nSOMMEIL : coucher 22 h 30, lever 6 h 30.\nMoins de 10 000 pas par jour en dehors des séances."
     },
     {
       "week": 12,
@@ -1349,7 +1354,7 @@
       "longRunMin": 0,
       "totalMin": 45,
       "sRPE": 135.0,
-      "instructions": "J-4. FOOTING : 45' facile, FC < 145.\nACCÉLÉRATIONS : 4×20'' relâchées, récup 1'30 en trottinant ou en marchant.\nFinir avec beaucoup de fraîcheur.\nTEST DE SUDATION :\n• Avant : toilettes, puis pesée NU et sec.\n• Pendant : noter tout ce que tu bois (ml) et manges (gels : 45 g de glucides ≈ 60–70 g de poids, à peser une fois).\n• Après : s'essuyer, pesée NU avant de boire ou d'aller aux toilettes.\n• Noter : durée, FC moyenne, température, humidité, soleil/ombre, vent, tenue (débardeur ou t-shirt).\n• Envoyer les chiffres au bilan : calcul du taux de sudation (l/h) selon la température et l'intensité."
+      "instructions": "J-4. FOOTING : 45' facile sur terrain roulant, FC < 145.\nACCÉLÉRATIONS : 4×20'' relâchées (≈ 3:20–3:30/km), récup 1'30 en trottinant.\nFinir avec beaucoup de fraîcheur.\nSOMMEIL : coucher 22 h 30, lever 6 h 30."
     },
     {
       "week": 12,
@@ -1365,7 +1370,7 @@
       "longRunMin": 0,
       "totalMin": 40,
       "sRPE": 260.0,
-      "instructions": "J-3. ÉCHAUFFEMENT : 15' facile.\nCORPS : 3×3' à effort 10 km (RPE 7 ; ≈ 3:35–3:45/km sur le plat, FC ≈ 168–172 en fin de répétition).\nRÉCUP : 3' en trottinant.\nRETOUR AU CALME : 10' facile.\nUne seule séance, rester très en contrôle."
+      "instructions": "J-3. CONTRÔLE AU RÉVEIL : VFC < 40 ou FC repos ≥ 55 → 2×3' au lieu de 3×3'.\nÉCHAUFFEMENT : 15' facile + 2 accélérations de 15''.\nCORPS : 3×3' à effort 10 km (≈ 3:35–3:45/km sur le plat, FC 168–172 en fin de répétition), récup 3' en trottinant.\nRETOUR AU CALME : 10' facile.\nRester en contrôle : la dernière répétition n'est pas plus rapide que la première.\nSOMMEIL : coucher 22 h, lever 6 h."
     },
     {
       "week": 12,
@@ -1381,7 +1386,7 @@
       "longRunMin": 0,
       "totalMin": 30,
       "sRPE": 60.0,
-      "instructions": "J-2. 30' très facile, FC < 140."
+      "instructions": "J-2. 30' très facile sur le plat, FC < 140.\nNutrition : charge glucidique selon le doc nutrition.\nSOMMEIL : coucher 22 h, lever 6 h."
     },
     {
       "week": 12,
@@ -1397,23 +1402,23 @@
       "longRunMin": 0,
       "totalMin": 20,
       "sRPE": 50.0,
-      "instructions": "J-1. 20' très facile, puis 4×15'' relâchés, récup 1' en marchant. Aucun renforcement. Préparer le matériel et la nutrition."
+      "instructions": "J-1. 20' très facile, puis 4×15'' relâchés, récup 1' en marchant. Aucun renforcement.\nRetrait du dossard à Uzès : aller-retour rapide, peu de marche.\nPréparer le matériel, les flasques et la caféine.\nSOMMEIL : coucher 21 h 30, réveil 5 h."
     },
     {
       "week": 12,
       "date": "2026-11-07",
       "dayName": "Samedi",
       "phase": "Affûtage final / course",
-      "runMin": 450,
+      "runMin": 436,
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
       "elevationM": 2250,
       "intensityMin": 0,
       "longRunMin": 450,
-      "totalMin": 450,
-      "sRPE": 3150.0,
-      "instructions": "STRATÉGIE FC : plafond 165 jusqu'au km ~60 (quelques secondes au-dessus en haut de bosse tolérées). Côtes 155–165 (marcher si > 165 sur pente raide) ; plat/roulant 150–158 ; descentes 140–152, pilotées à la foulée. Après le km 60 : libre jusqu'à 168–170 si les jambes suivent.\nNUTRITION : stratégie validée — alternance gel 45 g / iso 45 g toutes les 30' (ou 27' si le test à 100 g/h passe).\nCAFÉINE : plan finalisé au bilan.\nRAVITOS : arrêts courts et préparés. Objectif 7h25–7h35. | Récupération, pas de séance."
+      "totalMin": 436,
+      "sRPE": 3052.0,
+      "instructions": "OBJECTIF : 7 h 16 (arrivée vers 14 h 46). Fourchette 7 h 03 – 7 h 28.\nPASSAGES (objectif · trop vite si avant · plan B) : Argilliers 1 h 05 · 1 h 03 · 1 h 06 — Castillon 1 h 58 · 1 h 55 · 2 h 01 — Saint-Bonnet 3 h 06 · 3 h 00 · 3 h 10 — Lédenon 4 h 21 · 4 h 13 · 4 h 28 — Cabrières 5 h 00 · 4 h 51 · 5 h 08 — Escattes 6 h 04 · 5 h 54 · 6 h 14 — Arrivée 7 h 16.\nFC : plafond 160 la 1re heure, puis 165 jusqu'à Cabrières (km 60). Côtes 155–165 (marcher si > 165 sur pente raide), plat 150–158, descentes 140–152 pilotées à la foulée. Après Cabrières : libre jusqu'à 168–170 si les jambes suivent.\nMATIN : réveil 5 h, petit-déjeuner habituel à 5 h 15, départ de la maison 5 h 45.\nNUTRITION : gel 45 g à 30', puis alternance iso 45 g / gel 45 g toutes les 30' (≈ 90 g/h).\nHYDRATATION : ≈ 0,95 l/h (1 flasque iso + 1 flasque d'eau par heure). Soleil et plus de 16 °C : + 250 ml par heure et buff mouillé. 3 flasques sur Saint-Bonnet → Lédenon et Escattes → arrivée.\nCAFÉINE : 100 mg à 7 h, 100 mg à Castillon, 100 mg à Lédenon ; +100 mg à Escattes si besoin.\nPARACÉTAMOL : 1 g à 7 h, 1 g à Lédenon (vers 11 h 50), pas plus.\nRAVITOS : 45 s maximum, flasques prêtes.\nRécupération, pas de séance."
     },
     {
       "week": 12,
@@ -1429,7 +1434,7 @@
       "longRunMin": 0,
       "totalMin": 0,
       "sRPE": 0.0,
-      "instructions": "Repos. | Optionnel."
+      "instructions": "Repos.\nOptionnel."
     }
   ],
   "sessions": [
@@ -6732,18 +6737,18 @@
       "week": 12,
       "day_name": "Lundi",
       "phase": "Affûtage final / course",
-      "time_label": "06:45",
+      "time_label": "07:00",
       "title": "HT 25' très facile",
       "duration_min": 25,
       "rpe": 2.0,
       "elevation_m": 0,
       "run_min": 0,
       "bike_min": 25,
-      "strength_min": 20,
+      "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "J-5. 110–125 W, FC < 125. Supprimer si fatigue ou sommeil mauvais.",
+      "instructions": "J-5. 25' de vélo à 110–125 W, cadence 85–95 rpm, FC < 125.\nBut : faire circuler le sang dans les jambes après dimanche, sans impact.\nSaute-le si ta VFC est sous 40 ou si tu as mal dormi.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6779,17 +6784,17 @@
       "day_name": "Lundi",
       "phase": "Affûtage final / course",
       "time_label": "18:30",
-      "title": "Mobilité douce 20'",
+      "title": "Mobilité douce 20' + routine pieds",
       "duration_min": 20,
       "rpe": 1.0,
       "elevation_m": 0,
       "run_min": 0,
-      "bike_min": 25,
+      "bike_min": 0,
       "strength_min": 20,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "Hanches, mollets, ischios, respiration. Aucun renforcement chargé, pas de rouleau appuyé.",
+      "instructions": "Hanches, mollets, ischios, respiration + routine pieds habituelle. Aucun renforcement chargé, pas de rouleau appuyé.\nSOMMEIL : coucher 22 h 30, lever 6 h 30.\nMoins de 10 000 pas par jour en dehors des séances.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6835,7 +6840,7 @@
       "heat_min": 0,
       "intensity_min": 1,
       "long_run_min": 0,
-      "instructions": "J-4. FOOTING : 45' facile, FC < 145.\nACCÉLÉRATIONS : 4×20'' relâchées, récup 1'30 en trottinant ou en marchant.\nFinir avec beaucoup de fraîcheur.\nTEST DE SUDATION :\n• Avant : toilettes, puis pesée NU et sec.\n• Pendant : noter tout ce que tu bois (ml) et manges (gels : 45 g de glucides ≈ 60–70 g de poids, à peser une fois).\n• Après : s'essuyer, pesée NU avant de boire ou d'aller aux toilettes.\n• Noter : durée, FC moyenne, température, humidité, soleil/ombre, vent, tenue (débardeur ou t-shirt).\n• Envoyer les chiffres au bilan : calcul du taux de sudation (l/h) selon la température et l'intensité.",
+      "instructions": "J-4. FOOTING : 45' facile sur terrain roulant, FC < 145.\nACCÉLÉRATIONS : 4×20'' relâchées (≈ 3:20–3:30/km), récup 1'30 en trottinant.\nFinir avec beaucoup de fraîcheur.\nSOMMEIL : coucher 22 h 30, lever 6 h 30.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6871,7 +6876,7 @@
       "day_name": "Mercredi",
       "phase": "Affûtage final / course",
       "time_label": "07:00",
-      "title": "Rappel : 40' dont 3×3' à effort 10 km",
+      "title": "Rappel 40' dont 3×3' à effort 10 km",
       "duration_min": 40,
       "rpe": 6.5,
       "elevation_m": 100,
@@ -6881,7 +6886,7 @@
       "heat_min": 0,
       "intensity_min": 9,
       "long_run_min": 0,
-      "instructions": "J-3. ÉCHAUFFEMENT : 15' facile.\nCORPS : 3×3' à effort 10 km (RPE 7 ; ≈ 3:35–3:45/km sur le plat, FC ≈ 168–172 en fin de répétition).\nRÉCUP : 3' en trottinant.\nRETOUR AU CALME : 10' facile.\nUne seule séance, rester très en contrôle.",
+      "instructions": "J-3. CONTRÔLE AU RÉVEIL : VFC < 40 ou FC repos ≥ 55 → 2×3' au lieu de 3×3'.\nÉCHAUFFEMENT : 15' facile + 2 accélérations de 15''.\nCORPS : 3×3' à effort 10 km (≈ 3:35–3:45/km sur le plat, FC 168–172 en fin de répétition), récup 3' en trottinant.\nRETOUR AU CALME : 10' facile.\nRester en contrôle : la dernière répétition n'est pas plus rapide que la première.\nSOMMEIL : coucher 22 h, lever 6 h.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6927,7 +6932,7 @@
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 0,
-      "instructions": "J-2. 30' très facile, FC < 140.",
+      "instructions": "J-2. 30' très facile sur le plat, FC < 140.\nNutrition : charge glucidique selon le doc nutrition.\nSOMMEIL : coucher 22 h, lever 6 h.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -6973,7 +6978,7 @@
       "heat_min": 0,
       "intensity_min": 1,
       "long_run_min": 0,
-      "instructions": "J-1. 20' très facile, puis 4×15'' relâchés, récup 1' en marchant. Aucun renforcement. Préparer le matériel et la nutrition.",
+      "instructions": "J-1. 20' très facile, puis 4×15'' relâchés, récup 1' en marchant. Aucun renforcement.\nRetrait du dossard à Uzès : aller-retour rapide, peu de marche.\nPréparer le matériel, les flasques et la caféine.\nSOMMEIL : coucher 21 h 30, réveil 5 h.",
       "notes": "",
       "status": "planned",
       "original_data": {
@@ -7008,18 +7013,18 @@
       "week": 12,
       "day_name": "Samedi",
       "phase": "Affûtage final / course",
-      "time_label": "",
+      "time_label": "07:30",
       "title": "Course Veni Vici 87 km / 2 250 D+",
-      "duration_min": 450,
+      "duration_min": 436,
       "rpe": 7.0,
       "elevation_m": 2250,
-      "run_min": 450,
+      "run_min": 436,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 450,
-      "instructions": "STRATÉGIE FC : plafond 165 jusqu'au km ~60 (quelques secondes au-dessus en haut de bosse tolérées). Côtes 155–165 (marcher si > 165 sur pente raide) ; plat/roulant 150–158 ; descentes 140–152, pilotées à la foulée. Après le km 60 : libre jusqu'à 168–170 si les jambes suivent.\nNUTRITION : stratégie validée — alternance gel 45 g / iso 45 g toutes les 30' (ou 27' si le test à 100 g/h passe).\nCAFÉINE : plan finalisé au bilan.\nRAVITOS : arrêts courts et préparés. Objectif 7h25–7h35.",
+      "instructions": "OBJECTIF : 7 h 16 (arrivée vers 14 h 46). Fourchette 7 h 03 – 7 h 28.\nPASSAGES (objectif · trop vite si avant · plan B) : Argilliers 1 h 05 · 1 h 03 · 1 h 06 — Castillon 1 h 58 · 1 h 55 · 2 h 01 — Saint-Bonnet 3 h 06 · 3 h 00 · 3 h 10 — Lédenon 4 h 21 · 4 h 13 · 4 h 28 — Cabrières 5 h 00 · 4 h 51 · 5 h 08 — Escattes 6 h 04 · 5 h 54 · 6 h 14 — Arrivée 7 h 16.\nFC : plafond 160 la 1re heure, puis 165 jusqu'à Cabrières (km 60). Côtes 155–165 (marcher si > 165 sur pente raide), plat 150–158, descentes 140–152 pilotées à la foulée. Après Cabrières : libre jusqu'à 168–170 si les jambes suivent.\nMATIN : réveil 5 h, petit-déjeuner habituel à 5 h 15, départ de la maison 5 h 45.\nNUTRITION : gel 45 g à 30', puis alternance iso 45 g / gel 45 g toutes les 30' (≈ 90 g/h).\nHYDRATATION : ≈ 0,95 l/h (1 flasque iso + 1 flasque d'eau par heure). Soleil et plus de 16 °C : + 250 ml par heure et buff mouillé. 3 flasques sur Saint-Bonnet → Lédenon et Escattes → arrivée.\nCAFÉINE : 100 mg à 7 h, 100 mg à Castillon, 100 mg à Lédenon ; +100 mg à Escattes si besoin.\nPARACÉTAMOL : 1 g à 7 h, 1 g à Lédenon (vers 11 h 50), pas plus.\nRAVITOS : 45 s maximum, flasques prêtes.",
       "notes": "",
       "status": "planned",
       "original_data": {
