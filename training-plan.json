@@ -8,13 +8,13 @@
     "elevationM": 2250,
     "weightKg": 73,
     "sourceFile": "Preparation_Veni_Vici_12_semaines.xlsx",
-    "revision": "V26 — plan A terrain mouillé 7 h 22, garde-fous FC relevés, ravitos (boisson, sodium, caféine) revus",
-    "courseGpx": "COURSE_438476939.gpx",
-    "gpxDistanceKm": 87.79,
-    "gpxRawElevationGainM": 1464,
+    "revision": "V27 — trace officielle du 5/11 (87,6 km, arrivée au Fort Vauban), plan A terrain humide 7 h 27, PacePro 7h27",
+    "courseGpx": "course/veni_vici_2026.gpx",
+    "gpxDistanceKm": 87.58,
+    "gpxRawElevationGainM": 1467,
     "officialElevationGainM": 2250,
-    "workingRaceDurationMin": 442,
-    "workingRaceTime": "7h22 objectif terrain mouillé (fourchette 7h09–7h34) — temps de passage mis à jour le 03/11",
+    "workingRaceDurationMin": 447,
+    "workingRaceTime": "7h27 objectif terrain humide (fourchette 7h13–7h39) — trace du 5/11, temps de passage mis à jour le 05/11",
     "trainingHistoryNote": "Base récente ~4 h à 4 h 40 CAP/sem ; semaine 1 ~4 h 30 bien tolérée ; trail 60,6 km / 3325 D+ en 7h11 en mai ; expérience Veni Vici 2023. V3 augmente le volume jusqu’à 9h30 CAP en S10 sans dépasser 5h sur une sortie unique. Printemps 2026 : 8–12,6 h CAP/sem et 3 000–4 600 m D+/sem avant Brissac. Arrêt 2 semaines après Brissac puis tendinite d'Achille à la reprise ; été en entretien (0–4 h/sem). Reprise structurée fin août. Veni Vici 2023 (format 72 km / 1 916 D+) : 2e en 6h11 → extrapolation parcours actuel ≈ 7h40.",
     "achillesNote": "S6 (27/09) : Achille droit sans douleur ni gêne, sensible seulement à la palpation, marche normale au réveil. Antécédent : tendinite à la reprise après Brissac (juin 2026). Règle : ne pas faire bondir volume ET D+ la même semaine ; surveiller réveil et J+1 après séances à fort D+. S7 (04/10) : après 4h10 / 1 130 m D+, légère gêne Achille droit sans douleur ni modification de foulée ; talon gauche plus sensible les 5 dernières minutes. Talon gauche : pathologie suivie par le médecin du sport, traitement par ondes de choc prévu en novembre après la course. Julien prend le départ quoi qu'il arrive : le talon sert d'indicateur pour doser la charge (D+, descentes, vitesse), pas pour remettre en cause la course.",
     "weeklyReviewRule": "Bilan hebdomadaire : charge réelle, qualité des séances, fatigue musculaire, sommeil/VFC, réponse pied/chevilles/Achille au réveil et à 24 h. Objectif : maximiser la continuité et la spécificité Veni Vici. Règle d'organisation : les jours de télétravail en milieu de semaine accueillent les grosses séances (double qualité) ; les jours au bureau reçoivent renfo + footing facile. À chaque bilan : demander les charges finales de squat, soulevé de terre et mollets (kg/jambe) pour régler la semaine suivante.",
@@ -45,7 +45,7 @@
         "decision": "Semaine de course : charge inchangée, contrôle VFC/FC repos mercredi (2×3' si VFC < 40 ou FC repos ≥ 55), sommeil recalé sur réveil 5 h, moins de 10 000 pas/jour hors séances, plafond FC 160 la 1re heure de course."
       }
     ],
-    "raceHrStrategy": "Veni Vici (V26, ceinture HRM-Pro) : départ libre jusqu'au pied de la 1re bosse (km 2). Jusqu'à Cabrières (km 60) : plat/roulant 158–163, plafond 165 ; côtes jusqu'à 168, au-delà lever le pied et marcher si pente > 12 % ; descentes pilotées à la foulée. 1re heure ≤ 163 de moyenne (168 en 2023). Après Cabrières : libre (170 plat, 172 côte).",
+    "raceHrStrategy": "Veni Vici (V27, ceinture HRM-Pro) : départ libre jusqu'au pied de la 1re bosse (km 2). Jusqu'à Cabrières (km 62) : plat/roulant 158–163, plafond 165 ; côtes jusqu'à 168, au-delà lever le pied et marcher si pente > 12 % ; descentes pilotées à la foulée. 1re heure ≤ 163 de moyenne (168 en 2023). Après Cabrières : libre (170 plat, 172 côte).",
     "durabilityAdditions": "02/10 (vidéo D. Roche) : 2×5×20'' accélérations/sem en fin de footing ; endurance longue facile 80' le lendemain de la double qualité en S9 ; descentes rapides contrôlées en fin de séance de côte (S8 4×45'', S9–S10 5×1') ; circuit mollets endurance 10–12' juste après 2 footings/sem (S8–S10), version courte en S11. Pas d'antioxydants à forte dose ni d'AINS ; fer selon prise de sang. 02/10 (transcription lue) : endurance longue S9 portée à 90' ; gel + 4×30'' côte en fin de sortie longue S8 et S11 ; step-ups unipodaux ajoutés au circuit post-footing ; test 100 g/h sur la 4h30 de S9. Marqueur de résistance à la fatigue suivi : VAP à FC 155–160 dans les blocs allure course vs seuil frais (3:50/km à FC 165).",
     "raceNutrition": "Gel 45 g aux demi-heures, iso 45 g aux heures pleines (≈ 85 g/h : 7 gels + 7 iso, 2 gels de secours). 2 flasques maximum par tronçon (1 iso + 1 eau) ; verre de Saint-Yorre à Saint-Bonnet, Cabrières et Escattes (+ Castillon et Lédenon si grand soleil). Sodium ≈ 690 mg/h + Saint-Yorre : pas de capsules, 2 en secours. Caféine 200 mg à 6 h 45, 100 mg à Castillon, 100 mg à Cabrières. Paracétamol 1 g à 7 h et 1 g à Lédenon.",
     "calfNote": "09/10 : mollet droit chargé (séries lestées 20 kg sur marche surélevée, excentrique), Achille silencieux, talon très peu gêné, cuisse gauche OK depuis jeudi. Footing du 08/10 parfait (FC 131 moy, 142 max). Décisions : vendredi 50' + test avant les 5×20'' ; samedi footing 40' + mobilité douce ; sortie longue dimanche 11/10 08:30 avec décision au réveil. Éviter le travail lesté/excentrique des mollets dans les 72 h avant une séance clé ; S9–S10 : mollets en isométrique ou montées lentes sans charge lourde.",
@@ -90,7 +90,7 @@
       "projection": "Avec zones techniques : ≈7h23 (Argilliers 1h06, Castillon 2h03, St-Bonnet 3h07, Lédenon 4h26, Cabrières 5h06, Escattes 6h10). Fourchette 7h15–7h30. À valider après la répétition du 24/10.",
       "rule": "Référence la plus représentative du terrain — à utiliser pour les temps de passage et le PacePro de course."
     },
-    "raceWeather": "Prévision Open-Meteo du 03/11 : course au sec, 5–8 °C au départ, 12–14 °C à midi, vent faible. 50 à 85 mm de pluie de mercredi à vendredi midi : terrain mouillé, +6 min sur le plan."
+    "raceWeather": "Prévision Open-Meteo du 05/11 : course au sec, 3–4 °C au départ (brouillard possible), 12–13 °C à midi, ciel couvert, rafales 20–25 km/h vers midi. Pluie de mercredi à vendredi : 10 à 20 mm au lieu des 50 à 85 mm annoncés le 03/11 : terrain humide, +3 min sur le plan."
   },
   "days": [
     {
@@ -1410,16 +1410,16 @@
       "date": "2026-11-07",
       "dayName": "Samedi",
       "phase": "Affûtage final / course",
-      "runMin": 436,
+      "runMin": 447,
       "bikeMin": 0,
       "strengthMobilityMin": 0,
       "heatMin": 0,
       "elevationM": 2250,
       "intensityMin": 0,
       "longRunMin": 450,
-      "totalMin": 436,
-      "sRPE": 3052.0,
-      "instructions": "OBJECTIF : 7 h 16 (arrivée vers 14 h 46). Fourchette 7 h 03 – 7 h 28.\nPASSAGES (objectif · trop vite si avant · plan B) : Argilliers 1 h 05 · 1 h 03 · 1 h 06 — Castillon 1 h 58 · 1 h 55 · 2 h 01 — Saint-Bonnet 3 h 06 · 3 h 00 · 3 h 10 — Lédenon 4 h 21 · 4 h 13 · 4 h 28 — Cabrières 5 h 00 · 4 h 51 · 5 h 08 — Escattes 6 h 04 · 5 h 54 · 6 h 14 — Arrivée 7 h 16.\nFC : plafond 160 la 1re heure, puis 165 jusqu'à Cabrières (km 60). Côtes 155–165 (marcher si > 165 sur pente raide), plat 150–158, descentes 140–152 pilotées à la foulée. Après Cabrières : libre jusqu'à 168–170 si les jambes suivent.\nMATIN : réveil 5 h, petit-déjeuner habituel à 5 h 15, départ de la maison 5 h 45.\nNUTRITION : gel 45 g à 30', puis alternance iso 45 g / gel 45 g toutes les 30' (≈ 90 g/h).\nHYDRATATION : ≈ 0,95 l/h (1 flasque iso + 1 flasque d'eau par heure). Soleil et plus de 16 °C : + 250 ml par heure et buff mouillé. 3 flasques sur Saint-Bonnet → Lédenon et Escattes → arrivée.\nCAFÉINE : 100 mg à 7 h, 100 mg à Castillon, 100 mg à Lédenon ; +100 mg à Escattes si besoin.\nPARACÉTAMOL : 1 g à 7 h, 1 g à Lédenon (vers 11 h 50), pas plus.\nRAVITOS : 45 s maximum, flasques prêtes.\nRécupération, pas de séance."
+      "totalMin": 447,
+      "sRPE": 3129.0,
+      "instructions": "OBJECTIF : 7 h 27 sur la trace officielle du 5/11 et un terrain humide (arrivée au Fort Vauban vers 14 h 57). Fourchette 7 h 13 – 7 h 39.\nPASSAGES (objectif · trop vite si avant · plan B) : Argilliers 1 h 07 · 1 h 06 · 1 h 09 — Castillon 2 h 08 · 2 h 05 · 2 h 12 — Saint-Bonnet 3 h 17 · 3 h 12 · 3 h 22 — Lédenon 4 h 33 · 4 h 25 · 4 h 40 — Cabrières 5 h 13 · 5 h 04 · 5 h 21 — Escattes 6 h 16 · 6 h 05 · 6 h 27 — Arrivée 7 h 27. Après Cabrières (km 62), la colonne « trop vite » devient l'objectif bonus (7 h 13).\nPACEPRO : « Veni Vici 7h27 » (50 tronçons) sur le parcours « La Veni Vici 2026 » (trace du 5/11, 87,6 km).\nFC (ceinture) : libre jusqu'au pied de la 1re bosse (km 2, ≈ 9 min). Jusqu'à Cabrières : plat 158–163, jamais plus de 165 ; côtes jusqu'à 168, au-delà lève le pied et marche si la pente dépasse 12 % ; descentes sans FC, prudence sur le calcaire humide. 1re heure : 163 de moyenne au maximum. Après Cabrières : libre (170 sur le plat, 172 en côte).\nMATIN : réveil 5 h, petit-déjeuner habituel à 5 h 15 sans café, départ de la maison 5 h 40, parents à Poulx à 6 h 25, Uzès à 6 h 50. 250–300 ml d'eau entre 6 h 30 et 7 h 15. 3–4 °C au départ : coupe-vent, gants et buff, laissés à Argilliers.\nNUTRITION : gel 45 g aux demi-heures (0 h 30, 1 h 30…), iso 45 g aux heures pleines ≈ 85 g/h ; le gel de 4 h 30 se prend en repartant de Lédenon ; 2 gels de secours.\nHYDRATATION : 2 flasques maximum par tronçon (1 iso + 1 eau). 1 verre de Saint-Yorre (250 ml) à Saint-Bonnet, Cabrières et Escattes ; ciel couvert et 12–13 °C : pas de verre en plus.\nSODIUM : 690 mg/h avec gels et iso, plus la Saint-Yorre : pas de capsules, 2 en secours.\nCAFÉINE : 200 mg à 6 h 45, 100 mg à Castillon, 100 mg à Cabrières (400 mg).\nPARACÉTAMOL : 1 g à 7 h, 1 g à Lédenon (vers 12 h 03), pas plus.\nRAVITOS : 45 s maximum, flasques prêtes."
     },
     {
       "week": 12,
@@ -7016,16 +7016,16 @@
       "phase": "Affûtage final / course",
       "time_label": "07:30",
       "title": "Course Veni Vici 87 km / 2 250 D+",
-      "duration_min": 442,
+      "duration_min": 447,
       "rpe": 7.0,
       "elevation_m": 2250,
-      "run_min": 442,
+      "run_min": 447,
       "bike_min": 0,
       "strength_min": 0,
       "heat_min": 0,
       "intensity_min": 0,
       "long_run_min": 450,
-      "instructions": "OBJECTIF : 7 h 22 sur terrain mouillé (arrivée vers 14 h 52). Fourchette 7 h 09 – 7 h 34.\nPASSAGES (objectif · trop vite si avant · plan B) : Argilliers 1 h 05 · 1 h 03 · 1 h 07 — Castillon 1 h 59 · 1 h 56 · 2 h 02 — Saint-Bonnet 3 h 08 · 3 h 02 · 3 h 12 — Lédenon 4 h 24 · 4 h 16 · 4 h 31 — Cabrières 5 h 04 · 4 h 55 · 5 h 12 — Escattes 6 h 09 · 5 h 58 · 6 h 19 — Arrivée 7 h 22. Après Cabrières, la colonne « trop vite » devient l'objectif bonus (7 h 09).\nFC (ceinture) : libre jusqu'au pied de la 1re bosse (km 2, ≈ 8 min). Jusqu'à Cabrières : plat 158–163, jamais plus de 165 ; côtes jusqu'à 168, au-delà lève le pied et marche si la pente dépasse 12 % ; descentes sans FC, prudence sur le calcaire mouillé. 1re heure : 163 de moyenne au maximum. Après Cabrières : libre (170 sur le plat, 172 en côte).\nMATIN : réveil 5 h, petit-déjeuner habituel à 5 h 15 sans café, départ de la maison 5 h 45. 250–300 ml d'eau entre 6 h 30 et 7 h 15.\nNUTRITION : gel 45 g aux demi-heures (0 h 30, 1 h 30…), iso 45 g aux heures pleines (celle de 2 h juste avant Castillon) ≈ 85 g/h ; 2 gels de secours.\nHYDRATATION : 2 flasques maximum par tronçon (1 iso + 1 eau). 1 verre de Saint-Yorre (250 ml) à Saint-Bonnet, Cabrières et Escattes ; +1 verre à Castillon et Lédenon si grand soleil.\nSODIUM : 690 mg/h avec gels et iso, plus la Saint-Yorre : pas de capsules, 2 en secours.\nCAFÉINE : 200 mg à 6 h 45, 100 mg à Castillon, 100 mg à Cabrières (400 mg).\nPARACÉTAMOL : 1 g à 7 h, 1 g à Lédenon (vers 11 h 54), pas plus.\nRAVITOS : 45 s maximum, flasques prêtes.",
+      "instructions": "OBJECTIF : 7 h 27 sur la trace officielle du 5/11 et un terrain humide (arrivée au Fort Vauban vers 14 h 57). Fourchette 7 h 13 – 7 h 39.\nPASSAGES (objectif · trop vite si avant · plan B) : Argilliers 1 h 07 · 1 h 06 · 1 h 09 — Castillon 2 h 08 · 2 h 05 · 2 h 12 — Saint-Bonnet 3 h 17 · 3 h 12 · 3 h 22 — Lédenon 4 h 33 · 4 h 25 · 4 h 40 — Cabrières 5 h 13 · 5 h 04 · 5 h 21 — Escattes 6 h 16 · 6 h 05 · 6 h 27 — Arrivée 7 h 27. Après Cabrières (km 62), la colonne « trop vite » devient l'objectif bonus (7 h 13).\nPACEPRO : « Veni Vici 7h27 » (50 tronçons) sur le parcours « La Veni Vici 2026 » (trace du 5/11, 87,6 km).\nFC (ceinture) : libre jusqu'au pied de la 1re bosse (km 2, ≈ 9 min). Jusqu'à Cabrières : plat 158–163, jamais plus de 165 ; côtes jusqu'à 168, au-delà lève le pied et marche si la pente dépasse 12 % ; descentes sans FC, prudence sur le calcaire humide. 1re heure : 163 de moyenne au maximum. Après Cabrières : libre (170 sur le plat, 172 en côte).\nMATIN : réveil 5 h, petit-déjeuner habituel à 5 h 15 sans café, départ de la maison 5 h 40, parents à Poulx à 6 h 25, Uzès à 6 h 50. 250–300 ml d'eau entre 6 h 30 et 7 h 15. 3–4 °C au départ : coupe-vent, gants et buff, laissés à Argilliers.\nNUTRITION : gel 45 g aux demi-heures (0 h 30, 1 h 30…), iso 45 g aux heures pleines ≈ 85 g/h ; le gel de 4 h 30 se prend en repartant de Lédenon ; 2 gels de secours.\nHYDRATATION : 2 flasques maximum par tronçon (1 iso + 1 eau). 1 verre de Saint-Yorre (250 ml) à Saint-Bonnet, Cabrières et Escattes ; ciel couvert et 12–13 °C : pas de verre en plus.\nSODIUM : 690 mg/h avec gels et iso, plus la Saint-Yorre : pas de capsules, 2 en secours.\nCAFÉINE : 200 mg à 6 h 45, 100 mg à Castillon, 100 mg à Cabrières (400 mg).\nPARACÉTAMOL : 1 g à 7 h, 1 g à Lédenon (vers 12 h 03), pas plus.\nRAVITOS : 45 s maximum, flasques prêtes.",
       "notes": "",
       "status": "planned",
       "original_data": {
