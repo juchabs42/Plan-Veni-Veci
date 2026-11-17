@@ -1,6 +1,6 @@
 const { createClient } = window.SupabaseLite;
 
-const PLAN_URL = './training-plan.json?v=27';
+const PLAN_URL = './training-plan.json?v=28';
 const LOCAL_KEY = 'veni-vici-local-sessions-v1';
 const CACHE_KEY = 'veni-vici-cache-sessions-v1';
 const INSTALL_DISMISS_KEY = 'veni-vici-install-dismissed-v1';
@@ -46,9 +46,10 @@ function sortSessions(a,b){ const order={am:0,pm:1}; return a.scheduled_date.loc
 function planDay(date){ return state.plan?.days?.find(d => d.date === date) || null; }
 function routineForDate(date){ const name=DAY_NAMES[parseISO(date).getDay()]; return state.plan?.resources?.eveningRoutine?.find(r => r.day === name); }
 function ortonRoutineForDate(date){ const name=DAY_NAMES[parseISO(date).getDay()]; return state.plan?.resources?.ortonMorningRoutine?.find(r => r.day === name); }
-function weekForDate(date){ const d=planDay(date); if(d) return d.week; const start=parseISO(state.plan.meta.startDate); const target=parseISO(date); return Math.max(1, Math.min(12, Math.floor((target-start)/604800000)+1)); }
+function weekForDate(date){ const d=planDay(date); if(d) return d.week; const start=parseISO(state.plan.meta.startDate); const target=parseISO(date); return Math.max(1, Math.min(maxWeek(), Math.floor((target-start)/604800000)+1)); }
 function dateForWeekDay(week, dayIndex){ return addDays(state.plan.meta.startDate,(week-1)*7+dayIndex); }
 function referenceWeek(session){ return Number(session?.original_data?.week ?? session?.week ?? 0); }
+function maxWeek(){ return Math.max(12,...((state.plan?.days)||[]).map(d=>Number(d.week)||0)); }
 function updateCutoffWeek(){
   const currentWeek=weekForDate(localISO(new Date()));
   return Math.max(3,currentWeek);
@@ -238,7 +239,7 @@ async function seedPlan(){
 async function updateFuturePlan(){
   if(state.accessMode!=='owner'&&!state.demoMode) return toast('Lecture seule');
   const cutoff=updateCutoffWeek();
-  if(cutoff>12) return toast('Aucune semaine future à mettre à jour');
+  if(cutoff>maxWeek()) return toast('Aucune semaine future à mettre à jour');
 
   const incoming=(state.plan.sessions||[]).filter(s=>Number(s.week)>=cutoff);
   if(!incoming.length) return toast(`Aucune séance à partir de S${cutoff}`);
@@ -457,7 +458,7 @@ function bindDynamicSessionButtons(){
 
 function renderWeek(){
   if(!state.plan) return;
-  state.selectedWeek=Math.max(1,Math.min(12,state.selectedWeek));
+  state.selectedWeek=Math.max(1,Math.min(maxWeek(),state.selectedWeek));
   const first=dateForWeekDay(state.selectedWeek,0), last=dateForWeekDay(state.selectedWeek,6);
   $('weekTitle').textContent=`Semaine ${state.selectedWeek} · ${formatDate(first,{day:'numeric',month:'short'})} → ${formatDate(last,{day:'numeric',month:'short'})}`;
   const phase=state.plan.days.find(d=>d.week===state.selectedWeek)?.phase||'';
@@ -614,7 +615,7 @@ function bindUI(){
   if($('installCardBtn')) $('installCardBtn').onclick=triggerInstall;
   if($('installBtn')) $('installBtn').onclick=triggerInstall;
   $('prevWeekBtn').onclick=()=>{state.selectedWeek=Math.max(1,state.selectedWeek-1);renderWeek();};
-  $('nextWeekBtn').onclick=()=>{state.selectedWeek=Math.min(12,state.selectedWeek+1);renderWeek();};
+  $('nextWeekBtn').onclick=()=>{state.selectedWeek=Math.min(maxWeek(),state.selectedWeek+1);renderWeek();};
   $('closeEditBtn').onclick=closeEdit;
   $('editModal').onclick=e=>{if(e.target===$('editModal'))closeEdit();};
   $('resetSessionBtn').onclick=resetSingleSession;

@@ -1,7 +1,8 @@
-MISE À JOUR V27
+MISE À JOUR V28
 
 Après déploiement : Réglages → Mettre à jour les semaines futures.
-- Course : trace officielle du 5/11 (87,6 km, carrière de Vers, ravito de Castillon déplacé, arrivée au Fort Vauban).
-- Plan A 7 h 27 sur terrain humide (moins de pluie que prévu), nouveaux temps de passage.
-- PacePro « Veni Vici 7h27 » envoyé sur la fenix.
-- Météo : 3–4 °C au départ, 12–13 °C à midi, ciel couvert.
+- Semaines 13 à 15 (9–29 novembre) : récupération post-Veni Vici et ondes de choc.
+- Home trainer très facile (FC < 135) : jeu. 19/11 30', dim. 22/11 40', lun. 23/11 45', jeu. 26/11 45', dim. 29/11 50'.
+- Jamais le jour d'une séance d'ondes de choc (mar. 17, ven. 20, mar. 24, ven. 27) ni le lendemain : marche et mobilité.
+- Dimanche 29/11 : bilan pour écrire le bloc Fondations (reprise de la course le 30/11 si le médecin valide).
+- L'application accepte maintenant plus de 12 semaines.
