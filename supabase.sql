@@ -14,7 +14,7 @@ create table if not exists public.training_sessions (
   scheduled_date date not null,
   original_slot text not null check (original_slot in ('am','pm')),
   slot text not null check (slot in ('am','pm')),
-  week smallint not null check (week between 1 and 12),
+  week smallint not null check (week between 1 and 60),
   day_name text not null default '',
   phase text not null default '',
   time_label text not null default '',
